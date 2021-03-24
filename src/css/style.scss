@@ -90,8 +90,8 @@ $black: #161616;
   display: flex;
   .quote {
     margin-top: 0px;
-    font-family: "Cabin";
-    font-size: 28px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 24px;
     color: #4f5664;
 
     text-align: center;
@@ -218,6 +218,9 @@ html {
   font-family: sans-serif;
 
   background-color: rgba(255, 255, 255, 0.1);
+  ::-webkit-scrollbar {
+    display: none !important;
+  }
 }
 
 header {
@@ -382,7 +385,7 @@ header {
 
 .slide__content {
   height: 100vh;
-  border: 1px solid #000;
+
   position: relative;
   @extend %display_center;
   padding-top: 100px;
@@ -574,9 +577,12 @@ header {
 }
 
 section.section_chemistry {
+  background-color: rgb(230, 230, 230);
+
   .container {
     .row {
       .col-xl-3 {
+        padding: 0.2rem;
         .product_item {
           padding: 0.8rem 1.7rem;
           width: 100%;
@@ -589,6 +595,7 @@ section.section_chemistry {
             position: absolute;
             z-index: 9;
           }
+
           .img_wrap {
             position: relative;
             height: 30vmin;
@@ -631,6 +638,8 @@ section.section_chemistry {
               margin-top: -3rem;
               padding: 5px 23px 5px 10px;
               transition: all 0.6s ease;
+              font-size: 1rem;
+              font-family: "Barlow Condensed", sans-serif;
               &:before {
                 content: "";
                 position: absolute;
@@ -678,13 +687,14 @@ section.section_chemistry {
               color: rgb(88, 88, 88);
               transition: 0.3s;
               font-size: 1rem;
+              font-family: "Barlow Condensed", sans-serif;
               &:hover {
                 color: rgb(29, 159, 211);
               }
             }
             p {
               color: $main_blue;
-
+              font-size: 1rem;
               margin: -0.2rem 0;
             }
           }
@@ -804,7 +814,7 @@ section.section_news {
                   font-weight: 400;
                   color: white;
                   font-size: 2.3rem;
-                  font-family: "Cabin", sans-serif;
+                  font-family: "Barlow Condensed", sans-serif;
                   line-height: 2.4rem;
                 }
                 .btn {
