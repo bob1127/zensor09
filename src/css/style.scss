@@ -603,6 +603,10 @@ section.section_chemistry {
             overflow: hidden;
 
             @include pad_pro_width {
+              height: 32vmin;
+            }
+            @include mobile_width {
+              height: 60vmin;
             }
             img {
               width: 100%;
@@ -611,6 +615,20 @@ section.section_chemistry {
               top: 0;
               left: 0;
               transition: 0.5s;
+              @include pad_pro_width {
+                width: 80%;
+
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              @include pad_width {
+                width: 90%;
+
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
             }
             .img01 {
               z-index: 19;
@@ -786,6 +804,9 @@ section.section_others {
 
 section.section_news {
   padding: 5rem;
+  @include mobile_width {
+    padding: 15px;
+  }
   h2 {
     color: rgb(119, 119, 119);
   }
@@ -839,6 +860,9 @@ section.section_news {
               position: relative;
 
               padding: 0.2rem;
+              @include pad_width {
+                height: 41vh;
+              }
 
               .reveal {
                 visibility: hidden;
@@ -868,6 +892,9 @@ section.section_news {
 
           height: 121vh;
           overflow-y: scroll;
+          @include pad_pro_width {
+            margin-top: 35px;
+          }
 
           .item {
             background-color: #fff;
@@ -876,14 +903,25 @@ section.section_news {
             padding: 1rem;
             margin-bottom: 1rem;
             border: 1px solid rgb(216, 216, 216);
+            @include mobile_width {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
 
             img {
               width: 40%;
+              @include mobile_width {
+                width: 100%;
+              }
             }
             .txt {
               width: 60%;
               padding: 1rem;
-
+              @include mobile_width {
+                width: 95%;
+              }
               .date {
                 display: flex;
                 justify-content: space-between;

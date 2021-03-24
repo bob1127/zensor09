@@ -118,6 +118,9 @@ nav {
   }
   .bottom_nav {
     background-color: rgba(0, 0, 0, 0.2);
+    @include pad_width {
+      display: none;
+    }
     ul {
       justify-content: flex-end;
       display: flex;
@@ -130,7 +133,7 @@ nav {
       li {
         color: white !important;
         margin: 0 0.8rem;
-        font-family: "Barlow Condensed", sans-serif;
+
         font-size: 1rem;
         a {
           color: white !important;
@@ -361,5 +364,154 @@ ul#buttons li:hover:before {
   }
   100% {
     font-size: 1.25em;
+  }
+}
+
+//mobile nav toggle
+.mobile_toggle {
+  cursor: pointer;
+  position: relative;
+
+  width: 100%;
+  height: 2.5rem;
+  display: none;
+  border: 1px solid #000;
+
+  @include mobile_width {
+    display: block;
+  }
+}
+.bars {
+  width: 30px;
+  height: 4px;
+  background: #000;
+  position: absolute;
+  left: 50%;
+
+  transform: translateX(-50%);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #000;
+    margin-top: 9px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #000;
+    margin-top: 18px;
+  }
+}
+.mobile_nav {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background: rgb(13, 148, 182);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5vh;
+  right: -200vw;
+  display: none;
+
+  @include mobile_width() {
+    display: block;
+  }
+  ul {
+    height: 80vh;
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    li {
+      margin: 10px 0;
+      a {
+        color: #fafafa;
+        font-size: 2em;
+        text-decoration: none;
+        font-weight: 500;
+        position: relative;
+        opacity: 0;
+        pointer-events: none;
+        &:after {
+          content: "";
+          width: 100%;
+          position: absolute;
+          height: 3px;
+          border-radius: 5px;
+          background: #fff;
+          bottom: -10px;
+          left: 0;
+          transform-origin: left;
+          transition: transform 0.5s ease;
+          transform: scaleX(0);
+        }
+        &:hover {
+          &:after {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+  .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    div {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        transition: background 0.5s ease;
+        transform: rotate(-45deg);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        transition: background 0.5s ease;
+        transform: rotate(45deg);
+      }
+    }
+    &:hover {
+      div {
+        &::before {
+          background: rgb(209, 3, 3);
+        }
+        &::after {
+          background: rgb(209, 3, 3);
+        }
+      }
+    }
+  }
+  h2 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+    pointer-events: none;
+    color: #fff;
+    font-size: 2em;
+  }
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 25px;
   }
 }
