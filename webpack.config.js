@@ -1,26 +1,50 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 module.exports = {
-    entry: './src/js/index.js',
+    entry:{
+         index: './src/js/index.js',
+         product:'./src/js/product.js',
+         socialApp:'./src/js/socialApp.js',
+         
+         
+    },
     resolve:{
         alias: {
-          $: path.resolve(__dirname, './src/js/text.js'),
-          SplitText3: path.resolve(__dirname, './src/js/text.js'),
+          $: path.resolve(__dirname, './src/js/number.js'),
+          SplitText3: path.resolve(__dirname, './src/js/number.js'),
         }
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
+        filename: 'js/[name].js',
     },
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './src/index.html'
+            template: './src/index.html',
+       
+            chunks: ['manifest','vendor','index']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'product.html',
+            template: './src/product.html',
+            chunks: ['manifest','vendor','product']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'socialApp.html',
+            template: './src/socialApp.html',
+            chunks: ['manifest','vendor','socialApp']
         }),
         new MiniCssExtractPlugin({
-            filename: 'styles.css'
-        })
+            filename: 'css/[name].css',
+            chunkFilename: 'css/[name].chunk.css'
+            
+        }),
+       
+       
+        new CleanWebpackPlugin()
     ],
     module: {
         rules: [
