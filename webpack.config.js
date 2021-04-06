@@ -3,10 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 module.exports = {
+    externals: {
+        webpack: 'webpack'
+    },
     entry:{
          index: './src/js/index.js',
          product:'./src/js/product.js',
          socialApp:'./src/js/socialApp.js',
+         product_detail:'./src/js/product_detail.js',
          
          
     },
@@ -36,6 +40,11 @@ module.exports = {
             filename: 'socialApp.html',
             template: './src/socialApp.html',
             chunks: ['manifest','vendor','socialApp']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'product_detail.html',
+            template: './src/product_detail.html',
+            chunks: ['manifest','vendor','product_detail']
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',

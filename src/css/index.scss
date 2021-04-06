@@ -1008,11 +1008,11 @@ section.section_news {
 
               img {
                 width: 100%;
-                transform: scale(1.5);
+                transform: scale(1);
                 transition: 0.4s;
               }
               &:hover img {
-                transform: scale(1.56);
+                transform: scale(1.06);
               }
               &:hover:after {
                 background-color: transparent;

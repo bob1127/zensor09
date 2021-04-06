@@ -38,11 +38,6 @@ $black: #161616;
   outline: none;
 }
 
-a,
-a:hover {
-  text-decoration: none;
-  color: white;
-}
 //添加 sticky 效果
 .sticky {
   position: fixed;
@@ -264,7 +259,9 @@ nav {
     @include mobile_width {
       padding: 0.5rem 0;
     }
-    @extend %display_center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .left_wrap {
       width: 50%;
       position: relative;
@@ -369,10 +366,11 @@ nav {
         text-align: center;
         box-sizing: border-box;
         background: transparent;
-        border-radius: 100%;
+
         position: relative;
         overflow: hidden;
         transition: 0.5s;
+        margin-left: 0.2rem;
         box-shadow: 0px 8px 16px -6px, 0px 0px 16px -6px;
         @include mobile_width {
           margin-left: 0.2rem;
@@ -502,6 +500,9 @@ nav {
   }
 
   .bottom_nav {
+    a:hover {
+      text-decoration: none;
+    }
     background-color: rgba(0, 0, 0, 0.2);
     @include pad_width {
       display: none;
@@ -516,119 +517,122 @@ nav {
       @include pad_pro_width {
         width: 70%;
       }
-      .outside_li {
-        color: $navbar_txt;
+      a {
         width: 20%;
-        text-align: center;
+        .outside_li {
+          color: $navbar_txt;
+          width: 100%;
+          text-align: center;
 
-        font-size: 18px;
-        position: relative;
-        height: 30px;
-        &:hover .inside_ul {
-          top: 30px;
-          visibility: visible;
-          opacity: 1;
-        }
-
-        .inside_ul {
-          visibility: hidden;
-          width: 25vw;
-          height: 80vmin;
-          position: absolute;
-          background-color: white;
-
-          right: 30%;
-          transition: 0.3s;
-          top: 3rem;
-          opacity: 0;
-
-          border: 1px solid rgba(150, 150, 150, 0.3);
-          @include pad_pro_width {
-            width: 35vw;
+          font-size: 18px;
+          position: relative;
+          height: 30px;
+          &:hover .inside_ul {
+            top: 30px;
+            visibility: visible;
+            opacity: 1;
           }
-          .inside_li {
-            color: #00a7e1;
-            text-align-last: left;
-            padding: 0.2rem 0rem;
-            margin-left: 0.5rem;
-            > ul {
-              display: flex;
-              justify-content: center;
-              align-items: start;
-              flex-direction: column;
 
-              > li {
-                width: 100%;
+          .inside_ul {
+            visibility: hidden;
+            width: 25vw;
+            height: 80vmin;
+            position: absolute;
+            background-color: white;
+
+            right: 30%;
+            transition: 0.3s;
+            top: 3rem;
+            opacity: 0;
+
+            border: 1px solid rgba(150, 150, 150, 0.3);
+            @include pad_pro_width {
+              width: 35vw;
+            }
+            .inside_li {
+              color: #00a7e1;
+              text-align-last: left;
+              padding: 0.2rem 0rem;
+              margin-left: 0.5rem;
+              > ul {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: rgb(102, 102, 102);
-                padding: 0.4rem 1rem;
-                font-size: 16px;
-                border-bottom: 1px solid rgba(212, 212, 212, 0.3);
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
 
-                @include pad_pro_width {
-                  padding: 0.7rem 1rem;
-                }
-                i {
-                  color: rgb(136, 136, 136);
-                  font-weight: 100;
-                }
-                &:hover .product_wrap {
-                  display: block;
-                  top: -1px;
-                }
+                > li {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  color: rgb(102, 102, 102);
+                  padding: 0.4rem 1rem;
+                  font-size: 16px;
+                  border-bottom: 1px solid rgba(212, 212, 212, 0.3);
 
-                .product_wrap {
-                  position: absolute;
-                  background-color: white;
-                  width: 25vw;
-                  height: 80vmin;
-                  right: -100%;
-                  top: 0;
-                  display: none;
-                  border: 1px solid rgba(150, 150, 150, 0.3);
-                  padding: 1.5rem;
-                  overflow-y: scroll;
                   @include pad_pro_width {
-                    width: 35vw;
+                    padding: 0.7rem 1rem;
                   }
-                  .wrap {
-                    padding: 1rem 1rem;
+                  i {
+                    color: rgb(136, 136, 136);
+                    font-weight: 100;
+                  }
+                  &:hover .product_wrap {
+                    display: block;
+                    top: -1px;
+                  }
 
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
+                  .product_wrap {
+                    position: absolute;
+                    background-color: white;
+                    width: 25vw;
+                    height: 80vmin;
+                    right: -100%;
+                    top: 0;
+                    display: none;
+                    border: 1px solid rgba(150, 150, 150, 0.3);
+                    padding: 1.5rem;
+                    overflow-y: scroll;
+                    @include pad_pro_width {
+                      width: 35vw;
+                    }
+                    .wrap {
+                      padding: 1rem 1rem;
 
-                    .item {
                       display: flex;
                       justify-content: center;
                       align-items: center;
                       flex-direction: column;
-                      margin: 1.2rem 0;
-                      .scroll_sign {
-                        color: white;
-                        margin: 2rem 0;
-                      }
-                      img {
-                        width: 80%;
-                      }
-                      .product_name {
-                        color: rgb(75, 169, 224);
-                      }
-                      > ul {
-                        width: 100%;
 
-                        li {
-                          display: flex;
-                          justify-content: flex-start;
-                          align-items: flex-start;
-                          margin: 0.5rem 0;
+                      .item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin: 1.2rem 0;
+                        .scroll_sign {
+                          color: white;
+                          margin: 2rem 0;
+                        }
+                        img {
+                          width: 80%;
+                        }
+                        .product_name {
+                          color: rgb(75, 169, 224);
+                        }
+                        > ul {
+                          width: 100%;
 
-                          i {
-                            margin: 0 0.3rem;
-                            color: rgb(111, 224, 83);
+                          li {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            margin: 0.5rem 0;
+
+                            i {
+                              margin: 0 0.3rem;
+                              color: rgb(111, 224, 83);
+                            }
                           }
                         }
                       }
@@ -655,10 +659,14 @@ nav {
 
     visibility: hidden;
     padding: 2rem 3rem;
-    @extend %display_center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .wrap {
-      @extend %display_center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
 
       width: 90%;
@@ -666,7 +674,9 @@ nav {
       .item {
         position: relative;
         z-index: 99999;
-        @extend %display_center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
 
         width: 15%;
@@ -860,5 +870,22 @@ nav {
 @media (max-width: 992px) {
   h1 {
     font-size: 25px;
+  }
+}
+
+section.section_navgation {
+  .container-fluid {
+    .row {
+      .col-md-12 {
+        .wrap {
+          max-width: 400px;
+          border: 1px solid rgb(228, 8, 8);
+          a {
+            width: 30%;
+            color: #333;
+          }
+        }
+      }
+    }
   }
 }
