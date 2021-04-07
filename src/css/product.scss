@@ -10,6 +10,33 @@ header {
     background-size: cover;
   }
 }
+
+section.seciton_navgation {
+  .container-fluid {
+    .row {
+      .col-md-12 {
+        .wrap {
+          padding-left: 5rem;
+
+          a {
+            transition: 0.1s;
+            color: #333;
+            margin: 0 0.2rem;
+            font-size: 14px;
+
+            span {
+              margin: 0 0.2rem;
+            }
+          }
+          a:hover {
+            text-decoration: none;
+            color: rgb(146, 146, 146);
+          }
+        }
+      }
+    }
+  }
+}
 section.section_product01 {
   opacity: 1;
   filter: blur(0);
@@ -28,7 +55,7 @@ section.section_product01 {
   .container {
     .row {
       margin: 1.5rem 0;
-      .col-md-3 {
+      .col-xl-3 {
         a:hover {
           text-decoration: none;
         }

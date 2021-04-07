@@ -111,6 +111,7 @@ footer {
       .col-md-6 {
         .footer_banner {
           padding: 1.5rem;
+
           width: 100%;
           background-color: #e6e6e6;
           overflow: hidden;
@@ -123,13 +124,16 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
+
             > .txt {
               width: 80%;
-
+              background-color: #fff;
               color: #333;
-              font-size: 1.2rem;
+              font-size: 16px;
               font-weight: 500;
               letter-spacing: 1.5px;
+              padding: 0.5rem 1rem;
+              height: 100%;
               @include mobile_width {
                 font-size: 14px;
               }
@@ -137,10 +141,12 @@ footer {
             .txt_02 {
               width: 80%;
               color: #333;
-              font-size: 1.2rem;
+              font-size: 16px;
               font-weight: 500;
               letter-spacing: 1.5px;
               text-align: end;
+              background-color: #fff;
+              padding: 0.5rem 1rem;
               @include mobile_width {
                 font-size: 14px;
               }
@@ -148,17 +154,25 @@ footer {
             > .btn {
               background-color: #17d739;
               width: 20%;
-              font-size: 14px;
+              font-size: 16px;
               color: white;
-              padding: 0.2rem 0.4rem;
+              padding: 0.5rem 1.5rem;
+              @include mobile_width {
+                padding: 0.2rem 0.5rem;
+                font-size: 12px;
+              }
             }
             > .btn02 {
               background-color: #17d739;
               width: 20%;
-              font-size: 14px;
+              font-size: 16px;
               color: white;
-              padding: 0.2rem 0.4rem;
+              padding: 0.5rem 1.5rem;
               text-align: center;
+              @include mobile_width {
+                padding: 0.2rem 0.5rem;
+                font-size: 12px;
+              }
             }
           }
           .middle {
@@ -169,31 +183,32 @@ footer {
             .txt {
               width: 75%;
               display: flex;
-              justify-content: flex-start;
+              justify-content: center;
               align-items: center;
 
               #yes,
               div {
-                font-size: 3rem;
+                font-size: 3.5rem;
                 font-weight: 900;
                 color: #4ba6db;
+
                 @include mobile_width {
-                  font-size: 35px;
+                  font-size: 32px;
                 }
               }
             }
             .txt02 {
               width: 75%;
               display: flex;
-              justify-content: flex-end;
+              justify-content: center;
               align-items: center;
               #yes02,
               .div02 {
                 color: #12c953;
-                font-size: 3rem;
+                font-size: 3.5rem;
                 font-weight: 900;
                 @include mobile_width {
-                  font-size: 35px;
+                  font-size: 32px;
                 }
               }
             }
@@ -209,6 +224,7 @@ footer {
             }
             form {
               width: 80%;
+
               input {
                 width: 100%;
                 &::placeholder {
@@ -219,16 +235,18 @@ footer {
             .btn {
               background-color: #4ba6db;
               color: white;
-              padding: 0 1rem;
+              padding: 0.5rem 1.5rem;
               margin: 0 5px;
-              border-radius: 15px;
+              border-radius: 8px;
+              font-size: 18px;
             }
             .btn02 {
               background-color: #17d739;
               color: white;
-              padding: 0 1rem;
+              padding: 0.5rem 1.5rem;
               margin: 0 5px;
-              border-radius: 15px;
+              border-radius: 8px;
+              font-size: 18px;
             }
           }
         }
