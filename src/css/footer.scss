@@ -95,7 +95,7 @@ footer {
   position: relative;
   background-color: #272f3c;
   padding: 1.5rem 0;
-  margin-top: 30vh;
+  margin-top: 5vh;
   @include mobile_width {
     margin-bottom: 15vmin;
   }
@@ -253,7 +253,6 @@ footer {
       }
     }
     .row_bottom {
-      margin-top: 25vh;
       @include mobile_width {
         margin-top: 0;
       }
@@ -284,15 +283,14 @@ footer {
           align-items: flex-start;
           flex-wrap: wrap;
           padding: 0;
+
           ul {
-            width: 30%;
+            width: 45%;
             height: 100%;
-            margin: 0 0.8rem;
+
             @include pad_width {
               margin: 0rem;
-              width: 33%;
-
-              padding: 0 1rem;
+              width: 45%;
             }
             @include mobile_width {
               width: 100%;
@@ -302,7 +300,15 @@ footer {
               align-items: flex-start;
               flex-direction: column;
             }
+            .footer-icons {
+              display: flex;
 
+              a {
+                i {
+                  color: white;
+                }
+              }
+            }
             li {
               color: $white;
               margin: 0.5rem 0;

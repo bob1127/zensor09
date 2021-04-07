@@ -956,10 +956,6 @@ section.section_news {
           width: 100%;
           overflow: hidden;
 
-          @include mobile_width {
-            border: 2px solid rgb(226, 15, 15);
-            height: 80vh;
-          }
           &:hover .slick-prev {
             opacity: 1;
           }
@@ -1075,6 +1071,30 @@ section.section_mobile_carousel {
           .bottom_part {
             display: flex;
             justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}
+section.section_banner {
+  padding: 0 15vmin;
+  @include pad_pro_width {
+    padding: 0 5vmin;
+  }
+  @include pad_width {
+    padding: 0 2rem;
+  }
+  @include mobile_width {
+    padding: 0 0.5rem;
+  }
+  .container-fluid {
+    .row {
+      .col-md-6 {
+        img {
+          width: 100%;
+          @include pad_width {
+            margin: 1rem 0;
           }
         }
       }
