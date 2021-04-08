@@ -249,16 +249,15 @@ section.seciton_navgation {
         color: rgb(35, 145, 236);
         margin-top: 2rem;
       }
+
       p {
         font-size: 14px;
-        color: #333;
+        color: rgb(78, 78, 78);
         font-weight: 100;
       }
       ul {
-        padding: 0 3rem;
-        @include mobile_width {
-          padding: 0;
-        }
+        padding: 0;
+
         li {
           color: #333;
           margin: 0.5rem 0;
@@ -268,10 +267,35 @@ section.seciton_navgation {
         }
       }
       .btn_wrap {
-        .btn_buy {
-          background-color: rgb(19, 117, 197);
-          color: white;
-          padding: 0.5rem 1.5rem;
+        display: flex;
+        border: 1px solid #000;
+        width: 100%;
+      }
+      .contact_btn {
+        background-color: rgb(19, 117, 197);
+        color: white;
+        padding: 0.5rem 2rem;
+        width: 15rem;
+        text-align: center;
+        @include pad_width {
+          width: 50%;
+        }
+        @include mobile_width {
+          width: 100%;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+section.section_toggle {
+  .container-fluid {
+    .row {
+      .col-md-12 {
+        .card-header {
         }
       }
     }
