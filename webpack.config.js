@@ -11,6 +11,8 @@ module.exports = {
          product:'./src/js/product.js',
          socialApp:'./src/js/socialApp.js',
          product_detail:'./src/js/product_detail.js',
+         aboutUs:'./src/js/aboutUs.js',
+         
          
          
     },
@@ -45,6 +47,10 @@ module.exports = {
             filename: 'product_detail.html',
             template: './src/product_detail.html',
             chunks: ['manifest','vendor','product_detail']
+        }),new HtmlWebpackPlugin({
+            filename: 'aboutUs.html',
+            template: './src/aboutUs.html',
+            chunks: ['manifest','vendor','aboutUs']
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
