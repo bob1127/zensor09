@@ -10,7 +10,10 @@ header {
     background-size: cover;
   }
 }
-
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
 section.seciton_navgation {
   .container-fluid {
     .row {

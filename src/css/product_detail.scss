@@ -67,7 +67,10 @@ $pad_pro_media: 1100px;
   align-items: center;
   color: white;
 }
-
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
 #wrap {
   opacity: 1;
   filter: blur(0px);
