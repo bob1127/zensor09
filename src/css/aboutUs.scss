@@ -363,18 +363,32 @@ section.section_about_content {
 }
 section.section_produce {
  
-  height: 80vh;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  @include mobile_width{
-      height: 100vh;
-  }
+  
+
   .container-fluid 
   {
     .row {
       
       .col-md-12 {
+        .about_banner01{
+            display: block;
+            width: 100%;
+        }
+        .about_banner02{
+            display: none;
+            width: 100%;
+        }
+        @include mobile_width{
+            .about_banner01{
+                display: none;
+                width: 100%;
+            }
+            .about_banner02{
+                display: block;
+                width: 100%;
+                margin-bottom: 15vh;
+            }
+        }
        
       }
     }
