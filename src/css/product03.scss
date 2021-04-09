@@ -80,8 +80,16 @@ $card_btn: #00a7e1;
   align-items: center;
   color: white;
 }
+#wrapper {
+    width: 100%;
+    overflow: hidden;
 
+  }
+.slick-next{
+    display: none !important;
+}
 section.seciton_navgation {
+    overflow: hidden;
     .container-fluid {
       .row {
         .col-md-12 {
