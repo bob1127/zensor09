@@ -158,7 +158,12 @@ section.seciton_navgation {
         border: 1px solid #ebebeb;
         border-radius: 3px;
         margin-bottom: 5px;
-        height: 400px !important;
+        height: 600px ;
+        @include pc_width{
+          height: 400px;
+        }
+        
+
         .swiper-slide {
           position: relative;
           overflow: hidden;
