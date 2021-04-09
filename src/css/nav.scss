@@ -572,13 +572,23 @@ nav {
                   padding: 0.4rem 1rem;
                   font-size: 16px;
                   border-bottom: 1px solid rgba(212, 212, 212, 0.3);
-
+                  transition: 0.3s;
+                  &:hover {
+                    background-color: rgb(17, 129, 221);
+                    color: white;
+                    cursor: pointer;
+                  }
+                  &:hover i {
+                    color: white;
+                    transform: rotate(-180deg);
+                  }
                   @include pad_pro_width {
                     padding: 0.7rem 1rem;
                   }
                   i {
                     color: rgb(136, 136, 136);
                     font-weight: 100;
+                    transition: 0.2s;
                   }
                   &:hover .product_wrap {
                     display: block;
@@ -631,6 +641,7 @@ nav {
                             justify-content: flex-start;
                             align-items: flex-start;
                             margin: 0.5rem 0;
+                            color: #333 !important;
 
                             i {
                               margin: 0 0.3rem;

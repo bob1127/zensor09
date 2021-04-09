@@ -91,7 +91,7 @@ section.seciton_navgation {
   .container-fluid {
     .row {
       .col-md-12 {
-        .wrap {
+        .navgation_wrap {
           padding-left: 5rem;
           @include mobile_width {
             padding-left: 1rem;
@@ -121,6 +121,7 @@ section.seciton_navgation {
   align-items: flex-start;
   width: 100%;
   padding: 0 15vmin;
+
   @include pad_pro_width() {
     padding: 0;
   }
@@ -157,6 +158,7 @@ section.seciton_navgation {
         border: 1px solid #ebebeb;
         border-radius: 3px;
         margin-bottom: 5px;
+        height: 400px !important;
         .swiper-slide {
           position: relative;
           overflow: hidden;
@@ -294,11 +296,169 @@ section.seciton_navgation {
     }
   }
 }
-section.section_toggle {
+section.section_others {
   .container-fluid {
     .row {
       .col-md-12 {
-        .card-header {
+        @include mobile_width {
+          padding: 0 25px;
+        }
+        .txt {
+          @extend %display_center;
+        }
+
+        .slick-prev {
+          content: "→";
+          display: block;
+          height: 15px;
+          margin-left: 30vmin;
+          width: 40px;
+          height: 40px;
+          background-color: rgb(20, 155, 196);
+          z-index: 9999999;
+          border-radius: 100%;
+          opacity: 0;
+          margin-top: -5vmin;
+          @include mobile_width {
+            margin-top: -30vmin;
+          }
+        }
+        .slick-next {
+          content: "→";
+          display: block;
+          height: 40px;
+          width: 40px;
+          margin-right: 30vmin;
+          background-color: rgb(20, 155, 196);
+          border-radius: 100%;
+          opacity: 0;
+          margin-top: -5vmin;
+          @include mobile_width {
+            margin-top: -30vmin;
+          }
+          .slick-next::before {
+            content: "←";
+            display: block;
+            height: 40px;
+            width: 40px;
+            background-color: red;
+            position: absolute;
+            left: 20vmin;
+            z-index: 99999999;
+          }
+        }
+        .slick-slider {
+          width: 100%;
+          overflow: hidden;
+
+          &:hover .slick-prev {
+            opacity: 1;
+          }
+          &:hover .slick-next {
+            opacity: 1;
+          }
+        }
+        .slick-slider .element {
+          width: 100%;
+
+          border-radius: 8px;
+          display: inline-block;
+
+          overflow: hidden;
+          border: 1px solid rgba(41, 41, 41, 0.1);
+          margin: 0 6px;
+
+          .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0;
+            .pic {
+              width: 100%;
+              height: 35vmin;
+              overflow: hidden;
+              position: relative;
+              @include mobile_width {
+                height: 75vmin;
+              }
+              &::after {
+                transition: 0.5s;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 35vmin;
+                background-color: rgba(0, 0, 0, 0.15);
+                @include mobile_width {
+                  height: 75vmin;
+                }
+              }
+
+              img {
+                width: 100%;
+                transform: scale(1);
+                transition: 0.4s;
+              }
+              &:hover img {
+                transform: scale(1.06);
+              }
+              &:hover:after {
+                background-color: transparent;
+              }
+            }
+            .txt {
+              width: 100%;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+
+              padding: 1rem;
+              .top {
+                font-weight: 800;
+                padding-bottom: 1rem;
+                height: 8vmin;
+                @include mobile_width {
+                  height: 15vmin;
+                }
+              }
+              .bottom {
+                padding-top: 1rem;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                font-size: 14px;
+                color: #333;
+                text-align: center;
+                height: 20vmin;
+                @include mobile_width {
+                  height: 30vmin;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+section.section_toggle {
+  padding: 10vmin 0;
+  .container-fluid {
+    .row {
+      .col-md-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #accordionExample {
+          width: 90%;
+
+          .card {
+            .card-header {
+            }
+          }
         }
       }
     }

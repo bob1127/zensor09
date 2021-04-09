@@ -13,6 +13,7 @@ module.exports = {
          product_detail:'./src/js/product_detail.js',
          aboutUs:'./src/js/aboutUs.js',
          product02:'./src/js/product02.js',
+         service:'./src/js/service.js',
          
          
          
@@ -57,6 +58,11 @@ module.exports = {
             filename: 'product02.html',
             template: './src/product02.html',
             chunks: ['manifest','vendor','product02']
+        })
+        ,new HtmlWebpackPlugin({
+            filename: 'service.html',
+            template: './src/service.html',
+            chunks: ['manifest','vendor','service']
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',

@@ -111,6 +111,11 @@ section.section_about_content {
       padding: 0 5vmin;
       .col-xl-7 {
         .blog-slider {
+          .blog-slider__pagination {
+            @include mobile_width {
+              display: none;
+            }
+          }
           width: 100%;
           position: relative;
 
@@ -125,6 +130,7 @@ section.section_about_content {
           overflow: hidden;
           @include mobile_width {
             padding-left: 1rem;
+            padding-top: 13rem;
           }
           @media screen and (max-width: 992px) {
             max-width: 680px;
