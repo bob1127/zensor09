@@ -1,3 +1,43 @@
+//rwd 變數設定
+$pad_media: 769px;
+$mobile_media: 540px;
+$pad_pro_media: 2000px;
+
+// rwd mixin
+@mixin pad_width() {
+    @media screen and (max-width: $pad_media) {
+        @content;
+    }
+}
+
+@mixin mobile_width() {
+    @media screen and (max-width: $mobile_media) {
+        @content;
+    }
+}
+
+@mixin pad_pro_width() {
+    @media screen and (max-width: $pad_pro_media) {
+        @content;
+    }
+}
+
+$main_blue: #3784a8;
+$title_blue: rgb(38, 74, 121);
+$dark_blue: #2b4b63;
+$deep_white: rgb(211, 211, 211);
+$sidebar_blue: #3f5469;
+$fullpage_color: rgba(255, 255, 255, 0.3);
+$navbar_txt: rgb(255, 255, 255);
+
+//rwd 變數設定
+$pad_media: 769px;
+$mobile_media: 540px;
+$pad_pro_media: 1100px;
+$gray: #dddddd;
+$white: #fff;
+$black: #161616;
+
 #wrapper {
     width: 100%;
     overflow: hidden;
@@ -5,16 +45,29 @@
 
 header {
     background-color: #f3f5fa;
-    padding: 15vmin 15vmin;
+    padding: 15vmin 7vmin;
+
+    @include mobile_width {
+        padding: 15vmin 0;
+    }
 
     .container-fluid {
         .row {
-            .col-md-7 {
+            .col-md-8 {
                 display: flex;
                 position: relative;
+                border: 1px solid #000;
+
+                @include mobile_width {
+                    flex-direction: column;
+                }
 
                 .txt {
-                    width: 70%;
+
+                    width: 100%;
+                    word-break: break-all;
+
+                    @include mobile_width {}
 
                     .heading {
 
@@ -24,6 +77,10 @@ header {
                         width: 100%;
                         display: flex;
                         flex-direction: column;
+
+                        @include mobile_width {
+                            font-size: 36px;
+                        }
                     }
 
                     .heading>div {
@@ -94,7 +151,16 @@ header {
                     width: 60%;
                     position: absolute;
                     right: -20%;
-                    transform: rotate(120deg)
+                    transform: rotate(120deg);
+
+                    @include mobile_width {
+                        width: 80%;
+                        position: relative;
+                        top: 10%;
+                        right: 0;
+                        transform: rotate(0);
+                    }
+
                 }
             }
         }
@@ -184,10 +250,12 @@ section.section_form {
                     justify-content: center;
                     align-items: center;
                     width: 60%;
+                    border: 1px solid #000;
 
                     img {
                         margin: 0 2rem;
                         width: 25%;
+
                     }
                 }
 
