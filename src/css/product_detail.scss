@@ -580,9 +580,12 @@ section.section_toggle {
 
                           img {
                             width: 80%;
+                            height: 100%;
 
                             @include mobile_width {
                               width: 100%;
+                              height: 100%;
+
                             }
                           }
                         }
@@ -604,6 +607,7 @@ section.section_toggle {
 
                     @include mobile_width {
                       width: 100%;
+
                     }
 
                     span {
@@ -632,11 +636,12 @@ section.section_toggle {
                     img {
 
                       width: 25%;
-                      height: auto;
+
                       margin-right: 2rem;
 
                       @include mobile_width {
                         width: 100%;
+                        height: 100%;
                       }
                     }
 
