@@ -594,6 +594,13 @@ section.section_toggle {
               #form-ui {
                 display: flex;
 
+                @include mobile_width {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                }
+
                 button {
                   transition: .3s;
                   margin: 0 .5rem;
@@ -708,7 +715,7 @@ section.section_toggle {
                     img {
 
                       width: 25%;
-
+                      height: 100%;
                       margin-right: 2rem;
 
                       @include mobile_width {
