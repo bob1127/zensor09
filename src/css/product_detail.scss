@@ -605,6 +605,11 @@ section.section_toggle {
                   transition: .3s;
                   margin: 0 .5rem;
 
+                  @include mobile_width {
+                    width: 95%;
+                    margin: 1rem;
+                  }
+
                   &:hover {
                     box-shadow: 0 0 15px rgba(0, 0, 0, .3);
                   }
