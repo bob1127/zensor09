@@ -80,6 +80,12 @@ $pad_pro_media: 1100px;
   overflow: hidden;
 }
 
+.btn-link {
+  color: black !important;
+  font-size: 26px !important;
+
+}
+
 //方案選擇彈出視窗
 
 .modal-dialog {
@@ -336,7 +342,7 @@ section.seciton_navgation {
 
       p {
         font-size: 23px;
-        color: rgb(78, 78, 78);
+        color: rgb(46, 144, 209);
         font-weight: 500;
       }
 
@@ -580,17 +586,55 @@ section.section_toggle {
 
 
         #accordionExample {
-          width: 90%;
+          padding: 0 53px;
 
 
           @include mobile_width {
             width: 100%;
+            padding: 0 15px;
           }
 
           .card {
-            background-color: rgba(243, 243, 243, .4);
+            border: none !important;
+
+            .card-header {
+              border-bottom: 1px solid rgba(148, 148, 148, .3);
+              background-color: transparent !important;
+            }
 
             .card-body {
+              padding: 0 !important;
+
+              .content_wrap {
+                display: flex;
+
+                @include mobile_width {
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                }
+
+                .left {
+                  width: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+
+                  @include mobile_width {
+                    width: 100%;
+                  }
+
+                }
+
+                .right {
+                  width: 50%;
+
+                  @include mobile_width {
+                    width: 100%;
+                  }
+                }
+              }
 
               #form-ui {
                 display: flex;
@@ -602,9 +646,13 @@ section.section_toggle {
                   flex-direction: column;
                 }
 
+
+
                 button {
                   transition: .3s;
                   margin: 0 .5rem;
+                  color: black !important;
+                  font-size: 26px;
 
                   @include mobile_width {
                     width: 95%;
@@ -631,7 +679,11 @@ section.section_toggle {
                   .row {
                     .col-md-6 {
                       li {
-                        padding: 1.5rem;
+                        padding: 3rem;
+
+                        @include mobile_width {
+                          padding: 1.5rem;
+                        }
 
                         p {
                           font-weight: 200;
@@ -664,6 +716,12 @@ section.section_toggle {
                               font-size: 26px;
                             }
 
+                            h4 {
+                              font-weight: 400;
+                              font-size: 26px;
+                              color: rgb(23, 123, 218);
+                            }
+
                             h5,
                             p {
                               font-weight: 200;
@@ -677,6 +735,8 @@ section.section_toggle {
 
 
                         }
+
+
 
                         .img_wrap {
 
@@ -709,7 +769,7 @@ section.section_toggle {
                 }
 
                 li {
-                  padding: 1.5rem;
+                  padding: 3rem;
                   margin: 1rem 0;
                   background-color: rgb(255, 255, 255);
                   padding: 1rem;
@@ -717,12 +777,17 @@ section.section_toggle {
                   border: solid 1px rgba(160, 160, 160, 0.3);
                   box-shadow: 0 0 20px rgb(209, 209, 209);
 
+                  @include mobile_width {
+                    padding: 1.5rem;
+                  }
+
                   p {
                     font-weight: 200;
                     font-size: 20px;
 
                     span {
                       font-weight: 900;
+                      color: rgb(18, 133, 228);
                     }
                   }
 
@@ -747,6 +812,12 @@ section.section_toggle {
                       h3 {
                         font-weight: 900;
                         font-size: 26px;
+                      }
+
+                      h4 {
+                        font-weight: 400;
+                        font-size: 26px;
+                        color: rgb(23, 123, 218);
                       }
 
                       h5,
