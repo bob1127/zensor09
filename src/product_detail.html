@@ -655,10 +655,15 @@
                         
                         
                         <div class="txt">
-                          <h3><span>⚡︎</span>獨特技術</h3>
-                          <p>業界最輕，最小，可放入極小密閉空間。</p>
+                          <div class="title_wrap">
+                            <h3><span>⚡︎</span>獨特技術</h3>
+                            <p>業界最輕，最小，可放入極小密閉空間。</p>
+                            <p>為了滿足最新學術研究趨勢與產品開發需求，我们结合最新的研究趨勢和實用的產品研發經驗推出這款業界最小，符合感測器開發所需精度及靈敏度的無線傳感器研究與開發平台。</p>
+                          </div>
+                          
+                         
                           <p>
-                            為了滿足最新學術研究趨勢與產品開發需求，我们结合最新的研究趨勢和實用的產品研發經驗推出這款業界最小，符合感測器開發所需精度及靈敏度的無線傳感器研究與開發平台。
+                            
                           </p>
                         </div>
                         <div class="img_wrap">
@@ -676,13 +681,15 @@
                         
                         
                               <div class="txt">
-                                <h3><span>⚡︎</span>只有手指大小的無線電化學分析儀</h3>
+                                <div class="title_wrap">
+                                  <h3><span>⚡︎</span>只有手指大小的無線電化學分析儀</h3>
                                 <p>業界最輕，最小，可放入極小密閉空間。</p>
                                 <p>
                                   可以在極小的空間精準的控制實驗條件，提高實驗條件維持的穩定度。
                                   適用於需要精準控制環境氣體濃度，溫度等條件的實驗
  
                                 </p>
+                                </div>
                               </div>
                               <div class="img_wrap">
                                 <img src="../images/gif/Webp.net-gifmaker (1).gif" alt="" class='img02'>
@@ -696,9 +703,11 @@
                         
                         
                               <div class="txt">
-                                <h3><span>⚡︎</span>無線連接，業界趨勢</h3>
+                                <div class="title_wrap">
+                                  <h3><span>⚡︎</span>無線連接，業界趨勢</h3>
                                 <p>滿足戶外，智慧農場，智慧家庭，智慧醫療，物聯網IoT傳感器等無電源或遠距感測器的開發需求</p>
                                 <p class='mt'>*充滿電可持續使用3-6小時，使用時間與傳輸距離有關，也可以外接使用行動電源或普通電源</p>
+                                </div>
                                 
                               </div>
                               <div class="img_wrap">
@@ -734,8 +743,10 @@
                         
                         
                               <div class="txt">
-                                <h3><span>⚡︎</span>會成長的電化學分析儀</h3>
-                                <p>可以根據不同的實驗需求變換成多通道電化學分析儀，最多可以擴充到8通道</p>
+                                <div class="title_wrap">
+                                  <h3><span>⚡︎</span>會成長的電化學分析儀</h3>
+                                  <p>可以根據不同的實驗需求變換成多通道電化學分析儀，最多可以擴充到8通道  </p>
+                                </div>
                                 
                               </div>
                               <div class="img_wrap">
@@ -773,8 +784,10 @@
                         
                         
                         <div class="txt">
-                          <h3><span>⚡︎</span>兩種連接口，輕鬆轉換</h3>
-                          <p>無論是網版印刷電極（絲網印刷電極）/鱷魚夾，一秒切換</p>
+                          <div class="title_wrap">
+                            <h3><span>⚡︎</span>兩種連接口，輕鬆轉換</h3>
+                            <p>無論是網版印刷電極（絲網印刷電極）/鱷魚夾，一秒切換</p>
+                          </div>
                           
                         </div>
                         <div class="img_wrap img-middle">
@@ -1330,9 +1343,8 @@
           </div>
         </div>
     </footer>
-    <script>
-     
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
       <script>
         //topnav close
         $('.topFix_nav_close').click(function(){
@@ -1726,5 +1738,15 @@ function createItems() {
 
 
    </script>
+ <script>
+   $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+   $(function () {
+  $('.title_wrap').popover({
+    container: 'body'
+  })
+})
+ </script>
   </body>
 </html>
