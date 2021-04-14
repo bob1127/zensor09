@@ -579,6 +579,11 @@ section.section_toggle {
   .container-fluid {
     .row {
       .col-md-12 {
+        @include mobile_width {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
 
 
@@ -634,21 +639,15 @@ section.section_toggle {
                     }
 
                     .btn {
-                      width: 50%;
+                      width: 40%;
                       padding: .5rem 1.3rem;
                       background-color: rgb(46, 180, 241);
-
+                      color: white;
                       display: flex;
-                      justify-content: space-between;
+                      justify-content: center;
                       align-items: center;
 
-                      p {
-                        color: white;
 
-                        i {
-                          color: white
-                        }
-                      }
 
                     }
                   }
