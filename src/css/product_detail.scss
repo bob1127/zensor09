@@ -473,11 +473,11 @@ section.section_others {
         .slick-slider .element {
           width: 100%;
 
-          border-radius: 8px;
+
           display: inline-block;
 
           overflow: hidden;
-          border: 1px solid rgba(41, 41, 41, 0.1);
+
           margin: 0 6px;
 
           .wrap {
@@ -515,12 +515,12 @@ section.section_others {
 
               img {
                 width: 100%;
-                transform: scale(1);
+                transform: scale(.7);
                 transition: 0.4s;
               }
 
               &:hover img {
-                transform: scale(1.06);
+                transform: scale(1);
               }
 
               &:hover:after {
@@ -579,14 +579,12 @@ section.section_toggle {
   .container-fluid {
     .row {
       .col-md-12 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
 
 
 
         #accordionExample {
-          padding: 0 53px;
+          padding: 0 33px;
 
 
           @include mobile_width {
@@ -595,15 +593,151 @@ section.section_toggle {
           }
 
           .card {
-            border: none !important;
-
             .card-header {
-              border-bottom: 1px solid rgba(148, 148, 148, .3);
+
               background-color: transparent !important;
             }
 
             .card-body {
-              padding: 0 !important;
+              padding: 0 40px;
+
+              @include mobile_width {
+                padding: 0 7px;
+              }
+
+
+              .container-fluid {
+                .row {
+
+                  position: relative;
+
+
+                  .col-md-6 {
+                    position: relative;
+
+                  }
+
+                  .project_col6 {
+
+
+                    position: relative;
+
+
+
+
+                    img {
+                      transform: scale(1.2);
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+
+                    }
+
+                    .btn {
+                      width: 50%;
+                      padding: .5rem 1.3rem;
+                      background-color: rgb(46, 180, 241);
+
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+
+                      p {
+                        color: white;
+
+                        i {
+                          color: white
+                        }
+                      }
+
+                    }
+                  }
+
+                  .col-md-12 {
+                    .project_item_wrap {
+                      padding-top: 5rem;
+
+                      width: 80vw;
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;
+
+                      @include mobile_width {
+
+                        flex-direction: column;
+
+                      }
+
+
+
+                      .project_item {
+                        margin: 0 .5rem;
+                        width: 25%;
+
+
+
+                        @include pad_width {
+                          width: 90%;
+                        }
+
+                        @include pad_width {
+                          width: 30%;
+                        }
+
+                        @include mobile_width {
+                          width: 100%;
+                          margin-top: 3rem;
+                        }
+
+                        background-color: rgba(218, 218, 218, .4);
+
+
+
+
+                        .img_wrap {
+                          width: 100%;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          padding: 3rem 1em;
+
+
+
+                          img {
+                            width: 80%;
+                            height: 100%;
+
+
+                          }
+                        }
+
+                        .txt {
+                          padding: .4rem 1rem;
+
+                          p {
+                            line-height: 16px;
+                            font-size: 14px;
+                          }
+                        }
+
+                        .btn {
+                          background-color: rgb(46, 180, 241);
+                          color: white;
+                          width: 100%;
+                          padding: .3rem 0;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+
+                          &:hover {
+                            text-decoration: none;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
 
               .content_wrap {
                 display: flex;
@@ -618,7 +752,7 @@ section.section_toggle {
                   width: 50%;
                   display: flex;
                   justify-content: center;
-                  align-items: center;
+                  align-items: flex-start;
                   flex-direction: column;
 
                   @include mobile_width {
@@ -670,7 +804,7 @@ section.section_toggle {
                 padding: .3rem;
                 font-weight: 300;
 
-                color: white;
+                color: rgb(8, 134, 218);
               }
 
               ul {
@@ -680,6 +814,7 @@ section.section_toggle {
                     .col-md-6 {
                       li {
                         padding: 3rem;
+
 
                         @include mobile_width {
                           padding: 1.5rem;
@@ -772,10 +907,12 @@ section.section_toggle {
                   padding: 3rem;
                   margin: 1rem 0;
                   background-color: rgb(255, 255, 255);
-                  padding: 1rem;
+
                   border-radius: 10px;
                   border: solid 1px rgba(160, 160, 160, 0.3);
                   box-shadow: 0 0 20px rgb(209, 209, 209);
+
+
 
                   @include mobile_width {
                     padding: 1.5rem;
@@ -800,6 +937,7 @@ section.section_toggle {
 
                     .title_wrap {
                       width: 90%;
+
                       display: flex;
                       justify-content: center;
                       align-items: center;
@@ -808,6 +946,8 @@ section.section_toggle {
                       @include pad_pro_width {
                         width: 85%;
                       }
+
+
 
                       h3 {
                         font-weight: 900;
@@ -890,7 +1030,12 @@ section.section_toggle {
                 --caption: #242423;
               }
 
+              .dcf-overflow-x-auto {
+                width: 90vw !important;
+              }
+
               table {
+                width: 100%;
                 background-color: transparent;
                 border-collapse: collapse;
                 font-family: Arial, Helvetica, sans-serif
