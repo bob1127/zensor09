@@ -720,7 +720,13 @@ section.section_toggle {
                     position: relative;
 
                     .right_card,
-                    .left_card {}
+                    .left_card {
+                      height: 100vmin;
+
+                      @include pad_pro_width {
+                        height: auto;
+                      }
+                    }
 
 
                   }
