@@ -78,6 +78,55 @@ $card_btn: #00a7e1;
   align-items: center;
   color: white;
 }
+.close_nav {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99999;
+
+  @include mobile_width {
+    top: 10%;
+  }
+
+  div {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: #fff;
+      transition: background 0.5s ease;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: #fff;
+      transition: background 0.5s ease;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:hover {
+    div {
+      &::before {
+        background: rgb(3, 178, 209);
+      }
+
+      &::after {
+        background: rgb(3, 178, 209);
+      }
+    }
+  }
+}
 
 #wrapper {
   width: 100%;
@@ -945,8 +994,14 @@ section.section_toggle {
                         padding: 3rem;
 
 
-                        @include mobile_width {
+                        @include pad_pro_width {
                           padding: 1.5rem;
+                        }
+                        @include pad_width {
+                          padding: 1rem;
+                        }
+                        @include mobile_width {
+                          padding: .5rem;
                         }
 
                         p {
@@ -1045,9 +1100,14 @@ section.section_toggle {
                   box-shadow: 0 0 20px rgb(209, 209, 209);
 
 
-
+                  @include pad_pro_width {
+                    padding: 2.5rem;
+                  }
+                  @include pad_width {
+                    padding: 1.8rem;
+                  }
                   @include mobile_width {
-                    padding: 1.5rem;
+                    padding: .5rem;
                   }
 
                   p {

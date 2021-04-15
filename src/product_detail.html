@@ -454,7 +454,7 @@
        
          <nav class='mobile_nav'>
          
-           <div class="close mobile_nav_toggle">
+           <div class="close_nav mobile_nav_toggle">
              <div></div>
            </div>
          
@@ -1551,211 +1551,96 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-      <script>
-        //topnav close
-        $('.topFix_nav_close').click(function(){
-          $('.top_fix_nav').slideUp();
-        })
-      
-        
-  
      
-  //      const quotes = document.querySelectorAll(".quote");
-  
-  
-  // ScrollTrigger.addEventListener("refresh", setupSplits);
-  // setupSplits();
-          
-      </script>
-      <script>
-        var mediaQuery = window.matchMedia('(max-width:1100px)')
-        
-        
-        
-        $(document).ready(function () {
-          var stickyNavTop = $("nav").offset().top;
-  
-          var stickyNav = function () {
-            var scrollTop = $(window).scrollTop();
-  
-            if (scrollTop > stickyNavTop) {
-              $("nav").addClass("sticky");
-            
-              $('#nav_product').hover(function(){
-                $('.product_toggle').css('top','11.5vh')
-              })
-            } else {
-              $("nav").removeClass("sticky");
-              
-              $('#nav_product').hover(function(){
-                $('.product_toggle').css('top','11.5vh')
-                if(mediaQuery.matches){
-                  $('.product_toggle').css('top','7vh')
-            }
-              })
-            }
-          };
-          
-          stickyNav();
-  
-          $(window).scroll(function () {
-            stickyNav();
-          });
-        });
-        //top_fix_nav  virticle carousel
-        $(document).ready(function () {
-          $(".top_fix_nav").slick({
-            vertical: true,
-            dots: false,
-            autoplay: true,
-          });
-        });
-      </script>
-      <script>
-        const open = document.querySelector('.container');
-          const close = document.querySelector('.close');
-          var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
-          open.addEventListener('click', () => {
-              if (tl.reversed()) {
-                  tl.play();
-              } else {
-                  tl.to('nav', { right: 0 })
-                      .to('nav', { height: '100vh' }, '-=.1')
-                      .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .15 }, '-=.8')
-                      .to('.close', { opacity: 1, pointerEvents: 'all' }, "-=.8")
-                      .to('nav h2', { opacity: 1 }, '-=.1');
-              }
-          });
-  
-          close.addEventListener('click', () => {
-              tl.reverse();
-          });
-      $('.bars').click(function(){
-        $('.bars').hide(500)
+    <script>
+      //topnav close
+      $('.topFix_nav_close').click(function(){
+        $('.top_fix_nav').slideUp();
       })
-      $('.bars').click(function(){
-        $('.mobile_nav ul').css('visibility','visible')
-      })
-      $('.mobile_nav_toggle').click(function(){
-        $('.bars').delay(3000).show(500)
-      })
-      </script>
     
-      <script>
-        $('.mobile_gotop').click(function(){
-          $('html,body').animate({
-            scrollTop:0
-          },'slow')
-        })
-  
-        $('#gotop').click(function(){
-          $('html,body').animate({
-            scrollTop:0
-          },'slow')
-        })
-       
-      </script>
-      <script>
-         // (function ($) {
-      //   $.fn.countTo = function (options) {
-      //     options = options || {};
       
-      //     return $(this).each(function () {
-           
-      //       var settings = $.extend({}, $.fn.countTo.defaults, {
-      //         from:            $(this).data('from'),
-      //         to:              $(this).data('to'),
-      //         speed:           $(this).data('speed'),
-      //         refreshInterval: $(this).data('refresh-interval'),
-      //         decimals:        $(this).data('decimals')
-      //       }, options);
+
+   
+//      const quotes = document.querySelectorAll(".quote");
+
+
+// ScrollTrigger.addEventListener("refresh", setupSplits);
+// setupSplits();
+        
+    </script>
+    <script>
+      var mediaQuery = window.matchMedia('(max-width:1100px)')
       
-           
-      //       var loops = Math.ceil(settings.speed / settings.refreshInterval),
-      //         increment = (settings.to - settings.from) / loops;
       
-      //       var self = this,
-      //         $self = $(this),
-      //         loopCount = 0,
-      //         value = settings.from,
-      //         data = $self.data('countTo') || {};
       
-      //       $self.data('countTo', data);
-      
+      $(document).ready(function () {
+        var stickyNavTop = $("nav").offset().top;
+
+        var stickyNav = function () {
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop > stickyNavTop) {
+            $("nav").addClass("sticky");
           
-      //       if (data.interval) {
-      //         clearInterval(data.interval);
-      //       }
-      //       data.interval = setInterval(updateTimer, settings.refreshInterval);
-      
-           
-      //       render(value);
-      
-      //       function updateTimer() {
-      //         value += increment;
-      //         loopCount++;
-      
-      //         render(value);
-      
-      //         if (typeof(settings.onUpdate) == 'function') {
-      //           settings.onUpdate.call(self, value);
-      //         }
-      
-      //         if (loopCount >= loops) {
-             
-      //           $self.removeData('countTo');
-      //           clearInterval(data.interval);
-      //           value = settings.to;
-      
-      //           if (typeof(settings.onComplete) == 'function') {
-      //             settings.onComplete.call(self, value);
-      //           }
-      //         }
-      //       }
-      
-      //       function render(value) {
-      //         var formattedValue = settings.formatter.call(self, value, settings);
-      //         $self.text(formattedValue);
-      //       }
-      //     });
-      //   };
-      
-      //   $.fn.countTo.defaults = {
-      //     from: 0,              
-      //     to: 0,               
-      //     speed: 2000,          
-      //     refreshInterval: 1, 
-      //     decimals: 0,          
-      //     formatter: formatter,  
-      //     onUpdate: null,      
-      //     onComplete: null     
-      //   };
-      
-      //   function formatter(value, settings) {
-      //     return value.toFixed(settings.decimals);
-      //   }
-      // }(jQuery));
-      
-      //     jQuery(function ($) {
-           
-         
-      //       $('.timer').each(count);
+            $('#nav_product').hover(function(){
+              $('.product_toggle').css('top','11.5vh')
+            })
+          } else {
+            $("nav").removeClass("sticky");
             
-       
-      //       $( window ).scroll(function () {console.log($(window).scrollTop());
-      //     if($(window).scrollTop() > 300 && $(window).scrollTop() < 850)
-      //     {
-      //        $('.timer').each(count);
-      //      }
-      //       });
-            
-      //       function count(options) {
-      //         var $this = $(this);
-      //         options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-      //         $this.countTo(options);
-      //       }
-      //     });
-      </script>
+            $('#nav_product').hover(function(){
+              $('.product_toggle').css('top','11.5vh')
+              if(mediaQuery.matches){
+                $('.product_toggle').css('top','7vh')
+          }
+            })
+          }
+        };
+        
+        stickyNav();
+
+        $(window).scroll(function () {
+          stickyNav();
+        });
+      });
+      //top_fix_nav  virticle carousel
+      $(document).ready(function () {
+        $(".top_fix_nav").slick({
+          vertical: true,
+          dots: false,
+          autoplay: true,
+        });
+      });
+    </script>
+    <script>
+      const open = document.querySelector('.container');
+		const close_nav = document.querySelector('.close_nav');
+		var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
+		open.addEventListener('click', () => {
+			if (tl.reversed()) {
+				tl.play();
+			} else {
+				tl.to('nav', { right: 0 })
+					.to('nav', { height: '100vh' }, '-=.1')
+					.to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .15 }, '-=.8')
+					.to('.close_nav', { opacity: 1, pointerEvents: 'all' }, "-=.8")
+					.to('nav h2', { opacity: 1 }, '-=.1');
+			}
+		});
+
+		close_nav.addEventListener('click', () => {
+			tl.reverse();
+		});
+    $('.bars').click(function(){
+      $('.bars').hide(500)
+    })
+    $('.bars').click(function(){
+      $('.mobile_nav ul').css('visibility','visible')
+    })
+    $('.mobile_nav_toggle').click(function(){
+      $('.bars').delay(3000).show(500)
+    })
+    </script>
       <script>
              // product Gallery and Zoom
 

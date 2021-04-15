@@ -575,7 +575,7 @@ nav {
 
     background-color: rgba(0, 0, 0, 0.2);
 
-    @include pad_width {
+    @include mobile_width {
       display: none;
     }
 
