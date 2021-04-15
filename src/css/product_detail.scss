@@ -720,13 +720,7 @@ section.section_toggle {
                     position: relative;
 
                     .right_card,
-                    .left_card {
-                      height: 100vmin;
-
-                      @include mobile_width {
-                        height: 120vmin;
-                      }
-                    }
+                    .left_card {}
 
 
                   }
