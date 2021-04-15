@@ -7,26 +7,31 @@ $main_blue: #4ab6db;
   justify-content: center;
   align-items: center;
 }
+
 //rwd 變數設定
 $pad_media: 769px;
 $mobile_media: 540px;
 $pad_pro_media: 1100px;
+
 // rwd mixin
 @mixin pad_width() {
   @media screen and (max-width: $pad_media) {
     @content;
   }
 }
+
 @mixin mobile_width() {
   @media screen and (max-width: $mobile_media) {
     @content;
   }
 }
+
 @mixin pad_pro_width() {
   @media screen and (max-width: $pad_pro_media) {
     @content;
   }
 }
+
 // section.section_map {
 //   .container-fluid {
 //     .row {
@@ -96,6 +101,7 @@ footer {
   background-color: #272f3c;
   padding: 1.5rem 0;
   margin-top: 5vh;
+
   @include mobile_width {
     margin-bottom: 15vmin;
   }
@@ -104,10 +110,12 @@ footer {
     .row_banner {
       position: absolute;
       top: -15vmin;
+
       @include mobile_width {
         position: relative;
         top: 0;
       }
+
       .col-md-6 {
         .footer_banner {
           padding: 1.5rem;
@@ -115,17 +123,19 @@ footer {
           width: 100%;
           background-color: #e6e6e6;
           overflow: hidden;
+
           @include mobile_width {
             margin: 5px 0;
             padding: 0.6rem 1rem;
           }
+
           .top {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            > .txt {
+            >.txt {
               width: 80%;
               background-color: #fff;
               color: #333;
@@ -134,10 +144,12 @@ footer {
               letter-spacing: 1.5px;
               padding: 0.5rem 1rem;
               height: 100%;
+
               @include mobile_width {
                 font-size: 14px;
               }
             }
+
             .txt_02 {
               width: 80%;
               color: #333;
@@ -147,39 +159,46 @@ footer {
               text-align: end;
               background-color: #fff;
               padding: 0.5rem 1rem;
+
               @include mobile_width {
                 font-size: 14px;
               }
             }
-            > .btn {
+
+            >.btn {
               background-color: #17d739;
               width: 20%;
               font-size: 16px;
               color: white;
               padding: 0.5rem 1.5rem;
+
               @include mobile_width {
                 padding: 0.2rem 0.5rem;
                 font-size: 12px;
               }
             }
-            > .btn02 {
+
+            >.btn02 {
               background-color: #17d739;
               width: 20%;
               font-size: 16px;
               color: white;
               padding: 0.5rem 1.5rem;
               text-align: center;
+
               @include mobile_width {
                 padding: 0.2rem 0.5rem;
                 font-size: 12px;
               }
             }
           }
+
           .middle {
             margin: 1rem 0;
             display: flex;
             justify-content: center;
             align-items: center;
+
             .txt {
               width: 75%;
               display: flex;
@@ -197,41 +216,50 @@ footer {
                 }
               }
             }
+
             .txt02 {
               width: 75%;
               display: flex;
               justify-content: center;
               align-items: center;
+
               #yes02,
               .div02 {
                 color: #12c953;
                 font-size: 3.5rem;
                 font-weight: 900;
+
                 @include mobile_width {
                   font-size: 32px;
                 }
               }
             }
+
             img {
               width: 25%;
               margin: 0.3rem;
             }
           }
+
           .bottom {
             display: flex;
+
             @include mobile_width {
               display: none;
             }
+
             form {
               width: 80%;
 
               input {
                 width: 100%;
+
                 &::placeholder {
                   color: rgb(21, 146, 230);
                 }
               }
             }
+
             .btn {
               background-color: #4ba6db;
               color: white;
@@ -240,6 +268,7 @@ footer {
               border-radius: 8px;
               font-size: 18px;
             }
+
             .btn02 {
               background-color: #17d739;
               color: white;
@@ -252,17 +281,20 @@ footer {
         }
       }
     }
+
     .row_bottom {
       @include mobile_width {
         margin-top: 0;
       }
     }
+
     .row {
       padding: 0vmin 15vmin;
 
       @include pad_width {
         padding: 0vmin 8vmin;
       }
+
       @include pad_pro_width {
         padding: 0 5vmin;
       }
@@ -271,10 +303,12 @@ footer {
         p {
           color: $light_white;
         }
+
         .company_logo {
           width: 8rem;
         }
       }
+
       .col-xl-8 {
         .wrap {
           width: 100%;
@@ -292,6 +326,7 @@ footer {
               margin: 0rem;
               width: 45%;
             }
+
             @include mobile_width {
               width: 100%;
 
@@ -300,6 +335,7 @@ footer {
               align-items: flex-start;
               flex-direction: column;
             }
+
             .footer-icons {
               display: flex;
 
@@ -309,20 +345,24 @@ footer {
                 }
               }
             }
+
             li {
               color: $white;
               margin: 0.5rem 0;
               font-size: 14px;
               transform: scale(1);
               transition: 0.3s;
+
               &:hover {
                 transform: scale(0.98);
                 color: #00a7e1;
               }
             }
+
             .footer_ul_title {
               color: $light_white;
               font-size: 1rem;
+
               &:hover {
                 color: $light_white;
                 transform: scale(1);
@@ -331,16 +371,19 @@ footer {
           }
         }
       }
+
       .col-xl-4 {
         .map_wrap {
           p {
             color: $light_white;
           }
+
           iframe {
             width: 100%;
             height: 35vmin;
           }
         }
+
         form {
           width: 100%;
           display: flex;
@@ -350,20 +393,25 @@ footer {
 
           fieldset {
             width: 100%;
+
             p {
               color: rgb(219, 219, 219);
             }
+
             label {
               color: $light_white;
             }
+
             input {
               width: 100%;
               padding: 0.2rem 0.5rem;
               color: rgb(27, 146, 201);
+
               &::placeholder {
                 color: rgb(133, 133, 133);
               }
             }
+
             .submit {
               margin: 0.5rem 0;
               width: 100%;
@@ -378,6 +426,7 @@ footer {
     }
   }
 }
+
 .Marquee {
   width: 45%;
 
@@ -390,25 +439,31 @@ footer {
   display: flex;
 
   overflow: hidden;
+
   @include mobile_width {
     width: 100%;
   }
+
   @include pad_width {
     width: 100%;
   }
+
   @include pad_pro_width {
     width: 100%;
   }
 }
+
 .Marquee-content {
   display: box;
   display: flex;
 
   animation: marquee 10s linear infinite running;
 }
+
 .Marquee-content:hover {
   animation-play-state: paused;
 }
+
 .Marquee-tag {
   width: 100px;
   margin: 0 0.5em;
@@ -423,11 +478,13 @@ footer {
   justify-content: center;
 
   transition: all 0.2s ease;
+
   .company_slider {
     width: 100%;
     height: auto;
   }
 }
+
 .Marquee-tag:hover {
   background: rgba(255, 255, 255, 0.5);
 
@@ -439,6 +496,7 @@ footer {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translate(-50%);
   }
