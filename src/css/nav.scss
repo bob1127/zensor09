@@ -42,6 +42,12 @@ $black: #161616;
   list-style: none;
   outline: none;
 }
+a{
+  &:hover{
+    text-decoration: none !important;
+  }
+}
+
 
 //添加 sticky 效果
 .sticky {

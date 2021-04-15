@@ -509,9 +509,9 @@ section.section_others {
           .product_item {
             padding: 0.4rem 0.1rem;
             width: 100%;
-
+            background-color: rgba(0,0,0,.05);
             border: 0.1px solid rgb(233, 233, 233);
-            background-color: rgb(255, 255, 255);
+         
             transition: 0.5s;
             overflow: hidden;
 
