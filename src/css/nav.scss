@@ -42,8 +42,9 @@ $black: #161616;
   list-style: none;
   outline: none;
 }
-a{
-  &:hover{
+
+a {
+  &:hover {
     text-decoration: none !important;
   }
 }
@@ -284,7 +285,7 @@ a{
 }
 
 nav {
-  z-index: 99999;
+  z-index: 9;
   position: sticky;
 
   .top_nav {
