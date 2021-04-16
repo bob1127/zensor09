@@ -9,13 +9,22 @@ module.exports = {
     },
     entry:{
          index: './src/js/index.js',
-         product:'./src/js/product.js',
-         socialApp:'./src/js/socialApp.js',
-         product_detail:'./src/js/product_detail.js',
+         Potentiostats:'./src/js/Potentiostats.js',
+         ContactUs:'./src/js/ContactUs.js',
+         ECWP100C:'./src/js/ECWP100C.js',
          aboutUs:'./src/js/aboutUs.js',
-         product02:'./src/js/product02.js',
-         product03:'./src/js/product03.js',
+         Others:'./src/js/Others.js',
+         ScreenPrintedElectrodes:'./src/js/ScreenPrintedElectrodes.js',
          service:'./src/js/service.js',
+         ECAS100:'./src/js/ECAS100.js',
+         ACIP100:'./src/js/ACIP100.js',
+         MCP100:'./src/js/MCP100.js',
+         SF100:'./src/js/SF100.js',
+         PrintedElectrodes:'./src/js/PrintedElectrodes.js',
+         CM100:'./src/js/CM100.js',
+         CS100:'./src/js/CS100.js',
+         CT100:'./src/js/CT100.js',
+         
          
          
          
@@ -42,33 +51,33 @@ module.exports = {
             chunks: ['manifest','vendor','index']
         }),
         new HtmlWebpackPlugin({
-            filename: 'product.html',
-            template: './src/product.html',
-            chunks: ['manifest','vendor','product']
+            filename: 'Potentiostats.html',
+            template: './src/Potentiostats.html',
+            chunks: ['manifest','vendor','Potentiostats']
         }),
         new HtmlWebpackPlugin({
-            filename: 'socialApp.html',
-            template: './src/socialApp.html',
-            chunks: ['manifest','vendor','socialApp']
+            filename: 'ContactUs.html',
+            template: './src/ContactUs.html',
+            chunks: ['manifest','vendor','ContactUs']
         }),
         new HtmlWebpackPlugin({
-            filename: 'product_detail.html',
-            template: './src/product_detail.html',
-            chunks: ['manifest','vendor','product_detail']
+            filename: 'ECWP100C.html',
+            template: './src/ECWP100C.html',
+            chunks: ['manifest','vendor','ECWP100C']
         }),new HtmlWebpackPlugin({
             filename: 'aboutUs.html',
             template: './src/aboutUs.html',
             chunks: ['manifest','vendor','aboutUs']
         })
         ,new HtmlWebpackPlugin({
-            filename: 'product02.html',
-            template: './src/product02.html',
-            chunks: ['manifest','vendor','product02']
+            filename: 'Others.html',
+            template: './src/Others.html',
+            chunks: ['manifest','vendor','Others']
         }),
         new HtmlWebpackPlugin({
-            filename: 'product03.html',
-            template: './src/product03.html',
-            chunks: ['manifest','vendor','product03']
+            filename: 'ScreenPrintedElectrodes.html',
+            template: './src/ScreenPrintedElectrodes.html',
+            chunks: ['manifest','vendor','ScreenPrintedElectrodes']
         })
 
         ,new HtmlWebpackPlugin({
@@ -76,11 +85,52 @@ module.exports = {
             template: './src/service.html',
             chunks: ['manifest','vendor','service']
         }),
+        new HtmlWebpackPlugin({
+            filename: 'ECAS100.html',
+            template: './src/ECAS100.html',
+            chunks: ['manifest','vendor','ECAS100']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'ACIP100.html',
+            template: './src/ACIP100.html',
+            chunks: ['manifest','vendor','ACIP100']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'MCP100.html',
+            template: './src/MCP100.html',
+            chunks: ['manifest','vendor','MCP100']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'SF100.html',
+            template: './src/SF100.html',
+            chunks: ['manifest','vendor','SF100']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'PrintedElectrodes.html',
+            template: './src/PrintedElectrodes.html',
+            chunks: ['manifest','vendor','PrintedElectrodes']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'CM100.html',
+            template: './src/CM100.html',
+            chunks: ['manifest','vendor','CM100']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'CS100.html',
+            template: './src/CS100.html',
+            chunks: ['manifest','vendor','CS100']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'CT100.html',
+            template: './src/CT100.html',
+            chunks: ['manifest','vendor','CT100']
+        }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
             chunkFilename: 'css/[name].chunk.css'
             
         }),
+        
        
        
         new CleanWebpackPlugin()
