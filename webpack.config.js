@@ -9,21 +9,20 @@ module.exports = {
     },
     entry:{
          index: './src/js/index.js',
-         Potentiostats:'./src/js/Potentiostats.js',
+        
          ContactUs:'./src/js/ContactUs.js',
-         ECWP100C:'./src/js/ECWP100C.js',
+   
          aboutUs:'./src/js/aboutUs.js',
-         Others:'./src/js/Others.js',
-         ScreenPrintedElectrodes:'./src/js/ScreenPrintedElectrodes.js',
+     
+       
          service:'./src/js/service.js',
-         ECAS100:'./src/js/ECAS100.js',
-         ACIP100:'./src/js/ACIP100.js',
-         MCP100:'./src/js/MCP100.js',
-         SF100:'./src/js/SF100.js',
-         PrintedElectrodes:'./src/js/PrintedElectrodes.js',
-         CM100:'./src/js/CM100.js',
-         CS100:'./src/js/CS100.js',
-         CT100:'./src/js/CT100.js',
+       
+        
+         AllProducts:'./src/js/AllProducts.js',
+         ProductCatagory:'./src/js/ProductCatagory.js'
+        
+        
+         
          
          
          
@@ -53,7 +52,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'Potentiostats.html',
             template: './src/Potentiostats.html',
-            chunks: ['manifest','vendor','Potentiostats']
+            chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
             filename: 'ContactUs.html',
@@ -63,7 +62,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'ECWP100C.html',
             template: './src/ECWP100C.html',
-            chunks: ['manifest','vendor','ECWP100C']
+            chunks: ['manifest','vendor','AllProducts']
         }),new HtmlWebpackPlugin({
             filename: 'aboutUs.html',
             template: './src/aboutUs.html',
@@ -72,12 +71,12 @@ module.exports = {
         ,new HtmlWebpackPlugin({
             filename: 'Others.html',
             template: './src/Others.html',
-            chunks: ['manifest','vendor','Others']
+            chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
             filename: 'ScreenPrintedElectrodes.html',
             template: './src/ScreenPrintedElectrodes.html',
-            chunks: ['manifest','vendor','ScreenPrintedElectrodes']
+            chunks: ['manifest','vendor','ProductCatagory']
         })
 
         ,new HtmlWebpackPlugin({
@@ -88,42 +87,38 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'ECAS100.html',
             template: './src/ECAS100.html',
-            chunks: ['manifest','vendor','ECAS100']
+            chunks: ['manifest','vendor','AllProducts']
         }),
         new HtmlWebpackPlugin({
             filename: 'ACIP100.html',
             template: './src/ACIP100.html',
-            chunks: ['manifest','vendor','ACIP100']
+            chunks: ['manifest','vendor','AllProducts']
         }),
         new HtmlWebpackPlugin({
             filename: 'MCP100.html',
             template: './src/MCP100.html',
-            chunks: ['manifest','vendor','MCP100']
+            chunks: ['manifest','vendor','AllProducts']
         }),
         new HtmlWebpackPlugin({
             filename: 'SF100.html',
             template: './src/SF100.html',
-            chunks: ['manifest','vendor','SF100']
+            chunks: ['manifest','vendor','AllProducts']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'PrintedElectrodes.html',
-            template: './src/PrintedElectrodes.html',
-            chunks: ['manifest','vendor','PrintedElectrodes']
-        }),
+      
         new HtmlWebpackPlugin({
             filename: 'CM100.html',
             template: './src/CM100.html',
-            chunks: ['manifest','vendor','CM100']
+            chunks: ['manifest','vendor','AllProducts']
         }),
         new HtmlWebpackPlugin({
             filename: 'CS100.html',
             template: './src/CS100.html',
-            chunks: ['manifest','vendor','CS100']
+            chunks: ['manifest','vendor','AllProducts']
         }),
         new HtmlWebpackPlugin({
             filename: 'CT100.html',
             template: './src/CT100.html',
-            chunks: ['manifest','vendor','CT100']
+            chunks: ['manifest','vendor','AllProducts']
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',

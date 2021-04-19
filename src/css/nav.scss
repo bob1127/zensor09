@@ -592,7 +592,7 @@ nav {
         width: 70%;
       }
 
-      a {
+      .nav_title_link {
         width: 20%;
 
         .outside_li {
@@ -662,8 +662,20 @@ nav {
                     transform: rotate(-180deg);
                   }
 
+                  &:hover a {
+                    color: white
+                  }
+
                   @include pad_pro_width {
                     padding: 0.7rem 1rem;
+                  }
+
+                  a {
+                    color: #333;
+
+                    &:hover {
+                      color: white
+                    }
                   }
 
                   i {
@@ -694,6 +706,7 @@ nav {
                     }
 
                     .wrap {
+                      width: 100%;
                       padding: 1rem 1rem;
 
                       display: flex;
