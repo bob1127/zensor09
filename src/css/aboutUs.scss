@@ -117,96 +117,12 @@ $pad_pro_media: 1100px;
 }
 
 header {
-    .container-fluid {
-        .row {
-            position: relative;
-
-
-            .title {
-                position: absolute;
-                left: 30%;
-                top: 10%;
-                z-index: 99;
-                opacity: 1;
-                font-size: 5rem;
-                font-weight: 300;
-                transform: translateY(-50%);
-                animation: load_title 2s ease;
-
-                &::after {
-                    display: block;
-                    content: "";
-                    width: 5rem;
-                    height: 5px;
-                    background-color: black;
-                    left: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-
-            .col-md-6 {
-                overflow: hidden;
-
-
-                .img {
-
-                    background-position: center center;
-                    background-size: cover;
-                    width: 100%;
-                    height: 80vh;
-                    position: relative;
-                    transform: scale(1);
-                    animation: load_img ease-out 3s;
-                    animation-delay: .4s;
-
-                    &::before {
-                        content: "";
-                        display: block;
-                        width: 0%;
-                        height: 80vh;
-                        background-color: rgb(255, 255, 255);
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        animation: load_cover ease-in-out 1.3s;
-                    }
-
-                    @keyframes load_cover {
-                        0% {
-                            width: 100%;
-                        }
-
-                        100% {
-                            width: 0%;
-                        }
-                    }
-
-                    @keyframes load_img {
-                        0% {
-                            transform: scale(1.2);
-                        }
-
-                        100% {
-                            transform: scale(1);
-                        }
-                    }
-
-                    @keyframes load_title {
-                        0% {
-                            top: 20%;
-                            opacity: 0;
-                        }
-
-                        100% {
-                            top: 10%;
-                            opacity: 1;
-                        }
-                    }
-                }
-
-
-            }
-        }
+    .top_img{
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 60vh;
+        background-attachment: fixed;
     }
 }
 

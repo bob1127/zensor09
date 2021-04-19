@@ -60,6 +60,11 @@ module.exports = {
             chunks: ['manifest','vendor','ContactUs']
         }),
         new HtmlWebpackPlugin({
+            filename: 'PrintedElectrodes.html',
+            template: './src/PrintedElectrodes.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
             filename: 'ECWP100C.html',
             template: './src/ECWP100C.html',
             chunks: ['manifest','vendor','AllProducts']
