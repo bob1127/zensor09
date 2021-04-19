@@ -45,25 +45,143 @@ $black: #161616;
 
 header {
     background-color: #f3f5fa;
-    padding: 15vmin 7vmin;
-
-    @include mobile_width {
-        padding: 15vmin 0;
-    }
-
+   
     .container-fluid {
         .row {
-            .col-md-8 {
-                display: flex;
-                position: relative;
-                border: 1px solid #000;
+            position: relative;
+            .title {
+                position: absolute;
+                left: 40%;
+                top: 10%;
+                z-index: 99;
+                opacity: 1;
+                font-size: 5rem;
+                font-weight: 300;
+                transform: translateY(-50%);
+                animation: load_title 2s ease;
 
-                @include mobile_width {
-                    flex-direction: column;
+                &::after {
+                    display: block;
+                    content: "";
+                    width: 5rem;
+                    height: 5px;
+                    background-color: black;
+                    left: 50%;
+                    transform: translateY(-50%);
                 }
+            }
 
+            .col-md-6 {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+
+
+                .img {
+
+                    background-position: center center;
+                    background-size: cover;
+                    width: 100%;
+                    height: 80vh;
+                    position: relative;
+                    transform: scale(1);
+                    animation: load_img ease-out 3s;
+                    animation-delay: .4s;
+                    @include pad_pro_width{
+                        height: 60vh;
+                    }
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 0%;
+                        height: 80vh;
+                        background-color: rgb(255, 255, 255);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        animation: load_cover ease-in-out 1.3s;
+                        @include pad_pro_width{
+                            height:60vh;
+                        }
+                    }
+
+                    @keyframes load_cover {
+                        0% {
+                            width: 100%;
+                        }
+
+                        100% {
+                            width: 0%;
+                        }
+                    }
+
+                    @keyframes load_img {
+                        0% {
+                            transform: scale(1.2);
+                        }
+
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+
+                    @keyframes load_title {
+                        0% {
+                            top: 20%;
+                            opacity: 0;
+                        }
+
+                        100% {
+                            top: 10%;
+                            opacity: 1;
+                        }
+                    }
+                }
+                .btn_wrap{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .btn01,.btn02{
+                        border: 1px solid rgb(194, 194, 194);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: .5rem 1rem;
+                        margin: 1rem .5rem;
+                        transition: .3s;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .btn01{
+                        padding: 0;
+                        a{
+                            padding: .5rem 1rem;
+                            color: black;
+                            transition: .3s;
+                            &:hover{
+                                background-color: rgb(0, 0, 0);
+                                color: white
+                            }
+                        }
+                        
+
+                    }
+                    .btn02{
+                        color: rgb(252, 252, 252);
+                        background-color: rgb(0, 0, 0);
+                        &:hover{
+                            background-color: rgb(255, 255, 255);
+                            color: rgb(0, 0, 0)
+                        }
+                        
+                    }
+                }
                 .txt {
-
+                    padding: 5rem 1rem;
                     width: 100%;
                     word-break: break-all;
 
@@ -71,27 +189,27 @@ header {
 
                     .heading {
 
-                        font-size: 50px;
-                        width: -webkit-max-content;
-                        width: -moz-max-content;
+                        font-size: 5.5vmin;
+                      
                         width: 100%;
                         display: flex;
                         flex-direction: column;
-
-                        @include mobile_width {
-                            font-size: 36px;
+                        @include mobile_width{
+                            font-size: 8vmin;
                         }
+                     
                     }
 
                     .heading>div {
+                        width: 100%;
+                      
                         overflow: hidden;
                     }
 
                     .heading>div>p {
-                        width: -webkit-max-content;
-                        width: -moz-max-content;
-                        width: max-content;
-                        white-space: nowrap;
+              
+                      
+                       
                         margin: 0;
                         line-height: 100%;
                     }
@@ -145,6 +263,19 @@ header {
                         }
                     }
                 }
+
+
+            }
+            .col-md-8 {
+                display: flex;
+                position: relative;
+                border: 1px solid #000;
+
+                @include mobile_width {
+                    flex-direction: column;
+                }
+
+                
 
                 img {
                     top: 5%;
@@ -223,7 +354,10 @@ section.section_content {
 
 section.section_form {
     padding: 10vmin 0;
-
+    span{
+        color: rgb(8, 166, 228);
+        font-weight: 700;
+    }
     a:hover {
         text-decoration: none;
         cursor: pointer;
