@@ -44,18 +44,23 @@ $black: #161616;
 }
 
 header {
-    background-color: #f3f5fa;
-   
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+
+
+
     .container-fluid {
         .row {
             position: relative;
+
             .title {
                 position: absolute;
-                left: 40%;
+                left: 45%;
                 top: 10%;
                 z-index: 99;
                 opacity: 1;
-                font-size: 5rem;
+                font-size: 2.5rem;
                 font-weight: 300;
                 transform: translateY(-50%);
                 animation: load_title 2s ease;
@@ -71,7 +76,7 @@ header {
                 }
             }
 
-            .col-md-6 {
+            .col-md-12 {
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
@@ -79,17 +84,19 @@ header {
                 flex-direction: column;
 
 
+
                 .img {
 
                     background-position: center center;
                     background-size: cover;
                     width: 100%;
-                    height: 80vh;
+                    height: 50vh;
                     position: relative;
                     transform: scale(1);
                     animation: load_img ease-out 3s;
                     animation-delay: .4s;
-                    @include pad_pro_width{
+
+                    @include pad_pro_width {
                         height: 60vh;
                     }
 
@@ -97,14 +104,15 @@ header {
                         content: "";
                         display: block;
                         width: 0%;
-                        height: 80vh;
+                        height: 50vh;
                         background-color: rgb(255, 255, 255);
                         position: absolute;
                         top: 0;
                         left: 0;
                         animation: load_cover ease-in-out 1.3s;
-                        @include pad_pro_width{
-                            height:60vh;
+
+                        @include pad_pro_width {
+                            height: 60vh;
                         }
                     }
 
@@ -140,76 +148,64 @@ header {
                         }
                     }
                 }
-                .btn_wrap{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .btn01,.btn02{
-                        border: 1px solid rgb(194, 194, 194);
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: .5rem 1rem;
-                        margin: 1rem .5rem;
-                        transition: .3s;
-                        &:hover{
-                            cursor: pointer;
-                        }
-                    }
-                    .btn01{
-                        padding: 0;
-                        a{
-                            padding: .5rem 1rem;
-                            color: black;
-                            transition: .3s;
-                            &:hover{
-                                background-color: rgb(0, 0, 0);
-                                color: white
-                            }
-                        }
-                        
 
-                    }
-                    .btn02{
-                        color: rgb(252, 252, 252);
-                        background-color: rgb(0, 0, 0);
-                        &:hover{
-                            background-color: rgb(255, 255, 255);
-                            color: rgb(0, 0, 0)
-                        }
-                        
-                    }
-                }
+
                 .txt {
-                    padding: 5rem 1rem;
+
                     width: 100%;
                     word-break: break-all;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    @include mobile_width {
+                        flex-direction: column;
+                    }
+
+                    img {
+                        width: 320px;
+                        height: 320px;
+
+                        @include pad_pro_width {
+                            width: 250px;
+                            height: 250px;
+                        }
+                    }
 
                     @include mobile_width {}
 
                     .heading {
 
                         font-size: 5.5vmin;
-                      
-                        width: 100%;
+
+                        width: 50%;
                         display: flex;
                         flex-direction: column;
-                        @include mobile_width{
-                            font-size: 8vmin;
+
+
+
+                        @include pad_pro_width {
+                            padding: 2rem;
+                            font-size: 3.5vmin;
                         }
-                     
+
+                        @include mobile_width {
+                            font-size: 8vmin;
+                            width: 100%;
+
+                        }
                     }
 
                     .heading>div {
                         width: 100%;
-                      
+
                         overflow: hidden;
                     }
 
                     .heading>div>p {
-              
-                      
-                       
+
+
+
                         margin: 0;
                         line-height: 100%;
                     }
@@ -266,6 +262,7 @@ header {
 
 
             }
+
             .col-md-8 {
                 display: flex;
                 position: relative;
@@ -275,7 +272,7 @@ header {
                     flex-direction: column;
                 }
 
-                
+
 
                 img {
                     top: 5%;
@@ -354,10 +351,12 @@ section.section_content {
 
 section.section_form {
     padding: 10vmin 0;
-    span{
-        color: rgb(8, 166, 228);
+
+    span {
+
         font-weight: 700;
     }
+
     a:hover {
         text-decoration: none;
         cursor: pointer;
@@ -399,6 +398,24 @@ section.section_form {
 
                 form {
                     width: 100%;
+
+                    h3 {
+                        color: rgb(11, 133, 214);
+                    }
+
+                    .wrap_01,
+                    .wrap_02,
+                    .wrap_03 {
+
+                        padding: 3rem;
+                        box-shadow: 0 0 10px rgba(53, 53, 53, 0.2);
+                        border: 1px solid rgba(141, 141, 141, 0.2);
+
+                        @include mobile_width {
+                            padding: .5rem 1rem;
+                        }
+
+                    }
 
                     .form-group {
                         margin: 1rem 0;

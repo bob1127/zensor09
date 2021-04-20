@@ -1,6 +1,6 @@
 #wrapper {
     width: 100%;
-    height: 500vh;
+    height: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -96,18 +96,27 @@ $card_btn: #00a7e1;
 }
 
 section.section_content {
+    margin-top: 15vh;
+
     .container-fluid {
+
+
         .row {
+
+
             .col-md-12 {
+
+                padding: 0 15vmin;
+
                 .txt {
                     width: 100%;
                     padding: 0 15vmin;
 
                     h1 {
                         border: 1px solid #000;
-                        font-size: 2.3rem;
+                        font-size: 2rem;
                         font-family: 'Roboto', sans-serif;
-                        font-weight: 300;
+                        font-weight: 200;
                         position: relative;
 
                     }
@@ -135,21 +144,67 @@ section.section_content {
             }
         }
 
-        .row {
-            .img {
-                width: 100%;
-                height: 60vh;
-                background-position: center center;
-                background-size: cover;
-                background-attachment: fixed;
+        .top_bgc {
+
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            height: 60vh;
+            margin-right: 0;
+            margin-top: 15vh;
+
+            .col-md-12 {
                 position: relative;
+                padding: 0 15vmin;
 
                 .square {
                     position: absolute;
-                    padding: 4rem 2rem;
-                    background-color: rgb(7, 148, 190);
+
+                    top: -10vmin;
+                    width: 50vmin;
+                    height: 60vmin;
+                    background-color: #fae558;
+
+                    p {
+                        color: rgb(43, 43, 43)
+                    }
+
+                    form {
+                        width: 100%;
+                        padding: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+                        .form-group {
+                            width: 100%;
+
+                            label {
+                                color: rgb(43, 43, 43);
+
+                            }
+
+                            input {
+                                width: 100%;
+                                background-color: transparent !important;
+                                border: none;
+                                color: 1px rgb(43, 43, 43) solid;
+                                outline: none impor !important;
+                                border-radius: 0px !important;
+                                border-bottom: 1px #333 solid !important;
+
+                                &::placeholder {
+                                    color: rgba(43, 43, 43, 0.5)
+                                }
+
+                            }
+                        }
+                    }
                 }
             }
+
+
 
 
         }
