@@ -1256,6 +1256,16 @@ section.section_toggle {
                                             }
                                         }
 
+                                        .img03 {
+                                            width: 300px;
+                                            height: 100%;
+
+                                            @include mobile_width {
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+
                                         .img02 {
                                             width: 70%;
                                             height: 100%;
@@ -1464,6 +1474,8 @@ section.section_toggle {
 
                             }
 
+
+
                             .row-01 {
                                 background-color: rgba(95, 95, 95, 0.1);
                             }
@@ -1648,9 +1660,15 @@ section.section_toggle {
 
                         }
 
+
+
+
+
                     }
+
                 }
             }
         }
     }
+}
 }
