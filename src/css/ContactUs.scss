@@ -1,7 +1,7 @@
 #wrapper {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+
+
     position: relative;
 }
 
@@ -98,6 +98,8 @@ $card_btn: #00a7e1;
 section.section_content {
     margin-top: 15vh;
 
+
+
     .container-fluid {
 
 
@@ -107,6 +109,7 @@ section.section_content {
             .col-md-12 {
 
                 padding: 0 15vmin;
+                margin-top: 10vh;
 
                 .txt {
                     width: 100%;
@@ -158,6 +161,13 @@ section.section_content {
                 padding: 0 15vmin;
 
                 .square {
+
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    padding: 2rem;
                     position: absolute;
 
                     top: -10vmin;
@@ -169,44 +179,54 @@ section.section_content {
                         color: rgb(43, 43, 43)
                     }
 
-                    form {
-                        width: 100%;
-                        padding: 1rem;
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-start;
-                        flex-direction: column;
 
-                        .form-group {
-                            width: 100%;
-
-                            label {
-                                color: rgb(43, 43, 43);
-
-                            }
-
-                            input {
-                                width: 100%;
-                                background-color: transparent !important;
-                                border: none;
-                                color: 1px rgb(43, 43, 43) solid;
-                                outline: none impor !important;
-                                border-radius: 0px !important;
-                                border-bottom: 1px #333 solid !important;
-
-                                &::placeholder {
-                                    color: rgba(43, 43, 43, 0.5)
-                                }
-
-                            }
-                        }
-                    }
                 }
             }
 
 
 
 
+        }
+
+        .row {
+            margin: 0;
+
+            .col-md-6 {
+                padding: 5vmin 15vmin;
+
+                form {
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    .form-group {
+                        width: 100%;
+
+                        label {
+                            color: rgb(43, 43, 43);
+
+                        }
+
+                        input {
+                            width: 100%;
+                            background-color: transparent !important;
+                            border: none;
+                            color: 1px rgb(43, 43, 43) solid;
+                            outline: none impor !important;
+                            border-radius: 0px !important;
+                            border-bottom: 1px #333 solid !important;
+
+                            &::placeholder {
+                                color: rgba(43, 43, 43, 0.5)
+                            }
+
+                        }
+                    }
+                }
+            }
         }
     }
 }
