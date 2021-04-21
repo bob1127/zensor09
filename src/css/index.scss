@@ -31,16 +31,19 @@ $card_btn: #00a7e1;
     @content;
   }
 }
+
 @mixin pc_width_second() {
   @media screen and (max-width: $pc_second_media) {
     @content;
   }
 }
+
 @mixin pad_width() {
   @media screen and (max-width: $pad_media) {
     @content;
   }
 }
+
 @mixin mobile_width() {
   @media screen and (max-width: $mobile_media) {
     @content;
@@ -56,6 +59,7 @@ $card_btn: #00a7e1;
 @mixin magnetic($timeing) {
   transition: all $timeing cubic-bezier(0.615, 0, 0.07, 1);
 }
+
 //繼承
 
 %display_center {
@@ -63,6 +67,7 @@ $card_btn: #00a7e1;
   justify-content: center;
   align-items: center;
 }
+
 %bgc {
   background-position: center center;
   background-size: cover;
@@ -74,11 +79,13 @@ $card_btn: #00a7e1;
   justify-content: center;
   align-items: center;
 }
+
 %bgImg {
   width: 100%;
   background-position: center center;
   background-size: cover;
 }
+
 %fakeImg {
   background-color: #5290bb;
   display: flex;
@@ -93,9 +100,11 @@ $card_btn: #00a7e1;
   padding: 0;
   margin: 0;
 }
-#exampleModal{
+
+#exampleModal {
   z-index: 99999999999;
 }
+
 .wrap {
   width: 100%;
 
@@ -104,6 +113,7 @@ $card_btn: #00a7e1;
   padding: 20px 3px;
   padding-top: 60px;
   display: flex;
+
   .quote {
     margin-top: 0px;
     font-family: "Barlow Condensed", sans-serif;
@@ -113,6 +123,7 @@ $card_btn: #00a7e1;
     text-align: center;
     overflow: hidden;
     position: relative;
+
     .news_line {
       width: 40vw;
       height: 1px;
@@ -124,6 +135,7 @@ $card_btn: #00a7e1;
 .split-line {
   overflow: hidden;
 }
+
 //取消col 之間的間隔00000
 .margin-top {
   margin-top: 10vmin;
@@ -134,8 +146,8 @@ $card_btn: #00a7e1;
   padding-right: 0 !important;
 }
 
-.no-gutters > .col,
-.no-gutters > [class*="col-"] {
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -162,16 +174,20 @@ $card_btn: #00a7e1;
     @extend %display_center;
     padding: 1.2rem;
   }
+
   .content {
     padding: 2rem;
+
     .sidebar_zensor {
       .sidebar_pro_ouside_wrap {
         margin-left: 1rem;
+
         .sidebar_pro_ouside {
           color: rgb(109, 109, 109);
           margin: 1rem 0;
         }
       }
+
       .sidebar_pro_inside_wrap {
         margin-left: 1rem;
 
@@ -187,18 +203,23 @@ $card_btn: #00a7e1;
 .content_txt {
   color: rgb(211, 211, 211);
 }
+
 .second_title {
   color: rgb(63, 63, 63);
 }
+
 .link-txt {
   text-decoration: none !important;
+
   :hover {
     cursor: pointer;
   }
 }
+
 .link-blue {
   color: $main_blue;
 }
+
 .btn {
   padding: 0.3rem 3rem;
   display: flex;
@@ -206,6 +227,7 @@ $card_btn: #00a7e1;
   align-items: center;
   border-radius: 0px;
 }
+
 .btn-blue {
   background-color: #4ab6db;
   color: white;
@@ -234,6 +256,7 @@ html {
   font-family: sans-serif;
 
   background-color: rgba(255, 255, 255, 0.1);
+
   ::-webkit-scrollbar {
     display: none !important;
   }
@@ -241,6 +264,7 @@ html {
 
 header {
   margin-top: -2.5vmin;
+
   @include mobile_width {
     margin: 0;
   }
@@ -248,6 +272,10 @@ header {
   #carouselExampleIndicators {
     .carousel-inner {
       .carousel-item {
+        img {
+          width: 100%;
+        }
+
         .img {
           background-position: center center;
           background-size: cover;
@@ -255,26 +283,33 @@ header {
           height: 100vh;
           display: block;
         }
+
         .carousel_pc {
           display: block;
+
           @include pad_pro_width {
             display: none !important;
           }
         }
+
         .carousel_pad {
           width: 100%;
           display: none;
           border: 1px solid transparent;
+
           @include pad_pro_width {
             display: block;
           }
+
           @include mobile_width {
             display: none;
           }
         }
+
         .carousel_mobile {
           width: 100%;
           display: none;
+
           @include mobile_width {
             display: block;
           }
@@ -296,9 +331,11 @@ header {
   display: flex;
   align-items: flex-start;
   overflow: hidden;
+
   @include pad_pro_width {
     height: 60vmin;
   }
+
   @include pad_width {
     height: 70vmin;
   }
@@ -314,6 +351,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+
   .oakslider__controls {
     display: flex;
     width: 100%;
@@ -348,6 +386,7 @@ header {
     .oakslider__timer {
       width: 95px;
     }
+
     .oakslider__label {
       opacity: 1;
     }
@@ -408,9 +447,11 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
+
     @include pad_pro_width {
       height: 60vmin;
     }
+
     @include pad_width {
       height: 70vmin;
     }
@@ -436,6 +477,7 @@ header {
   padding-top: 100px;
   width: 100%;
   font-family: sans-serif;
+
   h2 {
     color: rgb(77, 77, 77);
     position: absolute;
@@ -444,20 +486,24 @@ header {
     font-size: 3vw;
     font-weight: 900;
     font-family: "Anton", sans-serif;
+
     @include mobile_width {
       top: 50%;
       left: 5%;
     }
   }
+
   .txt_left {
     width: 50%;
     border: 1px solid rgb(255, 255, 255);
     @extend %display_center;
     flex-direction: column;
   }
+
   .txt_right {
     width: 50%;
     border: 1px solid rgb(255, 255, 255);
+
     p {
       color: $deep_white;
     }
@@ -473,8 +519,7 @@ header {
   left: 10%;
   bottom: 30px;
 
-  span {
-  }
+  span {}
 }
 
 .slide__link {
@@ -490,6 +535,7 @@ header {
 
 section.section_about {
   background-color: #0e1b2e;
+
   .row {
     .col-md-6 {
       .txt {
@@ -497,6 +543,7 @@ section.section_about {
         border: 1px solid rgb(255, 255, 255);
         padding: 2.3rem;
       }
+
       .container {
         display: flex;
         flex-direction: column;
@@ -531,15 +578,18 @@ section.section_print {
     .row {
       .col-md-12 {
         @extend %display_center;
+
         .print_txt {
           @extend %display_center;
           flex-direction: column;
+
           h3 {
             font-size: 1.2rem;
             color: $main_blue;
           }
         }
       }
+
       .col-md-12 {
         @extend %display_center;
 
@@ -557,7 +607,7 @@ section.section_print {
         }
 
         /* end fix */
-        .owl-nav > div {
+        .owl-nav>div {
           margin-top: -26px;
           position: absolute;
           top: 50%;
@@ -575,10 +625,12 @@ section.section_print {
         .owl-nav .owl-next {
           right: -30px;
         }
+
         p {
           margin: 0 auto;
         }
       }
+
       .col-md-12 {
         .container {
           display: flex;
@@ -613,19 +665,23 @@ section.section_print {
 section.section_chemistry {
   background-color: rgb(241, 241, 241);
   padding: 0 50px;
+
   @include mobile_width {
     padding: 0 15px;
   }
+
   .container-fluid {
     .row {
       .col-xl-3 {
         padding: 0.2rem;
+
         .product_item_test {
           height: 504px;
           width: 273px;
 
           overflow: hidden;
           background-color: #fff;
+
           .wrap {
             width: 100%;
             padding: 0 31px;
@@ -633,11 +689,13 @@ section.section_chemistry {
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
+
             img {
               height: 256px;
               width: 211px;
             }
           }
+
           .product_name {
             width: 100%;
 
@@ -645,15 +703,18 @@ section.section_chemistry {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+
             h5 {
               font-size: 16px;
               color: black;
             }
+
             p {
               font-size: 14px;
               color: $main_blue;
             }
           }
+
           .txt {
             display: flex;
             justify-content: center;
@@ -666,16 +727,19 @@ section.section_chemistry {
               line-height: 14px;
             }
           }
+
           .btn_wrap {
             width: 200px;
             height: 38px;
             background-color: $main_blue;
+
             .btn {
               color: white;
               position: relative;
             }
           }
         }
+
         .product_item {
           padding: 0.4rem 0.1rem;
           width: 100%;
@@ -684,6 +748,7 @@ section.section_chemistry {
           background-color: #fff;
           transition: 0.5s;
           overflow: hidden;
+
           @include mobile_width {
             display: flex;
             justify-content: center;
@@ -694,10 +759,12 @@ section.section_chemistry {
           &:hover {
             position: absolute;
             z-index: 9;
+
             @include pad_width {
               position: relative;
             }
           }
+
           .img_wrap {
             overflow: hidden;
             position: relative;
@@ -713,16 +780,20 @@ section.section_chemistry {
               margin: 2.5rem 0;
 
               transition: 0.5s;
+
               @include pad_pro_width {
                 width: 80%;
               }
+
               @include pad_width {
                 width: 90%;
               }
+
               @include mobile_width {
                 width: 60%;
               }
             }
+
             .mark {
               background-color: #d61009;
               color: white;
@@ -733,6 +804,7 @@ section.section_chemistry {
               left: -70px;
               top: 10px;
             }
+
             .mark_hot {
               background-color: #f7c13b;
             }
@@ -763,10 +835,11 @@ section.section_chemistry {
                 transform: translateY(-50%);
                 position: absolute;
               }
-              &::before {
-              }
+
+              &::before {}
             }
           }
+
           .txt {
             margin-top: 1vmin;
 
@@ -781,10 +854,12 @@ section.section_chemistry {
               flex-direction: column;
 
               padding: 0 0.1rem;
+
               p {
                 color: #00a7e1;
                 margin: 0;
               }
+
               .model {
                 margin: 0;
                 font-size: 16px;
@@ -801,16 +876,20 @@ section.section_chemistry {
 
               height: 3rem;
               padding: 0rem 1rem;
+
               span {
                 font-weight: 700;
               }
+
               p {
                 color: rgb(22, 22, 22);
                 font-size: 14px;
                 margin: 0;
+
                 @include pc_width {
                   font-size: 13px;
                 }
+
                 @include pad_pro_width {
                   font-size: 14px;
                 }
@@ -825,6 +904,7 @@ section.section_chemistry {
 
 section.section_mcp {
   padding: 0 5rem;
+
   .container-fluid {
     background-color: rgba(185, 185, 185, 0.1);
 
@@ -832,16 +912,19 @@ section.section_mcp {
       .col-md-12 {
         @extend %display_center;
         padding: 3rem 5vw;
+
         .mcp_txt {
           padding: 3rem;
           width: 60%;
           @extend %display_center;
           flex-direction: column;
+
           h3 {
             font-size: 1.2rem;
             color: $main_blue;
           }
         }
+
         .container {
           display: flex;
           flex-direction: column;
@@ -877,9 +960,11 @@ section.section_others {
     .row {
       .col-md-12 {
         @extend %display_center;
+
         .othersProduct_wrap {
           width: 80%;
           @extend %display_center;
+
           .item {
             width: 30%;
             height: 60vh;
@@ -889,6 +974,7 @@ section.section_others {
             @extend %display_center;
           }
         }
+
         .bottom_txt {
           width: 100%;
 
@@ -910,6 +996,7 @@ section.section_news {
         @include mobile_width {
           padding: 0 25px;
         }
+
         .txt {
           @extend %display_center;
         }
@@ -926,10 +1013,12 @@ section.section_news {
           border-radius: 100%;
           opacity: 0;
           margin-top: -5vmin;
+
           @include mobile_width {
             margin-top: -30vmin;
           }
         }
+
         .slick-next {
           content: "→";
           display: block;
@@ -940,9 +1029,11 @@ section.section_news {
           border-radius: 100%;
           opacity: 0;
           margin-top: -5vmin;
+
           @include mobile_width {
             margin-top: -30vmin;
           }
+
           .slick-next::before {
             content: "←";
             display: block;
@@ -954,6 +1045,7 @@ section.section_news {
             z-index: 99999999;
           }
         }
+
         .slick-slider {
           width: 100%;
           overflow: hidden;
@@ -961,10 +1053,12 @@ section.section_news {
           &:hover .slick-prev {
             opacity: 1;
           }
+
           &:hover .slick-next {
             opacity: 1;
           }
         }
+
         .slick-slider .element {
           width: 100%;
 
@@ -981,14 +1075,17 @@ section.section_news {
             align-items: center;
             flex-direction: column;
             padding: 0;
+
             .pic {
               width: 100%;
               height: 35vmin;
               overflow: hidden;
               position: relative;
+
               @include mobile_width {
                 height: 75vmin;
               }
+
               &::after {
                 transition: 0.5s;
                 position: absolute;
@@ -999,6 +1096,7 @@ section.section_news {
                 width: 100%;
                 height: 35vmin;
                 background-color: rgba(0, 0, 0, 0.15);
+
                 @include mobile_width {
                   height: 75vmin;
                 }
@@ -1009,13 +1107,16 @@ section.section_news {
                 transform: scale(1);
                 transition: 0.4s;
               }
+
               &:hover img {
                 transform: scale(1.06);
               }
+
               &:hover:after {
                 background-color: transparent;
               }
             }
+
             .txt {
               width: 100%;
 
@@ -1025,15 +1126,18 @@ section.section_news {
               flex-direction: column;
 
               padding: 1rem;
+
               .top {
                 text-align: center;
                 font-weight: 800;
                 padding-bottom: 1rem;
                 height: 8vmin;
+
                 @include mobile_width {
                   height: 15vmin;
                 }
               }
+
               .bottom {
                 padding-top: 1rem;
                 border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -1041,6 +1145,7 @@ section.section_news {
                 color: #333;
                 text-align: center;
                 height: 20vmin;
+
                 @include mobile_width {
                   height: 30vmin;
                 }
@@ -1055,22 +1160,26 @@ section.section_news {
 
 section.section_mobile_carousel {
   display: none;
+
   @include mobile_width {
     display: block;
     padding: 0 15px;
   }
+
   .container {
     .row {
       .col-md-12 {
         img {
           width: 100%;
         }
+
         .txt {
           .top_part {
             p {
               color: rgb(133, 133, 133);
             }
           }
+
           .bottom_part {
             display: flex;
             justify-content: space-between;
@@ -1080,22 +1189,28 @@ section.section_mobile_carousel {
     }
   }
 }
+
 section.section_banner {
   padding: 0 15vmin;
+
   @include pad_pro_width {
     padding: 0 5vmin;
   }
+
   @include pad_width {
     padding: 0 2rem;
   }
+
   @include mobile_width {
     padding: 0 0.5rem;
   }
+
   .container-fluid {
     .row {
       .col-md-6 {
         img {
           width: 100%;
+
           @include pad_width {
             margin: 1rem 0;
           }

@@ -111,6 +111,10 @@ section.section_content {
                 padding: 0 15vmin;
                 margin-top: 10vh;
 
+                @include mobile_width {
+                    padding: 0 7vmin;
+                }
+
                 .txt {
                     width: 100%;
                     padding: 0 15vmin;
@@ -160,55 +164,22 @@ section.section_content {
                 position: relative;
                 padding: 0 15vmin;
 
-                @include pad_pro_width {
-                    padding: 5vmin;
+                @include mobile_width {
+                    padding: 0 7vmin;
                 }
 
-                .square {
-                    width: 40vmin;
-                    height: 60vmin;
-                    overflow: hidden;
-
-
-
-                    padding: 8rem 2rem 2rem 2rem;
+                img {
                     position: absolute;
-
+                    left: 15vmin;
                     top: -20vmin;
 
-                    background-color: #fae558;
+                    width: 43vmin;
 
-
-                    .wrap {
-                        width: 50%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: flex-start;
-                        flex-direction: column;
-
-                        .icon_wrap {
-                            display: flex;
-
-                            a {
-                                color: #333;
-                                font-size: 1.5rem;
-                                margin-right: .5rem;
-
-                                &:hover {
-                                    color: rgb(77, 77, 77);
-                                }
-
-                            }
-                        }
-
-                        p {
-                            color: rgb(43, 43, 43)
-                        }
+                    @include mobile_width {
+                        width: 55vmin;
+                        top: -35vmin;
+                        left: 7vmin;
                     }
-
-
-
 
                 }
             }
@@ -287,7 +258,7 @@ section.section_content {
                             background-color: transparent !important;
                             border: none;
                             color: 1px rgb(43, 43, 43) solid;
-                            outline: none impor !important;
+                            outline: transparent !important;
                             border-radius: 0px !important;
                             border-bottom: 1px #333 solid !important;
 
@@ -295,8 +266,8 @@ section.section_content {
                                 color: rgba(43, 43, 43, 0.5)
                             }
 
-                            input:focus {
-                                outline: none
+                            &:focus {
+                                outline: none !important;
                             }
 
                         }

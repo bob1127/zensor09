@@ -16,6 +16,7 @@ module.exports = {
      
        
          service:'./src/js/service.js',
+         article:'./src/js/article.js',
        
         
          AllProducts:'./src/js/AllProducts.js',
@@ -109,11 +110,7 @@ module.exports = {
             template: './src/SF100.html',
             chunks: ['manifest','vendor','AllProducts']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'ECD100.html',
-            template: './src/ECD100.html',
-            chunks: ['manifest','vendor','AllProducts']
-        }),
+       
       
         new HtmlWebpackPlugin({
             filename: 'CM100.html',
@@ -129,6 +126,11 @@ module.exports = {
             filename: 'CT100.html',
             template: './src/CT100.html',
             chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'article.html',
+            template: './src/article.html',
+            chunks: ['manifest','vendor','article']
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
