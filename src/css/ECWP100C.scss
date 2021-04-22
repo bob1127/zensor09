@@ -444,6 +444,12 @@ section.seciton_navgation {
                 font-weight: 900;
             }
 
+            h2 {
+                font-size: 23px;
+                font-weight: 500;
+                color: rgb(46, 144, 209);
+            }
+
             h5 {
                 color: rgb(35, 145, 236);
                 margin-top: 2rem;
@@ -786,6 +792,35 @@ section.section_toggle {
                         }
 
                         .card-body {
+                            .project_banner {
+                                width: 50%;
+
+                                @include mobile_width {
+                                    width: 100%;
+                                }
+                            }
+
+                            .txt_wrap {
+
+                                h3,
+                                h4 {
+                                    font-weight: 200;
+                                    color: #000;
+                                    font-size: 2.5rem;
+
+                                    @include mobile_width {
+                                        font-size: 2rem;
+                                    }
+
+                                }
+
+                                h4 {
+                                    background-color: rgb(190, 190, 190);
+                                    padding: .3rem .6rem;
+                                    display: flex;
+                                }
+                            }
+
                             padding: 0 40px;
 
                             @include mobile_width {
@@ -805,6 +840,7 @@ section.section_toggle {
                                         .right_card,
                                         .left_card {
                                             height: 100vmin;
+                                            overflow: hidden;
 
                                             @include pad_pro_width {
                                                 height: auto;
@@ -1079,7 +1115,7 @@ section.section_toggle {
                                                         h4 {
                                                             font-weight: 400;
                                                             font-size: 26px;
-                                                            color: rgb(23, 123, 218);
+                                                            color: #2e90d1;
                                                             text-align: center;
 
                                                             @include mobile_width {
@@ -1198,7 +1234,7 @@ section.section_toggle {
                                             h4 {
                                                 font-weight: 400;
                                                 font-size: 26px;
-                                                color: rgb(23, 123, 218);
+                                                color: #2e90d1;
                                                 text-align: center;
 
                                                 @include mobile_width {
@@ -1224,7 +1260,7 @@ section.section_toggle {
 
                                         h3 {
                                             font-size: 23px;
-                                            color: rgb(29, 29, 29);
+                                            color: #333;
                                             font-weight: 300;
                                             text-align: center;
                                         }
@@ -1245,9 +1281,9 @@ section.section_toggle {
 
 
                                         img {
-                                            
+
                                             margin: 1rem;
-                                            
+
 
 
                                         }

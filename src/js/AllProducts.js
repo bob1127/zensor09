@@ -11,7 +11,12 @@ var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile
 
 wow.init();
 
+ $(function() {
+     $("img.lazy").lazyload({
+         effect : "fadeIn"
+     });
 
+  });
 AOS.init();
 
       //topnav close
