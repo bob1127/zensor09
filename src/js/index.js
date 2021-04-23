@@ -103,7 +103,7 @@ fontawesome.library.add(fas,fab,far)
       })
 
 
-      jQuery(".slick-slider").slick({
+      $(".slick-slider").slick({
         slidesToShow:5,
         slidesToScroll: 1,
         arrows: true,

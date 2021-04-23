@@ -31,6 +31,7 @@
     "autoprefixer": "^10.2.5",
     "css-loader": "^5.0.2",
     "easyzoom": "^2.5.3",
+    "expose-loader": "^2.0.0",
     "gsap": "^3.6.1",
     "html-webpack-plugin": "^5.2.0",
     "jquery": "^3.6.0",
