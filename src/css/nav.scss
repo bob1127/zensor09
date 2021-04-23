@@ -288,6 +288,10 @@ nav {
   z-index: 9;
   position: sticky;
 
+  .fa-check-circle {
+    color: #36eb81;
+  }
+
   .top_nav {
     position: relative;
     padding: 0.5rem 50px;
@@ -501,24 +505,24 @@ nav {
         }
 
         80% {
-          color: #fff;
+
           font-size: 1.5em;
         }
 
         100% {
-          color: #fff;
+
           font-size: 1.35em;
         }
       }
 
       @keyframes icon-out {
         0% {
-          color: #fff;
+
           font-size: 1.35em;
         }
 
         20% {
-          color: #fff;
+
           font-size: 1.5em;
         }
 
@@ -528,42 +532,43 @@ nav {
       }
 
       a {
-        color: #4d4d4d;
+        color: transparent;
         text-decoration: none;
       }
 
       .fb a,
       .fb:before,
       .fb {
-        background: #3b5999;
+        background: transparent;
         color: #3b5999;
       }
 
       .line a,
       .line:before,
       .line {
-        background: #37a558;
+        background: transparent;
+
         color: #37a558;
       }
 
       .we a,
       .we:before,
       .we {
-        background: #2fcc70;
+        background: transparent;
         color: #2fcc70;
       }
 
       .ca a,
       .ca:before,
       .ca {
-        background: #414141;
+        background: transparent;
         color: #414141;
       }
 
       .em a,
       .em:before,
       .em {
-        background: #414141;
+        background: transparent;
         color: #414141;
       }
     }
