@@ -146,8 +146,13 @@ AOS.init();
     $('.gallery-thumbs').css('height', productCarouselThumbsItemWith);
 
     // activation zoom plugin
-    var $easyzoom = $('.easyzoom').easyZoom();
-
+  
+if($(window).width() > 600)
+{
+     var $easyzoom = $('.easyzoom').easyZoom();
+} else {
+    var $easyzoom = $('.easyzoom11').easyZoom();
+}
      
         $('.items').slick({
         slidesToShow: 3,
@@ -297,3 +302,5 @@ function createItems() {
     container: 'body'
   })
 })
+
+
