@@ -916,7 +916,12 @@ section.section_toggle {
                                             .project_item {
                                                 margin: 0 .5rem;
                                                 width: 25%;
-
+                                                .project-banner{
+                                                    width: 50% !important;
+                                                    @include mobile_width{
+                                                        width: 90%
+                                                    }
+                                                }
 
 
                                                 @include pad_width {

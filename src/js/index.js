@@ -141,3 +141,9 @@ fontawesome.library.add(fas,fab,far)
 
 
       $("img").lazyload();
+
+      $('.mobile_product').click(function(){
+        $('.inside_ul').animate({
+          'visibility':'visible'
+        },500)
+      })

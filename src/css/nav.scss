@@ -234,7 +234,7 @@ a {
       border-left: 0.5px solid rgb(255, 255, 255);
       border-right: 0.5px solid rgb(255, 255, 255);
 
-      i {
+      svg {
         font-size: 1.9rem;
         color: white;
       }
@@ -329,9 +329,9 @@ nav {
           display: flex;
         }
 
-        i {
-          padding-left: 1.8rem;
-          font-size: 1.4rem;
+        svg {
+          margin-left: 1.8rem;
+          font-size: 1.45rem;
           color: #333;
         }
       }
