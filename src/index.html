@@ -21,7 +21,7 @@
 
     
 
-
+    <script src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -1126,6 +1126,7 @@
           </div>
         </div>
       </section>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UGf_R2ER-jc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <footer>
         <div class="container-fluid">
           
@@ -1234,6 +1235,16 @@
 
 // ScrollTrigger.addEventListener("refresh", setupSplits);
 // setupSplits();
+jQuery(document).ready(function($) { 
+    jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() 
+    { 
+     var country = geoplugin_countryName(); 
+     alert(country); 
+     var code = geoplugin_countryCode(); 
+     alert(code); 
+     console.log("Your location is: " + country + ", " + zone + ", " + district); 
+    }); 
+}); 
         
     </script>
     
