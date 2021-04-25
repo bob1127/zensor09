@@ -6,7 +6,16 @@ import 'aos/dist/aos.css'; // You can also use <link>
 
 import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
-import { WOW } from 'wowjs'
+import { WOW } from 'wowjs';
+import fontawesome from '@fortawesome/fontawesome'
+import  fas  from '@fortawesome/fontawesome-free-solid';
+import fab  from '@fortawesome/fontawesome-free-brands';
+import far from '@fortawesome/fontawesome-free-regular';
+import gsap from "gsap";
+import Swiper from 'swiper/bundle';
+
+
+fontawesome.library.add(fas,fab,far)
 var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
 
 wow.init();
