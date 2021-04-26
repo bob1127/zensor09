@@ -461,6 +461,7 @@ section.seciton_navgation {
                 font-weight: 900;
             }
 
+
             h5 {
                 color: rgb(35, 145, 236);
                 margin-top: 2rem;
@@ -685,7 +686,7 @@ section.section_others {
                                 position: relative;
                                 border-radius: 20px;
                                 box-shadow: 0px 0px 5px rgba(45, 133, 184, 0.3);
-                                padding: 0.3rem 3rem;
+
                                 bottom: 50px;
 
                                 i {
@@ -771,7 +772,7 @@ section.section_others {
 
 section.section_toggle {
 
-    padding: 10vmin 0;
+
 
     .container-fluid {
         .row {
@@ -786,7 +787,7 @@ section.section_toggle {
 
 
                 #accordionExample {
-                    padding: 0 33px;
+
 
 
                     @include mobile_width {
@@ -798,17 +799,36 @@ section.section_toggle {
                         border: none !important;
 
                         .card-header {
+                            display: flex;
+                            justify-content: center;
+
 
                             background-color: transparent !important;
+
+                            .btn {
+                                transition: .2s;
+                            }
+
+                            .btn:hover {
+                                color: rgb(78, 78, 78) !important;
+                            }
+
+                            .btn:not(:disabled):not(.disabled) {
+                                text-decoration: none;
+                                outline: none;
+                            }
                         }
 
                         .card-body {
-                            padding: 0 40px;
+
 
                             @include mobile_width {
                                 padding: 0 7px;
                             }
 
+                            .ps_txt {
+                                font-weight: 800;
+                            }
 
                             .container-fluid {
                                 .row {
@@ -821,7 +841,7 @@ section.section_toggle {
 
                                         .right_card,
                                         .left_card {
-                                            height: 100vmin;
+
 
                                             @include pad_pro_width {
                                                 height: auto;
@@ -1106,7 +1126,7 @@ section.section_toggle {
 
                                                         h4 {
                                                             font-weight: 400;
-                                                            font-size: 26px;
+                                                            font-size: 26px !important;
                                                             color: rgb(23, 123, 218);
                                                             text-align: center;
 
@@ -1304,8 +1324,7 @@ section.section_toggle {
                                         }
 
                                         .img02 {
-                                            width: 70%;
-                                            height: 100%;
+
 
                                             @include mobile_width {
                                                 width: 100%;
@@ -1494,7 +1513,7 @@ section.section_toggle {
                             }
 
                             .dcf-overflow-x-auto {
-                                width: 90vw !important;
+                                padding: 0 10vmin;
                             }
 
                             table {

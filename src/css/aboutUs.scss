@@ -117,7 +117,7 @@ $pad_pro_media: 1100px;
 }
 
 header {
-    .top_img{
+    .top_img {
         background-position: center center;
         background-size: cover;
         width: 100%;
@@ -133,9 +133,9 @@ section.section_about_content {
 
     .container-fluid {
         .row {
-            padding: 0 5vmin;
+            padding: 0 15vmin;
 
-            .col-xl-12 {
+            .col-xl-8 {
                 .blog-slider {
                     .blog-slider__pagination {
                         @include mobile_width {
@@ -384,6 +384,24 @@ section.section_about_content {
                                 }
                             }
                         }
+                    }
+                }
+            }
+
+            .col-xl-4 {
+                .txt {
+                    padding: 1rem;
+
+                    h1 {
+                        font-size: 1.1rem;
+                        font-weight: 200;
+
+                        span {
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                        }
+
+
                     }
                 }
             }

@@ -79,7 +79,20 @@ $card_btn: #00a7e1;
     color: white;
 }
 
-.addbackground {
+.bgc-blue {
+    background-color: rgb(71, 147, 190) !important;
+
+}
+
+.color-light-white {
+    color: rgb(219, 219, 219) !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.bgc-grey {
 
 
     background-color: rgba(230, 230, 230, 0.3) !important;
@@ -629,6 +642,7 @@ section.section_others {
 
                             padding: 0 2rem;
 
+
                             img {
                                 width: 80%;
                                 margin: 2.5rem 0;
@@ -680,7 +694,7 @@ section.section_others {
                                 position: relative;
                                 border-radius: 20px;
                                 box-shadow: 0px 0px 5px rgba(45, 133, 184, 0.3);
-                                padding: 0.3rem 3rem;
+
                                 bottom: 50px;
 
                                 i {
@@ -766,7 +780,7 @@ section.section_others {
 
 section.section_toggle {
 
-    padding: 10vmin 0;
+
 
     .container-fluid {
         .row {
@@ -781,7 +795,6 @@ section.section_toggle {
 
 
                 #accordionExample {
-                    padding: 0 33px;
 
 
                     @include mobile_width {
@@ -793,26 +806,47 @@ section.section_toggle {
                         border: none !important;
 
                         .card-header {
+                            display: flex;
+                            justify-content: center;
+
 
                             background-color: transparent !important;
+
+                            #collapseThree {}
+
+                            .btn {
+                                transition: .2s;
+                            }
+
+                            .btn:hover {
+                                color: rgb(78, 78, 78) !important;
+                            }
+
+                            .btn:not(:disabled):not(.disabled) {
+                                text-decoration: none;
+                                outline: none;
+                            }
                         }
 
                         .card-body {
-                            .project_banner {
-                                width: 50%;
+                            padding: 0 !important;
 
-                                @include mobile_width {
-                                    width: 100%;
-                                }
+                            .project_banner {
+                                width: 80%;
+
                             }
+
+
+
 
                             .txt_wrap {
 
                                 h3,
                                 h4 {
                                     font-weight: 200;
-                                    color: #000;
-                                    font-size: 2.5rem;
+                                    color: #2e90d1;
+                                    font-size: 26px;
+
 
                                     @include mobile_width {
                                         font-size: 2rem;
@@ -821,13 +855,13 @@ section.section_toggle {
                                 }
 
                                 h4 {
-                                    background-color: rgb(190, 190, 190);
-                                    padding: .3rem .6rem;
+
+
                                     display: flex;
                                 }
                             }
 
-                            padding: 0 40px;
+
 
                             @include mobile_width {
                                 padding: 0 7px;
@@ -845,8 +879,8 @@ section.section_toggle {
 
                                         .right_card,
                                         .left_card {
-                                            height: 100vmin;
-                                            overflow: hidden;
+
+
 
                                             @include pad_pro_width {
                                                 height: auto;
@@ -914,11 +948,14 @@ section.section_toggle {
 
 
                                             .project_item {
-                                                margin: 0 .5rem;
+                                                margin-right: 1rem;
+
                                                 width: 25%;
-                                                .project-banner{
+
+                                                .project-banner {
                                                     width: 50% !important;
-                                                    @include mobile_width{
+
+                                                    @include mobile_width {
                                                         width: 90%
                                                     }
                                                 }
@@ -1298,8 +1335,7 @@ section.section_toggle {
                                         }
 
                                         .img02 {
-                                            width: 70%;
-                                            height: 100%;
+
 
                                             @include mobile_width {
                                                 width: 100%;
@@ -1488,7 +1524,7 @@ section.section_toggle {
                             }
 
                             .dcf-overflow-x-auto {
-                                width: 90vw !important;
+                                padding: 0 10vmin;
                             }
 
                             table {
