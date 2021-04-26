@@ -147,3 +147,7 @@ fontawesome.library.add(fas,fab,far)
           'visibility':'visible'
         },500)
       })
+
+      $('#product_toggle').click(function(){
+        $('.inside_product_nav ').slideToggle(500)
+      })

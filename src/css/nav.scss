@@ -917,6 +917,17 @@ nav {
       margin: 5px 0;
       padding-left: 2rem;
 
+      .inside_product_nav {
+
+        display: none;
+        margin-left: 10px;
+
+      }
+
+      #product_toggle {
+        color: white
+      }
+
       a {
         color: #fafafa;
         font-size: 1.5rem;
