@@ -917,6 +917,10 @@ nav {
       margin: 5px 0;
       padding-left: 2rem;
 
+      &:hover {
+        text-decoration: none;
+      }
+
       .inside_product_nav {
 
         display: none;
@@ -937,26 +941,12 @@ nav {
         opacity: 0;
         pointer-events: none;
 
-        &:after {
-          content: "";
-          width: 100%;
-          position: absolute;
-          height: 3px;
-          border-radius: 5px;
-          background: #fff;
-          bottom: -10px;
-          left: 0;
-          transform-origin: left;
-          transition: transform 0.5s ease;
-          transform: scaleX(0);
-        }
+
 
         &:hover {
           color: #4ba6db;
 
-          &:after {
-            transform: scaleX(1);
-          }
+
         }
       }
     }

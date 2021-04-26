@@ -79,6 +79,10 @@ $card_btn: #00a7e1;
     color: white;
 }
 
+.full-width {
+    width: 85% !important;
+}
+
 .addbackground_grey {
 
     box-shadow: 0 0 10px rgb(209, 209, 209);
@@ -1104,7 +1108,7 @@ section.section_toggle {
                                                     }
 
                                                     .title_wrap {
-                                                        width: 90%;
+                                                        width: 55%;
                                                         display: flex;
                                                         justify-content: center;
                                                         align-items: center;
@@ -1117,6 +1121,9 @@ section.section_toggle {
                                                         @include mobile_width {
                                                             width: 100%;
                                                         }
+
+
+
 
                                                         h3 {
                                                             font-weight: 900;
@@ -1226,7 +1233,7 @@ section.section_toggle {
                                         flex-direction: column;
 
                                         .title_wrap {
-                                            width: 90%;
+                                            width: 55%;
 
                                             display: flex;
                                             justify-content: center;
