@@ -63,7 +63,7 @@ fontawesome.library.add(fas,fab,far)
 
 
       const open = document.querySelector('.container');
-      const close = document.querySelector('.close');
+      const close = document.querySelector('.close_mobile');
       var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
       open.addEventListener('click', () => {
         if (tl.reversed()) {
@@ -72,7 +72,7 @@ fontawesome.library.add(fas,fab,far)
           tl.to('nav', { right: 0 })
             .to('nav', { height: '100vh' }, '-=.1')
             .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .05 }, '-=.8')
-            .to('.close', { opacity: 1, pointerEvents: 'all' }, "-=.8")
+            .to('.close_mobile', { opacity: 1, pointerEvents: 'all' }, "-=.8")
             .to('nav h2', { opacity: 1 }, '-=.1');
         }
       });

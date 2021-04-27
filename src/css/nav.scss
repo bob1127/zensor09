@@ -49,10 +49,26 @@ a {
   }
 }
 
+.product_list_icon_desk {
+  display: block !important;
+
+  svg {
+    font-size: 1.25rem !important;
+  }
+}
+
 .product_list_icon {
-  width: calc(100% / 3);
+  width: calc(100%/3);
+  transition: 0.5s;
+  margin-left: 0.2rem;
+  display: none;
   background-color: transparent !important;
   border: none !important;
+
+  @include mobile_width {
+    display: block;
+    margin-left: 0.2rem;
+  }
 
   svg {
 
@@ -133,6 +149,10 @@ a {
       }
     }
   }
+}
+
+#product_toggle {
+  color: white !important;
 }
 
 //添加 sticky 效果
@@ -852,7 +872,7 @@ nav {
   }
 
   .product_toggle {
-    background-color: #fff;
+    color: #fff !important;
     position: absolute;
     top: 17vh;
     left: 0;
@@ -867,6 +887,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 
     .wrap {
       display: flex;
@@ -977,13 +999,13 @@ nav {
 
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     visibility: hidden;
     z-index: 99;
     position: relative;
-
+    padding-top: 30vmin;
     margin-top: 5vmin;
     overflow-y: scroll;
 
@@ -1027,6 +1049,10 @@ nav {
         display: none;
         margin-left: 10px;
 
+        a {
+          font-size: 20px;
+        }
+
 
 
       }
@@ -1061,7 +1087,7 @@ nav {
     }
   }
 
-  .close {
+  .close_mobile {
     width: 30px;
     height: 30px;
     position: absolute;
