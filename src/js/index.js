@@ -13,7 +13,7 @@ import  fas  from '@fortawesome/fontawesome-free-solid';
 import fab  from '@fortawesome/fontawesome-free-brands';
 import far from '@fortawesome/fontawesome-free-regular';
 import gsap from "gsap";
-import $ from 'jquery';
+
 import 'slick-carousel';
 
 import LazyLoad from "vanilla-lazyload";
