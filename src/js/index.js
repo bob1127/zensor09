@@ -13,6 +13,26 @@ import  fas  from '@fortawesome/fontawesome-free-solid';
 import fab  from '@fortawesome/fontawesome-free-brands';
 import far from '@fortawesome/fontawesome-free-regular';
 import gsap from "gsap";
+import $ from 'jquery';
+import 'slick-carousel';
+import LazyLoad from "vanilla-lazyload";
+
+const lazyLoadOptions = {
+  elements_selector: ".lazy",
+	to_webp: true,
+};
+const pageLazyLoad = new LazyLoad(lazyLoadOptions);
+const logEvent = (eventName, element) => {
+	console.log(
+		Date.now(),
+		eventName,
+		element.getAttribute("data-src"),
+		element.getAttribute("src")
+	);
+};
+
+
+var jQuery = $
 
 fontawesome.library.add(fas,fab,far)
 
@@ -152,3 +172,16 @@ fontawesome.library.add(fas,fab,far)
         $('.inside_product_nav ').slideToggle(500)
       })
      
+
+      $('.topFix_nav_close').click(function(){
+        $('.top_fix_nav').slideUp();
+      })
+    
+
+      $("img").lazyload();
+      $(function() {
+         $("img.lazy").lazyload({
+             effect : "fadeIn"
+         });
+    
+      });
