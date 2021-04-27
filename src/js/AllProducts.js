@@ -28,6 +28,16 @@ wow.init();
   });
 AOS.init();
 
+
+$('.mobile_product').click(function(){
+  $('.inside_ul').animate({
+    'visibility':'visible'
+  },500)
+})
+
+$('#product_toggle').click(function(){
+  $('.inside_product_nav ').slideToggle(500)
+})
       //topnav close
       $('.topFix_nav_close').click(function(){
         $('.top_fix_nav').slideUp();
@@ -206,100 +216,6 @@ if($(window).width() > 600)
                           ]
                             
       });
-
-  // templating
-var colors = [ 'red', 'green', 'blue', 'orange' ];
-var sizes = [ 'small', 'medium', 'large' ];
-var prices = [ 10, 20, 30 ];
-
-createItems();
-
-var $output = $('#output');
-
-// filter with selects and checkboxes
-var $checkboxes = $('#form-ui input');
-
-$checkboxes.change( function() {
-  // map input values to an array
-  var inclusives = [];
-  // inclusive filters from checkboxes
-  $checkboxes.each( function( i, elem ) {
-    // use value if checked
-    if ( elem.checked ) {
-      inclusives.push( elem.value );
-    }
-  });
-  // combine inclusive filters
-  var filterValue = inclusives.join(',');
-  // set filter in hash
-  location.hash = 'filter=' + encodeURIComponent( filterValue );
-});
-
-var $container = $('#container');
-
-function onHashchange() {
-  var hashFilter = getHashFilter();
-  // show filter for demo
-  $output.text( hashFilter || '*' );
-  // filter isotope
-  $container.isotope({
-    itemSelector: '.item',
-    filter: hashFilter,
-  });
-}
-
-$(window).on( 'hashchange', onHashchange );
-
-// init Isotope with hash filter
-onHashchange();
-
-// set initial checkboxes from hash
-var hashFilter = getHashFilter();
-if ( hashFilter ) {
-  var filters = hashFilter.split(',');
-  filters.forEach( function( filter ) {
-    var $checkbox = $checkboxes.filter('[value="' + filter + '"]');
-    $checkbox.attr( 'checked', 'checked' );
-  });
-}
-
-function getHashFilter() {
-  var hash = location.hash;
-  // get filter=filterName
-  var matches = location.hash.match( /filter=([^&]+)/i );
-  if ( !matches ) {
-    return '';
-  }
-  return decodeURIComponent( matches[1] );
-}
-
-//------------
-
-
-function createItems() {
-
-  var $items;
-  // loop over colors, sizes, prices
-  // create one item for each
-  for (  var i=0; i < colors.length; i++ ) {
-    for ( var j=0; j < sizes.length; j++ ) {
-      for ( var k=0; k < prices.length; k++ ) {
-        var color = colors[i];
-        var size = sizes[j];
-        var price = prices[k];
-        var $item = $('<div />', {
-          'class': 'item ' + color + ' ' + size + ' price' + price
-        });
-        $item.append( '<p>' + size + '</p><p>$' + price + '</p>');
-        // add to items
-        $items = $items ? $items.add( $item ) : $item;
-      }
-    } 
-  }
-
-  $items.appendTo( $('#container') );
-
-}
 
 
 

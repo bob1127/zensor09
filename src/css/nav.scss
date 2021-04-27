@@ -161,7 +161,8 @@ a {
 }
 
 #product_toggle {
-  color: white !important;
+  color: #272727 !important;
+
 }
 
 //添加 sticky 效果
@@ -885,7 +886,7 @@ nav {
   }
 
   .product_toggle {
-    color: #fff !important;
+
     position: absolute;
     top: 17vh;
     left: 0;
@@ -1008,7 +1009,7 @@ nav {
   }
 
   ul {
-    height: 100vh;
+    height: 80vh;
 
     list-style: none;
     display: flex;
@@ -1041,7 +1042,7 @@ nav {
 
 
       svg {
-        color: white;
+        color: #272727;
         font-weight: 100 !important;
         transform: rotate(0deg);
         margin-left: 14rem;

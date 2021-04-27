@@ -5,11 +5,52 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> 
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
+import fontawesome from '@fortawesome/fontawesome'
+import  fas  from '@fortawesome/fontawesome-free-solid';
+import fab  from '@fortawesome/fontawesome-free-brands';
+import far from '@fortawesome/fontawesome-free-regular';
+import gsap from "gsap";
 AOS.init();
+$('.mobile_product').click(function(){
+  $('.inside_ul').animate({
+    'visibility':'visible'
+  },500)
+})
 
- 
-    
-AOS.init();
+$('#product_toggle').click(function(){
+  $('.inside_product_nav ').slideToggle(500)
+})
+const open = document.querySelector('.container');
+      const close = document.querySelector('.close_mobile');
+      var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
+      open.addEventListener('click', () => {
+        if (tl.reversed()) {
+          tl.play();
+        } else {
+          tl.to('nav', { right: 0 })
+            .to('nav', { height: '100vh' }, '-=.1')
+            .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .05 }, '-=.8')
+            .to('.close_mobile', { opacity: 1, pointerEvents: 'all' }, "-=.8")
+            .to('nav h2', { opacity: 1 }, '-=.1');
+        }
+      });
+  
+      close.addEventListener('click', () => {
+        tl.reverse();
+      });
+      $('.bars').click(function(){
+        $('.bars').hide(500)
+      })
+     
+      $('.bars').click(function(){
+        $('.mobile_nav ul').css('visibility','visible')
+      })
+      $('.mobile_nav_toggle').click(function(){
+        $('.bars').delay(3000).show(500)
+      })
+
+
+fontawesome.library.add(fas,fab,far)
 
 //topnav close
 $('.topFix_nav_close').click(function(){
@@ -71,34 +112,6 @@ $(document).ready(function () {
 
 
 
-const open = document.querySelector('.container');
-const close = document.querySelector('.close_nav');
-var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
-open.addEventListener('click', () => {
-  if (tl.reversed()) {
-    tl.play();
-  } else {
-    tl.to('nav', { right: 0 })
-      .to('nav', { height: '100vh' }, '-=.1')
-      .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .05 }, '-=.8')
-      .to('.close_nav', { opacity: 1, pointerEvents: 'all' }, "-=.8")
-      .to('nav h2', { opacity: 1 }, '-=.1');
-  }
-});
-
-close.addEventListener('click', () => {
-  tl.reverse();
-});
-$('.bars').click(function(){
-  $('.bars').hide(500)
-})
-
-$('.bars').click(function(){
-  $('.mobile_nav ul').css('visibility','visible')
-})
-$('.mobile_nav_toggle').click(function(){
-  $('.bars').delay(3000).show(500)
-})
 
 // activation carousel plugin
 var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -185,100 +198,6 @@ jQuery(".slick-slider").slick({
                       
 });
 
-// templating
-var colors = [ 'red', 'green', 'blue', 'orange' ];
-var sizes = [ 'small', 'medium', 'large' ];
-var prices = [ 10, 20, 30 ];
-
-createItems();
-
-var $output = $('#output');
-
-// filter with selects and checkboxes
-var $checkboxes = $('#form-ui input');
-
-$checkboxes.change( function() {
-// map input values to an array
-var inclusives = [];
-// inclusive filters from checkboxes
-$checkboxes.each( function( i, elem ) {
-// use value if checked
-if ( elem.checked ) {
-inclusives.push( elem.value );
-}
-});
-// combine inclusive filters
-var filterValue = inclusives.join(',');
-// set filter in hash
-location.hash = 'filter=' + encodeURIComponent( filterValue );
-});
-
-var $container = $('#container');
-
-function onHashchange() {
-var hashFilter = getHashFilter();
-// show filter for demo
-$output.text( hashFilter || '*' );
-// filter isotope
-$container.isotope({
-itemSelector: '.item',
-filter: hashFilter,
-});
-}
-
-$(window).on( 'hashchange', onHashchange );
-
-// init Isotope with hash filter
-onHashchange();
-
-// set initial checkboxes from hash
-var hashFilter = getHashFilter();
-if ( hashFilter ) {
-var filters = hashFilter.split(',');
-filters.forEach( function( filter ) {
-var $checkbox = $checkboxes.filter('[value="' + filter + '"]');
-$checkbox.attr( 'checked', 'checked' );
-});
-}
-
-function getHashFilter() {
-var hash = location.hash;
-// get filter=filterName
-var matches = location.hash.match( /filter=([^&]+)/i );
-if ( !matches ) {
-return '';
-}
-return decodeURIComponent( matches[1] );
-}
-
-//------------
-
-
-function createItems() {
-
-var $items;
-// loop over colors, sizes, prices
-// create one item for each
-for (  var i=0; i < colors.length; i++ ) {
-for ( var j=0; j < sizes.length; j++ ) {
-for ( var k=0; k < prices.length; k++ ) {
-  var color = colors[i];
-  var size = sizes[j];
-  var price = prices[k];
-  var $item = $('<div />', {
-    'class': 'item ' + color + ' ' + size + ' price' + price
-  });
-  $item.append( '<p>' + size + '</p><p>$' + price + '</p>');
-  // add to items
-  $items = $items ? $items.add( $item ) : $item;
-}
-} 
-}
-
-$items.appendTo( $('#container') );
-
-}
-
 
 
 $(function () {
@@ -289,3 +208,6 @@ $('.title_wrap').popover({
 container: 'body'
 })
 })
+
+
+

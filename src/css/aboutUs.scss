@@ -135,6 +135,10 @@ section.section_about_content {
         .row {
             padding: 0 15vmin;
 
+            @include mobile_width {
+                padding: 0 .4vmin;
+            }
+
             .col-xl-8 {
                 .blog-slider {
                     .blog-slider__pagination {
@@ -457,9 +461,18 @@ section.section_about_content {
 
                         }
 
-                        p {
-                            font-weight: 200;
-                            font-size: 16px;
+                        .text {
+                            padding: 0 10vmin;
+
+                            p {
+                                font-weight: 200;
+                                font-size: 16px;
+
+                            }
+
+                            @include mobile_width {
+                                padding: 0 5vmin;
+                            }
                         }
                     }
 
