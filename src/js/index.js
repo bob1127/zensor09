@@ -15,6 +15,7 @@ import far from '@fortawesome/fontawesome-free-regular';
 import gsap from "gsap";
 import $ from 'jquery';
 import 'slick-carousel';
+
 import LazyLoad from "vanilla-lazyload";
 
 const lazyLoadOptions = {
