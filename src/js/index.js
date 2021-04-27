@@ -151,3 +151,4 @@ fontawesome.library.add(fas,fab,far)
       $('#product_toggle').click(function(){
         $('.inside_product_nav ').slideToggle(500)
       })
+     
