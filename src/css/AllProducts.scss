@@ -79,20 +79,27 @@ $card_btn: #00a7e1;
     color: white;
 }
 
+.bgc-blue {
+    background-color: #dbdfe7 !important;
+
+}
+
+.color-light-white {
+    color: rgb(219, 219, 219) !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
 .full-width {
     width: 85% !important;
 }
 
-.addbackground_grey {
+.bgc-grey {
 
-    box-shadow: 0 0 10px rgb(209, 209, 209);
+
     background-color: rgba(230, 230, 230, 0.3) !important;
-}
-
-.addbackground_deep_grey {
-    box-shadow: 0 0 10px rgb(209, 209, 209);
-    background-color: rgba(230, 230, 230, 0.3) !important;
-
 }
 
 .close_nav {
@@ -143,11 +150,6 @@ $card_btn: #00a7e1;
             }
         }
     }
-}
-
-
-iframe {
-    width: 900px !important;
 }
 
 .modal-body {
@@ -465,6 +467,11 @@ section.seciton_navgation {
                 font-weight: 900;
             }
 
+            h2 {
+                font-size: 23px;
+                font-weight: 500;
+                color: rgb(46, 144, 209);
+            }
 
             h5 {
                 color: rgb(35, 145, 236);
@@ -639,6 +646,7 @@ section.section_others {
 
                             padding: 0 2rem;
 
+
                             img {
                                 width: 80%;
                                 margin: 2.5rem 0;
@@ -770,9 +778,7 @@ section.section_others {
     }
 }
 
-.img-middle {
-    width: 90% !important;
-}
+
 
 section.section_toggle {
 
@@ -785,13 +791,13 @@ section.section_toggle {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    flex-direction: column;
                 }
 
 
 
 
                 #accordionExample {
-
 
 
                     @include mobile_width {
@@ -809,6 +815,8 @@ section.section_toggle {
 
                             background-color: transparent !important;
 
+                            #collapseThree {}
+
                             .btn {
                                 transition: .2s;
                             }
@@ -823,16 +831,70 @@ section.section_toggle {
                             }
                         }
 
+                        #project-card-body {
+                            padding: 0 3.5rem;
+
+
+
+                            @include pad_width {
+                                padding: 0 2.5rem;
+                            }
+
+                            @include mobile_width {
+                                padding: 0 .5rem;
+                            }
+                        }
+
                         .card-body {
+                            padding: 0 3rem;
+
+                            .project_wrap {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                            }
+
+                            .project_banner {
+                                width: 50%;
+
+                                @include mobile_width {
+                                    width: 100%;
+                                }
+
+                            }
+
+
+
+
+                            .txt_wrap {
+
+                                h3,
+                                h4 {
+                                    font-weight: 200;
+                                    color: #2e90d1;
+                                    font-size: 26px;
+
+
+                                    @include mobile_width {
+                                        font-size: 2rem;
+                                    }
+
+                                }
+
+                                h4 {
+
+
+                                    display: flex;
+                                }
+                            }
+
 
 
                             @include mobile_width {
                                 padding: 0 7px;
                             }
 
-                            .ps_txt {
-                                font-weight: 800;
-                            }
 
                             .container-fluid {
                                 .row {
@@ -845,6 +907,7 @@ section.section_toggle {
 
                                         .right_card,
                                         .left_card {
+
 
 
                                             @include pad_pro_width {
@@ -887,6 +950,11 @@ section.section_toggle {
                                     }
 
                                     .col-md-12 {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: column;
+
                                         .project_img {
                                             width: 60%;
 
@@ -898,9 +966,9 @@ section.section_toggle {
                                         .project_item_wrap {
 
 
-                                            width: 80vw;
+                                            width: 80%;
                                             display: flex;
-                                            justify-content: flex-start;
+                                            justify-content: center;
                                             align-items: center;
                                             flex-wrap: wrap;
 
@@ -913,7 +981,8 @@ section.section_toggle {
 
 
                                             .project_item {
-                                                margin: 0 .5rem;
+                                                margin-right: 1rem;
+
                                                 width: 25%;
 
                                                 .project-banner {
@@ -1011,8 +1080,8 @@ section.section_toggle {
                                 .left {
                                     width: 50%;
                                     display: flex;
-                                    justify-content: center;
-                                    align-items: flex-start;
+                                    justify-content: flex-start;
+                                    align-items: center;
                                     flex-direction: column;
 
                                     @include mobile_width {
@@ -1022,6 +1091,10 @@ section.section_toggle {
                                 }
 
                                 .right {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    flex-direction: column;
                                     width: 50%;
 
                                     @include mobile_width {
@@ -1073,10 +1146,6 @@ section.section_toggle {
                                     .row {
                                         .col-md-6 {
                                             li {
-
-
-
-
                                                 padding: 3rem;
 
 
@@ -1122,9 +1191,6 @@ section.section_toggle {
                                                             width: 100%;
                                                         }
 
-
-
-
                                                         h3 {
                                                             font-weight: 900;
                                                             font-size: 26px;
@@ -1133,8 +1199,8 @@ section.section_toggle {
 
                                                         h4 {
                                                             font-weight: 400;
-                                                            font-size: 26px !important;
-                                                            color: rgb(23, 123, 218);
+                                                            font-size: 26px;
+                                                            color: #2e90d1;
                                                             text-align: center;
 
                                                             @include mobile_width {
@@ -1142,16 +1208,10 @@ section.section_toggle {
                                                             }
                                                         }
 
-                                                        h5 {
-                                                            text-align: center;
-                                                            font-weight: 200;
-                                                            font-size: 20px;
-                                                            text-align: center;
-                                                        }
-
+                                                        h5,
                                                         p {
                                                             text-align: center;
-                                                            font-weight: 400;
+                                                            font-weight: 200;
                                                             font-size: 20px;
                                                             text-align: center;
                                                         }
@@ -1198,6 +1258,10 @@ section.section_toggle {
                                 li {
                                     padding: 3rem;
                                     margin: 1rem 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
                                     background-color: rgb(255, 255, 255);
 
 
@@ -1250,6 +1314,8 @@ section.section_toggle {
                                             }
 
 
+
+
                                             h3 {
                                                 font-weight: 900;
                                                 font-size: 26px;
@@ -1258,7 +1324,7 @@ section.section_toggle {
                                             h4 {
                                                 font-weight: 400;
                                                 font-size: 26px;
-                                                color: rgb(23, 123, 218);
+                                                color: #2e90d1;
                                                 text-align: center;
 
                                                 @include mobile_width {
@@ -1266,15 +1332,10 @@ section.section_toggle {
                                                 }
                                             }
 
-                                            h5 {
-                                                text-align: center;
-                                                font-weight: 200;
-                                                font-size: 20px;
-                                            }
-
+                                            h5,
                                             p {
                                                 text-align: center;
-                                                font-weight: 400;
+                                                font-weight: 200;
                                                 font-size: 20px;
                                             }
 
@@ -1289,7 +1350,7 @@ section.section_toggle {
 
                                         h3 {
                                             font-size: 23px;
-                                            color: rgb(29, 29, 29);
+                                            color: #333;
                                             font-weight: 300;
                                             text-align: center;
                                         }
@@ -1311,24 +1372,10 @@ section.section_toggle {
 
                                         img {
 
-                                            width: 25%;
-                                            height: 100%;
+                                            margin: 1rem;
 
 
-                                            @include mobile_width {
-                                                width: 100%;
-                                                height: 100%;
-                                            }
-                                        }
 
-                                        .img03 {
-                                            width: 300px;
-                                            height: 100%;
-
-                                            @include mobile_width {
-                                                width: 100%;
-                                                height: 100%;
-                                            }
                                         }
 
                                         .img02 {
@@ -1511,7 +1558,11 @@ section.section_toggle {
 
                             .dcf-overflow-x-auto {
                                 overflow-x: auto !important;
-                                -webkit-overflow-scrolling: touch
+                                -webkit-overflow-scrolling: touch;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
                             }
 
                             :root {
@@ -1520,9 +1571,7 @@ section.section_toggle {
                                 --caption: #242423;
                             }
 
-                            .dcf-overflow-x-auto {
-                                padding: 0 10vmin;
-                            }
+                            .dcf-overflow-x-auto {}
 
                             table {
                                 width: 100%;
@@ -1537,8 +1586,6 @@ section.section_toggle {
                                 font-weight: normal;
 
                             }
-
-
 
                             .row-01 {
                                 background-color: rgba(95, 95, 95, 0.1);
@@ -1724,15 +1771,9 @@ section.section_toggle {
 
                         }
 
-
-
-
-
                     }
-
                 }
             }
         }
     }
-}
 }
