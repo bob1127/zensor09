@@ -12,7 +12,9 @@ import $ from 'jquery';
 import 'slick-carousel';
 
 import LazyLoad from "vanilla-lazyload";
-
+$('#product_toggle').click(function(){
+  $('.inside_product_nav ').slideToggle(500)
+})
 
 const lazyLoadOptions = {
   elements_selector: ".lazy",
@@ -32,7 +34,7 @@ const logEvent = (eventName, element) => {
 var jQuery = $
 
 const open = document.querySelector('.container');
-const close = document.querySelector('.close_nav');
+const close = document.querySelector('.close_mobile');
 var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
 open.addEventListener('click', () => {
   if (tl.reversed()) {
@@ -41,7 +43,7 @@ open.addEventListener('click', () => {
     tl.to('nav', { right: 0 })
       .to('nav', { height: '100vh' }, '-=.1')
       .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .05 }, '-=.8')
-      .to('.close_nav', { opacity: 1, pointerEvents: 'all' }, "-=.8")
+      .to('.close_mobile', { opacity: 1, pointerEvents: 'all' }, "-=.8")
       .to('nav h2', { opacity: 1 }, '-=.1');
   }
 });
@@ -154,9 +156,6 @@ $('.mobile_nav_toggle').click(function(){
         },500)
       })
 
-      $('#product_toggle').click(function(){
-        $('.inside_product_nav ').slideToggle(500)
-      })
      
 
       $('.topFix_nav_close').click(function(){

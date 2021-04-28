@@ -166,6 +166,25 @@ a {
 
 #product_toggle {
   color: #272727 !important;
+  position: relative;
+
+
+
+  &::after {
+    position: absolute;
+    transition: .2s;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 170%;
+    content: ">";
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #333;
+
+
+
+  }
 
 }
 
