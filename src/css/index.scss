@@ -848,6 +848,8 @@ section.section_chemistry {
             .btn {
               color: white;
               position: relative;
+
+
             }
           }
         }
@@ -941,7 +943,8 @@ section.section_chemistry {
               padding: 0.3rem 3rem;
               bottom: 50px;
 
-              svg {
+              .icon-add {
+                width: 10%;
                 left: 6%;
                 top: 50%;
                 transform: translateY(-50%);

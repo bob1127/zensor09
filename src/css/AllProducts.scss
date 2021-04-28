@@ -702,7 +702,8 @@ section.section_others {
 
                                 bottom: 50px;
 
-                                svg {
+                                .icon-add {
+                                    width: 10%;
                                     left: 6%;
                                     top: 50%;
                                     transform: translateY(-50%);
@@ -1564,6 +1565,10 @@ section.section_toggle {
                                 justify-content: center;
                                 align-items: center;
                                 flex-direction: column;
+
+                                @include pad_width {
+                                    display: block
+                                }
                             }
 
                             :root {
