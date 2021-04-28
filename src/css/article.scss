@@ -1,6 +1,91 @@
+//rwd 變數設定
+$pc_media: 1800px;
+
+$pad_media: 769px;
+$mobile_media: 540px;
+
+$pad_pro_media: 1100px;
+$gray: #dddddd;
+$white: #fff;
+$black: #161616;
+$card_btn: #00a7e1;
+
+// rwd mixin
+@mixin pc_width() {
+    @media screen and (max-width: $pc_media) {
+        @content;
+    }
+}
+
+@mixin pc_width_second() {
+    @media screen and (max-width: $pc_second_media) {
+        @content;
+    }
+}
+
+@mixin pad_width() {
+    @media screen and (max-width: $pad_media) {
+        @content;
+    }
+}
+
+@mixin mobile_width() {
+    @media screen and (max-width: $mobile_media) {
+        @content;
+    }
+}
+
+@mixin pad_pro_width() {
+    @media screen and (max-width: $pad_pro_media) {
+        @content;
+    }
+}
+
+@mixin magnetic($timeing) {
+    transition: all $timeing cubic-bezier(0.615, 0, 0.07, 1);
+}
+
+//繼承
+
+%display_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%bgc {
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+%display_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%bgImg {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+%fakeImg {
+    background-color: #5290bb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 section.section_content {
     margin-top: 10vh;
     padding: 0 20vmin;
+    
+    @include mobile_width{
+        padding: 0 2.5vmin;
+        
+    }
 
     .container-fluid {
 
