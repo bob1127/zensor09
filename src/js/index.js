@@ -8,11 +8,6 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 
 
-import fontawesome from '@fortawesome/fontawesome'
-import  fas  from '@fortawesome/fontawesome-free-solid';
-import fab  from '@fortawesome/fontawesome-free-brands';
-import far from '@fortawesome/fontawesome-free-regular';
-
 import $ from 'jquery';
 import 'slick-carousel';
 
@@ -35,7 +30,7 @@ const logEvent = (eventName, element) => {
 
 var jQuery = $
 
-fontawesome.library.add(fas,fab,far)
+
 
 
       var mediaQuery = window.matchMedia('(max-width:1100px)')
