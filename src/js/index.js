@@ -13,6 +13,7 @@ import 'slick-carousel';
 
 import LazyLoad from "vanilla-lazyload";
 
+
 const lazyLoadOptions = {
   elements_selector: ".lazy",
 	to_webp: true,
