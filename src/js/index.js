@@ -12,7 +12,7 @@ import fontawesome from '@fortawesome/fontawesome'
 import  fas  from '@fortawesome/fontawesome-free-solid';
 import fab  from '@fortawesome/fontawesome-free-brands';
 import far from '@fortawesome/fontawesome-free-regular';
-import gsap from "gsap";
+
 import $ from 'jquery';
 import 'slick-carousel';
 
@@ -83,46 +83,7 @@ fontawesome.library.add(fas,fab,far)
 
 
 
-      const open = document.querySelector('.container');
-      const close = document.querySelector('.close_mobile');
-      var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
-      open.addEventListener('click', () => {
-        if (tl.reversed()) {
-          tl.play();
-        } else {
-          tl.to('nav', { right: 0 })
-            .to('nav', { height: '100vh' }, '-=.1')
-            .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .05 }, '-=.8')
-            .to('.close_mobile', { opacity: 1, pointerEvents: 'all' }, "-=.8")
-            .to('nav h2', { opacity: 1 }, '-=.1');
-        }
-      });
-  
-      close.addEventListener('click', () => {
-        tl.reverse();
-      });
-      $('.bars').click(function(){
-        $('.bars').hide(500)
-      })
-      $('.bars').click(function(){
-        $('.mobile_nav ul').css('visibility','visible')
-      })
-      $('.mobile_nav_toggle').click(function(){
-        $('.bars').delay(3000).show(500)
-      })
-
-      $('.mobile_gotop').click(function(){
-        $('html,body').animate({
-          scrollTop:0
-        },'slow')
-      })
-
-      $('#gotop').click(function(){
-        $('html,body').animate({
-          scrollTop:0
-        },'slow')
-      })
-
+    
 
       $(".slick-slider").slick({
         slidesToShow:5,
