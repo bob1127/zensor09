@@ -96,6 +96,17 @@ $pad_pro_media: 1100px;
 //     }
 //   }
 // }
+.icon-fit-footer {
+  width: 1.6rem;
+  margin-right: .5rem;
+  transform: scale(1);
+  transition: .2s;
+
+  &:hover {
+    transition: scale(.8);
+  }
+}
+
 footer {
   position: relative;
   background-color: #272f3c;
@@ -350,11 +361,7 @@ footer {
             .footer-icons {
               display: flex;
 
-              a {
-                i {
-                  color: white;
-                }
-              }
+              a {}
             }
 
             li {
