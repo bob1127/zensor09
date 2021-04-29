@@ -4,12 +4,8 @@ import '../css/style.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> 
 
-import 'swiper/swiper-bundle.css';
-import 'wowjs/css/libs/animate.css';
-import { WOW } from 'wowjs'
-var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
 
-wow.init();
+
 
 
 AOS.init();

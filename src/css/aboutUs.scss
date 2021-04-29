@@ -133,7 +133,15 @@ section.section_about_content {
 
     .container-fluid {
         .row {
-            padding: 0 15vmin;
+            padding: 0 10vmin;
+
+
+
+            @include pad_pro_width {
+                padding: 0 5vmin;
+            }
+
+
 
             @include mobile_width {
                 padding: 0 .4vmin;
@@ -160,6 +168,7 @@ section.section_about_content {
                     transition: all 0.3s;
                     overflow: hidden;
 
+
                     @include mobile_width {
                         padding-left: 1rem;
                         padding-top: 13rem;
@@ -174,12 +183,18 @@ section.section_about_content {
                         min-height: 500px;
                         height: auto;
                         margin: 180px auto;
+                        padding-left: 11px;
+                        padding-top: 200px;
                     }
 
                     @media screen and (max-height: 500px) and (min-width: 992px) {
                         height: 350px;
                     }
-
+                    
+                    @include mobile_width {
+                        height: 500px;
+                        
+                    }
                     &__item {
                         display: flex;
                         align-items: center;
@@ -425,6 +440,20 @@ section.section_about_content {
                     align-items: center;
                     flex-direction: column;
                     padding-bottom: 5rem;
+                    .text {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                        p{
+                            width: 50%;
+                            margin: 3rem 0;
+                            @include mobile_width {
+                                width: 70%;
+                            }
+                            
+                        }
+                    }
 
                     .title {
                         width: 100%;
@@ -435,6 +464,8 @@ section.section_about_content {
 
                         padding: 5rem 0;
                         position: relative;
+
+                        
 
                         &::before {
                             content: "⌜";
@@ -461,19 +492,7 @@ section.section_about_content {
 
                         }
 
-                        .text {
-                            padding: 0 10vmin;
-
-                            p {
-                                font-weight: 200;
-                                font-size: 16px;
-
-                            }
-
-                            @include mobile_width {
-                                padding: 0 5vmin;
-                            }
-                        }
+                        
                     }
 
                     .img_wrap {
