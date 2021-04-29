@@ -626,6 +626,7 @@ section.section_others {
                         border: 0.1px solid rgb(233, 233, 233);
 
                         transition: 0.5s;
+                        margin: 5px;
                         overflow: hidden;
 
                         @include mobile_width {
@@ -853,6 +854,10 @@ section.section_toggle {
 
                         .card-body {
                             padding: 0 3rem;
+
+                            .inside_list{
+                                width: 30%;
+                            }
 
                             .project_wrap {
                                 display: flex;
@@ -1155,6 +1160,7 @@ section.section_toggle {
                                                 padding: 3rem;
 
 
+
                                                 @include pad_pro_width {
                                                     padding: 1.5rem;
                                                 }
@@ -1237,7 +1243,8 @@ section.section_toggle {
                                                     display: flex;
                                                     justify-content: center;
 
-                                                    flex-wrap: wrap;
+
+
                                                     width: 100%;
 
                                                     P {
@@ -1269,6 +1276,20 @@ section.section_toggle {
                                     align-items: center;
                                     flex-direction: column;
                                     background-color: rgb(255, 255, 255);
+                                    .SF_list{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: flex-start;
+                                        flex-direction: column;
+                                        
+                                        p{
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            padding: 0 !important;
+                                            margin: 0 !important;
+                                            line-height: 16px;
+                                        }
+                                    }
 
 
 
