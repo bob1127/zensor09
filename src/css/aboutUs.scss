@@ -190,11 +190,12 @@ section.section_about_content {
                     @media screen and (max-height: 500px) and (min-width: 992px) {
                         height: 350px;
                     }
-                    
+
                     @include mobile_width {
                         height: 500px;
-                        
+
                     }
+
                     &__item {
                         display: flex;
                         align-items: center;
@@ -440,18 +441,20 @@ section.section_about_content {
                     align-items: center;
                     flex-direction: column;
                     padding-bottom: 5rem;
-                    .text {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
 
-                        p{
+                    .text {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
                             width: 50%;
                             margin: 3rem 0;
+
                             @include mobile_width {
                                 width: 70%;
                             }
-                            
+
                         }
                     }
 
@@ -465,7 +468,7 @@ section.section_about_content {
                         padding: 5rem 0;
                         position: relative;
 
-                        
+
 
                         &::before {
                             content: "⌜";
@@ -492,7 +495,7 @@ section.section_about_content {
 
                         }
 
-                        
+
                     }
 
                     .img_wrap {

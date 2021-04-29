@@ -3,13 +3,64 @@ import '../css/AllProducts.scss';
 import '../css/style.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> 
-
+import $ from 'jquery';
 import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
 import { WOW } from 'wowjs';
-
+import 'slick-carousel';
 import gsap from "gsap";
 import Swiper from 'swiper/bundle';
+import LazyLoad from "vanilla-lazyload";
+//slick carousel
+$(".slick-slider").slick({
+  slidesToShow:5,
+  slidesToScroll: 1,
+  arrows: true,
+  
+  autoplay: true,
+  speed: 800,
+  infinite: true,
+  responsive: [
+                      
+                      {
+                        breakpoint: 1226,
+                        settings: {
+                          slidesToShow: 3,
+                          slidesToScroll: 1
+                        }
+                      },
+                      {
+                        breakpoint: 971,
+                        settings: {
+                          slidesToShow: 2,
+                          slidesToScroll: 1
+                        }
+                      }
+                      ,{
+                        breakpoint: 540,
+                        settings: {
+                          slidesToShow: 1,
+                          slidesToScroll: 1
+                        }
+                      }
+
+                    ]
+                      
+});
+//lazy load
+const lazyLoadOptions = {
+  elements_selector: ".lazy",
+	to_webp: true,
+};
+const pageLazyLoad = new LazyLoad(lazyLoadOptions);
+const logEvent = (eventName, element) => {
+	console.log(
+		Date.now(),
+		eventName,
+		element.getAttribute("data-src"),
+		element.getAttribute("src")
+	);
+};
 
 
 var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
