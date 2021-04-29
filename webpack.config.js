@@ -22,7 +22,8 @@ module.exports = {
        
         
          AllProducts:'./src/js/AllProducts.js',
-         ProductCatagory:'./src/js/ProductCatagory.js'
+         ProductCatagory:'./src/js/ProductCatagory.js',
+          ECWP100S:'./src/js/ECWP100S.js',
         
         
          
@@ -127,6 +128,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'CT100.html',
             template: './src/CT100.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'ECWP100S.html',
+            template: './src/ECWP100S.html',
             chunks: ['manifest','vendor','AllProducts']
         }),
         new HtmlWebpackPlugin({

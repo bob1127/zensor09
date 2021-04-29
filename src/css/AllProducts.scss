@@ -78,7 +78,14 @@ $card_btn: #00a7e1;
     align-items: center;
     color: white;
 }
+    .img02 {
+                                           
 
+        @include mobile_width {
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
 .bgc-blue {
     background-color: #dbdfe7 !important;
 
@@ -1405,14 +1412,7 @@ section.section_toggle {
 
                                         }
 
-                                        .img02 {
-
-
-                                            @include mobile_width {
-                                                width: 100%;
-                                                height: 100%;
-                                            }
-                                        }
+                                        
                                     }
                                 }
 

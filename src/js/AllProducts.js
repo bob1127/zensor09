@@ -1,66 +1,18 @@
 import 'bootstrap';
-import '../css/AllProducts.scss';
+import '../css/ECWP100C.scss';
 import '../css/style.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> 
 
-import $ from 'jquery';
 import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
-import { WOW } from 'wowjs';
-import 'slick-carousel';
+import { WOW } from 'wowjs'
+import fontawesome from '@fortawesome/fontawesome'
+import  fas  from '@fortawesome/fontawesome-free-solid';
+import fab  from '@fortawesome/fontawesome-free-brands';
+import far from '@fortawesome/fontawesome-free-regular';
 import gsap from "gsap";
-import Swiper from 'swiper/bundle';
-import LazyLoad from "vanilla-lazyload";
-//slick carousel
-$(".slick-slider").slick({
-  slidesToShow:5,
-  slidesToScroll: 1,
-  arrows: true,
-  
-  autoplay: true,
-  speed: 800,
-  infinite: true,
-  responsive: [
-                      
-                      {
-                        breakpoint: 1226,
-                        settings: {
-                          slidesToShow: 3,
-                          slidesToScroll: 1
-                        }
-                      },
-                      {
-                        breakpoint: 971,
-                        settings: {
-                          slidesToShow: 2,
-                          slidesToScroll: 1
-                        }
-                      }
-                      ,{
-                        breakpoint: 540,
-                        settings: {
-                          slidesToShow: 1,
-                          slidesToScroll: 1
-                        }
-                      }
-
-                    ]
-                      
-});
-//lazy load
-const lazyLoadOptions = {
-  elements_selector: ".lazy",
-	to_webp: true,
-};
-const pageLazyLoad = new LazyLoad(lazyLoadOptions);
-const logEvent = (eventName, element) => {
-	console.log(
-		Date.now(),
-		eventName,
-		element.getAttribute("data-src"),
-		element.getAttribute("src")
-	);
-};
-
+fontawesome.library.add(fas,fab,far)
 
 var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
 
@@ -72,33 +24,21 @@ wow.init();
      });
 
   });
+AOS.init();
 
-
-
-$('.mobile_product').click(function(){
-  $('.inside_ul').animate({
-    'visibility':'visible'
-  },500)
-})
-
-$('#product_toggle').click(function(){
-  $('.inside_product_nav ').slideToggle(500)
-})
-     
-
-
-
-
-//topnav close
+      //topnav close
       $('.topFix_nav_close').click(function(){
         $('.top_fix_nav').slideUp();
       })
     
       
 
+   
+//      const quotes = document.querySelectorAll(".quote");
 
 
-
+// ScrollTrigger.addEventListener("refresh", setupSplits);
+// setupSplits();
         
 
       var mediaQuery = window.matchMedia('(max-width:1100px)')
@@ -145,7 +85,7 @@ $('#product_toggle').click(function(){
       });
 
 
-// mobile menu toggle for gsap
+
       const open = document.querySelector('.container');
       const close = document.querySelector('.close_nav');
       var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
@@ -221,7 +161,145 @@ if($(window).width() > 600)
     var $easyzoom = $('.easyzoom11').easyZoom();
 }
      
+        $('.items').slick({
+        slidesToShow: 3,
+        dots:true,
+        infinite: true,
+        slideToScroll: true,
+        centerMode: true,
+        });
      
+      jQuery(".slick-slider").slick({
+        slidesToShow:5,
+        slidesToScroll: 1,
+        arrows: true,
+        
+        autoplay: true,
+        speed: 400,
+        infinite: true,
+        responsive: [
+                            
+                            {
+                              breakpoint: 1226,
+                              settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1
+                              }
+                            },
+                            {
+                              breakpoint: 971,
+                              settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                              }
+                            }
+                            ,{
+                              breakpoint: 540,
+                              settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                              }
+                            }
+
+                          ]
+                            
+      });
+
+  // templating
+var colors = [ 'red', 'green', 'blue', 'orange' ];
+var sizes = [ 'small', 'medium', 'large' ];
+var prices = [ 10, 20, 30 ];
+
+createItems();
+
+var $output = $('#output');
+
+// filter with selects and checkboxes
+var $checkboxes = $('#form-ui input');
+
+$checkboxes.change( function() {
+  // map input values to an array
+  var inclusives = [];
+  // inclusive filters from checkboxes
+  $checkboxes.each( function( i, elem ) {
+    // use value if checked
+    if ( elem.checked ) {
+      inclusives.push( elem.value );
+    }
+  });
+  // combine inclusive filters
+  var filterValue = inclusives.join(',');
+  // set filter in hash
+  location.hash = 'filter=' + encodeURIComponent( filterValue );
+});
+
+var $container = $('#container');
+
+function onHashchange() {
+  var hashFilter = getHashFilter();
+  // show filter for demo
+  $output.text( hashFilter || '*' );
+  // filter isotope
+  $container.isotope({
+    itemSelector: '.item',
+    filter: hashFilter,
+  });
+}
+
+$(window).on( 'hashchange', onHashchange );
+
+// init Isotope with hash filter
+onHashchange();
+
+// set initial checkboxes from hash
+var hashFilter = getHashFilter();
+if ( hashFilter ) {
+  var filters = hashFilter.split(',');
+  filters.forEach( function( filter ) {
+    var $checkbox = $checkboxes.filter('[value="' + filter + '"]');
+    $checkbox.attr( 'checked', 'checked' );
+  });
+}
+
+function getHashFilter() {
+  var hash = location.hash;
+  // get filter=filterName
+  var matches = location.hash.match( /filter=([^&]+)/i );
+  if ( !matches ) {
+    return '';
+  }
+  return decodeURIComponent( matches[1] );
+}
+
+//------------
+
+
+function createItems() {
+
+  var $items;
+  // loop over colors, sizes, prices
+  // create one item for each
+  for (  var i=0; i < colors.length; i++ ) {
+    for ( var j=0; j < sizes.length; j++ ) {
+      for ( var k=0; k < prices.length; k++ ) {
+        var color = colors[i];
+        var size = sizes[j];
+        var price = prices[k];
+        var $item = $('<div />', {
+          'class': 'item ' + color + ' ' + size + ' price' + price
+        });
+        $item.append( '<p>' + size + '</p><p>$' + price + '</p>');
+        // add to items
+        $items = $items ? $items.add( $item ) : $item;
+      }
+    } 
+  }
+
+  $items.appendTo( $('#container') );
+
+}
+
+
 
    $(function () {
   $('[data-toggle="popover"]').popover()
