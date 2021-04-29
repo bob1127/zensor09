@@ -1,8 +1,7 @@
 import 'bootstrap';
 import '../css/AllProducts.scss';
 import '../css/style.scss';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> 
+
 import $ from 'jquery';
 import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
@@ -73,7 +72,7 @@ wow.init();
      });
 
   });
-AOS.init();
+
 
 
 $('.mobile_product').click(function(){
@@ -85,19 +84,21 @@ $('.mobile_product').click(function(){
 $('#product_toggle').click(function(){
   $('.inside_product_nav ').slideToggle(500)
 })
-      //topnav close
+     
+
+
+
+
+//topnav close
       $('.topFix_nav_close').click(function(){
         $('.top_fix_nav').slideUp();
       })
     
       
 
-   
-//      const quotes = document.querySelectorAll(".quote");
 
 
-// ScrollTrigger.addEventListener("refresh", setupSplits);
-// setupSplits();
+
         
 
       var mediaQuery = window.matchMedia('(max-width:1100px)')
@@ -144,7 +145,7 @@ $('#product_toggle').click(function(){
       });
 
 
-
+// mobile menu toggle for gsap
       const open = document.querySelector('.container');
       const close = document.querySelector('.close_nav');
       var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
@@ -220,51 +221,7 @@ if($(window).width() > 600)
     var $easyzoom = $('.easyzoom11').easyZoom();
 }
      
-        $('.items').slick({
-        slidesToShow: 3,
-        dots:true,
-        infinite: true,
-        slideToScroll: true,
-        centerMode: true,
-        });
      
-      jQuery(".slick-slider").slick({
-        slidesToShow:5,
-        slidesToScroll: 1,
-        arrows: true,
-        
-        autoplay: true,
-        speed: 400,
-        infinite: true,
-        responsive: [
-                            
-                            {
-                              breakpoint: 1226,
-                              settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 1
-                              }
-                            },
-                            {
-                              breakpoint: 971,
-                              settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1
-                              }
-                            }
-                            ,{
-                              breakpoint: 540,
-                              settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                              }
-                            }
-
-                          ]
-                            
-      });
-
-
 
    $(function () {
   $('[data-toggle="popover"]').popover()
