@@ -79,6 +79,19 @@ $card_btn: #00a7e1;
     color: white;
 }
 
+.quote {
+    margin-top: 0px;
+    font-family: "Barlow Condensed", sans-serif;
+
+
+    color: #4f5664;
+
+  
+    overflow: hidden;
+    position: relative;
+
+   
+  }
 section.section_content {
     margin-top: 10vh;
     padding: 0 20vmin;
@@ -136,7 +149,7 @@ section.section_content {
                 }
 
                 .left_section {
-                    height: 20vh;
+                    
                     width: 100%;
 
                     display: flex;
@@ -145,9 +158,14 @@ section.section_content {
                     flex-direction: column;
 
                     h1 {
+                        font-size: 34px;
+
 
                         font-weight: 900;
                         font-family: 'Roboto', sans-serif;
+                    }
+                    p{
+                        font-size: 20px
                     }
 
                     .btn {

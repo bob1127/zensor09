@@ -1,91 +1,16 @@
-//rwd 變數設定
-$pc_media: 1800px;
+@import "variables.scss";
+@import "reset.scss";
+@import "slick.scss";
+.img02 {
+    
 
-$pad_media: 769px;
-$mobile_media: 540px;
 
-$pad_pro_media: 1100px;
-$gray: #dddddd;
-$white: #fff;
-$black: #161616;
-$card_btn: #00a7e1;
-
-// rwd mixin
-@mixin pc_width() {
-    @media screen and (max-width: $pc_media) {
-        @content;
+    @include pad_pro_width {
+        width: 100%;
+        height: 100%;
     }
 }
 
-@mixin pc_width_second() {
-    @media screen and (max-width: $pc_second_media) {
-        @content;
-    }
-}
-
-@mixin pad_width() {
-    @media screen and (max-width: $pad_media) {
-        @content;
-    }
-}
-
-@mixin mobile_width() {
-    @media screen and (max-width: $mobile_media) {
-        @content;
-    }
-}
-
-@mixin pad_pro_width() {
-    @media screen and (max-width: $pad_pro_media) {
-        @content;
-    }
-}
-
-@mixin magnetic($timeing) {
-    transition: all $timeing cubic-bezier(0.615, 0, 0.07, 1);
-}
-
-//繼承
-
-%display_center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-%bgc {
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-}
-
-%display_center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-%bgImg {
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-}
-
-%fakeImg {
-    background-color: #5290bb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-    .img02 {
-                                           
-
-        @include mobile_width {
-                                                width: 100%;
-                                                height: 100%;
-                                            }
-                                        }
 .bgc-blue {
     background-color: #dbdfe7 !important;
 
@@ -542,6 +467,9 @@ section.section_others {
     .container-fluid {
         .row {
             .col-md-12 {
+                .slick-initialized .slick-slide{
+                    overflow: hidden;
+                }
                 h2 {
                     font-weight: 200;
                 }
@@ -628,12 +556,12 @@ section.section_others {
 
                     .product_item {
                         padding: 0.4rem 0.1rem;
+                        padding-bottom: 1rem;
                         width: 100%;
                         background-color: rgba(0, 0, 0, .05);
                         border: 0.1px solid rgb(233, 233, 233);
 
                         transition: 0.5s;
-                        margin: 5px;
                         overflow: hidden;
 
                         @include mobile_width {
@@ -641,6 +569,7 @@ section.section_others {
                             justify-content: center;
                             align-items: center;
                             flex-direction: column;
+                            padding-bottom: 3.5rem
                         }
 
 
@@ -659,6 +588,7 @@ section.section_others {
                             img {
                                 width: 80%;
                                 margin: 2.5rem 0;
+                                margin-bottom: 0;
 
                                 transition: 0.5s;
 
@@ -707,8 +637,8 @@ section.section_others {
                                 position: relative;
                                 border-radius: 20px;
                                 box-shadow: 0px 0px 5px rgba(45, 133, 184, 0.3);
-
-                                bottom: 50px;
+                                padding: 0.3rem 3rem;
+                                margin-top: 15px;
 
                                 .icon-add {
                                     width: 10%;
@@ -862,7 +792,7 @@ section.section_toggle {
                         .card-body {
                             padding: 0 3rem;
 
-                            .inside_list{
+                            .inside_list {
                                 width: 30%;
                             }
 
@@ -1283,13 +1213,14 @@ section.section_toggle {
                                     align-items: center;
                                     flex-direction: column;
                                     background-color: rgb(255, 255, 255);
-                                    .SF_list{
+
+                                    .SF_list {
                                         display: flex;
                                         justify-content: center;
                                         align-items: flex-start;
                                         flex-direction: column;
-                                        
-                                        p{
+
+                                        p {
                                             font-size: 16px;
                                             font-weight: 600;
                                             padding: 0 !important;
@@ -1412,7 +1343,7 @@ section.section_toggle {
 
                                         }
 
-                                        
+
                                     }
                                 }
 

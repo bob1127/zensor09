@@ -1,30 +1,39 @@
 import 'bootstrap';
-import '../css/ECWP100C.scss';
+import '../css/AllProducts.scss';
 import '../css/style.scss';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> 
+import $ from 'jquery';
+import 'slick-carousel';
 
 import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
 import { WOW } from 'wowjs'
-import fontawesome from '@fortawesome/fontawesome'
-import  fas  from '@fortawesome/fontawesome-free-solid';
-import fab  from '@fortawesome/fontawesome-free-brands';
-import far from '@fortawesome/fontawesome-free-regular';
+
 import gsap from "gsap";
-fontawesome.library.add(fas,fab,far)
+import LazyLoad from "vanilla-lazyload";
+$('#product_toggle').click(function(){
+  $('.inside_product_nav ').slideToggle(500)
+})
+
+const lazyLoadOptions = {
+  elements_selector: ".lazy",
+	to_webp: true,
+};
+const pageLazyLoad = new LazyLoad(lazyLoadOptions);
+const logEvent = (eventName, element) => {
+	console.log(
+		Date.now(),
+		eventName,
+		element.getAttribute("data-src"),
+		element.getAttribute("src")
+	);
+};
+
 
 var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
 
 wow.init();
 
- $(function() {
-     $("img.lazy").lazyload({
-         effect : "fadeIn"
-     });
 
-  });
-AOS.init();
 
       //topnav close
       $('.topFix_nav_close').click(function(){
@@ -154,13 +163,7 @@ AOS.init();
 
     // activation zoom plugin
   
-if($(window).width() > 600)
-{
-     var $easyzoom = $('.easyzoom').easyZoom();
-} else {
-    var $easyzoom = $('.easyzoom11').easyZoom();
-}
-     
+
         $('.items').slick({
         slidesToShow: 3,
         dots:true,
@@ -169,7 +172,7 @@ if($(window).width() > 600)
         centerMode: true,
         });
      
-      jQuery(".slick-slider").slick({
+      $(".slick-slider").slick({
         slidesToShow:5,
         slidesToScroll: 1,
         arrows: true,

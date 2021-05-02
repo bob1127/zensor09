@@ -97,10 +97,44 @@ $pad_pro_media: 1100px;
 //   }
 // }
 .icon-mobile {
-  width: 70%;
+  width: 45%;
 
 }
+#mobile_buttons {
+  left: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 99999999;
+  display: none;
 
+  @include mobile_width {
+    display: block;
+  }
+
+  .mobile_icon_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon {
+      width: calc(100% / 4);
+      background-color: rgb(32, 142, 206);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:1rem .5rem;
+      border-left: 0.5px solid rgb(255, 255, 255);
+      border-right: 0.5px solid rgb(255, 255, 255);
+
+      svg {
+        font-size: 1.9rem;
+        color: white;
+      }
+    }
+  }
+}
 .icon-fit-footer {
   width: 1.6rem;
   margin-right: .5rem;

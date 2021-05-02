@@ -1,47 +1,7 @@
-//rwd 變數設定
-$pad_media: 769px;
-$mobile_media: 540px;
-$pad_pro_media: 2000px;
+@import "variables.scss";
+@import "reset.scss";
 
-// rwd mixin
-@mixin pad_width() {
-  @media screen and (max-width: $pad_media) {
-    @content;
-  }
-}
 
-@mixin mobile_width() {
-  @media screen and (max-width: $mobile_media) {
-    @content;
-  }
-}
-
-@mixin pad_pro_width() {
-  @media screen and (max-width: $pad_pro_media) {
-    @content;
-  }
-}
-
-$main_blue: #3784a8;
-$title_blue: rgb(38, 74, 121);
-$dark_blue: #2b4b63;
-$deep_white: rgb(211, 211, 211);
-$sidebar_blue: #3f5469;
-$fullpage_color: rgba(255, 255, 255, 0.3);
-$navbar_txt: rgb(255, 255, 255);
-
-//rwd 變數設定
-$pad_media: 769px;
-$mobile_media: 540px;
-$pad_pro_media: 1100px;
-$gray: #dddddd;
-$white: #fff;
-$black: #161616;
-
-* {
-  list-style: none;
-  outline: none;
-}
 
 a {
   &:hover {
@@ -344,41 +304,7 @@ a {
   }
 }
 
-#mobile_buttons {
-  left: 0;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  z-index: 99999999;
-  display: none;
 
-  @include mobile_width {
-    display: block;
-  }
-
-  .mobile_icon_wrap {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .icon {
-      width: calc(100% / 4);
-      background-color: rgb(32, 142, 206);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-      border-left: 0.5px solid rgb(255, 255, 255);
-      border-right: 0.5px solid rgb(255, 255, 255);
-
-      svg {
-        font-size: 1.9rem;
-        color: white;
-      }
-    }
-  }
-}
 
 .top_fix_nav {
   background: #4ba6db;
@@ -762,9 +688,23 @@ nav {
             opacity: 0;
 
             border: 1px solid rgba(150, 150, 150, 0.3);
+            
 
             @include pad_pro_width {
               width: 35vw;
+            }
+            @include pad_width{
+              height: 100vmin;
+              right: 40%;
+              width: 50vw
+            }
+            @media sreen and (max-width: 560px ){
+              .inside_ul {
+                height: 110vmin;
+              right: 40%;
+              width: 50vw
+
+              }
             }
 
             .inside_li {
@@ -845,6 +785,11 @@ nav {
                     @include pad_pro_width {
                       width: 35vw;
                     }
+                    @include pad_width {
+                      width: 50vw;
+                      height: 100vmin;
+                      right: -90%;
+                    }
 
                     .wrap {
                       width: 100%;
@@ -854,6 +799,9 @@ nav {
                       justify-content: center;
                       align-items: center;
                       flex-direction: column;
+                      @include pad_width {
+                      padding: 1rem 0;
+                    }
 
                       .item {
                         display: flex;
@@ -861,6 +809,7 @@ nav {
                         align-items: center;
                         flex-direction: column;
                         margin: 1.2rem 0;
+              
 
                         .scroll_sign {
                           color: white;
@@ -886,7 +835,7 @@ nav {
                             color: #333 !important;
 
                             .icon-check {
-                              width:1.2rem;
+                              width: 1.2rem;
                               margin-left: 1rem;
                               margin: 0 0.3rem;
                               color: rgb(111, 224, 83);
@@ -1211,6 +1160,49 @@ section.section_navgation {
             width: 30%;
             color: #333;
           }
+        }
+      }
+    }
+  }
+}
+
+#category {
+  width: 35vw;
+  height: 80vh;
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 99999;
+  right: 0;
+  top: 15vh;
+  background-color: rgb(245, 245, 245);
+  display: none;
+
+  .title {
+    color: $deep_white;
+    background-color: $sidebar_blue;
+    @extend %display_center;
+    padding: 1.2rem;
+  }
+
+  .content {
+    padding: 2rem;
+
+    .sidebar_zensor {
+      .sidebar_pro_ouside_wrap {
+        margin-left: 1rem;
+
+        .sidebar_pro_ouside {
+          color: rgb(109, 109, 109);
+          margin: 1rem 0;
+        }
+      }
+
+      .sidebar_pro_inside_wrap {
+        margin-left: 1rem;
+
+        .sidebar_pro_inside {
+          color: rgb(109, 109, 109);
+          margin: 0.5rem 0;
         }
       }
     }
