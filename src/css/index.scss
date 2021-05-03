@@ -630,6 +630,10 @@ section.section_news {
   .container-fluid {
     .row {
       .col-md-12 {
+        .slick-initialized .slick-slide{
+          overflow: hidden;
+          padding: 0 6px;
+      }
         @include mobile_width {
           padding: 0 25px;
         }
@@ -686,6 +690,7 @@ section.section_news {
         .slick-slider {
           width: 100%;
           overflow: hidden;
+     
 
           &:hover .slick-prev {
             opacity: 1;
@@ -704,7 +709,7 @@ section.section_news {
 
           overflow: hidden;
           border: 1px solid rgba(41, 41, 41, 0.1);
-          margin: 0 6px;
+         
 
           .wrap {
             display: flex;
