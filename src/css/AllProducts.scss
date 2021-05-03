@@ -725,8 +725,14 @@ section.section_others {
 
 section.section_toggle {
     iframe {
-        width: 100%;
+        width: 1000px;
         height: 50vh;
+        @include pad_pro_width{
+            width: 800px;
+        }
+        @include pad_width{
+            width: 500px;
+        }
     }
 
 
@@ -794,6 +800,28 @@ section.section_toggle {
 
                         .card-body {
                             padding: 0 3rem;
+                            .function_wrap{
+                               
+                                 
+                                >ul{
+                                    >.function_li{
+                                        display: flex;
+                                        flex-direction: row ;
+                                        justify-content: flex-start;
+                                        align-items: flex-start;
+                                        padding: 0 ;
+                                        margin: 0;
+                                        p{
+                                            text-align: left !important; 
+                                        }
+                                     
+                                        img{
+                                            width: 35px;
+                                            margin-right: 6px;
+                                        }
+                                    }
+                                }
+                            }
 
                             .inside_list {
                                 width: 30%;
@@ -1216,6 +1244,7 @@ section.section_toggle {
                                     align-items: center;
                                     flex-direction: column;
                                     background-color: rgb(255, 255, 255);
+
 
                                     .SF_list {
                                         display: flex;
