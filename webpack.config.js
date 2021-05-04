@@ -25,6 +25,7 @@ module.exports = {
          ProductCatagory:'./src/js/ProductCatagory.js',
           ECWP100S:'./src/js/ECWP100S.js',
           PrintedElectrodes_custom:'./src/js/PrintedElectrodes_custom.js',
+           Privacy:'./src/js/Privacy.js',
         
         
          
@@ -73,6 +74,11 @@ module.exports = {
             filename: 'PrintedElectrodes_custom.html',
             template: './src/PrintedElectrodes_custom.html',
             chunks: ['manifest','vendor','PrintedElectrodes_custom']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Privacy.html',
+            template: './src/Privacy.html',
+            chunks: ['manifest','vendor','Privacy']
         }),
         new HtmlWebpackPlugin({
             filename: 'ECWP100C.html',

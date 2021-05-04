@@ -1,0 +1,17 @@
+@import "variables.scss";
+@import "reset.scss";
+
+section.section_content{
+    .container{
+        .row{
+            .col-md-12{
+                span{
+                    font-weight: 700;
+                    font-size: 18px;
+
+                }
+              
+            }
+        }
+    }
+}
