@@ -6,12 +6,13 @@
 	 style="enable-background:new 0 0 439.4 331.5;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F7F7F7;}
-	.st1{fill:none;stroke:#000000;stroke-width:30.655;}
+	.st1{fill:none;stroke:#3A3A3A;stroke-width:30.655;}
+	.st2{fill:none;stroke:#000000;stroke-width:30.655;}
 </style>
 <rect x="0.9" y="5.9" class="st0" width="439.4" height="328.8"/>
 <g id="g2449" transform="translate(-145.3305,-145.3305)">
-	<path id="path2451" class="st1" d="M569.4,461.5V160.7H160.7v300.8H569.4z"/>
-	<path id="path2453" class="st1" d="M0,0"/>
+	<path id="path2451" class="st1" d="M569.4,461.5v-297H160.7v297H569.4z"/>
+	<path id="path2453" class="st2" d="M0,0"/>
 	<path id="path2455" class="st1" d="M164.5,164.5l176.3,178.7c13.1,13.2,36.9,13,49.6,0.1l176.2-177.4"/>
 	<path id="path2457" class="st1" d="M170.5,451.6l135.1-138.1"/>
 	<path id="path2459" class="st1" d="M558,450L426.5,315.4"/>

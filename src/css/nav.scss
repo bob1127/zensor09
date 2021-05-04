@@ -12,6 +12,9 @@ a {
 .icon-fit {
   width: 1.15em;
 }
+.icon-fit-mail {
+  width: 1.35em;
+}
 
 .product_list_icon_desk {
   display: block !important;
@@ -405,7 +408,7 @@ nav {
       justify-content: space-between;
       align-items: center;
 
-      @include mobile_width {
+      @include pad_width {
         width: 100%;
       }
 
@@ -416,7 +419,7 @@ nav {
         align-items: center;
         display: none;
 
-        @include mobile_width {
+        @include pad_width {
           display: flex;
         }
 
@@ -444,8 +447,12 @@ nav {
         height: 3rem;
         display: none;
 
-        @include mobile_width {
+        @include pad_width {
           display: flex;
+          width: 100%;
+        }
+        @include mobile_width{
+          width: calc(100% / 3);
         }
 
         .bars {
@@ -458,6 +465,7 @@ nav {
           top: 12px;
 
           transform: translateX(-50%);
+          
 
           &::before {
             content: "";
@@ -476,6 +484,12 @@ nav {
             background: #000;
             margin-top: 14.5px;
           }
+          @include pad_width{
+            left: 90%;
+          }
+          @include mobile_width{
+            left: 50%;
+          }
         }
       }
     }
@@ -483,7 +497,7 @@ nav {
     .right_wrap {
       width: 50%;
 
-      @include mobile_width {
+      @include pad_width {
         display: none;
       }
 
@@ -668,7 +682,7 @@ nav {
 
     background-color: rgba(0, 0, 0, 0.2);
 
-    @include mobile_width {
+    @include pad_width {
       display: none;
     }
 
@@ -704,12 +718,12 @@ nav {
 
           .inside_ul {
             visibility: hidden;
-            width: 25vw;
+            width: 22vw;
             height: 90vmin;
             position: absolute;
             background-color: white;
 
-            right: 30%;
+            right: 60%;
             transition: 0.3s;
             top: 3rem;
             opacity: 0;
@@ -796,18 +810,32 @@ nav {
                     display: block;
                     top: -1px;
                   }
+                  .series_wrap{
+                    display: flex;
+                    
+                  }
+                  .product_wrap.product_wrap_02{
+                    right: -200%;
+                    
+                  }
+
 
                   .product_wrap {
                     position: absolute;
                     background-color: white;
                     width: 25vw;
-                    height: 80vmin;
+                    height: 90vmin;
                     right: -100%;
                     top: 0;
                     display: none;
                     border: 1px solid rgba(150, 150, 150, 0.3);
                     padding: 1.5rem;
                     overflow-y: scroll;
+                    a{
+                      display: flex;
+                      justify-content: center;
+                      align-items:center
+                    }
 
                     @include pad_pro_width {
                       width: 35vw;
@@ -1068,6 +1096,12 @@ nav {
         a {
           font-size: 20px;
           color:white;
+          @include pad_width{
+            font-size: 25px
+          }
+          @include mobile_width{
+            font-size: 20px
+          }
 
           hr {
             width: 100%;
@@ -1092,12 +1126,18 @@ nav {
 
       a {
         color: #ffffff;
-        font-size: 1.5rem;
+        font-size: 20px;
         text-decoration: none;
         font-weight: 200;
         position: relative;
         opacity: 0;
         pointer-events: none;
+        @include pad_width{
+          font-size: 25px
+        }
+        @include mobile_width{
+          font-size: 20px
+        }
 
 
 
