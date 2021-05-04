@@ -1,0 +1,53 @@
+@import "variables.scss";
+@import "reset.scss";
+
+section.section_content{
+    
+    .container{
+        .row{
+            .col-md-12{
+                button{
+                    transition: .5s;
+                    &:hover{
+                        background-color: #2e90d1;
+                        color: white;
+                    }
+                }
+                
+                h1{
+                    color: #2e90d1;
+                }
+                h2{
+                    font-size: 25px;
+                }
+                .img_wrap{
+                    width: 50vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    @include mobile_width{
+                        width: 100%;
+                    }
+                    .img02{
+                        width: 80%;
+                    }
+                    img{
+                        width: 100%;
+                        @include mobile_width{
+                            width: 100%;
+                        }
+                    }
+                }
+                ul{
+                    li{
+                        span{
+                            margin-right: 10px;
+                            color: rgb(34, 216, 49);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

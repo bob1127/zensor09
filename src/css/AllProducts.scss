@@ -211,34 +211,7 @@ video {
     }
 }
 
-section.seciton_navgation {
-    .container-fluid {
-        .row {
-            .col-md-12 {
-                .navgation_wrap {
-                    padding-left: 5rem;
 
-                    @include mobile_width {
-                        padding-left: 1rem;
-                    }
-
-                    a {
-                        transition: 0.1s;
-                        color: #333;
-                        margin: 0 0.2rem;
-                        font-size: 14px;
-
-                        span {
-                            margin: 0 0.2rem;
-                        }
-                    }
-
-
-                }
-            }
-        }
-    }
-}
 
 .top_wrap {
     display: flex;

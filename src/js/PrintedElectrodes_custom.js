@@ -1,5 +1,5 @@
 import 'bootstrap';
-import '../css/AllProducts.scss';
+import '../css/PrintedElectrodes_custom.scss';
 import '../css/style.scss';
 import $ from 'jquery';
 import 'slick-carousel';
