@@ -94,15 +94,18 @@ $card_btn: #00a7e1;
 
 }
 
-.slick-next {
-    display: none !important;
-}
-
+.carousel-indicators > li {
+    border-radius: 50% !important;;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: rgb(240, 166, 56) !important;
+  }
 section.seciton_navgation {
     overflow: hidden;
 
     .container-fluid {
         .row {
+            border-bottom: 1px solid rgba(0,0,0,.2);
             .col-md-12 {
                 .navgation_wrap {
                     padding-left: 5rem;
@@ -187,7 +190,328 @@ header {
         }
     }
 }
+.slick-next:before {
+    margin-top: -2px;
+    content: ">" !important;
+    color: white;
+    font-weight: 700;
+    z-index: 999999;
+}
 
+.slick-prev:before {
+    margin-top: -2px;
+    content: "<" !important;
+    color: white;
+    font-weight: 700;
+    z-index: 999999;
+
+}
+section.section_others {
+    padding: 25vmin 0;
+
+    .container-fluid {
+        padding: 0 15vmin;
+        @include mobile_width{
+            padding: 0 3vmin;
+        }
+        .row {
+            .col-md-12 {
+                
+                .slick-initialized .slick-slide{
+                    overflow: hidden;
+                }
+                h2 {
+                    font-weight: 400;
+                }
+
+                display: flex;
+               
+
+                @include mobile_width {
+                    padding: 0 25px;
+                }
+
+                .txt {
+                    @extend %display_center;
+                }
+
+                .slick-prev {
+                    content: "→";
+                    display: block;
+                    height: 15px;
+                    margin-left: 30vmin;
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgb(20, 155, 196);
+                    z-index: 9999999;
+                    border-radius: 100%;
+                    opacity: 0;
+                    margin-top: -5vmin;
+
+                    @include mobile_width {
+                        margin-top: -30vmin;
+                    }
+                }
+
+                .slick-next {
+                    content: "";
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 30vmin;
+                    background-color: rgb(20, 155, 196);
+                    border-radius: 100%;
+                    opacity: 0;
+                    margin-top: -5vmin;
+
+                    @include mobile_width {
+                        margin-top: -30vmin;
+                    }
+
+                    .slick-next::before {
+                        content: "";
+                        display: block;
+                        height: 40px;
+                        width: 40px;
+                        background-color: red;
+                        position: absolute;
+                        left: 20vmin;
+                        z-index: 99999999;
+                    }
+                }
+
+                .slick-slider,.slick-slider-01,.slick-slider-02 {
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+
+
+
+                    .slick-dots {
+                    position: absolute;
+                    right: 0;
+                    top:15px;
+
+                    display: flex;
+                    justify-content: center;
+                    
+                    margin: 0;
+                    width: auto;
+                    
+                    
+                    list-style-type: none;
+                    
+                        li {
+                            margin: 0 0.15rem;
+                        }
+                    
+                        button {
+                            display: block;
+                            width: .6rem;
+                            height: .6rem;
+                            padding: 0;
+                            
+                            border: solid 1px #2e90d1;
+                            border-radius: 100%;
+                            background-color: transparent;
+                            
+                            text-indent: -9999px;
+                        }
+                    
+                        li.slick-active button {
+                            background-color: #2e90d1;
+                        }
+                    
+                    }
+
+                    &:hover .slick-prev {
+                        opacity: 1;
+                    }
+
+                    &:hover .slick-next {
+                        opacity: 1;
+                    }
+                }
+
+                .slick-slider .element {
+                    width: 100%;
+
+
+                    display: inline-block;
+
+                    overflow: hidden;
+
+        
+                    
+
+
+                    .product_item {
+                        padding: 0.4rem 0.1rem;
+                        padding-bottom: 1rem;
+                        width: 100%;
+                       
+                      
+
+                        transition: 0.5s;
+                        overflow: hidden;
+
+                        @include mobile_width {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            padding-bottom: 3.5rem
+                        }
+
+
+
+                        .img_wrap {
+                            
+                            overflow: hidden;
+                            position: relative;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: rgba(168, 185, 206, 0.1);
+
+                            padding: 0 2rem;
+
+
+                            img {
+
+                                width: 90%;
+                                margin: 1.5rem 0;
+                                margin-bottom: 0;
+
+                                transition: 0.5s;
+
+                                @include pad_pro_width {
+                                    width: 80%;
+                                }
+
+                                @include pad_width {
+                                    width: 90%;
+                                }
+
+                                @include mobile_width {
+                                    width: 60%;
+                                }
+                            }
+
+                            .mark {
+                                background-color: #d61009;
+                                color: white;
+                                padding: 0.1rem 5rem;
+                                letter-spacing: 0.3rem;
+                                position: absolute;
+                                transform: rotate(-45deg);
+                                left: -70px;
+                                top: 10px;
+                            }
+
+                            .mark_hot {
+                                background-color: #f7c13b;
+                            }
+                        }
+
+                        .wrap {
+                            height: 3rem;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+
+                            .btn {
+                                color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $card_btn;
+                                position: relative;
+                                border-radius: 20px;
+                                box-shadow: 0px 0px 5px rgba(45, 133, 184, 0.3);
+                                padding: 0.3rem 3rem;
+                                margin-top: 15px;
+
+                                .icon-add {
+                                    width: 10%;
+                                    left: 6%;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    position: absolute;
+                                }
+
+                                &::before {}
+                            }
+                        }
+
+                        .txt {
+                            margin-top: 1vmin;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            overflow: hidden;
+
+                            .top_txt {
+                                height: 4rem;
+
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-start;
+                                flex-direction: column;
+
+                                padding: 0 0.1rem;
+
+                                p {
+                                    color: #00a7e1;
+                                    margin: 0;
+                                    
+                                }
+
+                                .model {
+                                    margin: 0;
+                                    font-size: 16px;
+                                    color: #00a7e1;
+                                    margin-top: 0.5rem;
+                                }
+                            }
+
+                            .bottom_txt {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                flex-direction: column;
+
+                                height: 6rem;
+                             
+
+                                span {
+                                    font-weight: 700;
+                                }
+
+                                p {
+                                    color: rgb(22, 22, 22);
+                                    font-size: 18px;
+                                    margin: 0;
+
+                                    @include pc_width {
+                                        font-size: 13px;
+                                    }
+
+                                    @include pad_pro_width {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 section.section_product01 {
 
     opacity: 1;
