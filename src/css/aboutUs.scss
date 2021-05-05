@@ -663,6 +663,10 @@ section.section_about_content {
 
         .row {
             .col-md-12 {
+                @include mobile_width{
+                    padding: 0;
+                    margin: 0;
+                }
                 .content_wrap {
 
                     background-color: #fff;
@@ -683,7 +687,7 @@ section.section_about_content {
                             margin: 3rem 0;
 
                             @include mobile_width {
-                                width: 70%;
+                                width: 80%;
                             }
 
                         }

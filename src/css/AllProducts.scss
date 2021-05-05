@@ -856,6 +856,10 @@ section.section_toggle {
 
                                     .col-md-6 {
                                         position: relative;
+                                        @include mobile_width{
+                                            padding: 0;
+                                            margin: 0;
+                                        }
 
                                         .right_card,
                                         .left_card {
