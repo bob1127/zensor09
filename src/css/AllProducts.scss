@@ -1451,7 +1451,8 @@ section.section_toggle {
                             }
 
                             .dcf-table-bordered thead th {
-                                padding-top: 1.33em
+                                padding-top: 1.33em;
+                                text-align: center;
                             }
 
                             .dcf-wrapper-table-scroll {
@@ -1700,6 +1701,7 @@ section.section_toggle {
                                 .dcf-table-responsive.dcf-table-bordered,
                                 .dcf-table-responsive.dcf-table-bordered thead th {
                                     border-width: 0
+
                                 }
 
                                 .dcf-table-responsive.dcf-table-bordered tbody td {

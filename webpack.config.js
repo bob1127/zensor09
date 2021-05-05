@@ -55,9 +55,10 @@ module.exports = {
        
             chunks: ['manifest','vendor','index']
         }),
+        
         new HtmlWebpackPlugin({
-            filename: 'Potentiostats.html',
-            template: './src/Potentiostats.html',
+            filename: 'AllProducts.html',
+            template: './src/AllProducts.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({

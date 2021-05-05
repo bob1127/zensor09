@@ -357,8 +357,8 @@ section.section_others {
 
                         @include mobile_width {
                             display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            justify-content: flex-start;
+                            align-items: flex-start;
                             flex-direction: column;
                             padding-bottom: 3.5rem
                         }
@@ -472,7 +472,7 @@ section.section_others {
 
                                 .model {
                                     margin: 0;
-                                    font-size: 16px;
+                                    font-size: 18px;
                                     color: #00a7e1;
                                     margin-top: 0.5rem;
                                 }
@@ -489,20 +489,15 @@ section.section_others {
 
                                 span {
                                     font-weight: 700;
+                                    margin-right: 7px;
                                 }
 
                                 p {
                                     color: rgb(22, 22, 22);
-                                    font-size: 18px;
+                                    font-size: 16px;
                                     margin: 0;
 
-                                    @include pc_width {
-                                        font-size: 13px;
-                                    }
-
-                                    @include pad_pro_width {
-                                        font-size: 14px;
-                                    }
+                                
                                 }
                             }
                         }
