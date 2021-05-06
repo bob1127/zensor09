@@ -5,7 +5,7 @@ section.section_content{
     
     .container{
         .row{
-            .col-md-12{
+            .col-md-6{
                 button{
                     transition: .5s;
                     &:hover{
@@ -14,14 +14,19 @@ section.section_content{
                     }
                 }
                 
-                h1{
-                    color: #2e90d1;
-                }
+                
                 h2{
-                    font-size: 25px;
+                    font-size: 23px;
+                    font-weight: 300;
+                    color:#333;
+                }
+                ul{
+                    li{
+                        font-size: 20px;
+                    }
                 }
                 .img_wrap{
-                    width: 50vw;
+                    width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -41,11 +46,27 @@ section.section_content{
                 }
                 ul{
                     li{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                      
+                      
                         span{
                             margin-right: 10px;
-                            color: rgb(34, 216, 49);
+                            color: rgb(39, 202, 93);
                         }
                     }
+                }
+            }
+            .col-md-12{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1{
+                    color: #2e90d1;
+                    font-size: 26px;
+                    font-weight: 600;
                 }
             }
         }

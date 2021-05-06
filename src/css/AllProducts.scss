@@ -796,6 +796,22 @@ section.section_toggle {
 
                         .card-body {
                             padding: 0 3rem;
+                            .btn{
+                                transition: .3s;
+                                padding: .5rem 1rem;
+                                background-color: #2e90d1;
+                                border-radius: 20px;
+                                &:hover{
+                                    box-shadow: 0px 5px 10px rgba(0,0,0,.3);
+                                    transform: translateY(-5px);
+                                    transform: scale(1.1)
+                                }
+                                
+                                a{
+                                    color: white;
+                                }
+;
+                            }
                             .note{
                                 font-size: 14px;
                                 font-weight: 600
@@ -833,39 +849,51 @@ section.section_toggle {
                                 justify-content: center;
                                 align-items: center;
                                 flex-direction: column;
-                            }
-
-                            .project_banner {
-                                width: 50%;
-
-                                @include mobile_width {
-                                    width: 100%;
+                                h1{
+                                    font-size: 26px;
+                                    font-weight: 900;
+                                    color: #212529;
+                                    text-align: center;
                                 }
+                                a{
+                                    width: 100%;
+                                     display: flex;
+                                justify-content: center;
+                                align-items: center;
 
+
+                                     .project_banner {
+                                            width: 50%;
+
+                                            @include mobile_width {
+                                                width: 100%;
+                                            }
+
+                                     }
+                                    
+                                }
                             }
+
+                            
 
 
 
 
                             .txt_wrap {
 
-                                h3,
+                                
                                 h4 {
-                                    font-weight: 200;
+                                    
                                     color: #2e90d1;
-                                    font-size: 26px;
-
-
-                                    @include mobile_width {
-                                        font-size: 2rem;
-                                    }
-
+                                    font-size: 20px;    
+                                    font-weight: 500;                 
                                 }
 
-                                h4 {
+                                p {
+                                    font-size: 18px;
+                                    color: #333;
 
-
-                                    display: flex;
+                                    
                                 }
                             }
 
