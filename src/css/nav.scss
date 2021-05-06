@@ -847,7 +847,7 @@ nav {
       
                     .wrap {
                       width: 100%;
-                      padding: 1rem 1rem;
+                      padding: 1rem .3rem;
 
                       display: flex;
                       justify-content: center;
@@ -880,6 +880,7 @@ nav {
 
                         >ul {
                           width: 100%;
+                          
 
                           li {
                             display: flex;
@@ -887,11 +888,14 @@ nav {
                             align-items: flex-start;
                             margin: 0.5rem 0;
                             color: #333 !important;
+                            p{
+                              text-align: left;
+                            }
 
                             .icon-check {
                               width: 1.2rem;
-                              margin-left: 1rem;
-                              margin: 0 0.3rem;
+                              margin-right: 5px;
+                            
                               color: rgb(111, 224, 83);
                               transform: rotate(0) im !important;
                               margin-top: 3px;

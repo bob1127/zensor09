@@ -86,7 +86,14 @@ video {
         }
     }
 }
+.modal{
+    h5,p{
+        color: #2e90d1;
+        font-weight: 500;
+        font-size: 23px;
 
+    }
+}
 .modal-body {
     ul {
         display: flex;
@@ -374,6 +381,9 @@ video {
             h1 {
                 font-size: 26px;
                 font-weight: 900;
+                span{
+                    font-weight: 500;
+                }
             }
 
             h2 {
@@ -740,6 +750,19 @@ section.section_toggle {
 
 
                             background-color: transparent !important;
+                            h3{
+                                font-size:26px;
+                                font-weight: 900;
+                                color: #212529;
+
+
+                            }
+                            p{
+                                font-size:23px;
+                                font-weight: 500;
+                                color: #2e90d1;
+
+                            }
 
                             #collapseThree {}
 
@@ -773,6 +796,10 @@ section.section_toggle {
 
                         .card-body {
                             padding: 0 3rem;
+                            .note{
+                                font-size: 14px;
+                                font-weight: 600
+                            }
                            
                             .function_wrap{
                                
@@ -1532,6 +1559,11 @@ section.section_toggle {
                                 justify-content: center;
                                 align-items: center;
                                 flex-direction: column;
+                                h5{
+                                    font-weight: 500;
+                                    font-size: 23px;
+                                    color: #2e90d1;
+                                }
 
                                 @include pad_width {
                                     display: block
