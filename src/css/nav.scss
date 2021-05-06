@@ -14,7 +14,10 @@ a {
 }
 .icon-fit-mail {
   width: 1.35em;
-  opacity: .6;
+  opacity: .8;
+}
+.icon-cart{
+    opacity: .8;
 }
 
 .product_list_icon_desk {
@@ -44,7 +47,14 @@ a {
     color: #333;
   }
 }
+.modal{
+  h5,p{
+        color: #2e90d1;
+        font-weight: 500;
+        font-size: 23px;
 
+    }
+}
 .modal-body {
 
 

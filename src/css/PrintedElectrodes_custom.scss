@@ -5,12 +5,20 @@ section.section_content{
     
     .container{
         .row{
-            .col-md-6{
+     
+            .col-md-6,.col-md-12{
                 button{
-                    transition: .5s;
+                    transition: .3s;
+                    padding: .5rem 1rem;
+                    background-color: #2e90d1;
+                    border-radius: 20px;
+                    color: white;
+
                     &:hover{
-                        background-color: #2e90d1;
-                        color: white;
+                        box-shadow: 0 6px 15px rgba(0,0,0,.2);
+                        transform: translateY(-7px);
+                        transform: scale(1.02)
+                       
                     }
                 }
                 
@@ -35,7 +43,10 @@ section.section_content{
                         width: 100%;
                     }
                     .img02{
-                        width: 80%;
+                        width: 60%;
+                        @include mobile_width{
+                            width: 100%;
+                        }
                     }
                     img{
                         width: 100%;

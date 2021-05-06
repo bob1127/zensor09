@@ -86,8 +86,8 @@ video {
         }
     }
 }
-.modal{
-    h5,p{
+.modal_popup{
+    h5{
         color: #2e90d1;
         font-weight: 500;
         font-size: 23px;
@@ -804,7 +804,7 @@ section.section_toggle {
                                 &:hover{
                                     box-shadow: 0px 5px 10px rgba(0,0,0,.3);
                                     transform: translateY(-5px);
-                                    transform: scale(1.1)
+                                    transform: scale(1.03)
                                 }
                                 
                                 a{
@@ -1019,7 +1019,7 @@ section.section_toggle {
                                                     margin-top: 3rem;
                                                 }
 
-                                                background-color: rgba(218, 218, 218, .4);
+                                             
 
 
 
@@ -1035,7 +1035,7 @@ section.section_toggle {
 
 
                                                     img {
-                                                        width: 45%;
+                                                        width: 50%;
                                                         height: 100%;
 
 
@@ -1064,6 +1064,8 @@ section.section_toggle {
                                                         justify-content: center;
                                                         align-items: center;
                                                         z-index: 9999999;
+                                                        overflow: hidden;
+                                                        border-radius: 0;
 
                                                         img {
                                                             width: 100%;
@@ -1132,6 +1134,7 @@ section.section_toggle {
                                     margin: 0 .5rem;
                                     color: black !important;
                                     font-size: 26px;
+                                    
 
                                     @include mobile_width {
                                         width: 95%;
