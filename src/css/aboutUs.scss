@@ -17,9 +17,9 @@
 }
 
 header {
+
     margin-top: -2.5vmin;
 
-    //carousel
     .oakslider {
         position: relative;
         top: 0;
@@ -377,6 +377,19 @@ section.section_about_content {
             @include mobile_width {
                 padding: 0 .4vmin;
             }
+            .col-md-12.title-row{
+                position: relative;
+                .title-img{
+                    background-position: center center;
+                    background-size: cover;
+                    width: 100%;
+                    height: 85vh;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+            }
 
             .col-xl-8 {
                 .blog-slider {
@@ -433,6 +446,7 @@ section.section_about_content {
 
                         @media screen and (max-width: 768px) {
                             flex-direction: column;
+                            
                         }
 
                         &.swiper-slide-active {

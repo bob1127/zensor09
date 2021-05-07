@@ -170,5 +170,8 @@ $('.mobile_nav_toggle').click(function(){
          });
     
       });
+      $('#policy-btn').click(function(){
+        $('.policy').slideToggle()
+      })
 
-  
+     
