@@ -21,9 +21,9 @@
         <div class="content_wrap">
           本網站將 cookie 和相關技術用於網站營運、分析和第三方廣告之目的。您可以選擇同意我們使用這些技術、拒絕非必要技術 ，或進一步管理您的偏好設定。
           <a href="Privacy.html">隱私權政策</a>
-          <button id='policy-btn'>
+          <div id='policy-btn'>
             接受
-          </button>
+          </div>
         </div>
       </div>
      <!-- Modal -->
@@ -162,6 +162,7 @@
                   <p>電化學溶池</p>
                 </div>
                 <div class="icon_wrap">
+                  
                     <a href="line://ti/p/＠447ldwhl">
                       <i class="fab fa-line"></i>
                     </a>
@@ -250,7 +251,7 @@
     </div>
      <div id="mobile_buttons">
       <div class="mobile_icon_wrap">
-        <a class="icon" href="line://ti/p/＠447ldwhl">
+        <a class="icon" href="https://lin.ee/KGKDBME">
           <img class='icon-mobile' src="../images/icon/icon-line-mobile.svg" alt="">
         </a>
         <a class="icon " href='https://www.facebook.com/Zensor.RD/'>
@@ -354,6 +355,7 @@
                </a>
              </li>
              <li class="line">
+              
                <a href="line://ti/p/＠447ldwhl" title="Line" target="_blank">
                 <img class='icon-fit' src="../images/icon/icon-line.svg" alt="">
                </a>
@@ -1540,7 +1542,7 @@
           </div>
         </div>
       </section>
-      <div class="line-it-button" data-lang="zh_Hant" data-type="like" data-url="https://bob1127.github.io/zensor09/dist/ECWP100C.html" data-lineid="@lineteamjp" style="display: none;"></div>
+     
       <footer>
         <div class="container-fluid">
           
@@ -1668,7 +1670,11 @@
 // }); 
         
     </script>
-    <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+    <script>
+       $('#policy-btn').click(function(){
+        $('.policy').fadeOut()
+      })
+    </script>
   
   </body>
 </html>
