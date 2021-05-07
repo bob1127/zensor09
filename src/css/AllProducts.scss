@@ -136,16 +136,20 @@ video {
 
 .slick-next:before {
     margin-top: -2px;
-    content: ">" !important;
-    color: white;
+    content: "→" !important;
+    color: #00a7e1;
+    font-size: 30px;
     font-weight: 700;
+    z-index: 999999;
 }
 
 .slick-prev:before {
     margin-top: -2px;
-    content: "<" !important;
-    color: white;
+    content: "←" !important;
+    color: #00a7e1;
+    font-size: 30px;
     font-weight: 700;
+    z-index: 999999;
 
 }
 
@@ -479,7 +483,7 @@ section.section_others {
                     margin-left: 30vmin;
                     width: 40px;
                     height: 40px;
-                    background-color: rgb(20, 155, 196);
+                    
                     z-index: 9999999;
                     border-radius: 100%;
                     opacity: 0;
@@ -496,7 +500,7 @@ section.section_others {
                     height: 40px;
                     width: 40px;
                     margin-right: 30vmin;
-                    background-color: rgb(20, 155, 196);
+                    
                     border-radius: 100%;
                     opacity: 0;
                     margin-top: -5vmin;

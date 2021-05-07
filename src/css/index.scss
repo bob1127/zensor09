@@ -2,7 +2,12 @@
 @import "reset.scss";
 @import "slick.scss";
 
-
+.carousel-indicators > li {
+  border-radius: 50%;
+  width: 11px !important;
+  background-color: rgb(236, 168, 42);
+  height: 11px !important;
+}
 
  .policy{
       width: 100%;
@@ -39,7 +44,7 @@
         .wrap{
            padding: 0;
          
-            width: 18.5%;
+            width: 20%;
             display: flex;
             justify-content: center;
             align-items: center;
