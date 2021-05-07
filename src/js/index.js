@@ -12,6 +12,9 @@ import $ from 'jquery';
 import 'slick-carousel';
 
 import LazyLoad from "vanilla-lazyload";
+$('#policy-btn').click(function(){
+  $('.policy').fadeOut();
+})  
 $('#product_toggle').click(function(){
   $('.inside_product_nav ').slideToggle(500)
 })
@@ -148,7 +151,7 @@ $('.mobile_nav_toggle').click(function(){
       });
 
 
-      $("img").lazyload();
+
 
       $('.mobile_product').click(function(){
         $('.inside_ul').animate({
@@ -161,15 +164,8 @@ $('.mobile_nav_toggle').click(function(){
       $('.topFix_nav_close').click(function(){
         $('.top_fix_nav').slideUp();
       })
-    
-
-      $("img").lazyload();
-      $(function() {
-         $("img.lazy").lazyload({
-             effect : "fadeIn"
-         });
-    
-      });
      
+
+  
 
      

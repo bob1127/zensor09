@@ -48,7 +48,7 @@ a {
   }
 }
 .modal{
-  h5,p{
+  h5{
         color: #2e90d1;
         font-weight: 500;
         font-size: 23px;
@@ -119,8 +119,10 @@ a {
         align-items: center;
         flex-direction: column;
 
-        svg {
-          font-size: 1.5rem;
+        a{
+          
+          img {
+          width: 1.5rem;
 
           margin-top: .25rem;
           color: #333;
@@ -132,6 +134,7 @@ a {
 
             cursor: pointer;
           }
+        }
         }
       }
     }
