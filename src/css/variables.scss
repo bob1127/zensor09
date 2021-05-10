@@ -88,3 +88,15 @@ $card_btn: #00a7e1;
     align-items: center;
     color: white;
 }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.center-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
