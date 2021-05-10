@@ -231,3 +231,22 @@ img {
 
     overflow: hidden;
 }
+section.section_articles{
+    background-color: rgba(243, 241, 237,.4);
+    .container-fluid{
+        .row{
+            .col-md-3,.col-md-6{
+              .card{
+                  width: 100%;
+                  border: 1px solid rgba(128, 128, 128, 0.3);
+                  .img{
+                      width: 100%;
+                      height: 30vmin;
+                      background-position: center center;
+                      background-size: cover;
+                  }
+              }
+            }
+        }
+    }
+}

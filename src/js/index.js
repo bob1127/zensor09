@@ -83,7 +83,9 @@ $('.mobile_nav_toggle').click(function(){
             $('#nav_product').hover(function(){
               $('.product_toggle').css('top','11.5vh')
             })
+           
           } else {
+            
             $("nav").removeClass("sticky");
             
             $('#nav_product').hover(function(){

@@ -19,6 +19,7 @@ module.exports = {
        
          service:'./src/js/service.js',
          article:'./src/js/article.js',
+         article_list:'./src/js/article_list.js',
        
         
          AllProducts:'./src/js/AllProducts.js',
@@ -125,6 +126,11 @@ module.exports = {
             filename: 'SF100.html',
             template: './src/SF100.html',
             chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'article_list.html',
+            template: './src/article_list.html',
+            chunks: ['manifest','vendor','article_list']
         }),
        
       

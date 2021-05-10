@@ -91,7 +91,10 @@ footer {
   @include mobile_width {
     margin-bottom: 15vmin;
   }
-
+  .footer-logo{
+    width: 130px;
+    margin: .5rem 0;
+  }
   svg {
     color: white !important;
     font-size: 1.45rem !important;
@@ -421,77 +424,3 @@ footer {
   }
 }
 
-.Marquee {
-  width: 45%;
-
-  box-sizing: border-box;
-
-  color: #fff;
-  font-weight: 200;
-
-  display: box;
-  display: flex;
-
-  overflow: hidden;
-
-  @include mobile_width {
-    width: 100%;
-  }
-
-  @include pad_width {
-    width: 100%;
-  }
-
-  @include pad_pro_width {
-    width: 100%;
-  }
-}
-
-.Marquee-content {
-  display: box;
-  display: flex;
-
-  animation: marquee 10s linear infinite running;
-}
-
-.Marquee-content:hover {
-  animation-play-state: paused;
-}
-
-.Marquee-tag {
-  width: 100px;
-  margin: 0 0.5em;
-
-  background: rgba(255, 255, 255, 0.1);
-
-  display: inline-box;
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  transition: all 0.2s ease;
-
-  .company_slider {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.Marquee-tag:hover {
-  background: rgba(255, 255, 255, 0.5);
-
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translate(-50%);
-  }
-}

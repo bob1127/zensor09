@@ -115,19 +115,18 @@ section.seciton_navgation {
                     }
 
                     a {
-                        transition: 0.1s;
+                        transition: 0.2s;
                         color: #333;
                         margin: 0 0.2rem;
                         font-size: 14px;
-
+                        
+                        &:hover{
+                          color: rgb(46, 166, 221);
+                        }
+  
                         span {
                             margin: 0 0.2rem;
                         }
-                    }
-
-                    a:hover {
-                        text-decoration: none;
-                        color: rgb(146, 146, 146);
                     }
                 }
             }
@@ -385,8 +384,13 @@ section.section_others {
                                 width: 90%;
                                 margin: 1.5rem 0;
                                 margin-bottom: 0;
+                                transition: .3s;
 
                                 transition: 0.5s;
+                                transform: scale(1);
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
 
                                 @include pad_pro_width {
                                     width: 80%;

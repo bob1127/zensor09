@@ -382,10 +382,14 @@ section.seciton_navgation {
                   }
 
                   a {
-                      transition: 0.1s;
+                      transition: 0.2s;
                       color: #333;
                       margin: 0 0.2rem;
                       font-size: 14px;
+                      
+                      &:hover{
+                        color: rgb(46, 166, 221);
+                      }
 
                       span {
                           margin: 0 0.2rem;
