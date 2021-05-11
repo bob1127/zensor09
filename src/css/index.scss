@@ -1009,6 +1009,7 @@ section.section_banner {
   opacity: 1;
   animation: cookie-popup-in .5s ease forwards;  
   z-index: 99999;
+  margin-bottom: 60px;
 }
 .cookie-popup--accepted {
   opacity: 0;
