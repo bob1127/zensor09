@@ -19,8 +19,7 @@ module.exports = {
        
          service:'./src/js/service.js',
          article:'./src/js/article.js',
-         article_list:'./src/js/article_list.js',
-       
+
         
          AllProducts:'./src/js/AllProducts.js',
          ProductCatagory:'./src/js/ProductCatagory.js',
@@ -100,9 +99,9 @@ module.exports = {
             filename: 'ScreenPrintedElectrodes.html',
             template: './src/ScreenPrintedElectrodes.html',
             chunks: ['manifest','vendor','ProductCatagory']
-        })
-
-        ,new HtmlWebpackPlugin({
+        }),
+      
+        new HtmlWebpackPlugin({
             filename: 'service.html',
             template: './src/service.html',
             chunks: ['manifest','vendor','service']
@@ -128,9 +127,9 @@ module.exports = {
             chunks: ['manifest','vendor','AllProducts']
         }),
         new HtmlWebpackPlugin({
-            filename: 'article_list.html',
-            template: './src/article_list.html',
-            chunks: ['manifest','vendor','article_list']
+            filename: 'article.html',
+            template: './src/article.html',
+            chunks: ['manifest','vendor','article']
         }),
        
       
@@ -154,11 +153,7 @@ module.exports = {
             template: './src/ECWP100S.html',
             chunks: ['manifest','vendor','AllProducts']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'article.html',
-            template: './src/article.html',
-            chunks: ['manifest','vendor','article']
-        }),
+ 
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
             chunkFilename: 'css/[name].chunk.css'

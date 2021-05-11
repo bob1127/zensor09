@@ -1078,7 +1078,7 @@ nav {
 
     li {
       margin: 5px 0;
-      padding-left: 2rem;
+  
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -1107,12 +1107,15 @@ nav {
 
 
         display: none;
-        margin-left: 10px;
+    
+        width: 100%;
 
 
         a {
           font-size: 20px;
           color:white;
+          display: block;
+          width: 100%;
           @include pad_width{
             font-size: 25px
           }
