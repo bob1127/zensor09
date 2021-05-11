@@ -241,6 +241,25 @@ $(document).ready(function(){
      $('.video-popup').fadeOut('slow');
       return false;
    });
+
+
+   $('.popup-btn').on('click', function(){
+    $('.video-popup').fadeIn('slow');
+    return false;
+  });
+  
+  $('.popup-bg').on('click', function(){
+    $('.video-popup').slideUp('slow');
+    return false;
+  });
+  
+   $('.close-btn').on('click', function(){
+     $('.video-popup').fadeOut('slow');
+      return false;
+   });
+
+
+   
   
 });
 
