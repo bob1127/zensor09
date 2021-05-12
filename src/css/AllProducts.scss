@@ -103,6 +103,10 @@
 .icon-modal{
                 width: 110px ;
                 margin-right: .5rem;
+                transition: .2s;
+                &:hover{
+                    box-shadow: 5px 0 10px rgba(0,0,0,.3)
+                }
               
             }
 .modal-body {
