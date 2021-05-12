@@ -1006,10 +1006,17 @@ section.section_banner {
   color: #fff;
 }
 .cookie-popup--not-accepted {
+  width: 100%;
   opacity: 1;
   animation: cookie-popup-in .5s ease forwards;  
   z-index: 99999;
-  margin-bottom: 60px;
+  padding: 2.5rem 2rem ;
+  position: fixed;
+  bottom: -45px;
+  left: 0;
+  z-index: 999999999;
+  
+
 }
 .cookie-popup--accepted {
   opacity: 0;

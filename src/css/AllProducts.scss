@@ -100,6 +100,10 @@
 
     }
 }
+.icon-modal{
+                width: 2rem ;
+                margin-right: .5rem
+            }
 .modal-body {
     ul {
         display: flex;
@@ -117,6 +121,7 @@
                 font-size: 40px;
                 margin: 0 10px;
             }
+            
 
             .fa-line {
                 color: rgb(37, 235, 19);
@@ -175,10 +180,20 @@
 
 .modal-dialog {
     z-index: 9999999;
-
+    .modal-header{
+        border-bottom: none;
+    }
     .modal-body {
+        border-bottom: solid 1px rgba(0,0,0,.1);
+        p{
+            font-size: 23px;
+            text-align: left;
+            
+        }
         ul {
             width: 100%;
+            border-bottom: solid 1px rgba(0,0,0,.1);
+            padding-bottom: 1rem ;
 
 
             li {
@@ -735,19 +750,19 @@ section.section_toggle {
         }
     }
     iframe {
-        width: 1000px;
+        width: 100%;
         height: 80vh;
         @include pad_pro_width{
-            width: 800px;
+        
             height: 55vh;
         }
         @include pad_width{
-            width: 500px;
+         
             height: 40vh;
             
         }
         @include mobile_width{
-            width: 100%;
+          
             height: 200px;
         }
     }
@@ -1925,8 +1940,15 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
+  width: 70vw;
   height: auto;
+  @include pad_pro_width{
+      width: 80vw
+      
+  }
+  @include pad_width{
+      width: 90vw
+  }
 
 
 }
