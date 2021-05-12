@@ -420,6 +420,54 @@ section.section_form {
 
                     .form-group {
                         margin: 1rem 0;
+                        .checkboxes{
+                            display: flex;
+                            flex-wrap: wrap;
+                           .card{
+                               margin:  10px;
+                               border: solid 1px rgba(97, 97, 97, 0.2);
+                               box-shadow: 0 0 8px rgba(0,0,0,.2);
+                               border-radius: 10px;
+                
+                               display: flex;
+                               justify-content: center;;
+                               align-items: center;
+                               flex-direction: column;
+                               padding: 1rem;
+                               .title{
+                                   display: flex;
+                                   justify-content: flex-start;
+                                   width: 100%;
+                               }
+                               .pic{
+                                   border-radius: 100%;
+                                   width: 200px;
+                                   height: 200px;
+                                   box-shadow: 0 0 10px rgba(0,0,0,.6);
+                                  
+                             
+                                   display: flex;
+                                   justify-content: center;
+                                   align-items: center;
+                                   background:linear-gradient(#649173,#DBD5A4);
+                                   img{
+                                       width: 35px;
+                                   }
+                                   
+                               }
+                               .txt{
+                                   width: 250px;
+                                   padding: 1rem 0;
+                                   display: flex;
+                                   justify-content: center;
+                                   align-items: center;
+                                   P{
+                                       text-align: center;
+                                       color: rgb(66, 66, 66);
+                                   }
+                               }
+                           }
+                        }
 
                         i {
                             font-size: 1.5rem;
