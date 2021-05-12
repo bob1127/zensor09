@@ -446,6 +446,9 @@ section.section_form {
                                align-items: center;
                                flex-direction: column;
                                padding: 1rem;
+                               @include pad_pro_width{
+                                   margin: 6px;
+                               }
                                @include mobile_width{
                                    padding: 2.5rem 1rem;
                                    

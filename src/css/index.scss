@@ -992,7 +992,7 @@ section.section_banner {
   left: 1.25rem;
   right: 1.25rem;
   padding: 0.625rem 0.9375rem;
-  box-shadow: 0 0 0.625rem 0 rgba(0,0,0, .15);
+  box-shadow: 10px 0  10px rgba(0,0,0, .5);
   line-height: 150%;
   transition: opacity .5s;
   opacity: 0;
@@ -1002,15 +1002,15 @@ section.section_banner {
   width: 21.875rem; 
 }
 .cookie-popup--dark {
-  background: #000;
-  color: #fff;
+  background: #eeeeee;
+  color: rgb(46, 46, 46);
 }
 .cookie-popup--not-accepted {
   width: 100%;
   opacity: 1;
   animation: cookie-popup-in .5s ease forwards;  
   z-index: 99999;
-  padding: 2.5rem 2rem ;
+  padding: 1.5rem 2rem ;
   position: fixed;
   bottom: -45px;
   left: 0;
@@ -1033,20 +1033,26 @@ section.section_banner {
   text-align: right;
 }
 .cookie-popup-actions button {
-  color: orange;
-  border: none;
-  background: none;
+  color: #333;
+  border: solid 1px #333;
+ 
+
   font-family: inherit;
   font-style: inherit;
   font-size: inherit;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 	0.75rem;
-  padding: 0;
+  font-size: 	.8rem;
+  
+  padding: .5rem 1rem;
+  transition: .2s;
+
   cursor: pointer;
 }
 .cookie-popup-actions button:hover {
-  text-decoration: underline;
+  color: white;
+  background-color: rgb(19, 19, 19);
+  
 }
 
 @keyframes cookie-popup-in {
