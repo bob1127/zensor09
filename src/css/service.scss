@@ -407,6 +407,16 @@ section.section_form {
                     .wrap_01,
                     .wrap_02,
                     .wrap_03 {
+                        .step{
+                            width: 20%;
+                            padding: .5rem 1rem;
+                            background-color: rgb(201, 201, 201);
+                            @include mobile_width{
+                              width: 100%;
+                            }
+                        }
+                        position: relative;
+                       
 
                         padding: 3rem;
                         box-shadow: 0 0 10px rgba(53, 53, 53, 0.2);
@@ -415,8 +425,10 @@ section.section_form {
                         @include mobile_width {
                             padding: .5rem 1rem;
                         }
+                        
 
                     }
+                    
 
                     .form-group {
                         margin: 1rem 0;
@@ -434,6 +446,15 @@ section.section_form {
                                align-items: center;
                                flex-direction: column;
                                padding: 1rem;
+                               @include mobile_width{
+                                   padding: 2.5rem 1rem;
+                                   
+                               }
+                               &:hover img{
+                                   transform: scale(1.06);
+
+                               }
+                              
                                .title{
                                    display: flex;
                                    justify-content: flex-start;
@@ -450,8 +471,23 @@ section.section_form {
                                    justify-content: center;
                                    align-items: center;
                                    background:linear-gradient(#649173,#DBD5A4);
+                                   transition: .3s;
+
+                                   &:hover{
+                                    background:linear-gradient(#DBD5A4,#649173);
+                                   }
+                                   &:hover img{
+                                    transform: scale(1.05);
+                                   }
+
                                    img{
                                        width: 35px;
+                                       transform: scale(1);
+                                       transition: .3s;
+                                     
+                                   }
+                                   .ECWP100-img{
+                                       width: 200px;
                                    }
                                    
                                }
@@ -462,7 +498,7 @@ section.section_form {
                                    justify-content: center;
                                    align-items: center;
                                    P{
-                                       text-align: center;
+                                       
                                        color: rgb(66, 66, 66);
                                    }
                                }

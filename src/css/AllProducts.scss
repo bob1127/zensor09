@@ -107,6 +107,9 @@
                 &:hover{
                     box-shadow: 5px 0 10px rgba(0,0,0,.3)
                 }
+                @include mobile_width{
+                    width: 80px;
+                }
               
             }
 .modal-body {
@@ -1883,9 +1886,7 @@ section.section_toggle {
   background: lightgray; 
   border-radius: 5px;
 }
-p {
-  text-align: center;
-}
+
 .title {
   text-align: center;
   text-transform: uppercase;
