@@ -37,7 +37,9 @@ $pad_pro_media: 1100px;
 $gray: #dddddd;
 $white: #fff;
 $black: #161616;
-
+.display-none {
+    display: none;
+  }
 #wrapper {
     width: 100%;
     overflow: hidden;

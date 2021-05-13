@@ -866,6 +866,30 @@ section.section_content {
     }
 }
 
+
+section.section_main{
+    margin-top: 5vmin;
+    .container-fluid{
+        .row{
+            height: 100vh;
+            .col-left{
+                background:linear-gradient(to top right,#5f95c3,#64b9d5);
+                .title{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                    p{
+                        color: white;
+                        font-weight: 600;
+                        text-shadow: 2px 2px 5px #333;
+                    }
+                }
+            }
+        }
+    }
+}
 section.section_produce {
 
 

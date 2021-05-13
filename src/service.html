@@ -915,7 +915,7 @@
               
                <div class="row">
                    <div class="col-md-12">
-                    <form action="https://formspree.io/f/mayawndo" method="POST">
+                    <form id="my-form" action="https://formspree.io/f/xpzkppdw" method="POST">
                             <input type="hidden" name="_next" value="//site.io/thanks.html" />
                             <input type="hidden" name="_subject" value="New submission!" />
                             <input type="text" name="_gotcha" style="display:none" />
@@ -1170,46 +1170,28 @@
           
         </div>
       </footer>
+     
        <script>
-           $("#sel").change(function(){
-  switch (parseInt($(this).val())){
-
-		case 0: 
-      $("#sel2 option").remove();
-      break;
-		case 1: 
-      $("#sel2 option").remove();
-      var array = [ "台中市", "台北市", "高雄市", "台南市", "新北市" ];
-      //利用each遍歷array中的值並將每個值新增到Select中
-      $.each(array, function(i, val) {
-        $("#sel2").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
-      });      
-      break;
-		case 2: 
-      $("#sel2 option").remove();
-      var array = [ "蒙大拿州", "內布拉斯加州", "內華達州", "夏威夷州", "伊利諾州", " 印第安納州" ];
-      //利用each遍歷array中的值並將每個值新增到Select中
-      $.each(array, function(i, val) {
-        $("#sel2").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
-      });      
-      break;
-      case 3: 
-      $("#sel2 option").remove();
-      var array = [ "福建省", "河北省", "江西省", "山東省", "湖南省", " 廣東省" ];
-      //利用each遍歷array中的值並將每個值新增到Select中
-      $.each(array, function(i, val) {
-        $("#sel2").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
-      });      
-      break;
-	}
-});
-       </script>
-       <script>
-         $('.btn02').on('click',function(){
-           $('html,body').animate({
-             scrollTop : $('.section_form').offset().top
-           },500)
-         })
+                var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        alert('已成功寄出')
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
        </script>
   </body>
 </html>
