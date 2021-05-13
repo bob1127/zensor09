@@ -160,9 +160,11 @@ header {
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
+                    padding: 8vh 0;
 
                     @include mobile_width {
                         flex-direction: column;
+                 
                     }
 
                     img {
@@ -179,7 +181,7 @@ header {
 
                     .heading {
 
-                        font-size: 5.5vmin;
+                        font-size: 4.5vmin;
 
                         width: 50%;
                         display: flex;
@@ -193,6 +195,7 @@ header {
                         }
 
                         @include mobile_width {
+                            padding: .5rem;
                             font-size: 8vmin;
                             width: 100%;
 
@@ -209,8 +212,13 @@ header {
 
 
 
-                        margin: 0;
-                        line-height: 100%;
+                        margin: .5rem;
+                   ;
+                        line-height: 120%;
+                        @include mobile_width{
+                            margin: 0;
+                            list-style: 100%;
+                        }
                     }
 
                     .green {
@@ -409,10 +417,16 @@ section.section_form {
                     .wrap_01,
                     .wrap_02,
                     .wrap_03 {
+                        
                         .step{
                             width: 20%;
                             padding: .5rem 1rem;
                             background-color: rgb(201, 201, 201);
+                            position: absolute;
+                            top:0;
+                            left:0;
+                            font-weight: 500;
+                            
                             @include mobile_width{
                               width: 100%;
                             }
@@ -421,11 +435,16 @@ section.section_form {
                        
 
                         padding: 3rem;
+                        margin-top: 1rem;
                         box-shadow: 0 0 10px rgba(53, 53, 53, 0.2);
                         border: 1px solid rgba(141, 141, 141, 0.2);
-
+                        @include pad_pro_width {
+                            padding: 4.5rem 1rem;
+                        }
                         @include mobile_width {
-                            padding: .5rem 1rem;
+                            padding: 3rem 1rem;
+                            margin-top: .6rem;
+
                         }
                         
 
@@ -434,6 +453,7 @@ section.section_form {
 
                     .form-group {
                         margin: 1rem 0;
+                        position: relative;
                         .checkboxes{
                             display: flex;
                             flex-wrap: wrap;
@@ -453,6 +473,8 @@ section.section_form {
                                }
                                @include mobile_width{
                                    padding: 2.5rem 1rem;
+                                   justify-content: center;
+                                   align-items: center;
                                    
                                }
                                &:hover img{
@@ -505,6 +527,10 @@ section.section_form {
                                    P{
                                        
                                        color: rgb(66, 66, 66);
+                                       span{
+                                           font-weight: 600;
+                                           
+                                       }
                                    }
                                }
                            }

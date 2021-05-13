@@ -920,8 +920,9 @@
                             <input type="hidden" name="_subject" value="New submission!" />
                             <input type="text" name="_gotcha" style="display:none" />
                             <div class="wrap_01">
+                              <div class="step txt-center mb-3">STEP1</div>
                               <div class="form-group">
-                                <div class="step txt-center mt-3 mb-3">STEP01</div>
+                                
                                 <h3>請選擇需要試用的產品</h3>
                                 <h4>我想要試用Screen Printed Electrodes：</h4>
                                 <div class="checkboxes">
@@ -935,12 +936,12 @@
            
                                       </div>
                                       <div class="txt">
-                                        <p class='txt-center'>Carbon Screen printed electrodes -Three electrode) <span class='blue'>TE100 十片</span> </p>
+                                        <p class='txt-center'>Carbon Screen printed electrodes -Three electrode) <br><span class='blue'>TE100 十片</span> </p>
                                       </div>
                                     </div>
                                     <div class="card">
                                       <div class='title'>
-                                        <input type="checkbox" name="試用的產品" value="TE100 十片" id="inlineCheckbox1"/> 
+                                        <input type="checkbox" name="試用的產品" value="SE100 十片" id="inlineCheckbox1"/> 
                                       </div>
                                       <div class="pic">
                                         <img src="../images/nav商品圖片/SE100-service.png" alt="">
@@ -948,12 +949,12 @@
            
                                       </div>
                                       <div class="txt">
-                                        <p class='txt-center'>Carbon Screen printed electrodes -Single electrode) <span class='blue'>SE100 十片</span>  </p>
+                                        <p class='txt-center'>Carbon Screen printed electrodes -Single electrode) <br><span class='blue'>SE100 十片</span>  </p>
                                       </div>
                                     </div>
                                     <div class="card">
                                       <div class='title'>
-                                        <input type="checkbox" name="試用的產品" value="TE100 十片" id="inlineCheckbox1"/> 
+                                        <input type="checkbox" name="試用的產品" value="AUTE100 兩片" id="inlineCheckbox1"/> 
                                       </div>
                                       <div class="pic">
                                         <img src="../images/nav商品圖片/AUTE100-service.png" alt="">
@@ -961,12 +962,12 @@
            
                                       </div>
                                       <div class="txt">
-                                        <p class='txt-center'>Gold濺鍍電極- Three electrode <spn class='blue'>AUTE100 兩片</spn> </p>
+                                        <p class='txt-center'>Gold濺鍍電極- Three electrode <br> <span class='blue'>AUTE100 兩片</span> </p>
                                       </div>
                                     </div>
                                     <div class="card">
                                       <div class='title'>
-                                        <input type="checkbox" name="試用的產品" value="TE100 十片" id="inlineCheckbox1"/> 
+                                        <input type="checkbox" name="試用的產品" value="AUSE 100 兩片" id="inlineCheckbox1"/> 
                                       </div>
                                       <div class="pic">
                                         <img src="../images/nav商品圖片/AUSE100-service.png" alt="">
@@ -974,7 +975,7 @@
            
                                       </div>
                                       <div class="txt">
-                                        <p class='txt-center'>Gold濺鍍電極- Single electrode <span class='blue'>AUSE 100 兩片</span> </p>
+                                        <p class='txt-center'>Gold濺鍍電極- Single electrode  <br><span class='blue'>AUSE 100 兩片</span> </p>
                                       </div>
                                     </div>
                                     
@@ -1008,8 +1009,9 @@
                                 </div>
                             </div>
                             <div class="wrap_02">
+                              <div class="step txt-center mb-3">STEP2</div>
                               <div class="form-group mt-3">
-                                <div class="step txt-center mt-3 mb-3">STEP02</div>
+                               
                                 <h3>請您提供以下詳細資訊用於我們寄送您所需的樣品</h3>
                                 <label for="InputSchool">學校或機構名稱：</label>
                                 <input type="text" class="form-control" name="學校或機構名稱" id="InputName" placeholder="請輸入學校或機構名稱" >
@@ -1055,8 +1057,9 @@
                                 </div>
                             </div>
                             <div class="wrap_03">
+                              <div class="step txt-center mb-3">STEP3</div>
                               <div class="form-group mt-3">
-                                <div class="step txt-center mt-3 mb-3">STEP03</div>
+                                
                                 <h3>請您提供以下至少一種的聯絡方式，方便我們在出貨前跟您再次確認</h3>
                                 <label for="">Ｅmail <span>(必填)</span>  </label>
                                 <input type="email" class="form-control" name="Email" id="InputName" placeholder="請輸入Email"required >
@@ -1185,7 +1188,7 @@
             'Accept': 'application/json'
         }
       }).then(response => {
-        alert('已成功寄出')
+        alert('成功寄出！')
         form.reset()
       }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"

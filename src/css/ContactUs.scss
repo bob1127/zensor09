@@ -122,11 +122,18 @@ section.section_location{
     .container-fluid{
        .row{
            .col-md-6{
-            padding: 10vmin 0;
+            padding: 10vmin ;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            @include pad_width{
+                padding: 10vmin 4vmin;
+                
+            }
+            @include mobile_width{
+                padding: 10vmin 0;
+            }
                ul{
 
                }
@@ -146,6 +153,9 @@ section.section_location{
                         border-bottom: solid 1px rgb(37, 210, 223);
                         &:focus{
                             outline: none;
+                        }
+                        @include mobile_width{
+                            width: 80%;
                         }
                     }
                     .submit{

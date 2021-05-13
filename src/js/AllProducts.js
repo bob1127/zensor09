@@ -227,39 +227,92 @@ wow.init();
 
 $(document).ready(function(){
   
-  $('.popup-btn').on('click', function(){
-    $('.video-popup').fadeIn('slow');
+  $('.popup-btn01').on('click', function(){
+    $('.video-popup01').fadeIn('slow');
     return false;
   });
   
-  $('.popup-bg').on('click', function(){
-    $('.video-popup').slideUp('slow');
+  $('.popup-bg01').on('click', function(){
+    $('.video-popup01').slideUp('slow');
     return false;
   });
   
-   $('.close-btn').on('click', function(){
-     $('.video-popup').fadeOut('slow');
+   $('.close-btn01').on('click', function(){
+     $('.video-popup01').fadeOut('slow');
       return false;
    });
 
 
-   $('.popup-btn').on('click', function(){
-    $('.video-popup').fadeIn('slow');
+   $('.popup-btn02').on('click', function(){
+    $('.video-popup02').fadeIn('slow');
     return false;
   });
   
-  $('.popup-bg').on('click', function(){
-    $('.video-popup').slideUp('slow');
+  $('.popup-bg02').on('click', function(){
+    $('.video-popup02').slideUp('slow');
     return false;
   });
   
-   $('.close-btn').on('click', function(){
-     $('.video-popup').fadeOut('slow');
+   $('.close-btn02').on('click', function(){
+     $('.video-popup02').fadeOut('slow');
       return false;
    });
 
 
+   $('.popup-btn03').on('click', function(){
+    $('.video-popup03').fadeIn('slow');
+    return false;
+  });
+  
+  $('.popup-bg03').on('click', function(){
+    $('.video-popup03').slideUp('slow');
+    return false;
+  });
+  
+   $('.close-btn03').on('click', function(){
+     $('.video-popup03').fadeOut('slow');
+      return false;
+   });
+
+   
+
+
+
+   $('.popup-btn04').on('click', function(){
+    $('.video-popup04').fadeIn('slow');
+    return false;
+  });
+  
+  $('.popup-bg04').on('click', function(){
+    $('.video-popup04').slideUp('slow');
+    return false;
+  });
+  
+   $('.close-btn04').on('click', function(){
+     $('.video-popup04').fadeOut('slow');
+      return false;
+   });
+
+
+    $('.popup-btn05').on('click', function(){
+    $('.video-popup05').fadeIn('slow');
+    return false;
+  });
+  
+  $('.popup-bg05').on('click', function(){
+    $('.video-popup05').slideUp('slow');
+    return false;
+  });
+  
+   $('.close-btn05').on('click', function(){
+     $('.video-popup05').fadeOut('slow');
+      return false;
+   });
+
+   
    
   
 });
+
+
 

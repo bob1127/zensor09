@@ -100,8 +100,17 @@ $card_btn: #00a7e1;
     align-items: center;
     flex-direction: column;
 }
+.left-column{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
 .blue{
     color:#2e90d1
+}
+.dark{
+    color: #333;
 }
 .txt-center{
     text-align: center;
