@@ -1867,13 +1867,19 @@ section.section_toggle {
     position: relative;
     overflow: hidden;
     img{
-        width: 100%;
+        width: 60%;
         height: auto;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        z-index: 2
+        z-index: 2;
+        @include pad_pro_width{
+            width: 80%
+        }
+        @include mobile_width{
+            width: 100%
+        }
 
     }
     button{
