@@ -13,11 +13,15 @@ import 'slick-carousel';
 
 import LazyLoad from "vanilla-lazyload";
 
-const header = $('.header');
-	const icon = $('.icon-container');
+
+
+//mobile_nav
+ const header = document.querySelector('.header');
+	const icon = document.querySelector('.icon-container');
 	icon.onclick = function () {
 		header.classList.toggle('menu-open');
-    $('.cart-mobile-icon').fadeToggle()
+    $('.icon-fit-cart').fadeToggle()
+    $('.logo img').fadeToggle()
 	}
   $('.menu-item-product a').click(function(){
     $('.menu-ul').slideToggle(500)
@@ -32,6 +36,7 @@ $('.menu-simulator').click(function(){
  
 
 
+//隱私條款
 $('#policy-btn').click(function(){
   $('.policy').fadeOut();
 })  
@@ -39,6 +44,8 @@ $('#product_toggle').click(function(){
   $('.inside_product_nav ').slideToggle(500)
 })
 
+
+//圖片延遲載入
 const lazyLoadOptions = {
   elements_selector: ".lazy",
 	to_webp: true,
@@ -69,11 +76,8 @@ $('.mobile_nav_toggle').click(function(){
 })
 
 
-
+//top_fix_nav
       var mediaQuery = window.matchMedia('(max-width:1100px)')
-      
-      
-      
       $(document).ready(function () {
         var stickyNavTop = $("nav").offset().top;
 
@@ -106,6 +110,10 @@ $('.mobile_nav_toggle').click(function(){
           stickyNav();
         });
       });
+
+
+
+
       //top_fix_nav  virticle carousel
       $(document).ready(function () {
         $(".top_fix_nav").slick({

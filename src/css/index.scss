@@ -223,10 +223,15 @@ html {
 }
 
 header {
-  margin-top: -2.5vmin;
+  margin-top: -6vmin;
 
+  @include pad_width {
+    margin-top: 7vmin;
+    
+  }
   @include mobile_width {
-    margin: 0;
+    margin-top: 7vmin;
+    
   }
 
   #carouselExampleIndicators {

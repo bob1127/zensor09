@@ -13,7 +13,24 @@ import  fas  from '@fortawesome/fontawesome-free-solid';
 import fab  from '@fortawesome/fontawesome-free-brands';
 import far from '@fortawesome/fontawesome-free-regular';
 import gsap from "gsap";
+//mobile_nav
+ const header = document.querySelector('.header');
+	const icon = document.querySelector('.icon-container');
+	icon.onclick = function () {
+		header.classList.toggle('menu-open');
+    $('.icon-fit-cart').fadeToggle()
+    $('.logo img').fadeToggle()
+	}
+  $('.menu-item-product a').click(function(){
+    $('.menu-ul').slideToggle(500)
+  })
 
+  $('.menu-wireless').click(function(){
+    $('.menu-inside-wireless').slideToggle(500)
+  })
+$('.menu-simulator').click(function(){
+    $('.menu-inside-simulator').slideToggle(500)
+  })
 
 const open = document.querySelector('.container');
       const close = document.querySelector('.close_mobile');

@@ -10,6 +10,28 @@ import { WOW } from 'wowjs'
 
 import gsap from "gsap";
 import LazyLoad from "vanilla-lazyload";
+
+
+//mobile_nav
+ const header = document.querySelector('.header');
+	const icon = document.querySelector('.icon-container');
+	icon.onclick = function () {
+		header.classList.toggle('menu-open');
+    $('.icon-fit-cart').fadeToggle()
+    $('.logo img').fadeToggle()
+	}
+  $('.menu-item-product a').click(function(){
+    $('.menu-ul').slideToggle(500)
+  })
+
+  $('.menu-wireless').click(function(){
+    $('.menu-inside-wireless').slideToggle(500)
+  })
+$('.menu-simulator').click(function(){
+    $('.menu-inside-simulator').slideToggle(500)
+  })
+
+  
 $('#product_toggle').click(function(){
   $('.inside_product_nav ').slideToggle(500)
 })

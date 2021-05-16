@@ -925,11 +925,13 @@
      </nav>
      <div class="header">
       <div class="mobile_icon_wrap">
-        <div class="cart-mobile-logo">
-          <img src="../images/icon/icon-cart.svg" alt="" class=''>
-        </div>
+        <button type="button" class="product_list_mobile " data-toggle="modal" data-target="#exampleModal_ProductList">
+                  <img class='icon-fit icon-fit-cart' src="../images/icon/icon-cart.png" alt="">
+        </button>
         <div class="logo">
-          <img src="" alt="">
+            <a href='index.html' class='txt-center'>
+              <img src="../images/company_logo/zensor_logo_nav01.png" alt="">
+            </a>
         </div>
         <div class="icon-container">
           <div id="menuicon">
@@ -989,6 +991,9 @@
           <li class="menu-item"><a href="#">CONTACT</a>
           </li>
           <li class="menu-item"><a href="#">SERVICE</a>
+          </li>
+          <li class="menu-item">
+            
           </li>
          
         </ul>
@@ -1831,13 +1836,6 @@
     </script>
  <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
  <script>
-   (function () {
-  const header = document.querySelector('.header');
-	const icon = document.querySelector('.icon-container');
-	icon.onclick = function () {
-		header.classList.toggle('menu-open');
-	}
-}());
 
 
  </script>

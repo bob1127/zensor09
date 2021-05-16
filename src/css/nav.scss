@@ -2,11 +2,6 @@
 @import "reset.scss";
 
 
-.slick-slider{
-  @include mobile_width{
-    position: fixed !important;
-  }
-}
 a {
   &:hover {
     text-decoration: none !important;
@@ -52,6 +47,8 @@ a {
   }
 }
 .modal{
+  z-index:99999999999;
+
   h5{
         color: #2e90d1;
         font-weight: 500;
@@ -345,6 +342,9 @@ a {
   text-align: center;
   overflow: hidden;
   z-index: 999999;
+  @include pad_width{
+    position: fixed !important;
+  }
 
   .horizontal {
     padding: 0.3rem 0;
@@ -377,6 +377,12 @@ a {
   }
 }
 section.seciton_navgation {
+  @include pad_width{
+    margin-top: 7vh;
+  }
+  @include mobile_width{
+    margin-top: 15vh;
+  }
   .container-fluid {
       .row {
           .col-md-12 {
@@ -1329,7 +1335,7 @@ section.section_navgation {
 	display: block;
 	margin: 40px auto 30px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	.container {
 		margin: 0 auto;
 		width: 100%;
@@ -1348,7 +1354,7 @@ section.section_navgation {
 /* Menu Header */
 
 .header {
-  // background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+ 
   background-color:#f7f7f7;
 	overflow: hidden;
 	height: 55px;  
@@ -1359,7 +1365,12 @@ section.section_navgation {
   display: none;
 	transition: all 0.4s ease-out, background 1s ease-out;
   @include pad_width{
-    display: block
+    display: block;
+    margin-top: 6vmin;
+  }
+   @include mobile_width{
+    
+    margin-top: 10vmin;
   }
 }
 .header.menu-open {
@@ -1475,14 +1486,24 @@ section.section_navgation {
 }
 .mobile_icon_wrap{
   width: 100%;
- display: flex;
-  .cart{
+  display: flex;
+  .product_list_mobile {
     width: calc(100%/3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img{
-      width: 30px;
+    transition: 0.5s;
+    margin-left: 0.2rem;
+    display: none;
+    background-color: transparent !important;
+    border: none !important;
+
+    @include pad_width {
+      display: block;
+      margin-left: 0.2rem;
+    }
+
+    img {
+      
+      font-size: 1.45rem;
+      color: #333;
     }
   }
   .logo{
@@ -1490,8 +1511,11 @@ section.section_navgation {
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
-
+    a{
+      text-align:center;
+      img{
+      width: 110px;
+    }
     }
   }
   .icon-container {
