@@ -1,77 +1,29 @@
 import 'bootstrap';
 import '../css/ContactUs.scss';
 import '../css/style.scss';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> 
+import $ from 'jquery';
+import 'slick-carousel';
+import LazyLoad from "vanilla-lazyload";
 
-import 'swiper/swiper-bundle.css';
+//mobile_nav
+ const header = document.querySelector('.header');
+	const icon = document.querySelector('.icon-container');
+	icon.onclick = function () {
+		header.classList.toggle('menu-open');
+    $('.icon-fit-cart').fadeToggle()
+    $('.logo img').fadeToggle()
+	}
+  $('.menu-item-product a').click(function(){
+    $('.menu-ul').slideToggle(500)
+  })
 
-import fontawesome from '@fortawesome/fontawesome'
-import  fas  from '@fortawesome/fontawesome-free-solid';
-import fab  from '@fortawesome/fontawesome-free-brands';
-import far from '@fortawesome/fontawesome-free-regular';
-import gsap from "gsap";
-var form = document.getElementById("my-form");
-    
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-              'Accept': 'application/json'
-          }
-        }).then(response => {
-          alert('成功寄出！')
-          form.reset()
-        }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        });
-      }
-      form.addEventListener("submit", handleSubmit)
-
-     
-      
-AOS.init();
-
-const open = document.querySelector('.container');
-      const close = document.querySelector('.close_mobile');
-      var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
-      open.addEventListener('click', () => {
-        if (tl.reversed()) {
-          tl.play();
-        } else {
-          tl.to('nav', { right: 0 })
-            .to('nav', { height: '100vh' }, '-=.1')
-            .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .05 }, '-=.8')
-            .to('.close_mobile', { opacity: 1, pointerEvents: 'all' }, "-=.8")
-            .to('nav h2', { opacity: 1 }, '-=.1');
-        }
-      });
-  
-      close.addEventListener('click', () => {
-        tl.reverse();
-      });
-      $('.bars').click(function(){
-        $('.bars').hide(500)
-      })
-     
-      $('.bars').click(function(){
-        $('.mobile_nav ul').css('visibility','visible')
-      })
-      $('.mobile_nav_toggle').click(function(){
-        $('.bars').delay(3000).show(500)
-      })
-
-
-fontawesome.library.add(fas,fab,far)
-
-wow.init();
-AOS.init();
-
-
+  $('.menu-wireless').click(function(){
+    $('.menu-inside-wireless').slideToggle(500)
+  })
+$('.menu-simulator').click(function(){
+    $('.menu-inside-simulator').slideToggle(500)
+  })
+ 
 
 
 $('.mobile_product').click(function(){
@@ -128,18 +80,7 @@ var mediaQuery = window.matchMedia("(max-width:1100px)");
       });
 
 
-      var mySwiper = new Swiper(".swiper-container", {
-        direction: "vertical",
-        loop: true,
-        pagination: ".swiper-pagination",
-        grabCursor: true,
-        speed: 1000,
-        paginationClickable: true,
-        parallax: true,
-        autoplay: false,
-        effect: "slide",
-        mousewheelControl: 1,
-      });
+    
 
       
       
