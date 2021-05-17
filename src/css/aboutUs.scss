@@ -691,22 +691,9 @@ section.section_about_content {
                     flex-direction: column;
                     padding-bottom: 5rem;
 
-                    .text {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        p {
-                            width: 50%;
-                            margin: 3rem 0;
-
-                            @include mobile_width {
-                                width: 80%;
-                            }
-
-                        }
+                    .main_txt{
+                        width: 70%;
                     }
-
                     .title {
                         width: 100%;
                         display: flex;

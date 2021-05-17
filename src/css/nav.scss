@@ -1316,12 +1316,6 @@ section.section_navgation {
 
 
 
-.header {
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-}
 .content {
 	padding: 40px 5% 20px;
 	text-align: justify;
@@ -1354,24 +1348,26 @@ section.section_navgation {
 /* Menu Header */
 
 .header {
- 
+  position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
   background-color:#f7f7f7;
 	overflow: hidden;
 	height: 55px;  
 	width: 100%;
-  margin-top: 10vmin;
+
 	z-index: 9999999;
 	position: fixed;
   display: none;
 	transition: all 0.4s ease-out, background 1s ease-out;
   @include pad_width{
     display: block;
-    margin-top: 6vmin;
+    margin-top: 37.4px;
+
   }
-   @include mobile_width{
-    
-    margin-top: 10vmin;
-  }
+   
+
 }
 .header.menu-open {
 	height: 100%;
@@ -1380,6 +1376,7 @@ section.section_navgation {
 }
 .menu-inside-wireless,.menu-inside-simulator{
   display: none;
+  border-bottom: solid 1px rgb(211, 211, 211);
   
 }
 .menu-ul,.menu-li-title{
@@ -1433,6 +1430,23 @@ section.section_navgation {
     transform: rotate(45deg);
   }
   
+}
+.menu-item-product{
+  
+  a{
+    position: relative;
+    .mobile-icon-arrow{
+      color: white;
+      font-size: 1rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99999999;
+
+    }
+  }
+
+
 }
 .header ul.menu li.menu-item:nth-child(1) {
 	transition-delay: 0.35s;
