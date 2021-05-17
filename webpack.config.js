@@ -26,6 +26,7 @@ module.exports = {
           ECWP100S:'./src/js/ECWP100S.js',
           PrintedElectrodes_custom:'./src/js/PrintedElectrodes_custom.js',
            Privacy:'./src/js/Privacy.js',
+            wechat:'./src/js/wechat.js',
         
         
          
@@ -60,6 +61,11 @@ module.exports = {
             filename: 'AllProducts.html',
             template: './src/AllProducts.html',
             chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'wechat.html',
+            template: './src/wechat.html',
+            chunks: ['manifest','vendor','wechat']
         }),
         new HtmlWebpackPlugin({
             filename: 'ContactUs.html',

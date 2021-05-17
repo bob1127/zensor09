@@ -135,9 +135,48 @@ section.seciton_navgation {
 }
 
 header {
-    img {
-        width: 100%;
+  margin-top: -55px;
+  @include pad_width{
+      margin-top: 35px;
+  }
+  @include mobile_width{
+      margin-top: 80px;
+  }
+  #carouselExampleIndicators{
+    .carousel-inner{
+        .carousel-item{
+            img{
+                width: 100%;
+            }
+            .desk_img{
+                display: block;
+                @include pad_pro_width{
+                    display: none;
+                }
+                @include mobile_width{
+                    display: none;
+                }
+            }
+            .pad_img{
+                display: none;  
+                @include pad_pro_width{
+                    display: block;
+                }
+                @include mobile_width{
+                    display: none;
+                }
+            }
+            .mobile_img{
+                 display: none;
+             
+                @include mobile_width{
+                    display: block;
+                }
+            }
+        }
     }
+  }
+    
 }
 
 .close_nav {
@@ -461,7 +500,7 @@ section.section_others {
                             overflow: hidden;
 
                             .top_txt {
-                                height: 4rem;
+                                height: 5.2rem;
 
                                 display: flex;
                                 justify-content: center;

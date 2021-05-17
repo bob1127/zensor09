@@ -24,7 +24,7 @@ section.section_content{
                 
                 
                 h2{
-                    font-size: 26px;
+                    font-size: 22px;
                     font-weight: 400;
                     
                 }
@@ -89,4 +89,16 @@ section.section_content{
             }
         }
     }
+}
+.icon-modal{
+    width: 110px ;
+    margin-right: .5rem;
+    transition: .2s;
+    &:hover{
+        box-shadow: 5px 0 10px rgba(0,0,0,.3)
+    }
+    @include mobile_width{
+        width: 80px;
+    }
+  
 }

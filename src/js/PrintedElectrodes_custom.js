@@ -10,6 +10,39 @@ import { WOW } from 'wowjs'
 
 import gsap from "gsap";
 import LazyLoad from "vanilla-lazyload";
+
+//mobile_nav
+const header = document.querySelector('.header');
+const icon = document.querySelector('.icon-container');
+icon.onclick = function () {
+  header.classList.toggle('menu-open');
+  $('.icon-fit-cart').fadeToggle()
+  $('.logo img').fadeToggle()
+}
+$('.menu-item-product a').click(function(){
+  $('.menu-ul').slideToggle(500)
+})
+
+$('.menu-wireless').click(function(){
+  $('.menu-inside-wireless').slideToggle(500)
+})
+$('.menu-simulator').click(function(){
+  $('.menu-inside-simulator').slideToggle(500)
+})
+
+
+$('.mobile_product').click(function(){
+  $('.inside_ul').animate({
+    'visibility':'visible'
+  },500)
+})
+
+$('#product_toggle').click(function(){
+  $('.inside_product_nav ').slideToggle(500)
+})
+
+
+
 $('#product_toggle').click(function(){
   $('.inside_product_nav ').slideToggle(500)
 })
@@ -94,72 +127,6 @@ wow.init();
       });
 
 
-
-      const open = document.querySelector('.container');
-      const close = document.querySelector('.close_nav');
-      var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
-      open.addEventListener('click', () => {
-        if (tl.reversed()) {
-          tl.play();
-        } else {
-          tl.to('nav', { right: 0 })
-            .to('nav', { height: '100vh' }, '-=.1')
-            .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .05 }, '-=.8')
-            .to('.close_nav', { opacity: 1, pointerEvents: 'all' }, "-=.8")
-            .to('nav h2', { opacity: 1 }, '-=.1');
-        }
-      });
-  
-      close.addEventListener('click', () => {
-        tl.reverse();
-      });
-      $('.bars').click(function(){
-        $('.bars').hide(500)
-      })
-     
-      $('.bars').click(function(){
-        $('.mobile_nav ul').css('visibility','visible')
-      })
-      $('.mobile_nav_toggle').click(function(){
-        $('.bars').delay(3000).show(500)
-      })
-
-    // activation carousel plugin
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-        spaceBetween: 5,
-        paginationClickable: true, 
-        
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        breakpoints: {
-            0: {
-                slidesPerView: 3,
-            },
-            992: {
-                slidesPerView: 4,
-            },
-        }
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-
-        spaceBetween: 10,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        thumbs: {
-            swiper: galleryThumbs
-        },
-    });
-    // change carousel item height
-    // gallery-top
-    let productCarouselTopWidth = $('.gallery-top').outerWidth();
-    $('.gallery-top').css('height', productCarouselTopWidth);
-
-    // gallery-thumbs
-    let productCarouselThumbsItemWith = $('.gallery-thumbs .swiper-slide').outerWidth();
-    $('.gallery-thumbs').css('height', productCarouselThumbsItemWith);
 
     // activation zoom plugin
   
