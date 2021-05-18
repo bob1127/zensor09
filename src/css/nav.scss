@@ -1384,13 +1384,17 @@ section.section_navgation {
 }
 
 .menu-li{
-  color: rgb(34, 33, 33);
+  color: rgb(46, 45, 45);
  font-size: 15px !important;
+ font-weight: 700;
  
 }
 /* Menu List items */
 .mobile-menu {
 	clear: both;
+  .mobile_logo{
+    width: 120px;
+  }
 }
 .header ul.menu {
 	position: relative;
@@ -1403,8 +1407,9 @@ section.section_navgation {
 .header ul.menu li.menu-item a {
 	display: block;
 	position: relative;
-	color: rgb(34, 33, 33);
+	color: rgb(46, 45, 45);
 	text-decoration: none;
+  font-weight: 700;
 	font-size: 18px;
 	line-height: 2.8;
 	width: 100%;
