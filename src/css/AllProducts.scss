@@ -744,6 +744,16 @@ section.section_others {
 
 
 section.section_toggle {
+    padding: 0 15vmin;
+    @include pad_pro_width{
+        padding: 0 5vmin
+    }
+    @include pad_width{
+        padding: 0 15px
+    }
+    @include mobile_width{
+        padding: 0 
+    }
     .project-banner-link {
         width: 50%;
         transition: .3s;
