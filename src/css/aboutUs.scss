@@ -408,11 +408,17 @@ section.section_about_content {
                     padding: 0 20px;
                     display: flex;
                     flex-wrap: wrap;
+                    @include mobile_width{
+                        padding: 0l;
+                    }
                     img{
                         width: calc(200px/2);
                         height: calc(110px/2);
                         margin: 3px;
-                        box-shadow: 0 0 3px rgba(0,0,0,.2)
+                        box-shadow: 0 0 3px rgba(0,0,0,.2);
+                        @include mobile_width{
+                            margin: 0
+                        }
                     }
                 }
             }

@@ -1371,7 +1371,7 @@ section.section_navgation {
 }
 .header.menu-open {
 	height: 100%;
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  
 	transition: all 0.45s ease-out, background 0.8s ease-out;
 }
 .menu-inside-wireless,.menu-inside-simulator{
@@ -1384,7 +1384,7 @@ section.section_navgation {
 }
 
 .menu-li{
- color: white;
+  color: rgb(34, 33, 33);
  font-size: 15px !important;
  
 }
@@ -1403,14 +1403,14 @@ section.section_navgation {
 .header ul.menu li.menu-item a {
 	display: block;
 	position: relative;
-	color: #fff;
+	color: rgb(34, 33, 33);
 	text-decoration: none;
 	font-size: 18px;
 	line-height: 2.8;
 	width: 100%;
 	-webkit-tap-highlight-color: transparent;
   &:hover{
-    background-color: rgba(28, 29, 29,.2);
+    background-color: rgba(5, 167, 216, 0.5);
   }
 }
 .header ul.menu li.menu-item {
