@@ -435,7 +435,7 @@ section.section_about_content {
                            
                             transition: .7s;
                             &:hover{
-                                transform: scale(1.1);
+                                transform: scale(1.05);
                                 
                             }
                             @include mobile_width{
@@ -465,7 +465,39 @@ section.section_about_content {
                     align-items: center;
                     flex-direction: column;
                     padding-bottom: 5rem;
+                    .wrapper{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin-top: 100px;
+                        h2{
+                            font-size: 26px;
+                        }
+                        
+                        .img-wrap{
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            @include pad_pro_width{
+                                width: 100%;
+                            }
+                           
+                            img{
+                                width: 230px;
+                                transition: .3s;
+                                @include mobile_width{
+                                    width: 330px
+                                }
+                                &:hover{
+                                    transform: scale(1.1);
+                                }
 
+                            }
+                        }
+                    }
                     .main_txt{
                         width: 70%;
                     }
@@ -478,6 +510,14 @@ section.section_about_content {
 
                         padding: 5rem 0;
                         position: relative;
+                        h2{
+                            font-size: 26px;
+                        }
+                        h3{
+                            font-size: 23px;
+                            text-align: center;
+                            color: #333;
+                        }
 
 
 

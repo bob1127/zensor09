@@ -97,6 +97,61 @@ var mediaQuery = window.matchMedia("(max-width:1100px)");
       });
 
 
+
+
+
+
+       // activation zoom plugin
+  
+
+        $('.items').slick({
+        slidesToShow: 3,
+        dots:true,
+        infinite: true,
+        slideToScroll: true,
+        centerMode: true,
+        });
+     
+      $(".slick-slider").slick({
+        slidesToShow:5,
+        slidesToScroll: 1,
+        arrows: true,
+        
+        autoplay: true,
+        speed: 400,
+        infinite: true,
+        responsive: [
+                            
+                            {
+                              breakpoint: 1226,
+                              settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1
+                              }
+                            },
+                            {
+                              breakpoint: 971,
+                              settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                              }
+                            }
+                            ,{
+                              breakpoint: 540,
+                              settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                              }
+                            }
+
+                          ]
+                            
+      });
+
+
+
+
+
       var mySwiper = new Swiper(".swiper-container", {
         direction: "vertical",
         loop: true,
