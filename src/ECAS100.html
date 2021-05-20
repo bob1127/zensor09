@@ -1221,7 +1221,13 @@
                          
                             <div class="view">
                               <iframe src="https://www.youtube.com/embed/tCGH3sw-NJ0"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              
                             </div>
+                            <video width="320" height="240" controls>
+                              <source src="../video/zensor-video01.mp4" type="video/mp4">
+                              <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                            </video>
 
                             <h3 class='mt-5'>完整的電化學分析儀功能</h3>
                             <h4></h4>
@@ -1259,7 +1265,13 @@
                                 </li>
                                 <div class="view">
                                   <iframe src="https://www.youtube.com/embed/0prgYt1q79A"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                                 </div>
+                                <video width="320" height="240" controls>
+                                  <source src="../video/2-ECA-DEMO.MP4" type="video/mp4">
+                                  <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                                </video>
                                 
 
     
@@ -1367,6 +1379,11 @@
                              <div class="view">
                               <iframe src="https://www.youtube.com/embed/pi4rD6lWrSI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
+                            <video width="320" height="240" controls>
+                                  <source src="../video/3-ECAS-DEMO.MP4" type="video/mp4">
+                                  <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
                           </div>
                           
                         </div>
@@ -1432,6 +1449,11 @@
                               <div class="view">
                                 <iframe src="https://www.youtube.com/embed/C4YkGRVf-Io" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                              </div>
+                             <video width="320" height="240" controls>
+                                  <source src="../video/4-ECAS-OFFLINE.mp4" type="video/mp4">
+                                  <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
                           </div>
                           <div class="col-md-6 center-column">
                              <h4 class='blue'>開發檢測產品PH酸鹼檢測儀</h4>
@@ -1959,8 +1981,7 @@
         
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
      
     <script>
       if($(window).width() > 600)
@@ -1969,6 +1990,30 @@
 } else {
     var $easyzoom = $('.easyzoom11').easyZoom();
 }
+
+
+
+
+    </script>
+    <script>
+        查看ＩＰ位置
+        jQuery(document).ready(function($) { 
+          jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() 
+          { 
+          var country = geoplugin_countryName(); 
+          alert(country); 
+          var code = geoplugin_countryCode(); 
+          alert(code); 
+
+          if(country=="China"){
+            $('video').css('display','block')
+            
+          }
+
+
+          console.log("Your location is: " + country + ", " + zone + ", " + district); 
+          }); 
+      }); 
     </script>
   </body>
 </html>
