@@ -10,9 +10,15 @@ section.section_content{
         .row{
             .col-md-12{
                 h2{
-                    font-size: 25px;
+                    
                     font-weight: 800;
                     
+                }
+                h5{
+                    color: rgb(65, 65, 65);
+                    @include mobile_width{
+                        font-size: 16px;
+                    }
                 }
                 ul{
                     li{
@@ -41,6 +47,7 @@ section.section_content{
     }
     td,th{
             border: solid 1px rgba(0,0,0,.2);
+            text-align: center;
     
         }
     th{
