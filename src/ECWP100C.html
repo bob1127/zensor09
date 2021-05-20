@@ -296,7 +296,7 @@
                 <div class="form-group">
                   
                   <label for="">姓名：（必填）</label>
-                  <input type="text" class="form-control" name="name" id="InputName" placeholder="請輸入學校或機構名稱" required>
+                  <input type="text" class="form-control" name="name(project-01)" id="InputName" placeholder="請輸入學校或機構名稱" required>
                 </div>
                 <div class="form-group mt-3">
                    
@@ -347,7 +347,7 @@
                 <a href="wechat.html" target='_blank'><img class='icon-modal' src="../images/icon/wechat-modal.svg" alt=""></a>
               </ul>
             
-              <form id="my-form" action="https://formspree.io/f/xpzkppdw" method="POST">
+              <form id="my-form02" action="https://formspree.io/f/xpzkppdw" method="POST">
                 <input type="hidden" name="_next" value="//site.io/thanks.html" />
                 <input type="hidden" name="_subject" value="New submission!" />
                 <input type="text" name="_gotcha" style="display:none" />
@@ -355,7 +355,7 @@
                 <div class="form-group">
                   
                   <label for="">姓名：（必填）</label>
-                  <input type="text" class="form-control" name="name" id="InputName" placeholder="請輸入學校或機構名稱" required>
+                  <input type="text" class="form-control" name="name(project-02)" id="InputName" placeholder="請輸入學校或機構名稱" required>
                 </div>
                 <div class="form-group mt-3">
                    
@@ -405,7 +405,7 @@
                 <a href="wechat.html" target='_blank'><img class='icon-modal' src="../images/icon/wechat-modal.svg" alt=""></a>
               </ul>
             
-              <form id="my-form" action="https://formspree.io/f/xpzkppdw" method="POST">
+              <form id="my-form03" action="https://formspree.io/f/xpzkppdw" method="POST">
                 <input type="hidden" name="_next" value="//site.io/thanks.html" />
                 <input type="hidden" name="_subject" value="New submission!" />
                 <input type="text" name="_gotcha" style="display:none" />
@@ -2085,7 +2085,7 @@
                 <a href="tel:+886-4-24075415"><li>Tel: 886-4-24075415</li></a>
                 <a href="https://www.google.com.tw/maps/place/%E7%A6%AA%E8%AD%9C%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8+Zensor+R%26D/@24.0960616,120.6791285,17z/data=!3m1!4b1!4m5!3m4!1s0x34693c4f4ea55b59:0x929567b71b95f89c!8m2!3d24.0960567!4d120.6813172?hl=zh-TW"> <li>Address:412 臺中市大里區國中路249號</li></a>
                 <div class='footer_icons'>
-                  <a href="line://ti/p/＠KGKDBME">
+                  <a href="https://lin.ee/KGKDBME" title="Line" target="_blank">
                     <img class='icon-fit-footer' src="../images/icon/icon-line-footer.svg" alt="">
                   </a>
                   <a href="https://www.facebook.com/Zensor.RD/"><img class='icon-fit-footer' src="../images/icon/icon-facebook-footer.svg" alt=""></a>
@@ -2113,7 +2113,7 @@
             </div>
           </div>
           <div class="col-xl-4 ">
-            <form action="https://formspree.io/f/mayawndo" method="POST">
+            <form id="my-form04" action="https://formspree.io/f/xpzkppdw" method="POST">
               <fieldset id="fs-frm-inputs">
 
                 <p>想要收到更多關於電化學工作的靈感麼？</p>
@@ -2150,28 +2150,7 @@
 }
 
     </script>
-    <script>
-                var form = document.getElementById("my-form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        alert('成功寄出！')
-        form.reset()
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-       </script>
+   
      <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
       <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
  

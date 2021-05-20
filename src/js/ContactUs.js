@@ -3,8 +3,47 @@ import '../css/ContactUs.scss';
 import '../css/style.scss';
 import $ from 'jquery';
 import 'slick-carousel';
+
+import 'swiper/swiper-bundle.css';
+import 'wowjs/css/libs/animate.css';
+import { WOW } from 'wowjs'
+
+
 import LazyLoad from "vanilla-lazyload";
 
+
+
+     //form
+
+     var form = document.getElementById("my-form");
+     var form02 = document.getElementById("my-form02");
+
+     
+         
+         async function handleSubmit(event) {
+           event.preventDefault();
+           var status = document.getElementById("my-form-status");
+           var data = new FormData(event.target);
+           fetch(event.target.action, {
+             method: form.method,
+             body: data,
+             headers: {
+                 'Accept': 'application/json'
+             }
+           }).then(response => {
+             alert('成功寄出！')
+             form.reset()
+             form02.reset()
+       
+           }).catch(error => {
+             status.innerHTML = "Oops! There was a problem submitting your form"
+           });
+         }
+         form.addEventListener("submit", handleSubmit)
+         form02.addEventListener("submit", handleSubmit)
+       
+     
+     
 //mobile_nav
  const header = document.querySelector('.header');
 	const icon = document.querySelector('.icon-container');
@@ -79,6 +118,8 @@ var mediaQuery = window.matchMedia("(max-width:1100px)");
         });
       });
 
+
+ 
 
     
 

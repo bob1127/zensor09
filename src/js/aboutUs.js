@@ -6,7 +6,37 @@ import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
 import { WOW } from 'wowjs';
 import 'slick-carousel';
+import $ from 'jquery';
 var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
+
+
+
+//form
+
+var form = document.getElementById("my-form");
+
+
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        alert('成功寄出！')
+        form.reset()
+   
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+
 
 //mobile_nav
  const header = document.querySelector('.header');

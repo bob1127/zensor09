@@ -50,6 +50,9 @@ header {
     background-size: cover;
     width: 100%;
     margin-top: -2.5vmin;
+    @include mobile_width{
+       margin-top: 10vmin
+    }
 
 
 

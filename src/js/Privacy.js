@@ -1,18 +1,41 @@
 import 'bootstrap';
 import '../css/privacy.scss';
+import '../css/Detail_privacy.scss';
 import '../css/style.scss';
 import $ from 'jquery';
 import 'slick-carousel';
-
 import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
 import { WOW } from 'wowjs'
 
 import gsap from "gsap";
 import LazyLoad from "vanilla-lazyload";
+
+
+//mobile_nav
+const header = document.querySelector('.header');
+const icon = document.querySelector('.icon-container');
+icon.onclick = function () {
+  header.classList.toggle('menu-open');
+  $('.icon-fit-cart').fadeToggle()
+  $('.logo img').fadeToggle()
+}
+$('.menu-item-product a').click(function(){
+  $('.menu-ul').slideToggle(500)
+})
+
+$('.menu-wireless').click(function(){
+  $('.menu-inside-wireless').slideToggle(500)
+})
+$('.menu-simulator').click(function(){
+  $('.menu-inside-simulator').slideToggle(500)
+})
+
 $('#product_toggle').click(function(){
   $('.inside_product_nav ').slideToggle(500)
 })
+
+
 
 const lazyLoadOptions = {
   elements_selector: ".lazy",
@@ -43,11 +66,7 @@ wow.init();
       
 
    
-//      const quotes = document.querySelectorAll(".quote");
 
-
-// ScrollTrigger.addEventListener("refresh", setupSplits);
-// setupSplits();
         
 
       var mediaQuery = window.matchMedia('(max-width:1100px)')
@@ -95,128 +114,28 @@ wow.init();
 
 
 
-      const open = document.querySelector('.container');
-      const close = document.querySelector('.close_nav');
-      var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
-      open.addEventListener('click', () => {
-        if (tl.reversed()) {
-          tl.play();
-        } else {
-          tl.to('nav', { right: 0 })
-            .to('nav', { height: '100vh' }, '-=.1')
-            .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .05 }, '-=.8')
-            .to('.close_nav', { opacity: 1, pointerEvents: 'all' }, "-=.8")
-            .to('nav h2', { opacity: 1 }, '-=.1');
+    
+
+//form
+
+var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
         }
-      });
+      }).then(response => {
+        alert('成功寄出！')
+        form.reset()
   
-      close.addEventListener('click', () => {
-        tl.reverse();
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
       });
-      $('.bars').click(function(){
-        $('.bars').hide(500)
-      })
-     
-      $('.bars').click(function(){
-        $('.mobile_nav ul').css('visibility','visible')
-      })
-      $('.mobile_nav_toggle').click(function(){
-        $('.bars').delay(3000).show(500)
-      })
-
-    // activation carousel plugin
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-        spaceBetween: 5,
-        paginationClickable: true, 
-        
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        breakpoints: {
-            0: {
-                slidesPerView: 3,
-            },
-            992: {
-                slidesPerView: 4,
-            },
-        }
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-
-        spaceBetween: 10,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        thumbs: {
-            swiper: galleryThumbs
-        },
-    });
-    // change carousel item height
-    // gallery-top
-    let productCarouselTopWidth = $('.gallery-top').outerWidth();
-    $('.gallery-top').css('height', productCarouselTopWidth);
-
-    // gallery-thumbs
-    let productCarouselThumbsItemWith = $('.gallery-thumbs .swiper-slide').outerWidth();
-    $('.gallery-thumbs').css('height', productCarouselThumbsItemWith);
-
-    // activation zoom plugin
-  
-
-        $('.items').slick({
-        slidesToShow: 3,
-        dots:true,
-        infinite: true,
-        slideToScroll: true,
-        centerMode: true,
-        });
-     
-      $(".slick-slider").slick({
-        slidesToShow:5,
-        slidesToScroll: 1,
-        arrows: true,
-        
-        autoplay: true,
-        speed: 400,
-        infinite: true,
-        responsive: [
-                            
-                            {
-                              breakpoint: 1226,
-                              settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 1
-                              }
-                            },
-                            {
-                              breakpoint: 971,
-                              settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1
-                              }
-                            }
-                            ,{
-                              breakpoint: 540,
-                              settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                              }
-                            }
-
-                          ]
-                            
-      });
-
-
-
-
-
-   $(function () {
-  $('[data-toggle="popover"]').popover()
-})
-   $(function () {
-  $('.title_wrap').popover({
-    container: 'body'
-  })
-})
+    }
+    form.addEventListener("submit", handleSubmit)

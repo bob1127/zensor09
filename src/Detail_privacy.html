@@ -4,21 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>ECAS100-虛擬生化感測器、電化學分析儀-模擬器、離線獨立使用</title>
+   
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css
   "
   />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.4/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
-    <script src='../src/js/text.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
-  
+
+    <script src="https://k1ngzed.com/dist/EasyZoom/easyzoom.js"></script>
   </head>
   <body>
     <div class="topFix_nav_close">
@@ -27,9 +23,6 @@
      </div>
      <div id="wrapper">
 
-      
-
-      
       <div class="modal fade" id="exampleModal_ProductList" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -299,7 +292,7 @@
         </div>
       </div>
     </div>
-     <div id="mobile_buttons">
+       <div id="mobile_buttons">
       <div class="mobile_icon_wrap">
         <a class="icon" href="https://lin.ee/KGKDBME">
           <img class='icon-mobile' src="../images/icon/icon-line-mobile.svg" alt="">
@@ -315,7 +308,66 @@
         </a>
       </div>
      </div>
-    </div>
+       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">您可以通過以下即時通訊軟體取得在線報價</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             
+              <ul>
+                <a href="line://ti/p/＠447ldwhl">
+                  <img class='icon-fit-footer' src="../images/icon/icon-line.svg" alt="">
+                </a>
+                <a href="https://www.facebook.com/Zensor.RD/"><img class='icon-fit-footer' src="../images/icon/icon-facebook.svg" alt=""></a>
+                <a href=""><img class='icon-fit-footer' src="../images/icon/icon-wechat.svg" alt=""></a>
+              </ul>
+            
+              <form action="https://formspree.io/f/mayawndo" method="POST">
+                <input type="hidden" name="_next" value="//site.io/thanks.html" />
+                <input type="hidden" name="_subject" value="New submission!" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <p>
+                  或者您也可以在下方留下您的聯絡方式，我們會盡快與您聯繫
+                </p>
+                <div class="form-group">
+                  
+                  <label for="">姓名：（必填）</label>
+                  <input type="text" class="form-control" name="name" id="InputName" placeholder="請輸入學校或機構名稱" required>
+                </div>
+                <div class="form-group mt-3">
+                   
+                  <label for="">聯絡電話：</label>
+                  <input type="text" class="form-control" name="phone" id="InputName" placeholder="請輸入聯絡電話" >
+              
+                </div>
+                <label for="">Ｅmail (必填)</label>
+                  <input type="email" class="form-control" name="Email" id="InputName" placeholder="請輸入Email" required>
+                <div class="form-group mt-3">
+                   
+                    <label for="">公司/學校：</label>
+                    <input type="text" class="form-control" name="Company" id="InputCompany" placeholder="請輸入公司或機構名稱" >
+                
+                </div>
+                <div class="form-group mt-3">
+                  <label for="">留言內容：</label>
+                  
+                  <textarea style='width: 100%' id="textarea1" class="materialize-textarea" placeholder="Enter your message here..." name="message" data-length="500" ></textarea><br>
+                  
+              
+                </div>
+                
+                <input type="submit" name="Send" id="submit" value="Send" class="btn btn-info pull-right"> 
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
        <div id="category">
          <div class="title">禪譜產品分類</div>
          <div class="content">
@@ -889,48 +941,106 @@
             <a href="service.html" class='nav_title_link'><li class='outside_li'>Service</li></a>
           </ul>
        </div>
+    </nav>
+        
        
-      
-        
-        <nav class='mobile_nav'>
- 
-        
-          <div class="close_mobile mobile_nav_toggle">
-            <div></div>
-          </div>
-        
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-            <li id='product_li'>
-              <a id='product_toggle'>Product<i class="fas fa-chevron-right"></i></a>
-              <div class='inside_product_nav'>
-               <a>Potentiostats</a><br>
-                 <a href="ECWP100C.html">無線型/Wireless ECWP系列</a><br>
-                 <a href="ECWP100C.html">無線型/ECWP100-single</a><br>
-                 <a href="ECAS100.html">全功能模擬器/Simulator 系列</a><br>
-                 <a href="MCP100.html">多通道/Muti-channel</a><br>
-                 <a href="">比較所有型號Potentiostats</a><br>
-                 <a>
-                  Screen printed electrodes
-                 </a><br>
-                 <a href="PrintedElectrodes.html">客製化訂製電極</a><br>
-                 <a>
-                  Others
-                 </a><br>
-                 <a href="SF100.html">電化學偵測器</a><br>
-                 <a href="CS100.html">變頻攪拌電解池/Mgnetic stirrer</a><br>
-                 <a href="CM100.html">塗布機/Coating machine</a><br>
-                 <a href="CT100.html">蓋片機/Cover machine</a>
+       
+         
+       <div class="header">
+          <div class="mobile_icon_wrap">
+            <button type="button" class="product_list_mobile " data-toggle="modal" data-target="#exampleModal_ProductList">
+                      <img class='icon-fit icon-fit-cart' src="../images/icon/icon-cart.png" alt="">
+            </button>
+            <div class="logo">
+                <a href='index.html' class='txt-center'>
+                  <img src="../images/company_logo/zensor_logo_nav01.png" alt="">
+                </a>
+            </div>
+            <div class="icon-container">
+              <div id="menuicon">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
               </div>
               
-            </li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="socialApp.html">Contact us</a></li>
-          </ul>
-        </nav>
-      </nav>
+            </div>
+            
+          </div>
+          
+          <div class="mobile-menu">
+          <ul class="menu">
+          <li>
+          
+            <img src='../images/company_logo/mobile_logo.png' class='mobile_logo'>
+          </li>
+          <li class="menu-item"><a href="index.html">HOME</a>
+          </li>
+          <li class="menu-item menu-item-product">
+          
+            <a>PRODUCT <span class='mobile-icon-arrow'>></span> </a>
+
+            <ul class='menu-ul'>
+           
+              <li class='menu-toggle'>
+         
+                  Potentiostats
+              
+              </li>
+              <li class='menu-li menu-wireless'>
+                <p>無線型/Wireless ECWP系列</p>
+                <ul class='menu-inside-wireless'>
+                  <li><a href="ECWP100C.html" class='menu-li'>無線單通道電化學分析儀</a></li>
+                  <li><a href="ECWP100S.html" class='menu-li'>無線多通道電化學分析儀</a></li>
+                </ul>
+
+              </li>
+              <li class='menu-li menu-simulator'>
+                <p>全功能模擬器/Simulator系列</p>
+                <ul class='menu-inside-simulator'>
+                  <li><a href="ECAS100.html" class='menu-li'>電化學全能版模擬器</a></li>
+                  <li><a href="ACIP100.html" class='menu-li'>交流阻抗版模擬器</a></li>
+                </ul>
+              </li>
+              <li class='menu-li'>
+                <a href="" class='menu-li'>多通道/Muti-channel</a>
+              </li>
+              <li class='menu-toggle'>
+         
+                Screen printed electrodes
+            
+              </li> 
+              <li class='menu-li'>
+                <a href="PrintedElectrodes.html" class='menu-li'>網版印刷電極/濺鍍電極</a>
+              </li>
+              <li class='menu-li'>
+                <a href="PrintedElectrodes_custom.html" class='menu-li'>客製化訂製電極</a>
+              </li>
+              <li class='menu-toggle'>
+         
+                Others
+            
+              </li> 
+              <li class='menu-li'>
+                <a href="CS100.html" class='menu-li'>電化學偵測器</a>
+              </li>
+              <li class='menu-li'><a href="CS100.html"class='menu-li'>變頻攪拌電解池/Magnetic stirrer</a></li>
+              <li class='menu-li'><a href="CM100.html"class='menu-li'>塗布機/Coating machine</a></li>
+              <li class='menu-li'><a href="CT100.html"class='menu-li'>蓋片機/Cover machine</a></li>
+              
+            </ul>
+          </li>
+          <li class="menu-item"><a href="aboutUs.html">ABOUT-US</a>
+          </li>
+          <li class="menu-item"><a href="ContactUs.html">CONTACT</a>
+          </li>
+          <li class="menu-item"><a href="service.html">SERVICE</a>
+          </li>
+          <li class="menu-item">
+            
+          </li>
+         
+        </ul>
+      </div>
+    </div>
        <header>
          
          <div class="oakslider" style='display: none;'>
@@ -1010,202 +1120,156 @@
     </header>
     <div id="wrap">
         
-        <section class="section_content" style='display: none;'>
-            <div class="container-fluid">
-                <div class="row">
-                   <div class="col-md-6">
-                      <div class="left_section">
-                        <h1 class='quote'>Is it possible to sustain youth and to be impenetrable?</h1>
-                        <p class='quote'>
-                          真的可以冻龄並百毒不侵麼？
-                        </p>
-                        <div class="btn">
-                          更多電化學資訊
-                        </div>
- 
-                      </div>
-                      <div class="left_img">
-                        <div class="container">
-                          <div class="reveal">
-                            <img
-                              src="https://images.unsplash.com/photo-1542833807-ad5af0977050?ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                   </div>
-
-                   <div class="col-md-6">
-                    <div class="right_section">
-                      <p>
-                        NADH/NAD+ is avital co-enzyme couple that plays a significant role in energy production/consumption within the cells of living organisms. 
-                      </p>
-                      <p>
-                        It was published in Science by Professor David Sinclair(Harvard Medical School,2017) that NAD+ could underlie some effects of aging and propensity to age-related diseases. These include activating the body’s defenses against aging, deleting senescent cells, and reprogramming cells in vivo. Some researchers have found that NADH is beneficial for patients who are suffering from diabetes, Parkinson’s disease, Alzheimer’s disease, and depression.
-                      </p>  
-                      <p>
-                        In April 4 2020,it was reported in Biorxiv that COVID-19 infection strikingly depress NAD levels. Early preclinical data show that nutritional and pharmacological interventions to enhance NAD-based defenses may boost innate immunity.
-                      </p>
-                      <p> 
-                           Due to its importance, NADH detection has received much attention. A variety of analytical methods have been proposed for NADH sensing, including colorimetry, photo-electrochemistry, enzymatic assay, and high- performance liquid chromatography. Among these methods, electrochemical sensors are likely to offer a highly sensitive and in situ analytical approach for the detection of NADH. Due to their rapid response, straightforward operation, and cost effectiveness electrochemical detection method can be applied to explore the predictors of treatment effect in age-related disease or epidemic disease.
-                        
-                       </p>
-                       <span>Reference</span>
-                       <a href="">1.	Simple aminophenol-based electrochemical probes for non-enzymatic, dual amperometric detection of NADH and hydrogen peroxide</a>
-                       <a href="">
-                        2.	Development of Biocompatible Cellulose Microfiber Stabilized Carbon Nanofiber Hydrogel for the Efficient Electrochemical Determination of Nicotinamide Adenine Dinucleotide in Physiological Fluids
-                       </a>
-
-                    </div>
-                    
-                 </div>
-                   
-                </div>
-                
+       
+    <section class="section_content">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>無線電化學分析儀ECWP100-single免費試用相關條款</h1>
+              <h4>為讓您有更好的機會體驗了解禪譜科技生產的無線電化學分析儀之產品，並對產品穩定性、可靠性，適用性進行評估和了解。以下條款在申請試用前請您詳細知悉：</h4>
+              <h2 class='mt-3'>1，關於試用的產品規格、數量:</h2>
+            <div class='table-wrap'>
+                <table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
+                    <thead>
+                        <tr>
+                            <th data-label="品項" scope="col">品項</th>
+                            <th data-label="型號" scope="col">型號</th>
+                            <th data-label="數量" scope="col">數量</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="品項" scope="row">單通道遠端控制器</td>
+                            <td data-label="型號">ECWP100S</td>
+                            <td data-label="數量">1個</td>
+                        </tr>
+                        <tr>
+                            <td data-label="品項" scope="row">電極連接器</td>
+                            <td data-label="型號">ECWP100C</td>
+                            <td data-label="數量">1 個</td>
+                        </tr>
+                        <tr>
+                            <td data-label="品項" scope="row">附贈網版印刷電極</td>
+                            <td data-label="型號">TE100</td>
+                            <td data-label="數量">40 pcs</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </section>
-        <section class="section_articles">
-          <div class="container-fluid">
-            <div class="col-md-3">
-              <div class='card'>
-                <div class='article-title'>
-                  <p>Article-01</p>
-                  <div class="icon"></div>
-                </div>
-                <div class="img" style='background-image: url(https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);'></div>
-                <div class="article-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consectetur enim aperiam accusamus </p>
-                </div>
-                <div class="article-footer">
-                  <div class="icon"></div>
+           
+            </div>
+          </div>
+           <h2 class='mt-3'>2，關於試用期限:</h2>
+            <p>我們會隨機附上一組試用代碼。試用期自機器輸入該試用碼日起，<span class='blue'>為期30日</span>。</p>
+          <h2 class='mt-3'>
+            3，關於運費
+          </h2>
+          <p>臺灣地區免運，其他地區以 <span class='blue'>貨到付款</span> 的方式寄送，運費由 <span class='blue'>申請方自行支付</span> 。具體預估郵費我們會通過您留下的聯絡方式再評估給您。</p>
+          <h2 class='mt-3'>4，關於收取和退還押金</h2>
+          <p>
+            在您申請試用成功後，我們會向您收取 <span class='blue'>300美金</span> 作為押金。您可以通過匯款或者Paypal向我們支付。
+          </p>
+          <ul>
+              <li>
+                <span class='blue'>✓</span>若您試用後有意向購買，押金部分自動轉為貨款，您只需再支付1200美金，我們會寄送正式序列號給您，您就可以無期限使用您的無線電化學分析儀。
+              </li>
+              <li>
+                <span class='blue'>✓</span>若您使用後，發現我們的產品無法滿足您的需求，當我們收到您退還的試用品時（不需含贈品），我們會向您退還全額押金。
+              </li>
+          </ul>
+          <h2 class='mt-3'>5，關於退還試用品</h2>
+          <p>當您在試用期間發現我們的產品無法滿足您的需求時，您須將試用品及包裝完整寄回禪譜科技股份有限公司（台灣總公司），我們會在15工作天內協助您辦理押金退還的部分。 <span class='blue'>寄回運費的部分，由試用方自行負擔。</span> </p>
+          <h2 class='mt-3'>6 關於試用期間的技術支持</h2>
+          <p>
+            收到試用品後請閱讀相關說明後再使用。在試用期過程中您可以通過 <span class='blue'>Line官方賬號</span> 或 <span class='blue'>微信官方賬號</span> ，取得免費的相關技術支持及維修服務（不含人為損壞及遺失）。
+          </p>
+      </div>
+  </section>
    
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-
-            </div>
-            <div class="col-md-3">
-
-            </div>
-            
-          </div>
-        </section>
-        <footer>
+  <footer>
         
-          <div class="container-fluid">
-            
-            <div class="row row_bottom">
-              <div class="col-md-12">
-                 <a href='index.html'>
-                   <img src="../images/footer/footer-logo.svg" alt="" class='footer-logo'>
-                 </a>
+    <div class="container-fluid">
+      
+      <div class="row row_bottom">
+        <div class="col-md-12">
+           <a href='index.html'>
+             <img src="../images/footer/footer-logo.svg" alt="" class='footer-logo'>
+           </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-8 ">
+          <div class="wrap">
+            <ul>
+              <li class="footer_ul_title">Contact Us</li>
+              <a href='mailto:zensor.co@zensor.com.tw'><li>Email:zensor.co@zensor.com.tw</li></a>
+              <a href="tel:+886-4-24075415"><li>Tel: 886-4-24075415</li></a>
+              <a href="https://www.google.com.tw/maps/place/%E7%A6%AA%E8%AD%9C%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8+Zensor+R%26D/@24.0960616,120.6791285,17z/data=!3m1!4b1!4m5!3m4!1s0x34693c4f4ea55b59:0x929567b71b95f89c!8m2!3d24.0960567!4d120.6813172?hl=zh-TW"> <li>Address:412 臺中市大里區國中路249號</li></a>
+              <div class='footer_icons'>
+                <a href="https://lin.ee/KGKDBME" title="Line" target="_blank">
+                  <img class='icon-fit-footer' src="../images/icon/icon-line-footer.svg" alt="">
+                </a>
+                <a href="https://www.facebook.com/Zensor.RD/"><img class='icon-fit-footer' src="../images/icon/icon-facebook-footer.svg" alt=""></a>
+                <a href="wechat.html" target='_blank'><img class='icon-fit-footer' src="../images/icon/icon-wechat-footer.svg" alt=""></a>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-8 ">
-                <div class="wrap">
-                  <ul>
-                    <li class="footer_ul_title">Contact Us</li>
-                    <a href='mailto:zensor.co@zensor.com.tw'><li>Email:zensor.co@zensor.com.tw</li></a>
-                    <a href="tel:+886-4-24075415"><li>Tel: 886-4-24075415</li></a>
-                    <a href="https://www.google.com.tw/maps/place/%E7%A6%AA%E8%AD%9C%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8+Zensor+R%26D/@24.0960616,120.6791285,17z/data=!3m1!4b1!4m5!3m4!1s0x34693c4f4ea55b59:0x929567b71b95f89c!8m2!3d24.0960567!4d120.6813172?hl=zh-TW"> <li>Address:412 臺中市大里區國中路249號</li></a>
-                    <div class='footer_icons'>
-                      <a href="https://lin.ee/KGKDBME" title="Line" target="_blank">
-                        <img class='icon-fit-footer' src="../images/icon/icon-line-footer.svg" alt="">
-                      </a>
-                      <a href="https://www.facebook.com/Zensor.RD/"><img class='icon-fit-footer' src="../images/icon/icon-facebook-footer.svg" alt=""></a>
-                      <a href="wechat.html" target='_blank'><img class='icon-fit-footer' src="../images/icon/icon-wechat-footer.svg" alt=""></a>
-                    </div>
-                   
-                   
-  
-                  </ul>
-                  <ul>
-                    <li class="footer_ul_title">Product </li>
-                    <a href="ECWP100C.html"><li>Wireless potentiostates（new)</li></a>
-                    <a href="AllProducts.html"><li>Potentiostates</li></a>
-                    <a href="PrintedElectrodes.html"><li>Screen printed electrodes</li></a>
-                    <a href="AllProducts.html"><li>Others</li></a>
-                     <a href="AllProducts.html"><li>All Products</li></a>
-                    
-                    
-                
-                    
-  
-                    <li></li>
-                  </ul>
-                  
-                </div>
-              </div>
-              <div class="col-xl-4 ">
-                <form id="my-form" action="https://formspree.io/f/xpzkppdw" method="POST">
-                  <fieldset id="fs-frm-inputs">
-  
-                    <p>想要收到更多關於電化學工作的靈感麼？</p>
-                    <p>想要把研究成果變成產品麼？</p>
-                    <p>訂閱我們的電子報</p>
-  
-                    <input type="email" name="_replyto" id="email-address" placeholder="輸入您的信箱" required="">
              
-                 
-                    <input class='submit' type="submit" value="Submit" />
-                 
-                 
+             
+
+            </ul>
+            <ul>
+              <li class="footer_ul_title">Product </li>
+              <a href="ECWP100C.html"><li>Wireless potentiostates（new)</li></a>
+              <a href="AllProducts.html"><li>Potentiostates</li></a>
+              <a href="PrintedElectrodes.html"><li>Screen printed electrodes</li></a>
+              <a href="AllProducts.html"><li>Others</li></a>
+               <a href="AllProducts.html"><li>All Products</li></a>
               
-                </form>
-                
-              </div>
-            </div>
-            <div class="row mt-2" >
-              <div class="col-md-12">
-                <p>Copyright © 2016 Zensor R&D co.,Ltd All rights reserved</p>
-              </div>
-            </div>
+              
+          
+              
+
+              <li></li>
+            </ul>
             
           </div>
-        </footer>
-        <script>
-          //title text animation
-      const quotes = document.querySelectorAll(".quote");
+        </div>
+        <div class="col-xl-4 ">
+          <form id="my-form" action="https://formspree.io/f/xpzkppdw" method="POST">
+            <fieldset id="fs-frm-inputs">
 
-function setupSplits() {
-  quotes.forEach((quote) => {
-    // Reset if needed
-    if (quote.anim) {
-      quote.anim.progress(1).kill();
-      quote.split.revert();
-    }
+              <p>想要收到更多關於電化學工作的靈感麼？</p>
+              <p>想要把研究成果變成產品麼？</p>
+              <p>訂閱我們的電子報</p>
 
-    quote.split = new SplitText(quote, {
-      type: "lines,words,chars",
-      linesClass: "split-line",
-    });
-
-    // Set up the anim
-    quote.anim = gsap.from(quote.split.chars, {
-      scrollTrigger: {
-        trigger: quote,
-        toggleActions: "restart pause resume reverse",
-        start: "top 50%",
-      },
-      duration: 0.6,
-      ease: "circ.out",
-      y: 80,
-      stagger: 0.02,
-    });
-  });
+              <input type="email" name="_replyto" id="email-address" placeholder="輸入您的信箱" required="">
+       
+           
+              <input class='submit' type="submit" value="Submit" />
+           
+           
+        
+          </form>
+          
+        </div>
+      </div>
+      <div class="row mt-2" >
+        <div class="col-md-12">
+          <p>Copyright © 2016 Zensor R&D co.,Ltd All rights reserved</p>
+        </div>
+      </div>
+      
+    </div>
+  </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     
+    <script>
+      if($(window).width() > 600)
+{
+     var $easyzoom = $('.easyzoom').easyZoom();
+} else {
+    var $easyzoom = $('.easyzoom11').easyZoom();
 }
-
-ScrollTrigger.addEventListener("refresh", setupSplits);
-setupSplits();
-
-        </script>
-    
-    
-    
-    
-    
-    
+    </script>
   </body>
 </html>

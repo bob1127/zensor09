@@ -8,7 +8,7 @@ import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
 import { WOW } from 'wowjs'
 
-import gsap from "gsap";
+
 import LazyLoad from "vanilla-lazyload";
 
 //form
@@ -217,4 +217,38 @@ wow.init();
   })
 })
 
+
+
+//form
+
+var form = document.getElementById("my-form");
+var form02 = document.getElementById("my-form02");
+var form03 = document.getElementById("my-form03");
+var form04 = document.getElementById("my-form04");
+
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        alert('成功寄出！')
+        form.reset()
+        form02.reset()
+        form03.reset()
+        form04.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+    form02.addEventListener("submit", handleSubmit)
+    form03.addEventListener("submit", handleSubmit)
+    form04.addEventListener("submit", handleSubmit)
 

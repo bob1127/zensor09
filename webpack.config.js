@@ -23,10 +23,11 @@ module.exports = {
         
          AllProducts:'./src/js/AllProducts.js',
          ProductCatagory:'./src/js/ProductCatagory.js',
-          ECWP100S:'./src/js/ECWP100S.js',
-          PrintedElectrodes_custom:'./src/js/PrintedElectrodes_custom.js',
-           Privacy:'./src/js/Privacy.js',
-            wechat:'./src/js/wechat.js',
+         ECWP100S:'./src/js/ECWP100S.js',
+         PrintedElectrodes_custom:'./src/js/PrintedElectrodes_custom.js',
+         Privacy:'./src/js/Privacy.js',
+         wechat:'./src/js/wechat.js',
+       
         
         
          
@@ -85,6 +86,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'Privacy.html',
             template: './src/Privacy.html',
+            chunks: ['manifest','vendor','Privacy']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Detail_privacy.html',
+            template: './src/Detail_privacy.html',
             chunks: ['manifest','vendor','Privacy']
         }),
         new HtmlWebpackPlugin({
