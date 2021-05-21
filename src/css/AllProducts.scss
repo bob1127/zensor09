@@ -10,6 +10,7 @@
 }
 
 .img02 {
+    width: 100%;
 
     
 
@@ -845,7 +846,8 @@ section.section_toggle {
                     }
 
                     .card {
-                        border: none !important;
+                        // border: none !important;
+                        border: solid 1px transparent;
 
                         .card-header {
                             display: flex;
@@ -853,6 +855,14 @@ section.section_toggle {
 
 
                             background-color: transparent !important;
+                            &:focus{
+                                outline: none !important;
+                            }
+                            .btn-link{
+                                 &:focus{
+                                outline: none !important;
+                            }
+                            }
                             h3{
                                 font-size:26px;
                                 font-weight: 900;
@@ -1171,6 +1181,7 @@ section.section_toggle {
 
                             .content_wrap {
                                 display: flex;
+                                width: 100%;
 
                                 @include mobile_width {
                                     justify-content: center;
@@ -1308,6 +1319,7 @@ section.section_toggle {
                                                             font-weight: 400;
                                                             font-size: 26px;
                                                             color: #2e90d1;
+                                                            text-align: center;
                                                            
 
                                                             @include mobile_width {
@@ -1449,6 +1461,7 @@ section.section_toggle {
                                                 font-weight: 400;
                                                 font-size: 26px;
                                                 color: #2e90d1;
+                                                text-align: center;
                                                 
 
                                                 @include mobile_width {

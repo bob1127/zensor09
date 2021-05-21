@@ -1,6 +1,6 @@
 import 'bootstrap';
 import '../css/privacy.scss';
-import '../css/Detail_privacy.scss';
+
 import '../css/style.scss';
 import $ from 'jquery';
 import 'slick-carousel';
@@ -8,7 +8,7 @@ import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
 import { WOW } from 'wowjs'
 
-import gsap from "gsap";
+
 import LazyLoad from "vanilla-lazyload";
 
 
