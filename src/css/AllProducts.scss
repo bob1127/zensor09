@@ -1247,17 +1247,21 @@ section.section_toggle {
                                 .container-fluid {
                                     .row {
                                         .col-md-6 {
+                                            @media screen and (max-width: 850px){
+                                                padding-right: 0;
+                                                padding-left: 0;
+                                            }
                                             li {
-                                                padding: 3rem;
+                                                // padding: 3rem;
 
 
 
                                                 @include pad_pro_width {
-                                                    padding: 1.5rem;
+                                                    // padding: 1.5rem;
                                                 }
 
                                                 @include pad_width {
-                                                    padding: 1rem;
+                                                    // padding: 1rem;
                                                 }
 
                                                 @include mobile_width {
@@ -1280,14 +1284,14 @@ section.section_toggle {
                                                     }
 
                                                     .title_wrap {
-                                                        width: 75%;
+                                                        width: 100%;
                                                         display: flex;
                                                         justify-content: center;
                                                         align-items: center;
                                                         flex-direction: column;
 
                                                         @include pad_pro_width {
-                                                            width: 85%;
+                                                            width: 100%;
                                                         }
 
                                                         @include mobile_width {
@@ -1360,7 +1364,7 @@ section.section_toggle {
                                 }
 
                                 li {
-                                    padding: 3rem;
+                                    // padding: 3rem;
                                     margin: 1rem 0;
                                     display: flex;
                                     justify-content: center;
@@ -1388,11 +1392,11 @@ section.section_toggle {
 
 
                                     @include pad_pro_width {
-                                        padding: 2.5rem;
+                                        // padding: 2.5rem;
                                     }
 
                                     @include pad_width {
-                                        padding: 1.8rem;
+                                        // padding: 1.8rem;
                                     }
 
                                     @include mobile_width {
