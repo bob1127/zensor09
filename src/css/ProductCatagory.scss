@@ -105,7 +105,7 @@ section.seciton_navgation {
 
     .container-fluid {
         .row {
-            border-bottom: 1px solid rgba(0,0,0,.2);
+         
             .col-md-12 {
                 .navgation_wrap {
                     padding-left: 5rem;
@@ -247,7 +247,7 @@ header {
 
 }
 section.section_others {
-    padding: 25vmin 0;
+    padding: 5vmin 0;
 
     .container-fluid {
         padding: 0 15vmin;
@@ -375,6 +375,7 @@ section.section_others {
 
                 .slick-slider .element {
                     width: 100%;
+                    
 
 
                     display: inline-block;
@@ -413,7 +414,7 @@ section.section_others {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            background-color: rgba(168, 185, 206, 0.1);
+                            background-color: rgba(206, 206, 206, 0.1);
 
                             padding: 0 2rem;
 
@@ -498,7 +499,7 @@ section.section_others {
                             align-items: flex-start;
                             flex-direction: column;
                             overflow: hidden;
-
+                            padding: 0 1rem;
                             .top_txt {
                                 height: 5.2rem;
 
@@ -541,6 +542,7 @@ section.section_others {
                                     color: rgb(22, 22, 22);
                                     font-size: 16px;
                                     margin: 0;
+                                    text-align: left;
 
                                 
                                 }

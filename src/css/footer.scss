@@ -324,7 +324,8 @@ footer {
 
             @include pad_width {
               margin: 0rem;
-              width: 45%;
+              width: 50%;
+              padding-right: 1rem;
             }
 
             @include mobile_width {
@@ -368,7 +369,14 @@ footer {
           }
         }
       }
-
+      .col-md-12{
+        p{
+          @include mobile_width{
+            text-align: center;
+            margin-top: 1rem
+          }
+        }
+      }
       .col-xl-4 {
         .map_wrap {
           p {
@@ -390,6 +398,12 @@ footer {
 
           fieldset {
             width: 100%;
+            @include pad_width{
+              margin-top: 2rem;
+            }
+            @include mobile_width{
+              margin-top: .5rem;
+            }
 
             p {
               color: rgb(219, 219, 219);

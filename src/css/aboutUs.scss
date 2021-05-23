@@ -464,7 +464,7 @@ section.section_about_content {
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    padding-bottom: 5rem;
+                    
                     .wrapper{
                         display: flex;
                         justify-content: center;
@@ -500,6 +500,9 @@ section.section_about_content {
                     }
                     .main_txt{
                         width: 70%;
+                        p{
+                            text-align: center
+                        }
                     }
                     .title {
                         width: 100%;
@@ -508,7 +511,8 @@ section.section_about_content {
                         align-items: center;
                         flex-direction: column;
 
-                        padding: 5rem 0;
+                        padding-top: 5rem ;
+                        padding-bottom: 2rem;
                         position: relative;
                         h2{
                             font-size: 26px;

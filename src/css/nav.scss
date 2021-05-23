@@ -178,6 +178,11 @@ a {
   top: 0;
   z-index: 100;
   border-top: 0;
+  @media screen and (min-width: 1920px){
+    width: 1920px;
+    left: 50%;
+    transform:translateX(-50%);
+  }
 }
 
 #gotop {
@@ -389,8 +394,9 @@ section.seciton_navgation {
               .navgation_wrap {
                   padding-left: 5rem;
 
-                  @include mobile_width {
-                      padding-left: 1rem;
+
+                  @include pad_pro_width {
+                      padding-left: 0;
                   }
 
                   a {
@@ -417,6 +423,7 @@ section.seciton_navgation {
 nav {
   z-index: 9;
   position: sticky;
+
 
   .fa-check-circle {
     color: #36eb81;
