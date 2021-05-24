@@ -941,7 +941,15 @@ section.section_toggle {
                                 
                                  
                                 >ul{
-                                    max-width: 700px;
+                                    width: 65%;
+                                    @include pad_pro_width{
+                                        width: 75%;
+                                    }@include pad_width{
+                                        width: 85%;
+                                    }
+                                    @include mobile_width{
+                                        width: 100%;
+                                    }
                                     >.function_li{
                                         display: flex;
                                         flex-direction: row ;
