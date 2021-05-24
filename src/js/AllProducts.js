@@ -11,7 +11,12 @@ import { WOW } from 'wowjs'
 
 import LazyLoad from "vanilla-lazyload";
 
-//form
+//select lang
+
+
+$('.earth-global').click(function(){
+  $('.toggle-menu').fadeToggle()
+})
 
 //mobile_nav
  const header = document.querySelector('.header');
