@@ -112,6 +112,10 @@ $card_btn: #00a7e1;
 .dark{
     color: #333;
 }
+.text-justify{
+    text-align: justify;
+
+}
 .txt-center{
     text-align: center;
 }
@@ -119,10 +123,24 @@ $card_btn: #00a7e1;
     text-align: left;
 }
 .width-m{
-    width: 60% !important;
+    width: 65% !important;
+    @include mobile_width{
+        width: 100% !important;
+    }
 }
 .width-l{
-    width: 80% !important;
+    width: 100% !important;
+    @include pad_width{
+        width: 95% !important;
+
+    }
+    @include mobile_width{
+        width: 100% !important;
+
+    }
+}
+.width-xl{
+    width: 100%;
 }
 .margin-l{
   margin-top: 8rem;
@@ -131,8 +149,8 @@ $card_btn: #00a7e1;
   }
 }
 .margin-m{
-  margin: 4em;
+  margin-top: 4em;
 }
 .margin-s{
-  margin: 1.2rem;
+  margin-top: 1.2rem;
 }
