@@ -637,6 +637,25 @@ section.section_chemistry {
     }
   }
 }
+//english version
+
+section.chemistry-en{
+  p{
+    text-align: center !important;
+  }
+  .bottom_txt{
+    height: 5rem !important;
+    
+    @include pad_width{
+      height: 7rem !important;
+    }
+    @include mobile_width{
+      height: 5rem !important;
+    }
+
+  }
+}
+
 
 section.section_mcp {
   padding: 0 5rem;

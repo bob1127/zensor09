@@ -27,7 +27,7 @@ module.exports = {
          PrintedElectrodes_custom:'./src/js/PrintedElectrodes_custom.js',
          Privacy:'./src/js/Privacy.js',
          wechat:'./src/js/wechat.js',
-         ECWP100en:'./src/EN/js/ECWP100en.js',
+        //  ECWP100en:'./src/EN/js/ECWP100en.js',
 
 
        
@@ -60,7 +60,11 @@ module.exports = {
        
             chunks: ['manifest','vendor','index']
         }),
-        
+          new HtmlWebpackPlugin({
+            filename: 'EN/index_en.html',
+            template: './src/EN/index_en.html',
+            chunks: ['manifest','vendor','index']
+        }),
         new HtmlWebpackPlugin({
             filename: 'AllProducts.html',
             template: './src/AllProducts.html',
@@ -133,6 +137,7 @@ module.exports = {
             template: './src/EN/ECAS100en.html',
             chunks: ['manifest','vendor','AllProducts']
         }),
+      
         new HtmlWebpackPlugin({
             filename: 'ECAS100.html',
             template: './src/ECAS100.html',
