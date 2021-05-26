@@ -1008,6 +1008,22 @@ section.section_toggle {
                             @include mobile_width {
                                 padding: 0 7px;
                             }
+                            .container{
+                                .connect_wrap{
+                                    width: 100%;
+                                    .img_wrap{
+                                        width: 33%;
+                                        .title-txt{
+                                            
+                                            
+                                        }
+                                        img{
+                                            width: 100%;
+
+                                        }
+                                    }
+                                }
+                            }
 
 
                             .container-fluid {
