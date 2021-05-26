@@ -1025,11 +1025,46 @@ section.section_toggle {
                                 }
                             }
 
-
+                            
                             .container-fluid {
+                                @include mobile_width{
+                                    margin-left: 0 !important;
+                                    margin-right: 0 !important;
+                                    padding: 0 !important;
+                                }
                                 .row {
 
                                     position: relative;
+                                    .col-md-12{
+                                        .connect_wrap{
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            @include pad_width{
+                                                flex-direction: column;
+                                            }
+                                            .img_wrap{
+                                                width: 33%;
+                                                margin: 0 10px;
+                                                @include pad_width{
+                                                   width: 80%;
+                                                   margin: 10px;
+                                                }
+                                                @include mobile_width{
+                                                    width: 95%;
+                                                    
+                                                 }
+                                                .title{
+                                                    
+
+                                                }
+                                                img{
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
 
 
                                     .col-md-6 {
