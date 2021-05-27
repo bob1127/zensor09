@@ -137,6 +137,11 @@ module.exports = {
             template: './src/EN/ECAS100en.html',
             chunks: ['manifest','vendor','AllProducts']
         }),
+         new HtmlWebpackPlugin({
+            filename: 'EN/ECWP100en.html',
+            template: './src/EN/ECWP100en.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
       
         new HtmlWebpackPlugin({
             filename: 'ECAS100.html',
