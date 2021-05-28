@@ -726,10 +726,15 @@ section.section_others {
                                 flex-direction: column;
 
                                 padding: 0 0.1rem;
+                                @include pad_pro_width{
+                                    height: 6rem;
+                                    
+                                }
 
                                 p {
                                     color: #00a7e1;
                                     margin: 0;
+                                    text-align: center;
                                 }
 
                                 .model {
@@ -739,7 +744,9 @@ section.section_others {
                                     margin-top: 0.5rem;
                                 }
                             }
-
+                            .bottom-txt-en{
+                                padding: 3rem 1rem !important;
+                            }
                             .bottom_txt {
                                 display: flex;
                                 justify-content: center;

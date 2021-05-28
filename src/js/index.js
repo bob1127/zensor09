@@ -13,7 +13,9 @@ import 'slick-carousel';
 
 import LazyLoad from "vanilla-lazyload";
 
-
+$('.earth-global').click(function(){
+  $('.toggle-menu').fadeToggle()
+})
 
 //mobile_nav
  const header = document.querySelector('.header');
