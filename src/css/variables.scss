@@ -124,6 +124,9 @@ $card_btn: #00a7e1;
 }
 .width-m{
     width: 65% !important;
+    @include pad_pro_width{
+        width: 90% !important;
+    }
     @include mobile_width{
         width: 100% !important;
     }

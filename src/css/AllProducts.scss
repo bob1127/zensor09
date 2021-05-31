@@ -1127,7 +1127,7 @@ section.section_toggle {
 
                                     .col-md-12 {
                                         display: flex;
-                                        justify-content: center;
+                                        justify-content: flex-start;
                                         align-items: center;
                                         flex-direction: column;
 
@@ -1244,7 +1244,7 @@ section.section_toggle {
                                 display: flex;
                                 width: 100%;
 
-                                @include mobile_width {
+                                @include pad_width {
                                     justify-content: center;
                                     align-items: center;
                                     flex-direction: column;
@@ -1257,7 +1257,7 @@ section.section_toggle {
                                     align-items: center;
                                     flex-direction: column;
 
-                                    @include mobile_width {
+                                    @include pad_width {
                                         width: 100%;
                                     }
 
@@ -1270,7 +1270,7 @@ section.section_toggle {
                                     flex-direction: column;
                                     width: 50%;
 
-                                    @include mobile_width {
+                                    @include pad_width {
                                         width: 100%;
                                     }
                                 }
@@ -1496,7 +1496,7 @@ section.section_toggle {
                                         flex-direction: column;
 
                                         .title_wrap {
-                                            width: 55%;
+                                          
 
                                             display: flex;
                                             justify-content: center;

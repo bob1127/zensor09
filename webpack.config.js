@@ -60,11 +60,7 @@ module.exports = {
        
             chunks: ['manifest','vendor','index']
         }),
-          new HtmlWebpackPlugin({
-            filename: 'EN/index_en.html',
-            template: './src/EN/index_en.html',
-            chunks: ['manifest','vendor','index']
-        }),
+        
         new HtmlWebpackPlugin({
             filename: 'AllProducts.html',
             template: './src/AllProducts.html',
@@ -199,9 +195,102 @@ module.exports = {
             
         }),
         
-       
+       //English version
+
+        new HtmlWebpackPlugin({
+            filename: 'EN/index_en.html',
+            template: './src/EN/index_en.html',
+            chunks: ['manifest','vendor','index']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/aboutUs_en.html',
+            template: './src/EN/aboutUs_en.html',
+            chunks: ['manifest','vendor','aboutUs']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/ACIP100_en.html',
+            template: './src/EN/ACIP100_en.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/AllProducts_en.html',
+            template: './src/EN/AllProducts_en.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/CM100_en.html',
+            template: './src/EN/CM100_en.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/ContactUs_en.html',
+            template: './src/EN/ContactUs_en.html',
+            chunks: ['manifest','vendor','ContactUs']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/CS100_en.html',
+            template: './src/EN/CS100_en.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/CT100_en.html',
+            template: './src/EN/CT100_en.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Detail_privacy_en.html',
+            template: './src/EN/Detail_privacy_en.html',
+            chunks: ['manifest','vendor','Privacy']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/ECWP100S_en.html',
+            template: './src/EN/ECWP100S_en.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/MCP100_en.html',
+            template: './src/EN/MCP100_en.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/PrintedElectrodes_en.html',
+            template: './src/EN/PrintedElectrodes_en.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Privacy_en.html',
+            template: './src/EN/Privacy_en.html',
+            chunks: ['manifest','vendor','Privacy']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/PrintedElectrodes_custom_en.html',
+            template: './src/EN/PrintedElectrodes_custom_en.html',
+            chunks: ['manifest','vendor','PrintedElectrodes_custom']
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: 'EN/service_en.html',
+            template: './src/EN/service_en.html',
+            chunks: ['manifest','vendor','service']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/SF100_en.html',
+            template: './src/EN/SF100_en.html',
+            chunks: ['manifest','vendor','AllProducts']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/wechat_en.html',
+            template: './src/EN/wechat_en.html',
+            chunks: ['manifest','vendor','wechat']
+        }),
        
         new CleanWebpackPlugin()
+
+
+
+
+
+        
     ],
     module: {
         rules: [
