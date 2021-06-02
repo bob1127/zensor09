@@ -918,6 +918,53 @@ section.section_toggle {
 
                         .card-body {
                             padding: 0 3rem;
+                            .popup-youtube{
+                                border: solid 1px rgb(12, 131, 211);
+                                padding: .5rem 1.5rem ;
+                                border-radius: 15px;
+                                color: rgb(12, 131, 211);
+                                font-weight: 500;
+                                transition: .2s;
+                                z-index: 9999;
+                                &:hover{
+                                    color: white;
+                                    background-color: rgb(12, 131, 211);
+
+                                    
+                                }
+                            }
+                            .img-youtube-01{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 60vh;
+                                
+                                background-position: center center;
+                                background-size: cover;
+                                position: relative;
+
+                                &:after:hover{
+                                    background-color: transparent;
+                                }
+                                &::after{
+                                    display: block;
+                                    content: "";
+                                    width: 100%;
+                                    height: 60vh;
+                                    background-color: rgba(0,0,0,.2);
+                                    position: absolute;
+                                    left:0;
+                                    top: 0;
+                                    z-index: 99;
+                                    transition: .3s;
+
+                                }
+                                
+                         
+
+                                
+                            }
+                            
                             .operation-img{
                                 @include pad_width{
                                     width: 80%

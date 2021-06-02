@@ -11,6 +11,9 @@ import { WOW } from 'wowjs'
 
 import LazyLoad from "vanilla-lazyload";
 
+  
+  
+
 //select lang
 
 
