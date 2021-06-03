@@ -925,7 +925,7 @@ section.section_toggle {
                                 color: white;
                                 font-weight: 500;
                                 transition: .2s;
-                                z-index: 9999;
+                                
                                 &:hover{
                                     color: white;
                                     background-color: rgb(12, 131, 211);
@@ -955,7 +955,7 @@ section.section_toggle {
                                     position: absolute;
                                     left:0;
                                     top: 0;
-                                    z-index: 99;
+                                    z-index: -1;
                                     transition: .3s;
 
                                 }
