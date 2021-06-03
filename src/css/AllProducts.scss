@@ -935,10 +935,11 @@ section.section_toggle {
                                 }
                             }
                             .img-youtube-01{
+                                
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                height: 60vh;
+                                height: 480px;
                                 
                                 background-position: center center;
                                 background-size: cover;
@@ -1103,11 +1104,11 @@ section.section_toggle {
                                                 width: 33%;
                                                 margin: 0 10px;
                                                 @include pad_width{
-                                                   width: 80%;
+                                                   width: 95%;
                                                    margin: 10px;
                                                 }
                                                 @include mobile_width{
-                                                    width: 95%;
+                                                    width: 100%;
                                                     
                                                  }
                                                 .title{
