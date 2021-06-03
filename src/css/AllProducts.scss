@@ -639,7 +639,8 @@ section.section_others {
                             justify-content: center;
                             align-items: center;
 
-                            padding: 0 2rem;
+                            padding: 0 .5rem;
+                            
 
 
                             img {
@@ -1610,6 +1611,12 @@ section.section_toggle {
                                         align-items: center;
                                         flex-wrap: wrap;
                                         width: 100%;
+                                        @include pad_width{
+                                            margin: 0 10px;
+                                        }
+                                        @include mobile_width{
+                                            margin: 0 ;
+                                        }
 
 
                                         img {
