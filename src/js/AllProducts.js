@@ -146,7 +146,8 @@ wow.init();
         }
     });
     var galleryTop = new Swiper('.gallery-top', {
-
+        loop: true,
+        swiperDelay : 2000,
         spaceBetween: 10,
         navigation: {
             nextEl: '.swiper-button-next',
