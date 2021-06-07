@@ -14,12 +14,6 @@ import LazyLoad from "vanilla-lazyload";
   
   
 
-//select lang
-
-
-$('.earth-global').click(function(){
-  $('.toggle-menu').fadeToggle()
-})
 
 //mobile_nav
  const header = document.querySelector('.header');
