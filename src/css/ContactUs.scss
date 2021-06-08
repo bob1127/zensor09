@@ -140,6 +140,10 @@ section.section_location{
                 padding: 10vmin 0;
             }
                ul{
+                   @include mobile_width{
+                       width: 90%
+                   
+                   }
                   li{
                       img{
                           max-width: 150px;

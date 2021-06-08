@@ -58,14 +58,18 @@ a {
 }
 .toggle-menu{
            background-color: #f7f7f7;
-           width: 20vw;
+           width: 14vw;
            position: absolute;
            top: 0px;
            right: 30px;
            display:none;
            z-index: 999999999;
            padding: .5rem .8rem;
+           padding-bottom: 2.5rem;
            box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+           &:hover{
+             display:  block;
+           }
            ul{
              width: 100%;
              li{

@@ -178,3 +178,12 @@ $card_btn: #00a7e1;
     font-weight: 600 !important;
     line-height: 28px !important;
 }
+.link-none-style{
+    color: #333 !important;
+    font-weight: 600;
+    transition: .2s;
+    &:hover{
+        color: rgb(18, 135, 231) !important;
+        
+    }
+}
