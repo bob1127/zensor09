@@ -947,6 +947,9 @@ section.section_toggle {
                                 }
                             }
                             .img-youtube-01{
+                                overflow: hidden;
+                                
+
                                 &:hover .popup-youtube{
                                     display: block;
                                 }
@@ -955,6 +958,13 @@ section.section_toggle {
                                     top: 0;
                                     left: 0;
                                     z-index: 1;
+                                    transform: scale(1.1);
+                                    transition: .5s;
+                                    
+                                }
+                                &:hover img{
+                                    transform: scale(1);
+                                    filter: blur(8px);
                                     
                                 }
                                 
