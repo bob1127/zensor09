@@ -109,7 +109,7 @@
                 margin-right: .5rem;
                 transition: .2s;
                 &:hover{
-                    box-shadow: 5px 0 10px rgba(0,0,0,.3)
+                   transform: scale(1.1);
                 }
                 @include mobile_width{
                     width: 80px;
