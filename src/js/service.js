@@ -11,6 +11,52 @@ import { WOW } from 'wowjs'
 
 import LazyLoad from "vanilla-lazyload";
 
+
+
+//mobile_nav
+const header = document.querySelector('.header');
+const icon = document.querySelector('.icon-container');
+icon.onclick = function () {
+  header.classList.toggle('menu-open');
+  $('.icon-fit-cart').fadeToggle()
+  $('.logo img').fadeToggle()
+}
+$('.menu-item-product a').click(function () {
+  $('.menu-ul').slideToggle(500)
+})
+
+$('.menu-wireless').click(function () {
+  $('.menu-inside-wireless').slideToggle(500)
+})
+$('.menu-simulator').click(function () {
+  $('.menu-inside-simulator').slideToggle(500)
+})
+
+
+$('#product_toggle').click(function () {
+  $('.inside_product_nav ').slideToggle(500)
+})
+
+const lazyLoadOptions = {
+  elements_selector: ".lazy",
+  to_webp: true,
+};
+const pageLazyLoad = new LazyLoad(lazyLoadOptions);
+const logEvent = (eventName, element) => {
+  console.log(
+    Date.now(),
+    eventName,
+    element.getAttribute("data-src"),
+    element.getAttribute("src")
+  );
+};
+
+
+var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
+
+wow.init();
+
+
 //form
 
 var form = document.getElementById("my-form");
@@ -39,35 +85,6 @@ var form02 = document.getElementById("my-form02");
 
 
 
-//mobile_nav
-const header = document.querySelector('.header');
-const icon = document.querySelector('.icon-container');
-icon.onclick = function () {
-  header.classList.toggle('menu-open');
-  $('.icon-fit-cart').fadeToggle()
-  $('.logo img').fadeToggle()
-}
-$('.menu-item-product a').click(function(){
-  $('.menu-ul').slideToggle(500)
-})
-
-$('.menu-wireless').click(function(){
-  $('.menu-inside-wireless').slideToggle(500)
-})
-$('.menu-simulator').click(function(){
-  $('.menu-inside-simulator').slideToggle(500)
-})
-
-
-$('.mobile_product').click(function(){
-  $('.inside_ul').animate({
-    'visibility':'visible'
-  },500)
-})
-
-$('#product_toggle').click(function(){
-  $('.inside_product_nav ').slideToggle(500)
-})
 
 
 //topnav close
