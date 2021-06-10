@@ -465,6 +465,12 @@ section.section_about_content {
                     align-items: center;
                     flex-direction: column;
                     padding-bottom: 10vmin;
+                    #carouselExampleControls{
+                        display: none;
+                        @include mobile_width{
+                            display: block
+                        }
+                    }
                     
                     .wrapper{
                         display: flex;
@@ -472,6 +478,10 @@ section.section_about_content {
                         align-items: center;
                         flex-direction: column;
                         margin-top: 100px;
+                        @include mobile_width{
+                            display: none;
+                        }
+                        
                         h2{
                             font-size: 26px;
                         }
@@ -515,6 +525,9 @@ section.section_about_content {
                         padding-top: 5rem ;
                         padding-bottom: 2rem;
                         position: relative;
+                        @include mobile_width{
+                            width: 90%
+                        }
                         h2{
                             font-size: 26px;
                         }
@@ -533,6 +546,10 @@ section.section_about_content {
                             left: 35px;
                             top: 35px;
                             font-size: 2.5rem;
+                            @include mobile_width{
+                                left: 10px;
+                                top: 10px;
+                            }
                         }
 
                         &::after {
@@ -542,6 +559,10 @@ section.section_about_content {
                             right: 35px;
                             top: 35px;
                             font-size: 2.5rem;
+                             @include mobile_width{
+                                right: 10px;
+                                top: 10px;
+                            }
                         }
 
                         span {

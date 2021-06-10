@@ -8,6 +8,9 @@ import { WOW } from 'wowjs';
 import 'slick-carousel';
 import $ from 'jquery';
 
+
+
+// Slick version 1.5.8
 //chage lang 
 $('.icon-earth').hover(function () {
   $('.toggle-menu').fadeIn(500)
@@ -151,7 +154,7 @@ $('.items').slick({
 });
 
 $(".slick-slider").slick({
-  slidesToShow: 5,
+  slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
 
