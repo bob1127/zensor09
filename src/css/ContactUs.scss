@@ -1,7 +1,30 @@
 
 @import "variables.scss";
 @import "reset.scss";
-
+header{
+    .desktop-img{
+        @include pad_pro_width{
+            display: none;
+        }
+       
+    }
+    .pad-img{
+        display: none;
+        @include pad_pro_width{
+            display: block;
+        }
+        @include mobile_width{
+            display: none;
+        }
+    }
+    .mobile-img{
+        display: none;
+      
+        @include mobile_width{
+            display: block;
+        }
+    }
+}
 section.section_content {
     img{
         width: 130px;
@@ -119,10 +142,8 @@ section.section_marquee{
     }
 }
 section.section_location{
-    padding-top: 20px;
-    @include mobile_width{
-        padding-top: 100px;
-    }
+    height: 100vh ;
+
     .container{
        .row{
            .col-md-6{

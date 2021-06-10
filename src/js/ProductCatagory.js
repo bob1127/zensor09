@@ -6,6 +6,14 @@ import 'aos/dist/aos.css'; // You can also use <link>
 
 import 'swiper/swiper-bundle.css';
 
+
+
+
+
+//chage lang 
+$('.icon-earth').hover(function () {
+  $('.toggle-menu').fadeIn(500)
+})
 //mobile_nav
  const header = document.querySelector('.header');
 	const icon = document.querySelector('.icon-container');

@@ -1,5 +1,51 @@
 @import "variables.scss";
 @import "reset.scss";
+
+
+
+header{
+    .desktop-img{
+        @include pad_pro_width{
+            display: none;
+        }   
+       
+    }
+    .pad-img{
+        display: none;
+        @include pad_pro_width{
+            display: block;
+        }
+        @include mobile_width{
+            display: none;
+        }
+    }
+    .mobile-img{
+        display: none;
+      
+        @include mobile_width{
+            display: block;
+        }
+    }
+}
+#wrap,#wrapper {
+    opacity: 1;
+    filter: blur(0px);
+    animation-delay: 0.5s;
+    animation: loading 2s;
+
+    @keyframes loading {
+        0% {
+            opacity: 0;
+            filter: blur(8px);
+        }
+
+        100% {
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+}
+
 h2{
     font-size: 26px !important;
 }

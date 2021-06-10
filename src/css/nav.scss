@@ -409,17 +409,10 @@ section.seciton_navgation {
   @include mobile_width{
     margin-top: 15vh;
   }
-  .container-fluid {
+  .container {
       .row {
           .col-md-12 {
               .navgation_wrap {
-                  padding-left: 5rem;
-
-
-                  @include pad_pro_width {
-                      padding-left: 0;
-                  }
-
                   a {
                       transition: 0.2s;
                       color: #333;

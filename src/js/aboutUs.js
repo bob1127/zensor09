@@ -7,6 +7,14 @@ import 'wowjs/css/libs/animate.css';
 import { WOW } from 'wowjs';
 import 'slick-carousel';
 import $ from 'jquery';
+
+//chage lang 
+$('.icon-earth').hover(function () {
+  $('.toggle-menu').fadeIn(500)
+})
+
+
+
 var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
 
 

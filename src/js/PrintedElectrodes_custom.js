@@ -11,6 +11,14 @@ import { WOW } from 'wowjs'
 import gsap from "gsap";
 import LazyLoad from "vanilla-lazyload";
 
+
+
+//chage lang 
+$('.icon-earth').hover(function () {
+  $('.toggle-menu').fadeIn(500)
+})
+
+
 //mobile_nav
 const header = document.querySelector('.header');
 const icon = document.querySelector('.icon-container');

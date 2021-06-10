@@ -11,7 +11,10 @@ import { WOW } from 'wowjs'
 
 import LazyLoad from "vanilla-lazyload";
 
-
+     //chage lang 
+$('.icon-earth').hover(function () {
+  $('.toggle-menu').fadeIn(500)
+})
 
      //form
 

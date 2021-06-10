@@ -237,7 +237,7 @@
 }
 
 
-#wrap {
+#wrapper,#wrap {
     opacity: 1;
     filter: blur(0px);
     animation-delay: 0.5s;
@@ -797,8 +797,14 @@ section.section_toggle {
         padding: 0px
     }
     .project-banner-link {
-        width: 50%;
+        width: 60%;
         transition: .3s;
+        @include pad_pro_width{
+             width: 80%;
+        }
+        @include mobile_width{
+             width: 100%;
+        }
         >img{
             width: 100%;
         }
@@ -1224,15 +1230,16 @@ section.section_toggle {
 
                                         .project_item_wrap {
 
-
-                                            width: 80%;
+                     
+                                            width: 100%;
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
                                             flex-wrap: wrap;
 
                                             @include mobile_width {
-
+                                                width: 85%;
+ 
                                                 flex-direction: column;
 
                                             }
