@@ -235,7 +235,7 @@ var form = document.getElementById("my-form");
             'Accept': 'application/json'
         }
       }).then(response => {
-        alert('成功寄出！')
+        alert('Successful！')
         form.reset()
       }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"

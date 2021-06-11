@@ -215,7 +215,7 @@ var form04 = document.getElementById("my-form04");
             'Accept': 'application/json'
         }
       }).then(response => {
-        alert('成功寄出！')
+        alert('Successful！')
         form.reset()
         form02.reset()
         form03.reset()
