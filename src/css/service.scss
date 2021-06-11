@@ -164,6 +164,7 @@ header {
                     justify-content: space-around;
                     align-items: center;
                     padding: 8vh 0;
+                    height: 80vh;
 
                     @include mobile_width {
                         flex-direction: column;
@@ -460,11 +461,7 @@ section.section_form {
                         .checkboxes{
                             display: flex;
                             flex-wrap: wrap;
-                            @include mobile_width{
-                                justify-content: center;
-                                align-items: center;
-                            }
-
+                          
                            .card{
                                margin:  10px;
                                border: solid 1px rgba(97, 97, 97, 0.2);

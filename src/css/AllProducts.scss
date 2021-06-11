@@ -1529,7 +1529,7 @@ section.section_toggle {
                                 }
 
                                 li {
-                                    // padding: 3rem;
+                                
                                     margin: 1rem 0;
                                     display: flex;
                                     justify-content: center;
@@ -1553,23 +1553,7 @@ section.section_toggle {
                                             line-height: 16px;
                                         }
                                     }
-
-
-
-
-                                    @include pad_pro_width {
-                                        // padding: 2.5rem;
-                                    }
-
-                                    @include pad_width {
-                                        // padding: 1.8rem;
-                                    }
-
-                                    @include mobile_width {
-                                    
-                                        margin: 4rem 0;
-                                    }
-
+        
                                     p {
                                         font-weight: 200;
                                         font-size: 20px;
