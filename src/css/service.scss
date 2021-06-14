@@ -45,11 +45,12 @@ $black: #161616;
     overflow: hidden;
 }
 
-header {
+header{
     background-position: center center;
     background-size: cover;
     width: 100%;
     margin-top: -2.5vmin;
+    height: 80vh;
     @include mobile_width{
        margin-top: 10vmin
     }
