@@ -790,7 +790,7 @@ nav {
           .inside_ul {
             visibility: hidden;
             width: 22vw;
-            height: 500px;
+            height: 650px;
             
             
             position: absolute;
@@ -802,6 +802,10 @@ nav {
             opacity: 0;
 
             border: 1px solid rgba(150, 150, 150, 0.3);
+
+            @include pc_width{
+              height: 500px
+            }
             
 
             @include pad_pro_width {
@@ -899,13 +903,16 @@ nav {
                     position: absolute;
                     background-color: white;
                     width: 20vw;
-                    height: 500px;
+                    height: 650px;
                     right: -91.5%;
                     top: 0;
                     display: none;
                     border: 1px solid rgba(150, 150, 150, 0.3);
                     padding: 1.5rem;
                     overflow-y: scroll;
+                    @include pc_width{
+                      height: 500px
+                    }
                     @include pad_pro_width {
                       height: 550px;
                       width: 30vw;
