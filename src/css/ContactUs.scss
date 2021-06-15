@@ -2,6 +2,9 @@
 @import "variables.scss";
 @import "reset.scss";
 header{
+    @include mobile_width{
+        margin-top: 100px;
+    }
     .desktop-img{
         @include pad_pro_width{
             display: none;
@@ -142,8 +145,8 @@ section.section_marquee{
     }
 }
 section.section_location{
-    height: 100vh ;
 
+    padding: 20vmin 0;
     .container{
        .row{
            .col-md-6{
