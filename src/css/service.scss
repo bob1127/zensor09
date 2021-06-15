@@ -46,11 +46,32 @@ $black: #161616;
 }
 
 header{
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    margin-top: -2.5vmin;
-    height: 80vh;
+
+    @include mobile_width{
+        margin-top: 100px;
+    }
+    .desktop-img{
+        @include pad_pro_width{
+            display: none;
+        }
+       
+    }
+    .pad-img{
+        display: none;
+        @include pad_pro_width{
+            display: block;
+        }
+        @include mobile_width{
+            display: none;
+        }
+    }
+    .mobile-img{
+        display: none;
+      
+        @include mobile_width{
+            display: block;
+        }
+    }
     @include mobile_width{
        margin-top: 10vmin
     }
