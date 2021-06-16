@@ -283,6 +283,11 @@ module.exports = {
             template: './src/EN/wechat.html',
             chunks: ['manifest','vendor','wechat']
         }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/article-card.html',
+            template: './src/EN/article-card.html',
+            chunks: ['manifest','vendor','article-card']
+        }),
        
         new CleanWebpackPlugin()
 
