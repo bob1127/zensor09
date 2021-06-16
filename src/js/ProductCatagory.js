@@ -7,6 +7,9 @@ import 'aos/dist/aos.css'; // You can also use <link>
 import 'swiper/swiper-bundle.css';
 
 
+$('.icon-earth').hover(function () {
+  $('.toggle-menu').fadeIn(500)
+})
 
 
 //mobile_nav
