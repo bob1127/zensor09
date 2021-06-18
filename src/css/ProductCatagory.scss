@@ -94,12 +94,17 @@ $card_btn: #00a7e1;
 
 }
 
-.carousel-indicators > li {
+.carousel-indicators{
+    z-index: 5!important;
+
+     >li {
     border-radius: 50% !important;;
     width: 10px !important;
     height: 10px !important;
     background-color: rgb(240, 166, 56) !important;
+    
   }
+}
 section.seciton_navgation {
     overflow: hidden;
 
@@ -650,6 +655,96 @@ section.section_product01 {
                     }
                 }
             }
+        }
+    }
+}
+section.section_card{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .container{
+        .row{
+          .col-md-6{
+              padding-top: 20vmin;
+          }
+          .right{
+              img{
+                  width: 100%;
+              }
+          }
+          .col-md-12{
+
+              .card-wrap{
+                   width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                  .card{
+                        width: 350px;
+                        border: 1px solid rgba(0,0,0,.2);
+
+                        padding-bottom: 2rem;
+                        margin: 25px 0;
+                      .img-wrap{
+     
+
+                    
+                    position: relative;
+                    transition: .5s;
+                        transform: scale(1);
+                        &:hover img{
+                        transform: scale(0.98);
+                        filter: grayscale(20%);
+                        }
+                    img{
+                        width:100%;
+                        position: relative;
+                        transition: .5s;
+                    
+                    }
+                    .box{
+                        
+                        background-color: rgba(0,0,0,.2);
+                        width: 350px;
+                        bottom: 0;
+                        position: absolute;
+                        color: white;
+                        padding: 25px;
+                    
+                        >div{
+                        font-size: 14px;
+                        margin-top: 1rem;
+                        border-left: 3px solid orange;
+                        
+                        
+                        padding-left: 6px;
+                        display: flex;
+                        justify-content: space-between;
+                        P{
+                            margin: 0;
+                        }
+                    
+
+                    
+                        
+
+                        }
+                        
+                        
+                    }
+                    .bottom-text{
+                        height: 60vmin;
+                    }
+                    
+                    }
+                      
+                  }
+
+
+              }
+          }
         }
     }
 }

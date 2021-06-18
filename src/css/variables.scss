@@ -111,13 +111,28 @@ $card_btn: #00a7e1;
     flex-direction: column;
 }
 .blue{
-    color:#2e90d1
+    color:#2e90d1 !important;
 }
 .light-font{
     color: rgba(255,255,255,.7);
 }
 .dark{
-    color: #333;
+    color: #333 !important;
+}
+.white{
+    color: white !important;
+}
+.bg-blue{
+    background-color: #2e90d1 !important;
+}
+.bg-black{
+    background-color: rgb(26, 26, 26) !important;
+}
+.bg-grey{
+    background-color: rgb(71, 71, 71) !important;
+}
+.red{
+    color: rgb(221, 49, 49) !important;
 }
 .text-justify{
     text-align: justify;

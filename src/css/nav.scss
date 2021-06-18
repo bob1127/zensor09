@@ -832,6 +832,9 @@ nav {
  
                   background-color: rgb(234, 240, 243);
                   color: #333;
+                  &:hover{
+                    cursor: none !important;
+                  }
                   
                 }
 

@@ -122,6 +122,43 @@ section.section_about_content {
             @include mobile_width {
                 padding: 0 .4vmin;
             }
+            .col-md-6.left{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .wrap{
+                    width: 90%;
+                    h1{
+                        font-weight: 900;
+
+                    }
+                    
+                }
+            }
+            .col-md-6.right{
+                .square-wrap{
+                    width:100%;
+                    display:flex;
+                     justify-content: center;
+                     flex-wrap: wrap;
+                    .square{
+                        width:50%;
+                        height: 40vmin;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-weight: 800;
+                        font-size: 1.7rem;
+                        
+                        
+                    }
+                    .square01{
+                        background-color: #3894fd;
+                    }
+                }
+            }
             .col-md-12.title-row{
                 position: relative;
                 .title-img{

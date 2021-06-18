@@ -183,10 +183,10 @@ $('.mobile_nav_toggle').click(function(){
       })
      
 
-  
+
 
      
- /* common fuctions */
+/*
 function el(selector) { return document.querySelector(selector) }
 function els(selector) { return document.querySelectorAll(selector) }
 function on(selector, event, action) { els(selector).forEach(e => e.addEventListener(event, action)) }
@@ -196,18 +196,18 @@ function cookie(name) {
 }
 
 
-/* popup button hanler */
+
 on('.cookie-popup button', 'click', () => {
   el('.cookie-popup').classList.add('cookie-popup--accepted');
   document.cookie = `cookie-accepted=true`
 });
 
-/* popup init hanler */
+
 if (cookie('cookie-accepted') !== "true") {
   el('.cookie-popup').classList.add('cookie-popup--not-accepted');
 }
 
-
+*/
 
 /* page buttons handlers */
 

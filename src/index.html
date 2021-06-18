@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>禪譜科技股份有限公司-Zensor、電化學、無線電化學</title>
+
+ 
+    
   
   </head>
-
+z
   <body>
     
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
@@ -1172,9 +1175,9 @@
     
      </header>
 
-      <section class="section_chemistry pt-5 pb-5" >
+      <section class="section_chemistry " >
         <div class="container-fluid" data-aos='fade-up' data-aos-duration='1000'>
-          <div class="row mt-5">
+          <div class="row">
             <div class="col-md-12">
               <div class="wrap">
                 <div class="quote">PRODUCTS</div>
@@ -1730,28 +1733,23 @@
           </div>
         </div>
       </section>
-
-    
-
-
-    
-
-<div class="container">
-  
-  <div class="pin-title"></div>
-  
-  <div class="cookie-popup cookie-popup--short cookie-popup--dark">
-    
-    <div class='cookie-popup-content'>
-      本網站將 cookie 和相關技術用於網站營運、分析和第三方廣告之目的。您可以選擇同意我們使用這些技術、拒絕非必要技術 ，或進一步管理您的偏好設定。<br><a href="Privacy.html">隱私權條款</a>
+      
+    <div id="cookie-notice" class=" cookie-notification">
+	<div class="container">
+		<div class="wp-block-column cookie-svg">
+		<div>
+			
+		</div>
     </div>
-    <div class="cookie-popup-actions">
-      <button>同意</button>
-    </div>
-
+		<div class="wp-block-column cookie-content">
+			<div class="ct-cookies-content">本網站將 cookie 和相關技術用於網站營運、分析和第三方廣告之目的。您可以選擇同意我們使用這些技術、拒絕非必要技術 ，或進一步管理您的偏好設定。
+ <a href="../" target="_blank">隱私條款</a>.</div></div>
+			<button class="ct-accept" onclick="acceptCookie();">同意</button><button class="ct-close" onclick="myFunction()" >×</button>
   </div>
-  
 </div>
+
+
+
 
       <footer>
         
@@ -1827,9 +1825,7 @@
           
         </div>
       </footer>
-     
-      
-                
+ 
       
         
    
@@ -1878,10 +1874,19 @@ jQuery(document).ready(function($) {
         
     </script>
  <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
- <script>
 
 
- </script>
+<script>
+    function acceptCookie() {
+                document.cookie = "cookieaccepted=1; expires=Thu, 18 Dec 2030 12:00:00 UTC; path=/", document.getElementById("cookie-notice").style.visibility = "hidden"
+            }
+            document.cookie.indexOf("cookieaccepted") < 0 && (document.getElementById("cookie-notice").style.visibility = "visible");
+function myFunction() {
+  document.getElementById("cookie-notice").style.visibility = "hidden";
+}
+</script>
+
+
   
   </body>
 </html>
