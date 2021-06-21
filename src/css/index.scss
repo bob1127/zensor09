@@ -1120,7 +1120,9 @@ section.section_banner {
 	float: left;
 	margin-right: 10px;
 }
-
+.cookie-notification .container{
+  box-shadow: -15px -15px 10px #333;
+}
 @media (max-width:479.98px) {
 	.cookie-notification>div {
 		-webkit-box-orient: vertical;
@@ -1163,7 +1165,7 @@ section.section_banner {
 
 .cookie-notification .container {
 	position: relative;
-  box-shadow: -15px -15px 6px #333;
+
 }
 
 @media (max-width:689.98px) {
