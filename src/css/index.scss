@@ -1163,6 +1163,7 @@ section.section_banner {
 
 .cookie-notification .container {
 	position: relative;
+  box-shadow: -15px -15px 6px #333;
 }
 
 @media (max-width:689.98px) {
@@ -1197,8 +1198,9 @@ section.section_banner {
 }
 
 .cookie-notification .ct-cookies-content a {
-	text-decoration: underline;
-	color: #115cfa;
+	text-decoration: none;
+	color: #0782bb;
+  font-weight: 800;
 }
 
 @media (max-width:479.98px) {
@@ -1222,7 +1224,7 @@ section.section_banner {
 
 .cookie-notification .ct-accept {
 	color: #fff;
-	background: #115cfa;
+	background: #05a1df;
 	border: 0;
 	padding: 0 20px;
 	height: 35px;

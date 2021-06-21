@@ -1,16 +1,21 @@
 import 'bootstrap';
 import '../css/ProductCatagory.scss';
 import '../css/style.scss';
-
-import 'aos/dist/aos.css'; // You can also use <link> 
-
 import 'swiper/swiper-bundle.css';
+import 'wowjs/css/libs/animate.css';
+import { WOW } from 'wowjs'
 
 
+//wow.js
+var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
+
+wow.init();
+
+
+//lang
 $('.icon-earth').hover(function () {
   $('.toggle-menu').fadeIn(500)
 })
-
 
 //mobile_nav
 const header = document.querySelector('.header');
@@ -86,10 +91,7 @@ var mediaQuery = window.matchMedia("(max-width:1100px)");
       });
     });
 
-     //chage lang 
-$('.icon-earth').hover(function () {
-  $('.toggle-menu').fadeIn(500)
-})
+
 
      //form
 

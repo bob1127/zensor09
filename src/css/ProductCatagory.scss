@@ -666,7 +666,7 @@ section.section_card{
     }
     .container{
         .top-text{
-            .col-md-6{
+            .col-md-6,.col-md-12{
                 display: flex;
                 align-items: center;
        
@@ -682,6 +682,18 @@ section.section_card{
                     justify-content: center;
                     align-items: center;
                     
+                }
+                a{
+                    &:hover span{
+                        margin-left: 2rem;
+                        
+
+                    }
+                    span{
+                        margin-left: 1rem;
+                        transition: .4s;
+                        
+                    }
                 }
             }
         }
