@@ -1570,6 +1570,19 @@ section.section_toggle {
                                         justify-content: center;
                                         align-items: center;
                                         flex-direction: column;
+                                        .slider-method{
+                                            .method-wrap{
+                                                width: 320px;
+                                                img{
+                                                    width:100%;
+                                                  
+                                                
+                                                }
+                                                .txt{
+                                                    width:100%
+                                                }
+                                            }
+                                        }
 
                                         .title_wrap {
                                           
