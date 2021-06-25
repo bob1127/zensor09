@@ -1697,27 +1697,19 @@
         </div>
       </section>
 
-    
-
-
-    
-
-<div class="container">
-  
-  <div class="pin-title"></div>
-  
-  <div class="cookie-popup cookie-popup--short cookie-popup--dark">
-    
-    <div class='cookie-popup-content'>
-          This site uses cookies and related technologies for site operations, analytics, and third-party advertising purposes.You can choose to consent to our use of these technologies,<br> refuse non-essential technologies, or further manage your preferences<br><a href="Privacy.html">Privacy Policy</a>
-    </div>
-    <div class="cookie-popup-actions">
-      <button>Agree</button>
-    </div>
-
-  </div>
-  
-</div>
+      <div id="cookie-notice" class=" cookie-notification">
+        <div class="container">
+          <div class="wp-block-column cookie-svg">
+          <div>
+            
+          </div>
+          </div>
+          <div class="wp-block-column cookie-content">
+            <div class="ct-cookies-content"> This site uses cookies and related technologies for site operations, analytics, and third-party advertising purposes.You can choose to consent to our use of these technologies,<br> refuse non-essential technologies, or further manage your preferences.
+       <a href="../Privacy.html" target="_blank">Privacy Policy</a>.</div></div>
+            <button class="ct-accept" onclick="acceptCookie();">AGREE</button><button class="ct-close" onclick="myFunction()" >×</button>
+        </div>
+      </div>
 
       <footer>
         
@@ -1848,6 +1840,15 @@ jQuery(document).ready(function($) {
 
 
  </script>
+ <script>
+  function acceptCookie() {
+              document.cookie = "cookieaccepted=1; expires=Thu, 18 Dec 2030 12:00:00 UTC; path=/", document.getElementById("cookie-notice").style.visibility = "hidden"
+          }
+          document.cookie.indexOf("cookieaccepted") < 0 && (document.getElementById("cookie-notice").style.visibility = "visible");
+function myFunction() {
+document.getElementById("cookie-notice").style.visibility = "hidden";
+}
+</script>
   
   </body>
 </html>

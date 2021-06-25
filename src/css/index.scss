@@ -1121,7 +1121,7 @@ section.section_banner {
 	margin-right: 10px;
 }
 .cookie-notification .container{
-  box-shadow: -15px -15px 10px #333;
+  box-shadow: -5px -5px 15px rgba(0,0,0,.2);
 }
 @media (max-width:479.98px) {
 	.cookie-notification>div {
@@ -1151,6 +1151,9 @@ section.section_banner {
 @media (max-width:689.98px) {
 	.cookie-notification {
 		background: #fff;
+    z-index:999999999999999;
+    padding: 1.5rem 0;
+    box-shadow: -7px 0 10px rgba(0,0,0,.4)
 	}
 }
 
@@ -1172,14 +1175,14 @@ section.section_banner {
 	.cookie-notification .container {
 		width: 88%;
 		margin: 0 auto;
+    box-shadow: none;
 	}
 }
 
 @media (min-width:690px) {
 	.cookie-notification .container {
 		background: #fdfdfd;
-		-webkit-box-shadow: 0 5px 30px -5px rgba(34, 56, 101, .15);
-		box-shadow: 0 5px 30px -5px rgba(34, 56, 101, .15);
+
 		padding: 25px;
 		border-radius: 3px;
 		max-width: 100vw
