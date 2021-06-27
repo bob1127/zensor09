@@ -377,7 +377,7 @@ section.section_print {
 }
 
 section.section_chemistry {
-  background-color: rgb(241, 241, 241);
+
   padding: 0 50px;
 
   @include mobile_width {
@@ -466,6 +466,7 @@ section.section_chemistry {
           background-color: #fff;
           transition: 0.5s;
           overflow: hidden;
+          background-color: #f1f1f1;
 
           @include mobile_width {
             display: flex;
@@ -1185,6 +1186,13 @@ section.section_banner {
 		border-radius: 3px;
 		max-width: 100vw
 	}
+}
+@media (min-width:1500px) {
+	.cookie-notification,.cookie-notification .container {
+	
+		max-width: 65vw
+	}
+  
 }
 
 

@@ -7,7 +7,6 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 AOS.init();
 
-import gsap from "gsap";
 import $ from 'jquery';
 import 'slick-carousel';
 
