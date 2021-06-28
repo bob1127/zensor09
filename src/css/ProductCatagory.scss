@@ -830,6 +830,15 @@ section.section_card{
                     }
                     .bottom-text{
                         height: 60vmin;
+                        .category{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                          
+                            p{
+                                font-weight: 800;
+                            }
+                        }
                     }
                     
                     }
