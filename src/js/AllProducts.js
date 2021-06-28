@@ -11,9 +11,10 @@ import { WOW } from 'wowjs'
 
 import LazyLoad from "vanilla-lazyload";
 
-$('.icon-earth').hover(function () {
-  $('.toggle-menu').fadeIn(500)
+$('.icon-earth').hover(function(){
+  $('.toggle-menu').fadeToggle(500)
 })
+
 
 
 

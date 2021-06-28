@@ -73,7 +73,7 @@ header{
         }
     }
     @include mobile_width{
-       margin-top: 10vmin
+       margin-top: 20vmin
     }
 
 
@@ -484,6 +484,11 @@ section.section_form {
                         .checkboxes{
                             display: flex;
                             flex-wrap: wrap;
+                            @include pad_width{
+                                justify-content:  center;
+                                align-items: center;
+                                
+                            }
                           
                            .card{
                                margin:  10px;
