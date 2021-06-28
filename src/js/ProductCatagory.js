@@ -4,6 +4,10 @@ import '../css/style.scss';
 import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
 import { WOW } from 'wowjs'
+//wow.js
+var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
+
+wow.init();
 
 //mobile_nav
 const header = document.querySelector('.header');
@@ -83,11 +87,7 @@ $(document).ready(function () {
 
 
 
-v
-//wow.js
-var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
 
-wow.init();
 
 
 //lang
