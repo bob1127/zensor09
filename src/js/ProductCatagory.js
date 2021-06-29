@@ -1,13 +1,64 @@
 import 'bootstrap';
 import '../css/ProductCatagory.scss';
+import '../css/AllProducts.scss';
 import '../css/style.scss';
-import 'swiper/swiper-bundle.css';
+import $ from 'jquery';
+import 'slick-carousel';
+
+
 import 'wowjs/css/libs/animate.css';
 import { WOW } from 'wowjs'
-//wow.js
-var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
 
-wow.init();
+
+import LazyLoad from "vanilla-lazyload";
+
+$('.icon-earth').click(function(){
+  $('.toggle-menu').fadeToggle(500)
+  
+})
+
+$(".slick-slider").slick({
+slidesToShow: 3,
+			slidesToScroll: 1,
+			arrows: true,
+			prevArrow: $(".arrow__left"),
+			nextArrow: $(".arrow__right"),
+			fade: false,
+			infinite: true,
+			autoplay: true,
+			pauseOnHover:true,
+			focusOnSelect: true,
+			centerPadding: 0,
+			slideMargin: 10,
+			centerPadding: 0,
+  responsive: [
+
+    {
+      breakpoint: 1226,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 971,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+    , {
+      breakpoint: 540,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+  ]
+
+});
+
 
 //mobile_nav
 const header = document.querySelector('.header');
@@ -32,6 +83,35 @@ $('.menu-simulator').click(function () {
 $('#product_toggle').click(function () {
   $('.inside_product_nav ').slideToggle(500)
 })
+
+const lazyLoadOptions = {
+  elements_selector: ".lazy",
+  to_webp: true,
+};
+const pageLazyLoad = new LazyLoad(lazyLoadOptions);
+const logEvent = (eventName, element) => {
+  console.log(
+    Date.now(),
+    eventName,
+    element.getAttribute("data-src"),
+    element.getAttribute("src")
+  );
+};
+
+
+var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
+
+wow.init();
+
+
+
+//topnav close
+$('.topFix_nav_close').click(function () {
+  $('.top_fix_nav').slideUp();
+})
+
+
+
 
 //      const quotes = document.querySelectorAll(".quote");
 
@@ -90,50 +170,20 @@ $(document).ready(function () {
 
 
 
-//lang
-$('.icon-earth').hover(function () {
-  $('.toggle-menu').fadeIn(500)
-})
 
 
 
 
-     //form
 
-     var form = document.getElementById("my-form");
-     var form02 = document.getElementById("my-form02");
-
-     
-         
-         async function handleSubmit(event) {
-           event.preventDefault();
-           var status = document.getElementById("my-form-status");
-           var data = new FormData(event.target);
-           fetch(event.target.action, {
-             method: form.method,
-             body: data,
-             headers: {
-                 'Accept': 'application/json'
-             }
-           }).then(response => {
-             alert('成功寄出！')
-             form.reset()
-             form02.reset()
-       
-           }).catch(error => {
-             status.innerHTML = "Oops! There was a problem submitting your form"
-           });
-         }
-         form.addEventListener("submit", handleSubmit)
-         form02.addEventListener("submit", handleSubmit)
-       
-
-
-   $(function () {
+$(function () {
   $('[data-toggle="popover"]').popover()
 })
-   $(function () {
+$(function () {
   $('.title_wrap').popover({
     container: 'body'
   })
 })
+
+
+
+
