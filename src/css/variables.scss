@@ -88,6 +88,25 @@ $card_btn: #00a7e1;
     align-items: center;
     color: white;
 }
+
+// html,body{
+//     opacity: 1;
+//     filter: blur(0px);
+//     animation-delay: 0.5s;
+//     animation: loading 2s;
+
+//     @keyframes loading {
+//         0% {
+//             opacity: 0;
+//             filter: blur(8px);
+//         }
+
+//         100% {
+//             opacity: 1;
+//             filter: blur(0);
+//         }
+//     }
+// }
 .modal-content  {
    
     border-radius: 0px !important; 
@@ -128,14 +147,21 @@ $card_btn: #00a7e1;
 .white{
     color: white !important;
 }
+
 .bg-blue{
     background-color: #2e90d1 !important;
+}
+.bg-lightBlue{
+    background-color: #ddecf7 !important;
 }
 .bg-black{
     background-color: rgb(31, 31, 31) !important;
 }
 .bg-grey{
     background-color: rgb(71, 71, 71) !important;
+}
+.bg-lightGrey{
+    background-color: rgb(182, 179, 179) !important;
 }
 .red{
     color: rgb(221, 49, 49) !important;
@@ -149,6 +175,15 @@ $card_btn: #00a7e1;
 }
 .txt-left{
     text-align: left;
+}
+.btn-style{
+    border: solid 1px #333;
+    padding: .3rem 1.2rem;
+    
+    
+}
+.btn-color-grey{
+    color: #333;
 }
 .width-m{
     width: 65% !important;
