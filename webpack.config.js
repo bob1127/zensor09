@@ -141,6 +141,41 @@ module.exports = {
             filename: 'Others06.html',
             template: './src/Others06.html',
             chunks: ['manifest','vendor','ProductCatagory']
+        })
+        ,new HtmlWebpackPlugin({
+            filename: 'Others.html',
+            template: './src/EN/Others.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Others01.html',
+            template: './src/EN/Others01.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Others02.html',
+            template: './src/EN/Others02.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Others03.html',
+            template: './src/EN/Others03.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Others04.html',
+            template: './src/EN/Others04.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Others05.html',
+            template: './src/EN/Others05.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Others06.html',
+            template: './src/EN/Others06.html',
+            chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
             filename: 'ScreenPrintedElectrodes.html',
