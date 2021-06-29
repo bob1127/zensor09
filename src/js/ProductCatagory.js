@@ -7,10 +7,7 @@ import 'slick-carousel';
 
 
 import 'wowjs/css/libs/animate.css';
-import { WOW } from 'wowjs'
 
-
-import LazyLoad from "vanilla-lazyload";
 
 $('.icon-earth').click(function(){
   $('.toggle-menu').fadeToggle(500)
@@ -83,107 +80,6 @@ $('.menu-simulator').click(function () {
 $('#product_toggle').click(function () {
   $('.inside_product_nav ').slideToggle(500)
 })
-
-const lazyLoadOptions = {
-  elements_selector: ".lazy",
-  to_webp: true,
-};
-const pageLazyLoad = new LazyLoad(lazyLoadOptions);
-const logEvent = (eventName, element) => {
-  console.log(
-    Date.now(),
-    eventName,
-    element.getAttribute("data-src"),
-    element.getAttribute("src")
-  );
-};
-
-
-var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
-
-wow.init();
-
-
-
-//topnav close
-$('.topFix_nav_close').click(function () {
-  $('.top_fix_nav').slideUp();
-})
-
-
-
-
-//      const quotes = document.querySelectorAll(".quote");
-
-
-// ScrollTrigger.addEventListener("refresh", setupSplits);
-// setupSplits();
-
-
-var mediaQuery = window.matchMedia('(max-width:1100px)')
-
-
-
-$(document).ready(function () {
-  var stickyNavTop = $("nav").offset().top;
-
-  var stickyNav = function () {
-    var scrollTop = $(window).scrollTop();
-
-    if (scrollTop > stickyNavTop) {
-      $("nav").addClass("sticky");
-
-      $('#nav_product').hover(function () {
-        $('.product_toggle').css('top', '11.5vh')
-      })
-    } else {
-      $("nav").removeClass("sticky");
-
-      $('#nav_product').hover(function () {
-        $('.product_toggle').css('top', '11.5vh')
-        if (mediaQuery.matches) {
-          $('.product_toggle').css('top', '7vh')
-        }
-      })
-    }
-  };
-
-  stickyNav();
-
-  $(window).scroll(function () {
-    stickyNav();
-  });
-});
-//top_fix_nav  virticle carousel
-$(document).ready(function () {
-  $(".top_fix_nav").slick({
-    vertical: true,
-    dots: false,
-    autoplay: true,
-  });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-$(function () {
-  $('.title_wrap').popover({
-    container: 'body'
-  })
-})
-
 
 
 
