@@ -905,11 +905,15 @@ section.section_toggle {
                         .card-body {
                             padding: 0 3rem;
                             .popup-youtube{
-                                background-color: rgb(12, 131, 211);
-                                padding: .5rem 1.5rem ;
-                                border-radius: 8px;
-                                color: white;
-                                font-weight: 500;
+
+                                color: rgb(12, 131, 211);
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                line-height: 50px;
+                                text-align: center;
+                                border: solid 1px rgb(12, 131, 211);
+                              
                                 transition: .2s;
                                 z-index: 2;
                                 position: absolute;
@@ -919,6 +923,9 @@ section.section_toggle {
                                 display: none;
                                 transition: .3s;
                                 z-index: 9;
+                                @include mobile_width{
+                                    display: block;
+                                }
                            
                                 @include mobile_width{
                                     font-size: 10px
