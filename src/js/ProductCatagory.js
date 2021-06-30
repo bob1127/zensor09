@@ -7,11 +7,7 @@ import 'slick-carousel';
 import { WOW } from 'wowjs'
 
 import 'wowjs/css/libs/animate.css';
-$(function() {
-  $(".ad-wrap").stick_in_parent({
-    offset_top: 10
-  });
-});
+
 var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
 
 wow.init();
