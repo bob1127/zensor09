@@ -1083,18 +1083,19 @@
                     </p>
                     <a  href="https://www.facebook.com/sharer.php?u=https://www.zensor.com.tw/news_detail.php?id=44FF716A-6048-33A5-AF13-3769F87C5F04/&quote=覺得文章不錯嘛？分享給其他人!" target="_blank" class=''>
                       <img src="../images/Others/fb-icon.png" width="85px" height="" >
-                     
-
-                  
-                    </a >
 
                     <a href="http://line.naver.jp/R/msg/text/?LINE%E3%81%A7%E9%80%81%E3%82%8B%0D%0Ahttp%3A%2F%2Fline.naver.jp%2F"><img src="../images/Others/line-icon.png" width="85px" height="" alt="分享至LINE" /></a>
+
+                    <a   class='ml-2 copy-link'>
+                      <img src="../images/Others/link-icon.png" width="85px" height="" >
+
+                    </a >
                   </div>
 
                   
                 </div>
               </div>
-              <div class='col-md-3 right mt-5 wow fadeInRight' data-wow-duraion='1s' data-wow-delay='.5s'>
+              <div class='col-md-3 right mt-5 '>
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non fuga debitis, dolor animi harum quaerat ullam officiis enim inventore tenetur expedita possimus molestiae totam necessitatibus accusamus. In adipisci optio deserunt.</p>
                    <ul>
                      <li>
@@ -1111,14 +1112,17 @@
                      </li>
                    </ul>
                    <div class="ad-wrap">
-                     <div class='item-wrap center mt-2 ' >
-                      Advertisement
+                     <div class="sidebar-title">
+                       相關文章
                      </div>
                      <div class='item-wrap center mt-2 ' >
-                      Advertisement
+                         ARTICLE
                      </div>
                      <div class='item-wrap center mt-2 ' >
-                      Advertisement
+                         ARTICLE
+                     </div>
+                     <div class='item-wrap center mt-2 ' >
+                         ARTICLE
                      </div>
                    </div>
                    
@@ -1286,6 +1290,18 @@
     offset_top: 10
   });
 });
+
+
+var $temp = $("<input>");
+var $url = $(location).attr('href');
+
+$('.copy-link').on('click', function() {
+  alert('copy sucessful')
+  $temp.val($url).select();
+  document.execCommand("copy");
+  $temp.remove();
+
+})
     
      </script>
   </body>
