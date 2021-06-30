@@ -88,6 +88,7 @@ $card_btn: #00a7e1;
     color: white;
 }
 html,body{
+    scroll-behavior: smooth;
     animation: loading 1s ;
     @keyframes loading {
         0% {
@@ -349,10 +350,10 @@ section.section_card{
     }
     .col-md-3{
                 .item-wrap{
-                    width: 100%;
+                    padding: 3rem;
                     background-color: #333;
                     color: white;
-                    height : 40vmin;
+            
                     
 
                 }

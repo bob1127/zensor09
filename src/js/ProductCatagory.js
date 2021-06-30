@@ -4,11 +4,13 @@ import '../css/AllProducts.scss';
 import '../css/style.scss';
 import $ from 'jquery';
 import 'slick-carousel';
-
+import { WOW } from 'wowjs'
 
 import 'wowjs/css/libs/animate.css';
 
+var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });
 
+wow.init();
 $('.icon-earth').click(function(){
   $('.toggle-menu').fadeToggle(500)
   
