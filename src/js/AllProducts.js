@@ -11,6 +11,10 @@ import { WOW } from 'wowjs'
 
 import LazyLoad from "vanilla-lazyload";
 
+
+
+
+
 $('.icon-earth').click(function () {
   $('.toggle-menu').fadeToggle(500)
 
