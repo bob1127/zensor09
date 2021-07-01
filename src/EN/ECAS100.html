@@ -1267,15 +1267,27 @@
                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=tCGH3sw-NJ0">▶︎</a><br>
 
                         </div>
+                     
+
+                        <video class='china_video' poster="../../images/Products-Detail-Img/ECAS100/截圖01.png" poster="" width="800" height="540" controls>
+                          <source src="../../video/zensor-video01.mp4" type="video/mp4">
+                          <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        </video>
+
+                     
+              
                         
 
-                        <a style='display:none' class="popup-vimeo" href="">Open Vimeo video</a><br>
-
+                    
+                       
 
 
                         
 
                         <div class="txt">
+                          
+  
                           <div class="title_wrap wow fadeInUp width-xl" data-wow-duration='1s'>
                          
                             <h3 class='wow fadeInUp margin-l' data-wow-duration='1s'>Complete electrochemical  functions</h3>
@@ -1338,11 +1350,7 @@
 
                                 </div>
                                 </div>
-                                <video width="320" height="240" controls>
-                                  <source src="../video/2-ECA-DEMO.MP4" type="video/mp4">
-                                  <source src="movie.ogg" type="video/ogg">
-                                Your browser does not support the video tag.
-                                </video>
+                                
                           
                            
                             
@@ -2111,7 +2119,11 @@
           alert(code); 
 
           if(country=="China"){
-            $('video').css('display','block')
+            $('.china_video').css('display','block');
+            $('.img-youtube-01').css('display','none');
+            
+            
+
             
           }
 

@@ -1,7 +1,9 @@
 @import "variables.scss";
 @import "reset.scss";
 @import "slick.scss";
-
+.china_video{
+    display: none;
+}
 .br-column{
     display: none;
     @include mobile_width{
@@ -2097,13 +2099,7 @@ section.section_toggle {
   text-align: center;
   text-transform: uppercase;
 }
-.video {
-  width: 100%;
-  height: 400px;
-  margin: auto;
-  display: block;
-  border: none;
-}
+
  .close-btn01, .close-btn02, .close-btn03, .close-btn04,.close-btn05 {
   width: 100px;
   height: 50px;
