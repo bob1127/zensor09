@@ -7,7 +7,45 @@ a {
     text-decoration: none !important;
   }
 }
+.wechat-modal{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.6);
+ 
+  position: fixed;
+  z-index: 999999999999;
+  display: none;
+  
+  
+  .wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .wechat-close{
+      z-index:99999999999;
+      position: absolute;
+      right: 20%;
+      top: 20%;
+      width: 30px;
+      @include pad_width{
+        right: 10%;
+        top: 35%;
+      }
+      
+    }
+    .wechat-modal-img{
+      position: absolute;
+      max-width: 600px;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+      @include pad_width{
+        width: 100%;
+      }
+    }
+  }
 
+}
 .icon-fit {
   width: 1.15em;
 }
@@ -64,7 +102,7 @@ a {
            right: 30px;
            display:none;
            z-index: 999999999;
-           padding: 2.5rem 2.8rem;
+           padding: 2.5rem .8rem;
            
            box-shadow: 5px 5px 5px rgba(0,0,0,.3);
            &:hover{
@@ -829,11 +867,12 @@ nav {
                 align-items: start;
                 flex-direction: column;
                 .main-category{
+
  
                   background-color: rgb(234, 240, 243);
                   color: #333;
                   &:hover{
-                    cursor: none !important;
+                    background-color:  transparent;
                   }
                   
                 }

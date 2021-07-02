@@ -11,16 +11,20 @@ import { WOW } from 'wowjs'
 
 import LazyLoad from "vanilla-lazyload";
 
-
-
-
-
-$('.icon-earth').click(function () {
+$('.icon-earth').click(function(){
   $('.toggle-menu').fadeToggle(500)
-
+ 
+  
 })
 
+$('.wechat-btn').click(function(){
+  $('.wechat-modal').fadeIn(400);
+   $('.modal').removeClass('show')
+})
 
+$('.wechat-close').click(function(){
+  $('.wechat-modal').fadeOut();
+})
 
 
 //mobile_nav
