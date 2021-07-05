@@ -12,7 +12,15 @@
      var $easyzoom = $('.easyzoom').easyZoom();
 } else {
     var $easyzoom = $('.easyzoom11').easyZoom();
-}</script><script>jQuery(document).ready(function($) { 
+}</script><script>let lang = navigator.language;//获取浏览器默认语言。
+     
+       if(lang='zh-tw'){
+         alert('FROM CHINA!')
+       }
+       
+
+
+        jQuery(document).ready(function($) { 
           jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() 
           { 
           var country = geoplugin_countryName(); 
