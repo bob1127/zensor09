@@ -17,6 +17,28 @@
 }
 
 header{
+    .desktop-img{
+        @include pad_pro_width{
+            display: none;
+        }
+       
+    }
+    .pad-img{
+        display: none;
+        @include pad_pro_width{
+            display: block;
+        }
+        @include mobile_width{
+            display: none;
+        }
+    }
+    .mobile-img{
+        display: none;
+      
+        @include mobile_width{
+            display: block;
+        }
+    }
     margin-top: -55px;
     @include pad_width{
         margin-top: 35px;
