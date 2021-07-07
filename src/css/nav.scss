@@ -168,7 +168,7 @@ a {
         padding: .5rem 0;
 
         p {
-          line-height: .7rem;
+          line-height: 18px;
         }
 
       }
@@ -842,7 +842,7 @@ nav {
             border: 1px solid rgba(150, 150, 150, 0.3);
 
             @include pc_width{
-              height: 500px
+              height: 570px
             }
             
 
@@ -950,15 +950,17 @@ nav {
                     top: 0;
                     display: none;
                     border: 1px solid rgba(150, 150, 150, 0.3);
-                    padding: 1.5rem;
-                    overflow-y: scroll;
+                    padding: .3rem 1.5rem;
+                
                     @include pc_width{
-                      height: 500px
+                   
+                      height: 570px
                     }
                     @include pad_pro_width {
                       height: 550px;
                       width: 30vw;
                       right: -94.5%;
+                      
                   
                     
                     }
@@ -970,16 +972,9 @@ nav {
 
       
                     .wrap {
-                      width: 100%;
-                      padding: 1rem .3rem;
-
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      flex-direction: column;
-                      @include pad_width {
-                      padding: 1rem 0;
-                    }
+                      width: 100%; 
+                      padding: 0 !important;
+                    
 
                       .item {
                         display: flex;

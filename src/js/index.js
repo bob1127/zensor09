@@ -16,6 +16,18 @@ import LazyLoad from "vanilla-lazyload";
 $('.icon-earth').hover(function(){
   $('.toggle-menu').fadeIn(500)
 })
+
+
+$('.wechat-btn').click(function(){
+  $('.wechat-modal').fadeIn(400);
+
+   $('.modal,.modal-backdrop').removeClass('show')
+   $('.modal-backdrop').css('display','none')
+})
+
+$('.wechat-close').click(function(){
+  $('.wechat-modal').fadeOut();
+})
   
 
 //mobile_nav

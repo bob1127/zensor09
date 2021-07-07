@@ -23,7 +23,6 @@ $(function() {
   });
 });
 
-
 $('.icon-earth').click(function(){
   $('.toggle-menu').fadeToggle(500)
  
@@ -32,7 +31,9 @@ $('.icon-earth').click(function(){
 
 $('.wechat-btn').click(function(){
   $('.wechat-modal').fadeIn(400);
-   $('.modal').removeClass('show')
+
+   $('.modal,.modal-backdrop').removeClass('show')
+   $('.modal-backdrop').css('display','none')
 })
 
 $('.wechat-close').click(function(){
