@@ -67,6 +67,11 @@ module.exports = {
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
+            filename: 'AllProducts01.html',
+            template: './src/AllProducts01.html',
+            chunks: ['manifest','vendor','allproduct']
+        }),
+        new HtmlWebpackPlugin({
             filename: 'wechat.html',
             template: './src/wechat.html',
             chunks: ['manifest','vendor','wechat']
