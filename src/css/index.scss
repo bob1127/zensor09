@@ -1017,6 +1017,14 @@ section.section_banner {
 
 /* COOKIE POPUP STYLES */
 
+.privacy-btn{
+  background-color: white;
+  padding: .1rem .5rem;
+  margin-top: 1.5rem;
+  @include mobile_width{
+    margin-top: 1rem;
+  }
+}
 .cookie-popup {
   
   font-size: 0.875rem;
@@ -1159,11 +1167,12 @@ section.section_banner {
 
 @media (max-width:689.98px) {
 	.cookie-notification {
-		background: #fff;
+		background-color: rgba(0,0,0,.4);
     z-index:999999999999999;
     padding: 1.5rem 0;
     box-shadow: -7px 0 10px rgba(0,0,0,.4)
 	}
+  
 }
 
 @media (min-width:690px) {
@@ -1177,6 +1186,12 @@ section.section_banner {
 
 .cookie-notification .container {
 	position: relative;
+  background:  rgba(0,0,0,.4);
+  @include mobile_width{
+    background:  transparent;
+  }
+
+
 
 }
 
@@ -1190,7 +1205,7 @@ section.section_banner {
 
 @media (min-width:690px) {
 	.cookie-notification .container {
-		background: #fdfdfd;
+		
 
 		padding: 25px;
 		border-radius: 3px;
