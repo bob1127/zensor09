@@ -12,10 +12,11 @@ import $ from 'jquery';
 
 // Slick version 1.5.8
 //chage lang 
-$('.icon-earth').hover(function () {
-  $('.toggle-menu').fadeIn(500)
+$('.icon-earth').click(function(){
+  $('.toggle-menu').fadeToggle(500)
+ 
+  
 })
-
 
 
 var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true });

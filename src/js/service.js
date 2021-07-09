@@ -13,8 +13,10 @@ import LazyLoad from "vanilla-lazyload";
 
 
 //chage lang 
-$('.icon-earth').hover(function () {
-  $('.toggle-menu').fadeIn(500)
+$('.icon-earth').click(function(){
+  $('.toggle-menu').fadeToggle(500)
+ 
+  
 })
 //mobile_nav
 const header = document.querySelector('.header');
@@ -90,10 +92,7 @@ var mediaQuery = window.matchMedia("(max-width:1100px)");
       });
     });
 
-     //chage lang 
-$('.icon-earth').hover(function () {
-  $('.toggle-menu').fadeIn(500)
-})
+
 
      //form
 

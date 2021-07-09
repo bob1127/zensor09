@@ -13,6 +13,7 @@ var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile
 wow.init();
 $('.icon-earth').click(function(){
   $('.toggle-menu').fadeToggle(500)
+ 
   
 })
 

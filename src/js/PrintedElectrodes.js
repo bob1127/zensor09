@@ -10,6 +10,8 @@ import 'swiper/swiper-bundle.css';
 
 AOS.init();
 //chage lang 
-$('.icon-earth').hover(function () {
-  $('.toggle-menu').fadeIn(500)
+$('.icon-earth').click(function(){
+  $('.toggle-menu').fadeToggle(500)
+ 
+  
 })

@@ -13,10 +13,11 @@ import 'slick-carousel';
 import LazyLoad from "vanilla-lazyload";
 
 
-$('.icon-earth').hover(function(){
-  $('.toggle-menu').fadeIn(500)
+$('.icon-earth').click(function(){
+  $('.toggle-menu').fadeToggle(500)
+ 
+  
 })
-
 
 $('.wechat-btn').click(function(){
   $('.wechat-modal').fadeIn(400);

@@ -29,7 +29,11 @@ $('.menu-simulator').click(function () {
   $('.menu-inside-simulator').slideToggle(500)
 })
 
-
+$('.icon-earth').click(function(){
+  $('.toggle-menu').fadeToggle(500)
+ 
+  
+})
 
 $('.mobile_product').click(function () {
   $('.inside_ul').animate({
@@ -84,10 +88,6 @@ $(document).ready(function () {
   });
 });
 
-//chage lang 
-$('.icon-earth').hover(function () {
-  $('.toggle-menu').fadeIn(500)
-})
 
 //form
 
