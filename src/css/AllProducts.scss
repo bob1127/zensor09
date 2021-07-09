@@ -1,6 +1,9 @@
 @import "variables.scss";
 @import "reset.scss";
 @import "slick.scss";
+p{
+    font-weight: 400 
+}
 .china_video{
     display: none;
 }
@@ -933,11 +936,15 @@ section.section_toggle {
                                 @include mobile_width{
                                     font-size: 10px
                                 }
+                             
                                 
                               
                             }
                             .img-youtube-01{
                                 overflow: hidden;
+                                &:hover{
+                                    border: solid 2px rgb(12, 131, 211)
+                                }
                                 
 
                                 &:hover .popup-youtube{
