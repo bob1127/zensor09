@@ -11,7 +11,18 @@ import { WOW } from 'wowjs'
 
 import LazyLoad from "vanilla-lazyload";
 
-
+$(window).scroll(function(){
+  if($(this).scrollTop()>700){
+    $('#gotop').fadeIn(500)
+  }else(
+    $('#gotop').fadeOut(500)
+  )
+})
+$('#gotop img').click(function(){
+  $('html,body').animate({
+    scrollTop: 0
+  },600)
+})
 $(function() {
   $('.popup-youtube, .popup-vimeo').magnificPopup({
       disableOn: 700,

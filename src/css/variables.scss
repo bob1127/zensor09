@@ -89,24 +89,24 @@ $card_btn: #00a7e1;
     color: white;
 }
 
-// html,body{
-//     opacity: 1;
-//     filter: blur(0px);
-//     animation-delay: 0.5s;
-//     animation: loading 2s;
+html,body{
+    opacity: 1;
+   
+    animation-delay: 0.5s;
+    animation: loading 2s;
 
-//     @keyframes loading {
-//         0% {
-//             opacity: 0;
-//             filter: blur(8px);
-//         }
+    @keyframes loading {
+        0% {
+            opacity: 0;
+         
+        }
 
-//         100% {
-//             opacity: 1;
-//             filter: blur(0);
-//         }
-//     }
-// }
+        100% {
+            opacity: 1;
+            
+        }
+    }
+}
 .modal-content  {
    
     border-radius: 0px !important; 
