@@ -10,10 +10,23 @@ p{
 .br-column{
     display: none;
     @include mobile_width{
-        display: block
-    }
-}s
+        display: block;
 
+    }
+}
+
+.mobile-img{
+    display: none;
+    @include mobile_width{
+        display: block;
+    }
+}
+.desktop-img{
+    display: block;
+    @include mobile_width{
+        display: none;
+    }
+}
 .img02 {
     width: 100%;
 
