@@ -2,7 +2,9 @@
 @import "reset.scss";
 
 
-
+p,li{
+    font-size: 20px;
+}
 header{
     .desktop-img{
         @include pad_pro_width{

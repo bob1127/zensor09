@@ -7,6 +7,11 @@ a {
     text-decoration: none !important;
   }
 }
+.wechat-btn{
+  &:hover{
+    cursor:pointer;
+  }
+}
 .wechat-modal{
   width: 100vw;
   height: 100vh;
