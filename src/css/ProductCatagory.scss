@@ -146,7 +146,86 @@ section.seciton_navgation {
         }
     }
 }
+section.section_allproducts{
+   
+    .container-fluid{
+        .row{
+          .col-md-12{
+              padding: 10vmin 10vmin 0 10vmin;
+             
+              .slick-slider{
+                  width: 100%;
+                  @include mobile_width{
+                      padding-left: 7.5px;
+                  }
+                  .element{
+                      padding: 7px;
+                      margin: 5px;
+                      background-color: rgb(243, 243, 243);
+                      
+                      .product_item{
+                          width: 100%;
+                          height: 550px;
+                         
+                          padding: 20px;
+                          position: relative;
+                          box-shadow: 10px 10px 15p rgba(0,0,0,.3);
+                          transition: .3s;
 
+                          @include mobile_width{
+                              height: 570px;
+                          }
+                          &:hover{
+                              box-shadow: 6px 6px 10px rgba(0,0,0,.2);
+                              cursor:pointer;
+                          }
+                          &::after{
+                              position: absolute;
+                              
+                              content: "";
+                              display: block;
+                              width: 14px;
+                              height: 14px;
+                              border-radius: 100%;
+                              background-color: #fff;
+                              left: 15px;
+                              top: 15px;
+
+                          }
+                          
+                          .img_wrap{
+                              width: 100%;
+
+                              img{
+                                  width:100%;
+
+
+                              }
+                          }
+                          .txt{
+                              .top_txt{
+                                  p{
+                                      color: rgb(58, 58, 58);
+                                  }
+                                  
+
+                              }
+                              .bottom_txt{
+                                  p{
+                                      color: rgb(117, 117, 117);
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+              .slick-track{
+                  margin: 0;
+              }
+          }
+        }
+    }
+}
 header {
   margin-top: -55px;
   @include pad_width{

@@ -589,6 +589,27 @@ section.section_form {
                     }
 
                 }
+                button{
+                    border: solid 1px black;
+                    background-color: transparent;
+                    padding: .4rem 1rem;
+                    
+                }
+                
+                .btn-fb-link,.btn-line-link{
+                    transition: .3s;
+                    &:hover{
+                        background-color: rgb(16, 172, 233);
+                        color:white;
+
+                    }
+                    &:hover a{
+                        
+                        color:white;
+
+                    }
+
+                }
             }
         }
     }

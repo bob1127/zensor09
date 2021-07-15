@@ -169,10 +169,10 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
   watchSlidesProgress: true,
   breakpoints: {
     0: {
-      slidesPerView: 3,
-    },
-    992: {
       slidesPerView: 4,
+    },
+    550: {
+      slidesPerView: 6,
     },
   }
 });

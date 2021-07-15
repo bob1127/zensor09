@@ -844,6 +844,7 @@ section.section_toggle {
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
+                    padding: 0 5px;
                 }
 
 
@@ -922,6 +923,9 @@ section.section_toggle {
 
                         .card-body {
                             padding: 0 3rem;
+                            @include mobile_width{
+                                padding: 0;
+                            }
                             .popup-youtube{
 
                                 color: white;
@@ -1168,10 +1172,7 @@ section.section_toggle {
 
                                     .col-md-6 {
                                         position: relative;
-                                        @include mobile_width{
-                                            padding: 0;
-                                            margin: 0;
-                                        }
+                                    
 
                                         .right_card,
                                         .left_card {
@@ -1414,10 +1415,7 @@ section.section_toggle {
                                 .container-fluid {
                                     .row {
                                         .col-md-6 {
-                                            @media screen and (max-width: 850px){
-                                                padding-right: 0;
-                                                padding-left: 0;
-                                            }
+                                      
                                             li {
                                                 // padding: 3rem;
 
@@ -1451,20 +1449,16 @@ section.section_toggle {
                                                     }
 
                                                     .title_wrap {
-                                                        width: 100%;
+                                                    
                                                         display: flex;
                                                         justify-content: center;
                                                         align-items: center;
                                                         flex-direction: column;
-
-                                                        @include pad_pro_width {
-                                                            width: 100%;
+                                                        @include mobile_width{
+                                                            width: 98%;
                                                         }
 
-                                                        @include mobile_width {
-                                                            width: 100%;
-                                                        }
-
+                                                        
                                                         h3 {
                                                             font-weight: 900;
                                                             font-size: 26px;
@@ -1594,15 +1588,13 @@ section.section_toggle {
                                             justify-content: center;
                                             align-items: center;
                                             flex-direction: column;
+                                            @include mobile_width{
+                                                            width: 98%;
+                                                     }
 
-                                            @include pad_pro_width {
-                                                width: 95%;
-                                            }
+                                         
 
-                                            @include mobile_width {
-                                                width: 100%;
-                                            }
-
+                                       
 
 
 
