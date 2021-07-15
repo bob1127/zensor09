@@ -844,7 +844,7 @@ section.section_toggle {
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    padding: 0 5px;
+                   
                 }
 
 
@@ -855,7 +855,7 @@ section.section_toggle {
 
                     @include mobile_width {
                         width: 100%;
-                        padding: 0 3px;
+                        padding: 0;
                     }
 
                     .card {
@@ -917,7 +917,7 @@ section.section_toggle {
                             }
 
                             @include mobile_width {
-                                padding: 0 .5rem;
+                                padding: 0;
                             }
                         }
 
@@ -1109,7 +1109,7 @@ section.section_toggle {
 
 
                             @include mobile_width {
-                                padding: 0 7px;
+                                padding: 0;
                             }
                             .container{
                                 .connect_wrap{
