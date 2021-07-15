@@ -1554,6 +1554,9 @@ section.section_toggle {
                                     p {
                                         font-weight: 200;
                                         font-size: 20px;
+                                        @include mobile_width{
+                                            font-size: 18px;
+                                        }
 
                                         span {
                                             font-weight: 900;
@@ -1620,6 +1623,9 @@ section.section_toggle {
                                              
                                                 font-weight: 200;
                                                 font-size: 20px;
+                                                @include mobile_width{
+                                                    font-size: 18px;
+                                                }
                                             }
 
 
@@ -1637,6 +1643,9 @@ section.section_toggle {
                                         p {
                                             font-weight: 200;
                                             font-size: 20px;
+                                            @include mobile_width{
+                                                font-size: 18px;
+                                            }
                                         }
                                     }
 
