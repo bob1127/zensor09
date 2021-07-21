@@ -694,13 +694,19 @@ section.section_Other{
                     width: 100%;
                     background-color: rgba(0,0,0,.1);
                     position: relative;
+                    overflow: hidden;
                     &:hover img{
-                        transform: scale(.9)ㄤ
+                        transform: scale(.9);
+                    }
+                    &:hover:after{
+                        left: 0;
+                        
                     }
                     &::after{
+                        transition: .4s;
                         position: absolute;
                         width: 20%;
-                        left: 0;
+                        left: -100%;
                         top: 45%;
                         padding: .7rem 0;
                         padding-right: .5rem;
