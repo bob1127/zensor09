@@ -912,6 +912,19 @@ section.section_news {
                   height: 30vmin;
                 }
               }
+              .btn-go-article{
+                transition: .4s;
+                background-color: white;
+                color: black;
+                &:hover{
+                  background-color: black;
+                   color: white ;
+                   cursor: pointer;
+                }
+                  &:hover a{
+                    color: white;
+                  }
+              }
               .button{
                 a{
                   text-decoration: none;

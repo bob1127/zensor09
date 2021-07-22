@@ -425,7 +425,15 @@ section.section_nagtive{
 }
 section.section_card{
     .col-md-9{
-   
+        .article-next-btn{
+            color:#333;
+            span{
+                transition: .5s;
+            }
+            &:hover span{
+                margin-left: 1.5rem;
+            }
+        }
     }
     .col-md-3{
         border-left: solid 1px rgb(230,230,230);
@@ -695,11 +703,28 @@ section.section_Other{
                     background-color: rgba(0,0,0,.1);
                     position: relative;
                     overflow: hidden;
+                    &:hover:before{
+                        display: block;
+                    }
                     &:hover img{
                         transform: scale(.9);
                     }
                     &:hover:after{
                         left: 0;
+                        
+                    }
+                    &::before{
+                        position: absolute;
+                        top: 0;
+                        left:0;
+                        background-color: rgba(0,0,0,.3);
+                        width: 100%;
+                        height: 100vmin;
+                        content:"";
+                        display: none;
+                        z-index: 99999999;
+                        transition: .4s;
+                       
                         
                     }
                     &::after{
