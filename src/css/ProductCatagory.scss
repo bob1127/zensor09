@@ -456,6 +456,15 @@ section.section_card{
     }
     .container-fluid{
         padding: 0 15vmin;
+        @include pad_pro_width{
+            padding: 0 9vmin;
+        }
+        @include pad_width{
+            padding: 0 5vmin;
+        }
+        @include mobile_width{
+            padding: 0 2vmin;
+        }
         .top-text{
             .slick{
                 .col-md-7{
@@ -469,7 +478,7 @@ section.section_card{
                 }
             }
             
-            .col-md-9,.col-md-3,.col-md-12{
+            .col-md-9,.col-md-3{
                 display: flex;
                 align-items: center;
                 @include mobile_width{
@@ -567,15 +576,18 @@ section.section_card{
               .card-wrap{
                    width: 100%;
                     display: flex;
+               
+                   
                     flex-wrap: wrap;
-                    justify-content: space-between;
-                    align-items: center;
+                
                   .card{
                         width: 350px;
                         border: 1px solid rgba(0,0,0,.2);
+                        
 
                         padding-bottom: 2rem;
-                        margin: 25px 0;
+                        margin: 25px;
+                        margin-left: 0;
                       .img-wrap{
                         overflow: hidden;
      
