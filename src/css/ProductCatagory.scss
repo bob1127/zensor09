@@ -454,7 +454,8 @@ section.section_card{
         text-decoration: none;
         color: white;
     }
-    .container{
+    .container-fluid{
+        padding:  15vmin;
         .top-text{
             .slick{
                 .col-md-7{
@@ -676,6 +677,14 @@ section.section_card{
     .col-md-8{
         .slider-item{
             padding: 1rem;
+            transition: .4s;
+            &:hover{
+                transform: scale(1.05);
+                cursor: pointer;
+                transform: translateY(-7px)
+           
+                
+            }
             .wrap{
                
                background-color: #f1f1f1;
