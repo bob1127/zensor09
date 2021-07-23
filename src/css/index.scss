@@ -107,17 +107,21 @@
   padding: 20px 3px;
   padding-top: 60px;
   display: flex;
+  .quote-product{
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 50px;
+  }
 
   .quote {
-    margin-top: 0px;
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 24px;
-    color: #4f5664;
-
-
-    text-align: center;
-    overflow: hidden;
-    position: relative;
+    
+    display: flex; 
+    justify-content: space-between;width:100%; 
+    padding: 0 50px;
+    a{
+      font-weight: 700;
+      font-size: 24px;
+    }
 
     .news_line {
       width: 40vw;
