@@ -359,15 +359,16 @@ section.seciton_navgation {
       .row {
           .col-md-12 {
               .navgation_wrap {
-                padding: 0 15vmin;
-                @include pad_pro_width{
+                
+                padding: 0 10vmin;
+                @include mobile_width{
                   padding: 0;
                 }
                   a {
                       transition: 0.2s;
                       color: #333;
                       margin: 0 0.2rem;
-                      font-size: 14px;
+                      font-size: 17px;
                       font-weight: 700;
                       
                       &:hover{
