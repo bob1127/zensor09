@@ -121,11 +121,9 @@ section.seciton_navgation {
          
             .col-md-12 {
                 .navgation_wrap {
-                    padding-left: 5rem;
+                    padding-left: 15px;
 
-                    @include mobile_width {
-                        padding-left: 1rem;
-                    }
+                
 
                     a {
                         transition: 0.2s;
