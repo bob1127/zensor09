@@ -34,7 +34,15 @@ $(function() {
   });
 });
 
-
+$('.menu-item-product').click(function(){
+  $('.mobile-icon-arrow01').fadeToggle()
+})
+$('.service-item').click(function(){
+  $('.service-menu').slideToggle()
+})
+$('.service-item').click(function(){
+  $('.mobile-icon-arrow02').fadeToggle()
+})
 $('.menu-li-01').click(function(){
   $('.mobile-menu-arrow01').fadeToggle(500)
 
