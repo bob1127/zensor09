@@ -113,37 +113,37 @@ html,body{
     
   }
 }
-section.seciton_navgation {
-    overflow: hidden;
+// section.seciton_navgation {
+//     overflow: hidden;
 
-    .container-fluid {
-        .row {
+//     .container-fluid {
+//         .row {
          
-            .col-md-12 {
-                .navgation_wrap {
-                    padding-left: 15px;
+//             .col-md-12 {
+//                 .navgation_wrap {
+//                     padding-left: 15px;
 
                 
 
-                    a {
-                        transition: 0.2s;
-                        color: #333;
-                        margin: 0 0.2rem;
-                        font-size: 14px;
+//                     a {
+//                         transition: 0.2s;
+//                         color: #333;
+//                         margin: 0 0.2rem;
+//                         font-size: 14px;
                         
-                        &:hover{
-                          color: rgb(46, 166, 221);
-                        }
+//                         &:hover{
+//                           color: rgb(46, 166, 221);
+//                         }
   
-                        span {
-                            margin: 0 0.2rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                         span {
+//                             margin: 0 0.2rem;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 section.section_allproducts{
    
     .container-fluid{
@@ -432,6 +432,26 @@ section.section_nagtive{
     margin-top: 8vh;
 }
 section.section_card{
+    .article-logo{
+        width: 50px;
+    }
+    .article-navgation{
+        a {
+            transition: 0.2s;
+            color: #333;
+            margin: 0 0.2rem;
+            font-size: 17px;
+            font-weight: 700;
+            
+            &:hover{
+              color: rgb(46, 166, 221);
+            }
+
+            span {
+                margin: 0 0.2rem;
+            }
+        }
+    }
     .col-md-9{
         .article-next-btn{
             color:#333;
@@ -707,10 +727,15 @@ section.section_card{
             }
             .wrap{
                
-               background-color: #f1f1f1;
+               
+               
               
                 .txt{
+                    width: 100%;
                 
+              }
+              img{
+                  width:100%;
               }
 
             }

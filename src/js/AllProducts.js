@@ -34,6 +34,19 @@ $(function() {
   });
 });
 
+
+$('.menu-li-01').click(function(){
+  $('.mobile-menu-arrow01').fadeToggle(500)
+
+})
+
+
+$('.menu-li-02').click(function(){
+  $('.mobile-menu-arrow02').fadeToggle(500)
+})
+
+
+
 $('.icon-earth').click(function(){
   $('.toggle-menu').fadeToggle(500)
  
