@@ -34,8 +34,9 @@ $(function() {
   });
 });
 
-$('.menu-item-product').click(function(){
-  $('.mobile-icon-arrow01').fadeToggle()
+$('.menu-li-03').click(function(){
+  $('.mobile-icon-arrow01').fadeToggle(500)
+
 })
 $('.service-item').click(function(){
   $('.service-menu').slideToggle()
@@ -47,6 +48,7 @@ $('.menu-li-01').click(function(){
   $('.mobile-menu-arrow01').fadeToggle(500)
 
 })
+
 
 
 $('.menu-li-02').click(function(){
