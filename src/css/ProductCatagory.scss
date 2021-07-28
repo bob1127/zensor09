@@ -470,21 +470,20 @@ section.section_card{
         }
 
         .item-wrap{
-                    padding: 3rem;
-                    background-color: #333;
-                    color: white;
-            
+            transition: .3s;
+                    
+            &:hover{
+                cursor: pointer;
+                margin-left: 1.5vmin;
+                box-shadow: 5px 0 5px rgba(0,0,0,.2)
+            }
                     
 
         }
     }
     a{
         text-decoration: none;
-        color: rgba(0,0,0,.8);
-        transition: .4s;
-        &:hover{
-            color: rgb(45, 157, 231);
-        }
+        color: white;
     }
     .container-fluid{
         padding: 0 15vmin;
