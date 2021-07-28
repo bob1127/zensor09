@@ -45,6 +45,10 @@ $black: #161616;
     overflow: hidden;
 }
 
+
+body{
+    background: linear-gradient(10deg, #355C7D, #6C5B7B, #C06C84);
+}
 header{
 
     @include mobile_width{
@@ -406,6 +410,7 @@ section.section_form {
     }
 
     .container {
+        
         .row {
             .col-md-12 {
                 display: flex;
