@@ -480,7 +480,11 @@ section.section_card{
     }
     a{
         text-decoration: none;
-        color: white;
+        color: rgba(0,0,0,.8);
+        transition: .4s;
+        &:hover{
+            color: rgb(45, 157, 231);
+        }
     }
     .container-fluid{
         padding: 0 15vmin;
