@@ -468,6 +468,18 @@ section.section_card{
         }
     }
     .col-md-3{
+        ul{
+            li{
+                a{
+                    color: #333;
+                    text-decoration: none;
+                    transition: .4s;
+                    &:hover{
+                        color: #56c7f2;
+                    }
+                }
+            }
+        }
         border-left: solid 1px rgb(230,230,230);
         .sidebar-title{
             border-bottom: 2px solid rgb(236, 181, 28);
