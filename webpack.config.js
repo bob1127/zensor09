@@ -191,6 +191,11 @@ module.exports = {
             template: './src/Others15.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
+         new HtmlWebpackPlugin({
+            filename: 'Others16.html',
+            template: './src/Others16.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
         
         new HtmlWebpackPlugin({
             filename: 'ScreenPrintedElectrodes.html',
