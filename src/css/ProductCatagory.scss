@@ -627,6 +627,10 @@ section.section_card{
                
                    
                     flex-wrap: wrap;
+                    @include mobile_width{
+                        justify-content: center;
+                        align-items: center;
+                    }
                 
                   .card{
                         width: 350px;
@@ -634,8 +638,11 @@ section.section_card{
                         
 
                         padding-bottom: 2rem;
-                        margin: 25px;
+                        margin: 10px;
                         margin-left: 0;
+                        &:hover .box{
+                            height: 120px;
+                        }
                       .img-wrap{
                         overflow: hidden;
      
@@ -662,6 +669,8 @@ section.section_card{
                         position: absolute;
                         color: white;
                         padding: 25px;
+                        transition: all 3s ease-in-out;
+
                     
                         >div{
                         font-size: 14px;

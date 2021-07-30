@@ -308,7 +308,10 @@ p{
                 .swiper-slide {
                     position: relative;
                     overflow: hidden;
-                    height: 470px;
+                    height: 600px;
+                    @include pad_pro_width{
+                        height: 470px;
+                    }
 
                     a {
                         position: relative;
