@@ -44,7 +44,9 @@ $black: #161616;
     width: 100%;
     overflow: hidden;
 }
-
+html{
+   
+}
 header{
 
     @include mobile_width{
@@ -388,7 +390,7 @@ section.section_content {
 
 section.section_form {
     padding: 10vmin 0;
-
+  background: linear-gradient(30deg, #eaeaea, white);
     span {
 
         font-weight: 700;
@@ -443,15 +445,22 @@ section.section_form {
                     .wrap_01,
                     .wrap_02,
                     .wrap_03 {
+                        box-shadow: -4vmin 4vmin 4vmin rgba(0, 0, 0, 0.3) !important;
+                        border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin: auto;
                         
                         .step{
                             width: 20%;
                             padding: .5rem 1rem;
-                            background-color: rgb(201, 201, 201);
+                          
                             position: absolute;
                             top:0;
                             left:0;
                             font-weight: 500;
+                            font-size: 22px;
                             
                             @include mobile_width{
                               width: 100%;

@@ -408,6 +408,56 @@ module.exports = {
             template: './src/EN/Others06.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Others07.html',
+            template: './src/EN/Others07.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Others08.html',
+            template: './src/EN/Others08.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Others09.html',
+            template: './src/EN/Others09.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Others10.html',
+            template: './src/EN/Others10.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Others11.html',
+            template: './src/EN/Others11.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Others12.html',
+            template: './src/EN/Others12.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Others13.html',
+            template: './src/EN/Others13.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Others14.html',
+            template: './src/EN/Others14.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),new HtmlWebpackPlugin({
+            filename: 'EN/Others15.html',
+            template: './src/EN/Others15.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Others16.html',
+            template: './src/EN/Others16.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+     
        
         new CleanWebpackPlugin()
 

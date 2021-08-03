@@ -15,7 +15,10 @@
         color: rgb(72, 145, 158);
     }
 }
-
+     
+html{
+   
+}
 header{
     .desktop-img{
         @include pad_pro_width{
@@ -84,7 +87,8 @@ header{
   }
 
     section.section_about {
-        background-color: #0e1b2e;
+         background-image: linear-gradient(75deg, #ff2b2b 5%,50%, #ff2b2b 90%,90%);
+        
 
         .row {
             .col-md-6 {
@@ -125,8 +129,9 @@ header{
 
 
 section.section_about_content {
+    background: linear-gradient(10deg, #7db9de, #577c8a,#355C7D );
     padding: 10vmin 4vmin;
-
+   
 
 
     .container-fluid {
@@ -517,13 +522,25 @@ section.section_about_content {
                 }
                 .content_wrap {
 
-                    background-color: #fff;
-                    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+                    
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    padding-bottom: 10vmin;
+                    background-color: rgba(255,255,255,.4);
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto 0 auto;
+    padding: 0 1.5rem 2rem;
+    color: #fafafa;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 4px;
+    box-shadow:inset 0 -1rem 1rem rgba(255, 255, 255, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.1),
+                0.3rem 0.2rem 3rem rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
                     #carouselExampleControls{
                         display: none;
                         @include mobile_width{
