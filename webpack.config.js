@@ -123,82 +123,82 @@ module.exports = {
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others01.html',
-            template: './src/Others01.html',
+            filename: 'Article01.html',
+            template: './src/Article01.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others02.html',
-            template: './src/Others02.html',
+            filename: 'Article02.html',
+            template: './src/Article02.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others03.html',
-            template: './src/Others03.html',
+            filename: 'Article03.html',
+            template: './src/Article03.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others04.html',
-            template: './src/Others04.html',
+            filename: 'Article04.html',
+            template: './src/Article04.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others05.html',
-            template: './src/Others05.html',
+            filename: 'Article05.html',
+            template: './src/Article05.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others06.html',
-            template: './src/Others06.html',
+            filename: 'Article06.html',
+            template: './src/Article06.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others07.html',
-            template: './src/Others07.html',
+            filename: 'Article07.html',
+            template: './src/Article07.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others08.html',
-            template: './src/Others08.html',
+            filename: 'Article08.html',
+            template: './src/Article08.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others09.html',
-            template: './src/Others09.html',
+            filename: 'Article09.html',
+            template: './src/Article09.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others10.html',
-            template: './src/Others10.html',
+            filename: 'Article10.html',
+            template: './src/Article10.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others11.html',
-            template: './src/Others11.html',
+            filename: 'Article11.html',
+            template: './src/Article11.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others12.html',
-            template: './src/Others12.html',
+            filename: 'Article12.html',
+            template: './src/Article12.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others13.html',
-            template: './src/Others13.html',
+            filename: 'Article13.html',
+            template: './src/Article13.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }), new HtmlWebpackPlugin({
-            filename: 'Others14.html',
-            template: './src/Others14.html',
+            filename: 'Article14.html',
+            template: './src/Article14.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Others15.html',
-            template: './src/Others15.html',
+            filename: 'Article15.html',
+            template: './src/Article15.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
          new HtmlWebpackPlugin({
-            filename: 'Others16.html',
-            template: './src/Others16.html',
+            filename: 'Article16.html',
+            template: './src/Article16.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         
@@ -384,82 +384,82 @@ module.exports = {
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others01.html',
-            template: './src/EN/Others01.html',
+            filename: 'Article01.html',
+            template: './src/Article01.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others02.html',
-            template: './src/EN/Others02.html',
+            filename: 'EN/Article02.html',
+            template: './src/EN/Article02.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others03.html',
-            template: './src/EN/Others03.html',
+            filename: 'EN/Article03.html',
+            template: './src/EN/Article03.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others04.html',
-            template: './src/EN/Others04.html',
+            filename: 'EN/Article04.html',
+            template: './src/EN/Article04.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others05.html',
-            template: './src/EN/Others05.html',
+            filename: 'EN/Article05.html',
+            template: './src/EN/Article05.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others06.html',
-            template: './src/EN/Others06.html',
+            filename: 'EN/Article06.html',
+            template: './src/EN/Article06.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others07.html',
-            template: './src/EN/Others07.html',
+            filename: 'EN/Article07.html',
+            template: './src/EN/Article07.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others08.html',
-            template: './src/EN/Others08.html',
+            filename: 'EN/Article08.html',
+            template: './src/EN/Article08.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others09.html',
-            template: './src/EN/Others09.html',
+            filename: 'EN/Article09.html',
+            template: './src/EN/Article09.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others10.html',
-            template: './src/EN/Others10.html',
+            filename: 'EN/Article10.html',
+            template: './src/EN/Article10.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others11.html',
-            template: './src/EN/Others11.html',
+            filename: 'EN/Article11.html',
+            template: './src/EN/Article11.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others12.html',
-            template: './src/EN/Others12.html',
+            filename: 'EN/Article12.html',
+            template: './src/EN/Article12.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others13.html',
-            template: './src/EN/Others13.html',
+            filename: 'EN/Article13.html',
+            template: './src/EN/Article13.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others14.html',
-            template: './src/EN/Others14.html',
+            filename: 'EN/Article14.html',
+            template: './src/EN/Article14.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),new HtmlWebpackPlugin({
-            filename: 'EN/Others15.html',
-            template: './src/EN/Others15.html',
+            filename: 'EN/Article15.html',
+            template: './src/EN/Article15.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others16.html',
-            template: './src/EN/Others16.html',
+            filename: 'EN/Article16.html',
+            template: './src/EN/Article16.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
      

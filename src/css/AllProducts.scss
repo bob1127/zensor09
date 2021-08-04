@@ -2251,3 +2251,22 @@ section.section_two_section{
   color: red;
   text-transform: uppercase;
 }
+
+
+
+
+section.section_APP{
+    background-color: rgb(48, 171, 241);
+    .container-fluid{
+        
+        .row{
+            .col-md-6{
+                img{
+                    max-width: 800px;
+                }
+
+            }
+
+        }
+    }
+}
