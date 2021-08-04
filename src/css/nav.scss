@@ -835,7 +835,12 @@ nav {
                   
                 }
                 .fa-chevron-right{
-                  color: #333;
+                  color: #a1a1a1;
+                  font-weight:100;
+                  transition: .3s;
+                  img{
+                    width: 15px;
+                  }
                 }
 
                 >li {
@@ -1497,6 +1502,7 @@ section.section_navgation {
     transform: rotate(0deg);
     top: 0;
     right: 0;
+    position: absolute;
   }
     
   
@@ -1511,7 +1517,7 @@ section.section_navgation {
     position: relative;
     .mobile-icon-arrow,.mobile-menu-arrow01,.mobile-menu-arrow02{
       color: white;
-      font-size: 1rem;
+      font-size: 20px;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);

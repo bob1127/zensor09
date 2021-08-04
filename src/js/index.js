@@ -13,6 +13,30 @@ import 'slick-carousel';
 import LazyLoad from "vanilla-lazyload";
 
 
+
+
+$('.menu-li-03').click(function(){
+  $('.mobile-icon-arrow01').fadeToggle(500)
+
+})
+$('.service-item').click(function(){
+  $('.service-menu').slideToggle()
+})
+$('.service-item').click(function(){
+  $('.mobile-icon-arrow02').fadeToggle()
+})
+$('.menu-li-01').click(function(){
+  $('.mobile-menu-arrow01').fadeToggle(500)
+
+})
+
+
+
+$('.menu-li-02').click(function(){
+  $('.mobile-menu-arrow02').fadeToggle(500)
+})
+
+
 $('.icon-earth').click(function(){
   $('.toggle-menu').fadeToggle(500)
  

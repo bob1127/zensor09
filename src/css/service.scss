@@ -408,7 +408,11 @@ section.section_form {
         padding: 1rem 2.5rem;
     }
 
-    .container {
+    .container-fluid {
+        padding: 0 15vmin;
+        @include mobile_width{
+            padding: 0 15px;
+        }
         .row {
             .col-md-12 {
                 display: flex;
@@ -506,6 +510,7 @@ section.section_form {
                                align-items: center;
                                flex-direction: column;
                                padding: 1rem;
+                              
                                @include pad_pro_width{
                                    margin: 6px;
                                }
@@ -513,6 +518,7 @@ section.section_form {
                                    padding: 2.5rem 1rem;
                                    justify-content: center;
                                    align-items: center;
+                                    width: 100%;
                                    
                                }
                                &:hover img{

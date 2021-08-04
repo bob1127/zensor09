@@ -118,6 +118,10 @@
     display: flex; 
     justify-content: space-between;width:100%; 
     padding: 0 50px;
+    @include mobile_width{
+       padding: 0;
+       flex-direction: columns;
+    }
     a{
       font-weight: 700;
       font-size: 24px;

@@ -6,10 +6,13 @@ import 'slick-carousel';
 
 import 'swiper/swiper-bundle.css';
 import 'wowjs/css/libs/animate.css';
-import { WOW } from 'wowjs'
+import { WOW } from 'wowjs';
 
 
 import LazyLoad from "vanilla-lazyload";
+
+
+
 
 $(window).scroll(function(){
   if($(this).scrollTop()>700){

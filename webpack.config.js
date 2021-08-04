@@ -67,6 +67,11 @@ module.exports = {
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
+            filename: 'OthersProducts.html',
+            template: './src/OthersProducts.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
+        new HtmlWebpackPlugin({
             filename: 'AllProducts01.html',
             template: './src/AllProducts01.html',
             chunks: ['manifest','vendor','allproduct']
@@ -469,6 +474,7 @@ module.exports = {
     ],
     module: {
         rules: [
+            
 
             {
                 test: /\.s[ac]ss$/i,
