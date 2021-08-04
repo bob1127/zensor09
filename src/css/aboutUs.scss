@@ -482,6 +482,7 @@ section.section_about_content {
                         padding: 0;
                     }
                     a{
+                
                         width: calc(200px/2);
                         height: calc(110px/2);
                         overflow: hidden;
@@ -540,7 +541,7 @@ section.section_about_content {
                 0 0 0 1px rgba(255, 255, 255, 0.1),
                 0.3rem 0.2rem 3rem rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);    
                     #carouselExampleControls{
                         display: none;
                         @include mobile_width{
@@ -568,6 +569,9 @@ section.section_about_content {
                             justify-content: center;
                             align-items: center;
                             flex-wrap: wrap;
+                            a{
+                                margin: 10px;
+                            }
                             @include pad_pro_width{
                                 width: 100%;
                             }
@@ -587,6 +591,9 @@ section.section_about_content {
                     }
                     .main_txt{
                         width: 70%;
+                        @include mobile_width{
+                            width: 90%;
+                        }
                         p{
                             text-align: center
                         }

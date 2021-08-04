@@ -118,8 +118,8 @@ module.exports = {
             chunks: ['manifest','vendor','aboutUs']
         })
         ,new HtmlWebpackPlugin({
-            filename: 'Others.html',
-            template: './src/Others.html',
+            filename: 'ArticleList.html',
+            template: './src/ArticleList.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
@@ -379,8 +379,8 @@ module.exports = {
             chunks: ['manifest','vendor','article-card']
         }),
         new HtmlWebpackPlugin({
-            filename: 'EN/Others.html',
-            template: './src/EN/Others.html',
+            filename: 'EN/ArticleList.html',
+            template: './src/EN/ArticleList.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
