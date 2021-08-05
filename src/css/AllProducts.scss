@@ -2114,65 +2114,25 @@ section.section_toggle {
     }
 }
 section.section_two_section{
-    .container-fluid{
+    padding: 10vmin 0;
+    background-color:#4ba6db;
+    .container{
         .row{
-            .col-md-6{
-                
-                a{  
-                    width:90%;
-                    .wrap{
-                    padding-top: 35px;
-                    @include mobile-width{
-                      padding-top: 20px;
-                    }
+            .col-md-12{
 
-                    .white-img{
-                        display: none;
-                    }
+                a{
+                    width: 50%;
                     img{
-                        width: 70px;
-                        
-                    }
-                    &:hover .black-img{
-                        display: none;
-                    }
-                    &:hover .white-img{
-                        display: block;
-                    }
-                    &:hover{
-                        background-color: #12bcf4;
-                        color: white;
-                        
-                    }
-                    &:hover .wrap_txt p{
-                         top:  40%;
-                    }
-                    transition: .4s;
                     width: 100%;
-                    height: 230px;
+                    transition: .4s;
+                    margin: 20px;
                     
-                    border: solid 1px rgba(0,0,0,.2);
-                    @include pad-width{
-                        width: 100%;
+
+                    &:hover{
+                        cursor: pointer;
+                        box-shadow: 0 0 10px rgba(0,0,0,.4);
                     }
                 }
-                }
-                .wrap_txt{
-                    width:100%;
-                    height: 30px;
-                    position: relative;
-                   
-                    overflow: hidden;
-                   
-                    p{
-                        position: absolute;
-                        transition: .3s;
-                        top: 200%;
-                        left: 50%;
-                        letter-spacing: .2rem;
-                        transform: translate(-50%)
-                        
-                    }
                 }
             }
         }
@@ -2270,6 +2230,7 @@ section.section_APP{
                     .app-txt{
                         font-size: 40px;
                         font-weight: 700;
+                        color: #454545;
                     }
                 }
                 .bottom{
@@ -2283,6 +2244,10 @@ section.section_APP{
                        .qr-img{
                            width: 150px;
                            margin-right: 20px;
+                           &:hover{
+                               cursor: pointer;
+                               
+                           }
                        }
                        p{
                         color:#b3b3b3;
@@ -2302,7 +2267,7 @@ section.section_APP{
                                &:hover{
                                    cursor: pointer;
                                    
-                                   transform: translate(1.06);
+                                   transform: scale(1.06);
                                    
                                }
                            }

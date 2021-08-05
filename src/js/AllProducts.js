@@ -72,9 +72,27 @@ $('.wechat-btn').click(function(){
    $('.modal,.modal-backdrop').removeClass('show')
    $('.modal-backdrop').css('display','none')
 })
+$('.qr-google').click(function(){
+  $('.google-modal').fadeIn(400);
+
+   $('.modal,.modal-backdrop').removeClass('show')
+   $('.modal-backdrop').css('display','none')
+})
+$('.qr-apple').click(function(){
+  $('.apple-modal').fadeIn(400);
+
+   $('.modal,.modal-backdrop').removeClass('show')
+   $('.modal-backdrop').css('display','none')
+})
 
 $('.wechat-close').click(function(){
   $('.wechat-modal').fadeOut();
+})
+$('.google-close').click(function(){
+  $('.google-modal').fadeOut();
+})
+$('.apple-close').click(function(){
+  $('.apple-modal').fadeOut();
 })
 
 

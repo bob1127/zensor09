@@ -12,7 +12,7 @@ a {
     cursor:pointer;
   }
 }
-.wechat-modal{
+.wechat-modal,.apple-modal,.google-modal{
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,.6);
@@ -26,21 +26,21 @@ a {
     width: 100%;
     height: 100%;
     position: relative;
-    .wechat-close{
+    .wechat-close,.google-close,.apple-close{
       z-index:99999999999;
       position: absolute;
       right: 20%;
       top: 20%;
       width: 30px;
       @include pad_width{
-        right: 10%;
-        top: 35%;
+        right: 5%;
+        top: 5%;
       }
       
     }
     .wechat-modal-img{
       position: absolute;
-      max-width: 600px;
+       width: 600px;
       left: 50%;
       top:50%;
       transform: translate(-50%,-50%);
@@ -48,6 +48,15 @@ a {
         width: 100%;
       }
     }
+    .google-modal-img,.apple-modal-img{
+      position: absolute;
+       width: 400px;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+     
+    }
+
   }
 
 }

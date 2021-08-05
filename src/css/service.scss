@@ -402,11 +402,31 @@ section.section_form {
         color: rgb(9, 121, 196);
     }
 
-    a {
+   .btn_wrap{
+    @include mobile_width{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        
+        width:100%;
+    }
+     button{
+        padding: 20px;
+        transition: .4s;
+        &:hover{
+            background-color: white;
+        }
+        a {
         color: rgb(87, 87, 87);
         transition: .2s;
-        padding: 1rem 2.5rem;
+        padding: 2.5rem;
+        
+        img{
+            width: 50px;
+        }
     }
+    }
+   }
 
     .container-fluid {
         padding: 0 15vmin;
