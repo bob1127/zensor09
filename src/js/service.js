@@ -12,6 +12,16 @@ import { WOW } from 'wowjs'
 import LazyLoad from "vanilla-lazyload";
 
 
+$('.wechat-btn').click(function(){
+  $('.wechat-modal').fadeIn(400);
+
+   $('.modal,.modal-backdrop').removeClass('show')
+   $('.modal-backdrop').css('display','none')
+})
+
+$('.wechat-close').click(function(){
+  $('.wechat-modal').fadeOut();
+})
 
 
 $('.menu-li-03').click(function(){

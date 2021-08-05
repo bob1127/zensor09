@@ -76,11 +76,7 @@ module.exports = {
             template: './src/AllProducts01.html',
             chunks: ['manifest','vendor','allproduct']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'wechat.html',
-            template: './src/wechat.html',
-            chunks: ['manifest','vendor','wechat']
-        }),
+       
         new HtmlWebpackPlugin({
             filename: 'ContactUs.html',
             template: './src/ContactUs.html',
@@ -368,16 +364,7 @@ module.exports = {
             template: './src/EN/SF100.html',
             chunks: ['manifest','vendor','AllProducts']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'EN/wechat.html',
-            template: './src/EN/wechat.html',
-            chunks: ['manifest','vendor','wechat']
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'EN/article-card.html',
-            template: './src/EN/article-card.html',
-            chunks: ['manifest','vendor','article-card']
-        }),
+       
         new HtmlWebpackPlugin({
             filename: 'EN/ArticleList.html',
             template: './src/EN/ArticleList.html',
