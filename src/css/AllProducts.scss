@@ -2260,7 +2260,12 @@ section.section_APP{
     .container-fluid{
         
         .row{
-            .col-md-6{
+            .col-md-5{
+                img{
+                    max-width: 300px;
+                }
+            }
+            .col-md-7{
                 .top{
                     .app-txt{
                         font-size: 40px;
@@ -2270,13 +2275,36 @@ section.section_APP{
                 .bottom{
                    width: 100%;
                    border-radius: 20px;
-                   height: 50vmin;
-                   background-color: #f1f1f1;  
+                  
+                   background-color: #f2f2f2;  
+                   padding:  20px;
                    .wrap{
-                       width: 80%;
+                       width: 95%;
+                       .qr-img{
+                           width: 150px;
+                           margin-right: 20px;
+                       }
+                       p{
+                        color:#b3b3b3;
+                        font-weight: 100;
+                       }
+                       hr{
+
+                           height:1px;
+                       }
                        .top-part{
+                 
                            img{
                                width: 140px;
+                               transition: .5s;
+
+
+                               &:hover{
+                                   cursor: pointer;
+                                   
+                                   transform: translate(1.06);
+                                   
+                               }
                            }
                        }
                        
@@ -2284,9 +2312,7 @@ section.section_APP{
                    } 
                    
                 }
-                img{
-                    max-width: 300px;
-                }
+                
 
             }
 

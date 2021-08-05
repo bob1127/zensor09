@@ -672,6 +672,7 @@ section.section_card{
                         padding-bottom: 2rem;
                         margin: 10px;
                         margin-left: 0;
+                       
                         &:hover .box{
                             height: 120px;
                         }
@@ -923,6 +924,9 @@ section.section_Other{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+         @include mobile_width{
+                            width: 100%;
+                        }
    
         .circle{
             margin-top: 10px;

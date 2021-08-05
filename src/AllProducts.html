@@ -1530,7 +1530,10 @@
       </footer>
     </div>
     <script>
-    VanillaTilt.init(document.querySelectorAll(".card"),{
+    
+
+if($(window).width()>550){
+  VanillaTilt.init(document.querySelectorAll(".card"),{
 	max: 30,
 	speed: 1000,
   transition: true,
@@ -1538,6 +1541,19 @@
   perspective: 600,
   glare: true
 });
+}else{
+  VanillaTilt.init(document.querySelectorAll(".cardwww"),{
+	max: 30,
+	speed: 1000,
+  transition: true,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  perspective: 600,
+  glare: true
+});
+  
+}
+
+
 
 
       $(".slick-slider").slick({
