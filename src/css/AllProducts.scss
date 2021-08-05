@@ -2256,13 +2256,36 @@ section.section_two_section{
 
 
 section.section_APP{
-    background-color: rgb(48, 171, 241);
+  
     .container-fluid{
         
         .row{
             .col-md-6{
+                .top{
+                    .app-txt{
+                        font-size: 40px;
+                        font-weight: 700;
+                    }
+                }
+                .bottom{
+                   width: 100%;
+                   border-radius: 20px;
+                   height: 50vmin;
+                   background-color: #f1f1f1;  
+                   .wrap{
+                       width: 80%;
+                       .top-part{
+                           img{
+                               width: 140px;
+                           }
+                       }
+                       
+                       
+                   } 
+                   
+                }
                 img{
-                    max-width: 800px;
+                    max-width: 300px;
                 }
 
             }
