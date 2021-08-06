@@ -592,11 +592,9 @@ section.section_about_content {
                     .main_txt{
                         width: 70%;
                         @include mobile_width{
-                            width: 90%;
+                            width: 95%;
                         }
-                        p{
-                            text-align: center
-                        }
+                       
                     }
                     .title {
                         width: 100%;

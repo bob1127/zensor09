@@ -761,13 +761,18 @@ section.section_news {
         .slick-initialized .slick-slide{
           overflow: hidden;
           padding: 0 6px;
-      }
+        }
         @include mobile_width {
           padding: 0 25px;
         }
 
         .txt {
           @extend %display_center;
+        }
+       
+        .slick-prev:before, .slick-next:before{
+          color: #03cafc;
+          font-size: 30px;
         }
 
         .slick-prev {
@@ -777,7 +782,7 @@ section.section_news {
           margin-left: 30vmin;
           width: 40px;
           height: 40px;
-          background-color: rgb(20, 155, 196);
+         
           z-index: 9999999;
           border-radius: 100%;
           opacity: 0;
@@ -794,7 +799,7 @@ section.section_news {
           height: 40px;
           width: 40px;
           margin-right: 30vmin;
-          background-color: rgb(20, 155, 196);
+        
           border-radius: 100%;
           opacity: 0;
           margin-top: -5vmin;

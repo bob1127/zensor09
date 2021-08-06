@@ -371,8 +371,8 @@ module.exports = {
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({
-            filename: 'Article01.html',
-            template: './src/Article01.html',
+            filename: 'EN/Article01.html',
+            template: './src/EN/Article01.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
         new HtmlWebpackPlugin({

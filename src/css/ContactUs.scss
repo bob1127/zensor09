@@ -1,6 +1,10 @@
 
 @import "variables.scss";
 @import "reset.scss";
+
+html,body{
+   background-color:#d9d9d9;
+}
 header{
     @include mobile_width{
         margin-top: 100px;
@@ -144,71 +148,119 @@ section.section_marquee{
           
     }
 }
+
 section.section_location{
-
+    
+    background-color: #e8e8e8;
+    @include mobile_width{
+            margin-top: 25vmin;
+        }
  
-    .container{
+    .container-fluid{
+        padding: 0 15vmin;
+        @include pad_width{
+            padding: 0 5vmin;
+        }
+        @include mobile_width{
+            padding: 0 10px;
+        }
+      
        .row{
-           .col-md-6{
+           padding: 10vmin 0;
            
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            flex-direction: column;
-           
-            @include pad_pro_width{
-                padding: 10vmin 4vmin;
-                
-            }
-            @include mobile_width{
-                padding: 0;
-            }
-               ul{
-                   @include mobile_width{
-                       width: 90%
-                   
-                   }
-                  li{
-                      img{
-                          max-width: 150px;
-                      }
-                  }
-
+           .card-wrap{
+               background-color: #fff;
+               display: flex;
+               box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+               height: 80vh;
+               @include pad_pro_width{
+                   display: flex;
+                   flex-direction: column;
+                   height: 100%;
                }
-               form{
-                   width: 100%;
-                   #fs-frm-inputs{
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    width: 100%;
-                    input{
-                        width: 100%;
-                        margin: 1rem 0;
-                        padding: .2rem 0;
-                        border: none;
-                        border-bottom: solid 1px #479ee3;
-                        &:focus{
-                            outline: none;
-                        }
+               .left{
+                   padding: 20px 30px;
+                   width: 50%;
+                   display: flex;
+                   justify-content: start;
+                   align-items: start;
+                   flex-direction: column;
+                   @include pad_pro_width{
+                       width: 100%;
+                   }
+
                    
-                    }
-                    .submit{
-                        background-color: #479ee3;
-                        border: solid 1px #479ee3;
-                        color: #fff;
-                        text-align: center;
-                        padding: .5rem 1rem;
-                        border-radius:20px;
-                    }
+                   h1{
+                       font-size: 32px;
+                       font-weight: 400;
                    }
                    
-                   
+                   form{
+                       display: flex;
+                       width: 100%;
+                       @include mobile_width{
+                           flex-direction: column;
+                       }
+                       
+                       .form-txt{
+                           padding: 0 10px;
+                           padding-left: 15px;
 
+                           border-left: solid 1px rgba(0,0,0,.3);
+                           .icon-wrap{
+                              
+                                   li{
+                                       display: flex;
+                                       justify-content: start;
+                                     
+                                      
+                                       img{
+                                           width: 25px;
+                                           height: 25px;
+                                       }
+                                       p{
+                                           margin-top: .5px;
+                                           margin-left: 10px;
+                                       }
+                                   }
+                            
+                           }
+                       }
+                       #fs-frm-inputs{
+                           width:100%;
+                           display: flex;
+                           flex-direction: column;
+                           padding-right: 15px;
+                       }
+                       
+                       width: 100%;
+                       input{
+                           width: 100%;
+                           background-color:#e8e8e8;
+                           border: none;
+                           padding: .4rem 0;
+                       }
+                       .submit{
+                           margin-top: 15px;
+                           background-color: #2ec0ff;
+                           color: white;
+                           border: none;
+                       }
+
+                   }
                }
-               p{
-                   color: #666;
+               .right{
+                   width: 50%;
+                   @include pad_pro_width{
+                     width: 100%;
+               }
+                   iframe{
+                       height: 100%;
+                       @include pad_pro_width{
+                           height: 50vh;
+                       }
+                       
+                   }
                }
            }
        } 

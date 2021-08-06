@@ -2223,6 +2223,9 @@ section.section_APP{
             .col-md-5{
                 img{
                     max-width: 300px;
+                    @include mobile_width{
+                        width: 200px;
+                    }
                 }
             }
             .col-md-7{
@@ -2262,6 +2265,7 @@ section.section_APP{
                            img{
                                width: 140px;
                                transition: .5s;
+                               
 
 
                                &:hover{
