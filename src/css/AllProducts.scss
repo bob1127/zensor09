@@ -2119,9 +2119,20 @@ section.section_two_section{
     .container{
         .row{
             .col-md-12{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include mobile_width{
+                        flex-direction: column;
+                    }
+                
+
 
                 a{
                     width: 50%;
+                    @include mobile_width{
+                        width: 100%;
+                    }
                     img{
                     width: 100%;
                     transition: .4s;
