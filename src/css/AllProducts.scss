@@ -292,6 +292,7 @@ p{
             display: block;
             max-width: 700px;
             margin: 1em auto 3em;
+            margin-top: 0;
 
             a {
                 display: block;
@@ -303,14 +304,15 @@ p{
                 border-radius: 3px;
                 margin-bottom: 5px;
                 height: auto !important;
-
+                
+ 
 
                 .swiper-slide {
                     position: relative;
                     overflow: hidden;
                     height: 600px;
-                    @include pad_pro_width{
-                        height: 470px;
+                    @include pc_width{
+                        height: 450px;
                     }
 
                     a {
