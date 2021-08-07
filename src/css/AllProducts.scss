@@ -809,12 +809,7 @@ section.section_toggle {
         >img{
             width: 100%;
         }
-        &:hover{
-            box-shadow: 10px 0 20px rgba(0,0,0,.5);
-            transform: translateY(-7px);
-            
-
-        }
+       
 
         @include mobile_width {
             width: 90%
