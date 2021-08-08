@@ -28,8 +28,14 @@ html {
 #exampleModal {
     z-index: 99999999999;
 }
-a,.slick-slide{
+a,.slick-slide,button{
     outline:none !important;
 }
-
+.discount-banner{
+    transition: .5s;
+    &:hover{
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
     
