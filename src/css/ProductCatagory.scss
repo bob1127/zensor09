@@ -534,7 +534,7 @@ section.section_card{
         
     }
     .container-fluid{
-        padding: 0 15vmin;
+        padding: 0 10vmin;
         @include pad_pro_width{
             padding: 0 9vmin;
         }
@@ -672,6 +672,7 @@ section.section_card{
                         padding-bottom: 2rem;
                         margin: 10px;
                         margin-left: 0;
+                       
                        
                         &:hover .box{
                             height: 120px;
