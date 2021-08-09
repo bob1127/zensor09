@@ -20,6 +20,7 @@ html{
    
 }
 header{
+    margin-top: -8vmin;
     .desktop-img{
         @include pad_pro_width{
             display: none;
@@ -131,6 +132,7 @@ header{
 section.section_about_content {
     background: linear-gradient(10deg, #7db9de, #577c8a,#355C7D );
     padding: 10vmin 4vmin;
+    margin-top: -8vmin;
    
 
 

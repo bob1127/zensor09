@@ -48,6 +48,7 @@ html{
    
 }
 header{
+    margin-top: -8vmin;
 
     @include mobile_width{
         margin-top: 100px;
@@ -495,6 +496,9 @@ section.section_form {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   margin: auto;
+                        .btn{
+                            padding: .8rem 4.5rem;
+                        }
                         
                         .step{
                             width: 20%;

@@ -407,14 +407,18 @@ p{
         padding: 0 1rem;
 
         flex-direction: column;
-        @include pad_width{
-            width: 45%;
+
+        @include pad_pro_width{
+            width: 45% ;
         }
         .swiper-button-next,.swiper-button-prev{
             top: 90%;
             transition: .5s;
             width: 30px !important;
             height: 30px !important;
+            @include mobile_width{
+                display: none;
+            }
             
             &:hover{
                 border-radius: 100%;
@@ -2138,8 +2142,13 @@ section.section_toggle {
     }
 }
 section.section_two_section{
-    padding: 10vmin 0;
+    padding: 6vmin 0;
     background-color:#4ba6db;
+    height: 85vh;
+    @include mobile_width{
+        height: auto;
+    }
+
     .container{
         .row{
             .col-md-12{
@@ -2153,19 +2162,32 @@ section.section_two_section{
 
 
                 a{
-                    width: 50%;
+                    width: 20%;
+                    transition: .5s;
+                    &:hover{
+                        margin-bottom: 20px;
+                    }
+                    @include pad_width{
+                        width: 40%;
+                    }
                     @include mobile_width{
-                        width: 100%;
+                        width: 80%;
+                        margin: 10px 0;
                     }
                     img{
                     width: 100%;
                     transition: .4s;
                     margin: 20px;
+                    transition: .5s;
+                    @include mobile_width{
+                        margin: 0;
+                    }
                     
 
                     &:hover{
                         cursor: pointer;
-                        box-shadow: 0 0 10px rgba(0,0,0,.4);
+                        transform: scale(1.1);
+                        
                     }
                 }
                 }

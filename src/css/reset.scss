@@ -31,6 +31,9 @@ html {
 a,.slick-slide,button{
     outline:none !important;
 }
+.swiper-button-next,.swiper-button-prev{
+    outline:none;
+}
 .discount-banner{
     transition: .5s;
     &:hover{

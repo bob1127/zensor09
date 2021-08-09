@@ -150,6 +150,7 @@ section.section_marquee{
 }
 
 section.section_location{
+    margin-top: -8vmin;
     
     background-color: #e8e8e8;
     @include mobile_width{
