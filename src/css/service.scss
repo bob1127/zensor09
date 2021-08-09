@@ -404,6 +404,19 @@ section.section_form {
     }
 
    .btn_wrap{
+    .link-btn{
+        width: 250px;
+        margin-right: 20px;
+        transition: .5s;
+        @include mobile-width{
+            width: 300px;
+            margin-top: 8px;
+        }
+        &:hover{
+            margin-left:15px;
+            cursor: pointer;
+        }
+    }
     @include mobile_width{
         display: flex;
         justify-content:center;

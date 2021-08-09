@@ -399,12 +399,36 @@ p{
     .right {
         width: 50%;
         height: 100%;
+        position: relative;
 
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0 1rem;
+
         flex-direction: column;
+        @include pad_width{
+            width: 45%;
+        }
+        .swiper-button-next,.swiper-button-prev{
+            top: 90%;
+            transition: .5s;
+            width: 30px !important;
+            height: 30px !important;
+            
+            &:hover{
+                border-radius: 100%;
+                background-color: #03c6fc;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .swiper-button-prev{
+            left: -10px;
+        }
+        .swiper-button-next{
+            right: -10px;
+        }
         .gallery-thumbs {
                 height: 130px;
                 width:100%;
@@ -2253,16 +2277,20 @@ section.section_APP{
                   
                    background-color: #f2f2f2;  
                    padding:  20px;
+                   .qr-img-wrap{
+                       display: flex;
+                       flex-direction: column;
+                       .top{
+                           display: flex;
+                       }
+                   }
+                   .scan-icon{
+                       width: 120px;
+                       height: 120px;
+                   }
                    .wrap{
                        width: 95%;
-                       .qr-img{
-                           width: 150px;
-                           margin-right: 20px;
-                           &:hover{
-                               cursor: pointer;
-                               
-                           }
-                       }
+                       
                        p{
                         color:#b3b3b3;
                         font-weight: 100;
@@ -2290,6 +2318,24 @@ section.section_APP{
                        
                        
                    } 
+                   .img-wrap{
+                       display: flex;
+                       .qr-img{
+                           width: 120px;
+                           height: 150px;
+                           margin-right: 30px;
+                           @include mobile_width{
+                               width:50%;
+                               margin-right: 10px;
+                             
+                           }
+                           &:hover{
+                               cursor: pointer;
+                           }
+                       }
+                       
+                       
+                   }
                    
                 }
                 
