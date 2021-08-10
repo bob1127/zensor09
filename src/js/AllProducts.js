@@ -26,14 +26,17 @@ $('#gotop img').click(function(){
     scrollTop: 0
   },600)
 })
-
-$(window).scroll(function(){
+if($(window).width()<550){
+  $(window).scroll(function(){
+  
   if($(this).scrollTop()>700){
     $('#mobile_buttons').fadeIn(500)
   }else(
     $('#mobile_buttons').fadeOut(500)
   )
-})
+  })
+}
+
 
 
 $(function() {
