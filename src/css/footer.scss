@@ -45,7 +45,7 @@ $pad_pro_media: 1100px;
   display: none;
 
   @include mobile_width {
-    display: block;
+    display: none;
   }
 
   .mobile_icon_wrap {
