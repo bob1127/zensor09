@@ -258,6 +258,7 @@ p{
     align-items: flex-start;
     width: 100%;
     padding: 0 15vmin;
+   
 
 
     @include pad_pro_width() {
@@ -293,10 +294,48 @@ p{
             max-width: 700px;
             margin: 1em auto 3em;
             margin-top: 0;
+            @include mobile_width{
+                margin: 0;
+            }
 
             a {
                 display: block;
                 margin-bottom: 15px;
+                @include mobile_width{
+                    margin-bottom: 0;
+                }
+            }
+            .gallery-thumbs {
+                height: 130px;
+                width:100%;
+                @include pad_pro_width{
+                    height: 110px;
+                }
+                @include mobile_width{
+                    padding-bottom: 3rem;
+                }
+                .swiper-slide {
+                    border: 1px solid rgb(160, 20, 216);
+                    position: relative;
+                    transition: border 0.15s linear;
+                    border: 1px solid #ebebeb;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    height: calc(100% - 2px);
+
+                    img {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        max-width: 100%;
+                    }
+                }
+
+                .swiper-slide.swiper-slide-thumb-active {
+                    border-color: #000;
+                }
             }
 
             .gallery-top {
@@ -313,6 +352,9 @@ p{
                     height: 600px;
                     @include pc_width{
                         height: 520px;
+                    }
+                    @include mobile_width{
+                        height: 450px;
                     }
 
                     a {
@@ -410,6 +452,20 @@ p{
 
         @include pad_pro_width{
             width: 45% ;
+        }
+        .txt-mobile{
+            visibility: hidden;
+            @include mobile_width{
+              visibility: visible;
+              padding-top: 3rem;
+            }
+        }
+        .txt-desk{
+            display: block;
+            @include mobile_width{
+                display: none !important;
+                
+            }
         }
         .swiper-button-next,.swiper-button-prev{
             top: 90%;

@@ -205,7 +205,7 @@ $(document).ready(function () {
 
 // activation carousel plugin
 var galleryThumbs = new Swiper('.gallery-thumbs', {
-  spaceBetween: 6,
+  spaceBetween: 5,
   paginationClickable: true,
 
   freeMode: true,
