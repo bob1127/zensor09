@@ -779,6 +779,9 @@ section.section_card{
     }
     .col-md-8{
         padding: 6.5vmin 0;
+        @include mobile_width{
+            padding: 7.5vmin 0;
+        }
         .ul__list--inline{
            
             width: 100%;
