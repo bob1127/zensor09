@@ -2376,6 +2376,27 @@ section.section_APP{
                            height:1px;
                        }
                        .top-part{
+                           .icon-wrap{
+                               display: flex;
+                               justify-content: flex-start;
+                               align-items: flex-start;
+                               width: 100%;
+
+                               
+                               a{
+                                   img{
+                                       
+                                       @include mobile_width{
+                                       width: 100%;
+
+                                      }
+                                   }
+                                   @include mobile_width{
+                                       width: 47%;
+
+                                   }
+                               }
+                           }
                  
                            img{
                                width: 140px;

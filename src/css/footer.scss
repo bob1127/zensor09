@@ -50,7 +50,9 @@ $pad_pro_media: 1100px;
   bottom: 0;
   z-index: 99999999;
   display: none;
-
+  @include mobile_width{
+    box-shadow: 10px 0 0 rgba(0,0,0,.4) !important;
+  }
 
 
   .mobile_icon_wrap {
