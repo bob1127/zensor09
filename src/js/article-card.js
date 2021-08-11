@@ -8,6 +8,8 @@ import { WOW } from 'wowjs';
 import 'slick-carousel';
 import $ from 'jquery';
 
+
+
 $('.menu-li-03').click(function(){
   $('.mobile-icon-arrow01').fadeToggle(500)
 

@@ -8,6 +8,7 @@ import { WOW } from 'wowjs';
 import 'slick-carousel';
 import $ from 'jquery';
 
+
 $('.wechat-btn').click(function(){
   $('.wechat-modal').fadeIn(400);
 

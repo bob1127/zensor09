@@ -12,6 +12,7 @@ import gsap from "gsap";
 import LazyLoad from "vanilla-lazyload";
 
 
+
 $('.wechat-btn').click(function(){
   $('.wechat-modal').fadeIn(400);
 
