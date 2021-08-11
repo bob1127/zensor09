@@ -2211,9 +2211,7 @@ section.section_two_section{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @include mobile_width{
-                        flex-direction: column;
-                    }
+            
                 
 
 
@@ -2227,7 +2225,7 @@ section.section_two_section{
                         width: 40%;
                     }
                     @include mobile_width{
-                        width: 80%;
+                        width: 50%;
                         margin: 10px 0;
                     }
                     img{
