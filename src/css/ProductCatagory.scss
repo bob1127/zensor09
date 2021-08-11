@@ -778,6 +778,15 @@ section.section_card{
 
     }
     .col-md-8{
+        padding: 6.5vmin 0;
+        .ul__list--inline{
+           
+            width: 100%;
+            position: absolute;
+            bottom:0%;
+            z-index: 9999999;
+            
+        }
         .slick-slider{
             .wrap{
                 a{
