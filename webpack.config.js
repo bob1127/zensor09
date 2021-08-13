@@ -400,16 +400,7 @@ module.exports = {
             template: './src/EN/Article06.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'EN/Article07.html',
-            template: './src/EN/Article07.html',
-            chunks: ['manifest','vendor','ProductCatagory']
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'EN/Article08.html',
-            template: './src/EN/Article08.html',
-            chunks: ['manifest','vendor','ProductCatagory']
-        }),
+       
         new HtmlWebpackPlugin({
             filename: 'EN/Article09.html',
             template: './src/EN/Article09.html',
