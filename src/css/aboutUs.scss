@@ -531,23 +531,28 @@ section.section_about_content {
                     align-items: center;
                     flex-direction: column;
                     background-color: rgba(255,255,255,.4);
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    margin: 0 auto 0 auto;
-    padding: 0 1.5rem 2rem;
-    color: #fafafa;
-    border: 1px solid rgba(255, 255, 255, .5);
-    border-radius: 4px;
-    box-shadow:inset 0 -1rem 1rem rgba(255, 255, 255, 0.2),
-                0 0 0 1px rgba(255, 255, 255, 0.1),
-                0.3rem 0.2rem 3rem rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);    
+                    width: 100%;
+                    max-width: 1200px;
+                    height: auto;
+                    margin: 0 auto 0 auto;
+                    padding: 0 1.5rem 2rem;
+                    color: #fafafa;
+                    border: 1px solid rgba(255, 255, 255, .5);
+                    border-radius: 4px;
+                    box-shadow:inset 0 -1rem 1rem rgba(255, 255, 255, 0.2),
+                                0 0 0 1px rgba(255, 255, 255, 0.1),
+                                0.3rem 0.2rem 3rem rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(50px);
+                    -webkit-backdrop-filter: blur(50px);   
+                    @include mobile_width{
+                        margin-top: 100px;
+                    } 
                     #carouselExampleControls{
                         display: none;
                         @include mobile_width{
-                            display: block
+                            display: block;
+                           
+
                         }
                     }
                     
