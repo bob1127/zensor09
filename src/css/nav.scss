@@ -775,6 +775,7 @@ nav {
       .nav_title_link {
         width: 20%;
         padding: 6px 0;
+        
 
         .outside_li {
           color: $navbar_txt;
@@ -804,6 +805,7 @@ nav {
             transition: 0.3s;
             top: 3rem;
             opacity: 0;
+            border-radius: 10px;
 
             border: 1px solid rgba(150, 150, 150, 0.3);
 
@@ -813,11 +815,37 @@ nav {
             
 
             @include pad_pro_width {
-              height: 550px;
+              height: 650px;
               width: 32vw;
               right: 11.6vw;
            
              
+            }
+        
+
+            .inside_li-potentiostat,.inside_li_service{
+              position: relative;
+              &::before{
+                content:"";
+                display: block;
+                width: 15px;
+                height: 15px;
+                background-color: #eaf0f3;
+                transform: rotate(50deg);
+                position: absolute;
+                right: 3.5px;
+                 top: -4.5px;
+              }
+            }
+            .inside_li_service{
+              border-radius: 10px 10px 0 0;
+              &:hover:before{
+                background-color: #00a7e1 !important;
+              }
+              &::before{
+                background-color: white !important;
+              }
+              
             }
        
 
@@ -833,6 +861,9 @@ nav {
                 justify-content: center;
                 align-items: start;
                 flex-direction: column;
+                .main-category-potentiostat{
+                  border-radius: 10px 10px 0 0;
+                }
                 .main-category{
 
  
@@ -877,6 +908,7 @@ nav {
                   &:hover a {
                     color: white
                   }
+              
 
                   @include pad_pro_width {
                     padding: 0.7rem 1rem;
@@ -900,6 +932,7 @@ nav {
                   &:hover .product_wrap {
                     display: block;
                     top: -1px;
+                   
                   }
                   .series_wrap{
                     display: flex;
@@ -907,6 +940,7 @@ nav {
                   }
                   .product_wrap.product_wrap_02{
                     right: -182.5%;
+                    border-radius: 10px;
                     @include pad_pro_width{
                       right: -185%;
                       
@@ -921,6 +955,7 @@ nav {
                     background-color: white;
                     width: 20vw;
                     height: 650px;
+                    border-radius: 10px;
                     right: -91.5%;
                     top: 0;
                     display: none;
@@ -932,7 +967,7 @@ nav {
                       height: 570px
                     }
                     @include pad_pro_width {
-                      height: 550px;
+                      height: 650px;
                       width: 30vw;
                       right: -94.5%;
                       
