@@ -96,7 +96,7 @@ async function handleSubmit(event) {
       'Accept': 'application/json'
     }
   }).then(response => {
-    alert('成功寄出！')
+    alert('Successful！')
     form.reset()
 
   }).catch(error => {

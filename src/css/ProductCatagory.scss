@@ -467,6 +467,9 @@ section.section_nagtive{
     margin-top: 8vh;
 }
 section.section_card{
+    @include mobile_width{
+        padding: 0 15px;
+    }
     .article-logo{
         width: 50px;
     }
@@ -774,6 +777,9 @@ section.section_card{
 	}
 }
 .article-slick{
+    @include mobile_width{
+        padding: 0 15px;
+    }
     .col-md-4{
 
     }

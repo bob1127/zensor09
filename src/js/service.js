@@ -167,7 +167,7 @@ var mediaQuery = window.matchMedia("(max-width:1100px)");
                  'Accept': 'application/json'
              }
            }).then(response => {
-             alert('成功寄出！')
+             alert('Successful！')
              form.reset()
              form02.reset()
        
