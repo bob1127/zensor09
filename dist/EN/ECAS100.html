@@ -12,13 +12,7 @@
      var $easyzoom = $('.easyzoom').easyZoom();
 } else {
     var $easyzoom = $('.easyzoom11').easyZoom();
-}</script><script>let lang = navigator.language;//获取浏览器默认语言。
-     
-       alert(lang)
-
-
-
-      //   jQuery(document).ready(function($) { 
+}</script><script>//   jQuery(document).ready(function($) { 
       //     jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() 
       //     { 
       //     var country = geoplugin_countryName(); 
@@ -27,15 +21,29 @@
       //     alert(code); 
 
       //     if(country=="China"){
-      //       $('.china_video').css('display','block');
-      //       $('.img-youtube-01').css('display','none');
-            
-            
-
+      //       $('video').css('display','block')
             
       //     }
 
 
       //     console.log("Your location is: " + country + ", " + zone + ", " + district); 
       //     }); 
-      // });</script></div></body></html>
+      // }); 
+
+      check();
+function check() {
+    var language = window.navigator.systemLanguage || window.navigator.language;
+    language = language.toLowerCase();
+    console.log(language);
+    switch (language) {
+        case "zh-tw":
+            document.write('這是繁體');
+            //alert("繁體(big5)");
+            break;
+        case "zh-cn":
+            document.write('这是简体');
+            //alert("简体(gb2312)");
+
+            break;
+    }
+}</script></div></body></html>
