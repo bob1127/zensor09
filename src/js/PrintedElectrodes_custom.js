@@ -255,8 +255,7 @@ wow.init();
 
 var form = document.getElementById("my-form");
 var form02 = document.getElementById("my-form02");
-var form03 = document.getElementById("my-form03");
-var form04 = document.getElementById("my-form04");
+
 
     
     async function handleSubmit(event) {
@@ -273,13 +272,11 @@ var form04 = document.getElementById("my-form04");
         alert('Successful！')
         form.reset()
         form02.reset()
-        form03.reset()
-        form04.reset()
+
       }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"
       });
     }
     form.addEventListener("submit", handleSubmit)
     form02.addEventListener("submit", handleSubmit)
-    form03.addEventListener("submit", handleSubmit)
-    form04.addEventListener("submit", handleSubmit)
+

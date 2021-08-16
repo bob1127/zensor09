@@ -107,25 +107,33 @@
   padding: 20px 3px;
   padding-top: 60px;
   display: flex;
-  .quote-product{
-    font-size: 24px;
-    font-weight: 700;
-   
-  }
+  .section-title{
+    font-weight: 500;
+      font-size: 22px;
+      @include mobile_width{
+        font-size: 18px;
+      }
 
+  }
   .quote {
     
     display: flex; 
-    justify-content: space-between;width:100%; 
+    justify-content: space-between;
+    width:100%; 
     padding: 0 50px;
     @include mobile_width{
        padding: 0;
        flex-direction: columns;
     }
     a{
-      font-weight: 700;
-      font-size: 24px;
+      font-weight: 500;
+      font-size: 22px;
+      @include mobile_width{
+        font-size: 18px;
+      }
+      
     }
+    
 
     .news_line {
       width: 40vw;

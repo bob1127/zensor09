@@ -349,3 +349,10 @@ form02.addEventListener("submit", handleSubmit)
 form03.addEventListener("submit", handleSubmit)
 form04.addEventListener("submit", handleSubmit)
 
+
+ if($(window).width() > 600)
+{
+     var $easyzoom = $('.easyzoom').easyZoom();
+} else {
+    var $easyzoom = $('.easyzoom11').easyZoom();
+}
