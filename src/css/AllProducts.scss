@@ -1044,6 +1044,7 @@ section.section_toggle {
                               
                             }
                             .img-youtube-01{
+                                display: block;
                                 overflow: hidden;
                                 &:hover{
                                     border: solid 2px rgb(12, 131, 211)
@@ -2447,5 +2448,5 @@ section.section_APP{
 //video
 
 .wrap-video{
-    display:none
+   display: none
 }

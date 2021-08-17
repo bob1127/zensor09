@@ -356,3 +356,22 @@ form04.addEventListener("submit", handleSubmit)
 } else {
     var $easyzoom = $('.easyzoom11').easyZoom();
 }
+
+
+//判斷瀏覽器語言
+
+
+
+
+
+
+ $(function() {
+          $('.popup-youtube, .popup-vimeo').magnificPopup({
+              disableOn: 700,
+              type: 'iframe',
+              mainClass: 'mfp-fade',
+              removalDelay: 160,
+              preloader: false,
+              fixedContentPos: false
+          });
+      });
