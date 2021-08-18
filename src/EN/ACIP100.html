@@ -2183,24 +2183,8 @@
           });
       });
       </script> 
-    <script>
-       //圖片延遲載入
-const lazyLoadOptions = {
-  elements_selector: ".lazy",
-	to_webp: true,
-};
-const pageLazyLoad = new LazyLoad(lazyLoadOptions);
-const logEvent = (eventName, element) => {
-	console.log(
-		Date.now(),
-		eventName,
-		element.getAttribute("data-src"),
-		element.getAttribute("src")
-	);
-};
-
-      
-      check();
+      <script>
+        check();
 function check() {
     var language = window.navigator.systemLanguage || window.navigator.language;
     language = language.toLowerCase();
@@ -2226,6 +2210,25 @@ function check() {
     }
 }
 
+      </script>
+    <script>
+       //圖片延遲載入
+const lazyLoadOptions = {
+  elements_selector: ".lazy",
+	to_webp: true,
+};
+const pageLazyLoad = new LazyLoad(lazyLoadOptions);
+const logEvent = (eventName, element) => {
+	console.log(
+		Date.now(),
+		eventName,
+		element.getAttribute("data-src"),
+		element.getAttribute("src")
+	);
+};
+
+      
+      
 
     </script>
        
