@@ -1317,12 +1317,19 @@
                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=tCGH3sw-NJ0">▶︎</a><br>
 
                         </div>
-                        <div class='wrap-video width-l'>
+                        <!-- <div class='wrap-video width-l'>
                         <video controls class='width-xl'>
                           <source src="../../video/1-ECAS-INSTALL.mp4" type="video/ogg">
                           <source src="../../video/1-ECAS-INSTALL.mp4" type="video/mp4">
                           
                         </video>
+                     </div> -->
+                      <div class='wrap-video width-l'>
+                        <video class="lazy width-xl" controls width="620" data-src="../../video/1-ECAS-INSTALL.mp4" data-poster="../../../images/Products-Detail-Img/ECAS100/截圖01.png">
+                            <source type="video/mp4" data-src="../../video/1-ECAS-INSTALL.mp4" />
+                            <source type="video/ogg" data-src="../../video/1-ECAS-INSTALL.ogg" />
+                            <source type="video/avi" data-src="../../video/1-ECAS-INSTALL.avi" />
+                        </video>   
                      </div>
                         
 
@@ -1363,13 +1370,21 @@
                                    </div>
                  
                                    <div class="view" style='display: none'>
-                                    <div class='wrap-video width-l'>
+                                    <!-- <div class='wrap-video width-l'>
                           <video controls class='width-xl'>
                               <source src="../../video/DEMO.MP4" type="video/ogg">
                               <source src="../../video/DEMO.MP4" type="video/mp4">
                             
                           </video>
-                       </div>
+                       </div> -->
+                                  <div class='wrap-video width-xl'>
+                        <video class="lazy width-xl" controls width="620" data-src="../../video/DEMO.MP4" data-poster="../../images/Products-Detail-Img/ECAS100/ECAS100-USE.png">
+                            <source type="video/mp4" data-src="../../video/DEMO.MP4" />
+                            <source type="video/ogg" data-src="../../video/DEMO.ogg" />
+                            <source type="video/avi" data-src="../../video/DEMO.avi" />
+                        </video>   
+                     </div>
+                                   
                                 
 
                                 </div>
@@ -1527,13 +1542,20 @@
                              </div>
                             
                         </div>
-                        <div class='wrap-video width-l'>
+                        <!-- <div class='wrap-video width-l'>
                                   <video controls class='width-xl'>
                                       <source src="../../video/3-ECAS-DEMO.MP4" type="video/ogg">
                                       <source src="../../video/3-ECAS-DEMO.MP4" type="video/mp4">
                                     
                                   </video>
-                         </div>
+                         </div> -->
+                          <div class='wrap-video width-xl'>
+                        <video class="lazy width-xl" controls width="620" data-src="../../video/3-ECAS-DEMO.MP4" data-poster="../../images/Products-Detail-Img/ECAS100/operation.png">
+                            <source type="video/mp4" data-src="../../video/3-ECAS-DEMO.MP4" />
+                            <source type="video/ogg" data-src="../../video/3-ECAS-DEMO.ogg" />
+                            <source type="video/avi" data-src="../../video/3-ECAS-DEMO.avi" />
+                        </video>   
+                     </div>
                      
                       
                       </li>
@@ -1570,13 +1592,20 @@
                                  <a class="popup-youtube" href="https://www.youtube.com/watch?v=C4YkGRVf-Io">▶︎</a><br>
 
                               </div>
-                              <div class='wrap-video width-xl'>
+                              <!-- <div class='wrap-video width-xl'>
                               <video controls class='width-xl'>
                                   <source src="../../video/4-ECAS-OFFLINE.mp4" type="video/ogg">
                                   <source src="../../video/4-ECAS-OFFLINE.mp4" type="video/mp4">
                                 
                               </video>
-                          </div>
+                          </div> -->
+                           <div class='wrap-video width-xl'>
+                                <video class="lazy width-xl" controls width="620" data-src="../../video/4-ECAS-OFFLINE.mp4" data-poster="../../images/Products-Detail-Img/ECAS100/ECAS-devlope02.png">
+                                    <source type="video/mp4" data-src="../../video/4-ECAS-OFFLINE.mp4" />
+                                    <source type="video/ogg" data-src="../../video/4-ECAS-OFFLINE.ogg" />
+                                    <source type="video/avi" data-src="../../video/../video/4-ECAS-OFFLINE.avi" />
+                                </video>   
+                            </div>
                      
                           </div>
                           <div class="col-md-6 center-column">
@@ -1588,13 +1617,20 @@
                                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=XSYEFbB0IA8">▶︎</a><br>
 
                              </div>
-                             <div class='wrap-video width-xl'>
+                             <!-- <div class='wrap-video width-xl'>
                               <video controls class='width-xl'>
                                   <source src="../../video/pH Sensor demo.mp4" type="video/ogg">
                                   <source src="../../video/pH Sensor demo.mp4" type="video/mp4">
                                 
                               </video>
-                          </div>
+                          </div> -->
+                              <div class='wrap-video width-xl'>
+                            <video class="lazy width-xl" controls width="620" data-src="../../video/pH Sensor demo.mp4" type="video/mp4" data-poster="../../images/Products-Detail-Img/ECAS100/ECAS-devlope01.png">
+                                <source type="video/mp4" data-src="../../video/pH Sensor demo.mp4" type="video/mp4" />
+                                <source type="video/ogg" data-src="../../video/pH Sensor demo.ogg" />
+                                <source type="video/avi" data-src="../../video/../video/../video/pH Sensor demo.avi" />
+                            </video>   
+                           </div>
                        
                              
                              
@@ -2148,7 +2184,21 @@
       });
       </script> 
     <script>
-       
+       //圖片延遲載入
+const lazyLoadOptions = {
+  elements_selector: ".lazy",
+	to_webp: true,
+};
+const pageLazyLoad = new LazyLoad(lazyLoadOptions);
+const logEvent = (eventName, element) => {
+	console.log(
+		Date.now(),
+		eventName,
+		element.getAttribute("data-src"),
+		element.getAttribute("src")
+	);
+};
+
       
       check();
 function check() {
