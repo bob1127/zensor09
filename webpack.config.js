@@ -210,6 +210,11 @@ module.exports = {
             chunks: ['manifest','vendor','service']
         }),
         new HtmlWebpackPlugin({
+            filename: 'service-1.html',
+            template: './src/service-1.html',
+            chunks: ['manifest','vendor','service']
+        }),
+        new HtmlWebpackPlugin({
             filename: 'ECAS100.html',
             template: './src/ECAS100.html',
             chunks: ['manifest','vendor','AllProducts']
@@ -357,6 +362,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'EN/service.html',
             template: './src/EN/service.html',
+            chunks: ['manifest','vendor','service']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/service-1.html',
+            template: './src/EN/service-1.html',
             chunks: ['manifest','vendor','service']
         }),
         new HtmlWebpackPlugin({
