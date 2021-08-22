@@ -285,6 +285,11 @@ module.exports = {
             chunkFilename: 'css/[name].chunk.css'
             
         }),
+        new HtmlWebpackPlugin({
+            filename: 'Download.html',
+            template: './src/Download.html',
+            chunks: ['manifest','vendor','Download']
+        }),
         
        //English version
 
