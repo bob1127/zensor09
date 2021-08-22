@@ -369,6 +369,9 @@ p{
                             
                             height: 90%;
                             object-fit: contain;
+                            @include mobile_width{
+                                height: 95%;
+                            }
                         }
                     }
 
