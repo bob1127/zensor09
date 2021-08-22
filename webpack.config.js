@@ -15,6 +15,7 @@ module.exports = {
          ContactUs:'./src/js/ContactUs.js',
    
          aboutUs:'./src/js/aboutUs.js',
+         Download:'./src/js/Download.js',
      
        
          service:'./src/js/service.js',
