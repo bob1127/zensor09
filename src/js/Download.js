@@ -1,5 +1,5 @@
 import 'bootstrap';
-import '../css/aboutUs.scss';
+import '../css/Download.scss';
 import '../css/style.scss';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
