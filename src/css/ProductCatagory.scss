@@ -943,23 +943,21 @@ section.section_Other{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        transform: scale(1);
+        transition: .4s;
+        &:hover{
+            transform: scale(1.04);
+        }
          @include mobile_width{
                             width: 100%;
                         }
    
         .circle{
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            border-radius: 100%;
-            width:200px;
-            height: 200px;
-            border: solid 2px #fff;
-            box-shadow: 0px 4px 21px 0px rgba(0,0,0,0.15);
+            width: 100%;
             
+           
             img{
-                width:80%;
+                width:70%;
 
             }
         }

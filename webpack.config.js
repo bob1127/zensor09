@@ -15,7 +15,7 @@ module.exports = {
          ContactUs:'./src/js/ContactUs.js',
    
          aboutUs:'./src/js/aboutUs.js',
-         Download:'./src/js/Download.js',
+     
      
        
          service:'./src/js/service.js',
@@ -289,7 +289,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'Download.html',
             template: './src/Download.html',
-            chunks: ['manifest','vendor','Download']
+            chunks: ['manifest','vendor','ProductCatagory']
         }),
         
        //English version
