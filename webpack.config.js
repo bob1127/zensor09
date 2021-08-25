@@ -456,6 +456,11 @@ module.exports = {
             template: './src/EN/Article16.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
+        new HtmlWebpackPlugin({
+            filename: 'EN/Download.html',
+            template: './src/EN/Download.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
      
        
         new CleanWebpackPlugin()
