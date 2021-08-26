@@ -1169,7 +1169,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/無線恆電位儀-OUT.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/無線恆電位儀-OUT.webp">
                         </div>
                         <div class="title">
                          <h2>業界最小的無線電化學分析儀</h2>
@@ -1192,7 +1192,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/ECWP100-single.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/ECWP100-single.webp">
                         </div>
                         <div class="title">
                           <h2>業界最小的無線電化學分析儀</h2>
@@ -1215,7 +1215,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/ECAS100.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/ECAS100.webp">
                         </div>
                         <div class="title">
                           <h2>電化學分析儀-模擬器</h2>
@@ -1240,7 +1240,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/ACIP100.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/ACIP100.webp">
                         </div>
                         <div class="title">
                           <h2>電化學分析儀-模擬器<br>（交流阻抗版）</h2>
@@ -1263,7 +1263,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/MCP100.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/MCP100.webp">
                         </div>
                         <div class="title">
                           <h2>多通道電化學分析儀</h2>
@@ -1298,7 +1298,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/網版印刷電極.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/網版印刷電極.webp">
                         </div>
                         <div class="title">
                           <h2>網版印刷電極</h2>
@@ -1321,7 +1321,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/customerize.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/customerize.webp">
                         </div>
                         <div class="title">
                           <h2>客製化訂製電極服務</h2>
@@ -1354,7 +1354,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/SF100.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/SF100.webp">
                         </div>
                         <div class="title">
                           <h2>電化學偵測器/流通檢測池</h2>
@@ -1377,7 +1377,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/cs100.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/cs100.webp">
                         </div>
                         <div class="title">
                           <h2>電化學溶池</h2>
@@ -1400,7 +1400,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/CM100.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/CM100.webp">
                         </div>
                         <div class="title">
                           <h2>修飾電極用塗布機
@@ -1424,7 +1424,7 @@
                     <div class="card card-1">
                        <div class='inside-wrap center-column'>
                         <div class="circle center">
-                          <img src="../images/Index-Img/Product-Img/CT100.webp">
+                          <img class='element-img' src="../images/Index-Img/Product-Img/CT100.webp">
                         </div>
                         <div class="title">
                           <h2>小型產線工具系列
@@ -1534,6 +1534,54 @@
         </div>
       </footer>
     </div>
+     <script>
+    VanillaTilt.init(document.querySelectorAll(".card"),{
+	max: 30,
+	speed: 1000,
+  transition: true,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  perspective: 600,
+  glare: true
+});
+
+
+      $(".slick-slider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        
+        autoplay: false,
+        speed: 400,
+        infinite: true,
+        responsive: [
+                            
+                            {
+                              breakpoint: 1400,
+                              settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1
+                              }
+                            },
+                            {
+                              breakpoint: 1150,
+                              settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                              }
+                            }
+                            ,{
+                              breakpoint: 750,
+                              settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                              }
+                            }
+
+                          ]
+                            
+      });
+    </script>
     <script>
     
 

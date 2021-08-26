@@ -14,7 +14,19 @@ p{
 
     }
 }
-
+.no-center{
+    text-align: left !important;
+ }
+th[scope] {
+    text-align: left !important;
+}
+.table-title{
+   text-align: center !important;
+}
+th[scope] img{
+    display: block;
+    margin: auto;
+}
 .mobile-img{
     display: none;
     @include mobile_width{
@@ -1774,6 +1786,11 @@ section.section_toggle {
                                 border-collapse: collapse;
                                 font-family: Arial, Helvetica, sans-serif
                             }
+                            .product-page{
+                                padding: .2rem 1rem;
+                                color: white;
+                                background-color: #1897e0;
+                            }
 
                             th {
                                 text-align: left
@@ -1851,8 +1868,11 @@ section.section_toggle {
                             .dcf-table tfoot td,
                             .dcf-table tfoot th {
                                 padding-top: .75em;
-                                vertical-align: top
+                                vertical-align: top;
+                                text-align: center;
+                              
                             }
+                            
 
                             .dcf-table tbody td,
                             .dcf-table tbody th {
@@ -1932,6 +1952,29 @@ section.section_toggle {
                                     font-weight: 700;
                                     padding-right: 1.78em
                                 }
+                            }
+                            .dm-wrap{
+                                display: flex;
+                                flex-direction:column;
+                                
+                                @include mobile_width{
+                                   align-items: center;
+                                }
+                                .dm-img{
+                                    width: 350px;
+                                    @include mobile_width{
+                                        width: 90%;
+                                    }
+                                }
+                                .dm-btn{
+                                    width: 250px;
+                                    @include mobile_width{
+                                        width: 350px;
+                                    }
+
+
+                                }
+                                
                             }
 
                             .dcf-overflow-x-auto {

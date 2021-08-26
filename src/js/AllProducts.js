@@ -11,7 +11,7 @@ import { WOW } from 'wowjs';
 
 import LazyLoad from "vanilla-lazyload";
 
-
+$('th').attr('scope','no-center')
 
 
 $(window).scroll(function(){

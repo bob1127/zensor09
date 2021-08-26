@@ -933,7 +933,7 @@ section.section_Other{
         background:#f2f2f2 ;
         
      
-        box-shadow: 0px 4px 21px 0px rgba(0,0,0,0.15);
+        
         border-radius: 20px;
         transform-style: preserve-3d;
         z-index:999999;
@@ -945,11 +945,13 @@ section.section_Other{
         flex-direction: column;
         transform: scale(1);
         transition: .4s;
+
         &:hover{
             transform: scale(1.04);
         }
          @include mobile_width{
-                            width: 100%;
+            width: 100%;
+            padding: 0;
           }
         .title-wrap{
             padding: 10px 18px;
@@ -961,6 +963,7 @@ section.section_Other{
                 height: 25px;
                 margin-left: 5px;
             }
+          
             span{
                 color: #333 !important;
                 
@@ -975,6 +978,12 @@ section.section_Other{
                 width:85%;
 
             }
+            .element-img{
+                width: 60% ;
+                @include mobile_width{
+                    width: 75% ;
+                }
+            }
         }
         .title{
             padding: 5px 0;
@@ -983,9 +992,12 @@ section.section_Other{
             width:100%;
             h2{
                 font-weight: 700;
-                font-size: 22px;
+                font-size: 20px;
                 color: #333;
                 height: 60px;
+                @include mobile_width{
+                    font-size: 18px;
+                }
             }
             h3{
                 display: inline-block;
