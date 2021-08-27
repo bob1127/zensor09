@@ -1824,6 +1824,9 @@ section.section_toggle {
                                 border-top: 1px solid var(--b-table);
                                 font-size: .84em
                             }
+                            .specification td,.specification th{
+                                text-align: left !important;
+                            }
 
                             .dcf-table tfoot {
                                 font-size: .84em
@@ -1978,12 +1981,15 @@ section.section_toggle {
                             }
 
                             .dcf-overflow-x-auto {
+                                position: relative;
                                 overflow-x: auto !important;
                                 -webkit-overflow-scrolling: touch;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 flex-direction: column;
+                                
+                                
                                 h5{
                                     font-weight: 500;
                                     font-size: 23px;
@@ -2191,7 +2197,31 @@ section.section_toggle {
 
                             .dcf-overflow-x-auto {
                                 overflow-x: auto !important;
-                                -webkit-overflow-scrolling: touch
+                                -webkit-overflow-scrolling: touch;
+                                position: relative;
+                                .table-right-icon{
+                                        right: 20px;
+                                        width: 20px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        position: absolute;
+                                        
+                                        
+                                        
+                                    }
+                                .right-arrow{
+                                    position: absolute;
+                                    height:150vh;
+                                    background-color: rgba(255,255,255,.5);
+                                    width: 10vw;
+                                    right: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+
+
+                                    
+                                
+                                }
                             }
 
                             .panel {
