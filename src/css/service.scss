@@ -406,13 +406,14 @@ section.section_form {
 
    .btn_wrap{
        width:100%;
+      
     a{
         width: 15%;
         @include pad_pro_width{
             width: 18%;
         }
         @include mobile_width{
-            width: 55%;
+            width: 48%;
         }
     }
     .link-btn{
@@ -432,7 +433,7 @@ section.section_form {
         display: flex;
         justify-content:center;
         align-items: center;
-        flex-direction: column;
+        flex-wrap: wrap;
         
         width:100%;
     }

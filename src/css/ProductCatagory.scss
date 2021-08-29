@@ -952,6 +952,7 @@ section.section_Other{
          @include mobile_width{
             width: 100%;
             padding: 0;
+         
           }
         .title-wrap{
             padding: 10px 18px;
@@ -976,6 +977,9 @@ section.section_Other{
            
             img{
                 width:85%;
+                @include mobile_width{
+                    width: 80% ;
+                }
 
             }
             .element-img{
