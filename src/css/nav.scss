@@ -1507,6 +1507,7 @@ section.section_navgation {
 	list-style: none;
   height: 70vh;
   overflow-y: scroll;
+  overflow-x: hidden !important;
 
 }
 .header ul.menu li.menu-item a {
