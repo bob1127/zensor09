@@ -534,6 +534,8 @@ section.section_card{
     a{
         text-decoration: none;
         color: white;
+        font-weight: 600;
+        font-size: 17.5;
         
     }
     .container-fluid{
@@ -680,6 +682,20 @@ section.section_card{
                         &:hover .box{
                             height: 120px;
                         }
+                    .bottom-text{
+                        
+                        color: rgba(0,0,0,.6);
+                        font-weight: 100;
+                        .category{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                          
+                            p{
+                                font-weight: 800;
+                            }
+                        }
+                    }
                       .img-wrap{
                         overflow: hidden;
      
@@ -730,18 +746,7 @@ section.section_card{
                         
                         
                     }
-                    .bottom-text{
-                        height: 60vmin;
-                        .category{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                          
-                            p{
-                                font-weight: 800;
-                            }
-                        }
-                    }
+                    
                     
                     }
                       
