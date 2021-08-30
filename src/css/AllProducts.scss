@@ -1959,9 +1959,16 @@ section.section_toggle {
                             .dm-wrap{
                                 display: flex;
                                 flex-direction:column;
-                                
+                                padding-left: 30px;
+                                width: 35%;
+                                @include pad_pro_width{
+                                   padding-top: 30px;
+                                   padding-left: 0;
+                                }
                                 @include mobile_width{
                                    align-items: center;
+                                  width: 100%;
+                                  
                                 }
                                 .dm-img{
                                     width: 350px;
@@ -2196,6 +2203,15 @@ section.section_toggle {
                             }
                             .dcf-overflow-specification{
                                 display: flex;
+                                width: 65%;
+                                margin-right: 30px;
+                                &:focus{
+                                    outline:none;
+                                }
+                                @include pad_pro_width{
+                                    flex-direction: column;
+                                    width: 100%;
+                                }
                             }
 
                             .dcf-overflow-x-auto {
