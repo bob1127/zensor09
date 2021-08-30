@@ -1023,7 +1023,7 @@ section.section_toggle {
                         }
 
                         .card-body {
-                            padding: 0 3rem;
+                            // padding: 0 3rem;
                             @include mobile_width{
                                 padding: 0;
                             }
@@ -1984,10 +1984,10 @@ section.section_toggle {
                                 position: relative;
                                 overflow-x: auto !important;
                                 -webkit-overflow-scrolling: touch;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
+                                // display: flex;
+                                // justify-content: center;
+                                // align-items: center;
+                                // flex-direction: column;
                                 
                                 
                                 h5{
@@ -2202,6 +2202,7 @@ section.section_toggle {
                                 overflow-x: auto !important;
                                 -webkit-overflow-scrolling: touch;
                                 position: relative;
+                                overflow-y: hidden;
                                 .table-right-icon{
                                         right: 20px;
                                         width: 20px;
