@@ -925,10 +925,13 @@ section.section_Other{
         }
     }
 }
-.slick-list{
+.dm-download-wrap{
    padding: 10vmin 0;
+   display: flex;
+   flex-wrap: wrap;
 }
 .element{
+     margin: 10px;
    
       
       .card {

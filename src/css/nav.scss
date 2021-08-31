@@ -257,7 +257,7 @@ a {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 9999999999999;
   border-top: 0;
   @media screen and (min-width: 1920px){
     width: 1920px;
@@ -328,7 +328,7 @@ a {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  z-index: 999999;
+  z-index: 999999999999999;
   @include pad_width{
     position: fixed !important;
   }
