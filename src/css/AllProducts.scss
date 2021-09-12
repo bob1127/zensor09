@@ -582,7 +582,7 @@ th[scope] img{
                 li {
                     color: #333;
                     margin: 0.5rem 0;
-                    font-weight: 100;
+                    font-weight: 300;
                     font-size: 20px;
 
                     .detail-list-icon{
@@ -1836,6 +1836,10 @@ section.section_toggle {
                             .dcf-table th {
                                 padding-right: 1.78em
                             }
+                            .dcf-table-bordered{
+                           
+                                
+                            }
 
                             .dcf-table-bordered,
                             .dcf-table-bordered td,
@@ -1968,6 +1972,7 @@ section.section_toggle {
                                 @include mobile_width{
                                    align-items: center;
                                   width: 100%;
+                                  justify-content: center;
                                   
                                 }
                                 .dm-img{
@@ -1979,10 +1984,66 @@ section.section_toggle {
                                 .dm-btn{
                                     width: 250px;
                                     @include mobile_width{
-                                        width: 350px;
+                                        width: 250px;
                                     }
 
 
+                                }
+                                
+                            }
+                            .table_title{
+                                 position: relative;
+                                 &:after{
+                                  content: '→';
+                                    display:none;
+                                    width: 90px;
+                                    height: 100vh;
+                                    background-color: rgba(255,255,255,.8);
+                                    top: 20vh;
+                                    right: 0;
+                                    position: absolute;
+                                
+                                    text-align: center;
+                                    line-height: 50vh;
+                                    font-size: 20px;
+                                    z-index:9997;
+                                    filter: blur(11px);
+                                    box-shadow: 0 0 25px 0 rgba(255,255,255,.6);
+                                    @include mobile_width{
+                                        
+                                        display: block
+                                    }
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                }
+                                 &:before{
+                                    content: '→';
+                                    display:none;
+                                    width: 80px;
+                                    height: 100vh;
+                                   
+                                    top: 20vh;
+                                    right: 0;
+                                    position: absolute;
+                                    color: #4ba6db;
+                                    text-align: center;
+                                    line-height: 50vh;
+                                    font-size: 20px;
+                                    z-index:9999;
+                                    @include mobile_width{
+                                        display: block
+                                    }
+                                  
+                                    
+                                    
+
+                                    
+                                    
+                                    
                                 }
                                 
                             }
@@ -1995,6 +2056,7 @@ section.section_toggle {
                                 // justify-content: center;
                                 // align-items: center;
                                 // flex-direction: column;
+                               
                                 
                                 
                                 h5{
@@ -2203,8 +2265,18 @@ section.section_toggle {
                             }
                             .dcf-overflow-specification{
                                 display: flex;
-                                width: 65%;
+                                width: 100%;
                                 margin-right: 30px;
+                        
+                             
+                                table{
+                                    width: 70%;
+                                    @include pad_pro_width{
+                                  
+                                    width: 100%;
+                                }
+                                }
+                             
                                 &:focus{
                                     outline:none;
                                 }

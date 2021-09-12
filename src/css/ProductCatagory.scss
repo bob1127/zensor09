@@ -518,6 +518,45 @@ section.section_card{
         .sidebar-title{
             border-bottom: 2px solid rgb(236, 181, 28);
         }
+        .ad-wrap{
+            padding-top: 85px;
+            .pdf-download{
+                border: solid 1px rgba(0,0,0,.2);
+                border-radius:20px;
+                padding: 30px 10px;
+                .pdf-icon{
+                    width: 30px;
+                }
+                
+                a{
+                   
+                }
+              
+                h5{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: black;
+                }
+                hr{
+                    background-color: blue;
+                    color: blue;
+                    width: 20%;
+                }
+                a{
+                    width: 90%;
+                    transition: .5s;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                    .pdf-img{
+                        width:100%;
+                    
+                    
+                   }
+                }
+                
+            }
+        }
 
         .item-wrap{
             transition: .3s;
@@ -682,10 +721,13 @@ section.section_card{
                         &:hover .box{
                             height: 120px;
                         }
+                    .pdf-btn{
+                        color: #333;
+                    }    
                     .bottom-text{
                         
                         color: rgba(0,0,0,.6);
-                        font-weight: 100;
+                        font-weight: 200;
                         .category{
                             display: flex;
                             justify-content: space-between;
@@ -722,7 +764,7 @@ section.section_card{
                         position: absolute;
                         color: white;
                         padding: 25px;
-                        transition: all 3s ease-in-out;
+                      
 
                     
                         >div{

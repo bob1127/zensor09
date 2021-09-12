@@ -19,6 +19,7 @@ $gray: #dddddd;
 $white: #fff;
 $black: #161616;
 $card_btn: #00a7e1;
+$bg_yellow: #fbe7a3;
 
 // rwd mixin
 @mixin pc_width() {
@@ -107,6 +108,10 @@ html,body{
             
         }
     }
+}
+
+.bg-yellow{
+    background-color: #fbe7a3;
 }
 .modal-content  {
    
@@ -202,7 +207,7 @@ html,body{
     }
 }
 
-.width-l{
+.width-m{
     width: 80% !important;
     @include pad_width{
         width: 95% !important;

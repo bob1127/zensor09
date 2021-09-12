@@ -1,26 +1,7 @@
-//rwd 變數設定
-$pad_media: 769px;
-$mobile_media: 540px;
-$pad_pro_media: 2000px;
+@import "variables.scss";
+@import "reset.scss";
+@import "slick.scss";
 
-// rwd mixin
-@mixin pad_width() {
-    @media screen and (max-width: $pad_media) {
-        @content;
-    }
-}
-
-@mixin mobile_width() {
-    @media screen and (max-width: $mobile_media) {
-        @content;
-    }
-}
-
-@mixin pad_pro_width() {
-    @media screen and (max-width: $pad_pro_media) {
-        @content;
-    }
-}
 
 $main_blue: #3784a8;
 $title_blue: rgb(38, 74, 121);
@@ -460,8 +441,10 @@ section.section_form {
    }
 
     .container-fluid {
-        padding: 0 10.5vmin;
-        
+        padding: 0 22vmin;
+        @include pc_width{
+            padding: 0 7vmin;
+        }
         @include pad_width{
             padding: 0 5vmin;
         }
@@ -501,6 +484,7 @@ section.section_form {
                     h3 {
                         color: rgb(11, 133, 214);
                     }
+                    
 
                     .wrap_01,
                     .wrap_02,
@@ -549,8 +533,77 @@ section.section_form {
                         
 
                     }
-                    
+                    .form-wrap{
+                        display: flex;
+                        width:100%;
+                        @include pad_width{
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .wrap_02{
+                            margin-right: 25px;
 
+                        }
+                        .wrap_03{
+                            margin-left: 25px;
+                            
+                        }
+                        .wrap_02,.wrap_03{
+                            width: 50%;
+                            height: 700px;
+                            margin-top: 50px;
+                            @include pad_width{
+                            width:100%;
+                            height: auto;
+                            
+                            margin: 0;
+                            margin-top: 25px;
+                        }
+                            @include mobile_width{
+                            width:100%;
+                            height: auto;
+                            
+                            margin: 0;
+                            margin-top: 25px;
+                        }
+                            
+                        }
+                        
+                    }
+                    .form-group-submit{
+                        margin-top: 100px;
+                        label{
+                            display: flex;
+                        flex-direction:column;
+                        justify-content: center;
+                        align-items: center;
+                        .checkboxes{
+                            width: 60%;
+                             @include pad_width{
+                                width: 85%;
+                                
+                            }
+                            @include mobile_width{
+                                width: 100%;
+                                
+                            }
+                            
+                        }
+                        #submit{
+                            width: 15%;
+                            @include pad_width{
+                                width: 35%;
+                                
+                            }
+                            @include mobile_width{
+                                width: 100%;
+                                
+                            }
+                        }
+                        }
+                    }
+  
                     .form-group {
                         margin: 1rem 0;
                         position: relative;

@@ -19,8 +19,7 @@ module.exports = {
      
        
          service:'./src/js/service.js',
-         article:'./src/js/article.js',
-
+     
         
          AllProducts:'./src/js/AllProducts.js',
          ProductCatagory:'./src/js/ProductCatagory.js',
@@ -72,11 +71,7 @@ module.exports = {
             template: './src/OthersProducts.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'AllProducts01.html',
-            template: './src/AllProducts01.html',
-            chunks: ['manifest','vendor','allproduct']
-        }),
+
        
         new HtmlWebpackPlugin({
             filename: 'ContactUs.html',
@@ -253,12 +248,7 @@ module.exports = {
             template: './src/SF100.html',
             chunks: ['manifest','vendor','AllProducts']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'article.html',
-            template: './src/article.html',
-            chunks: ['manifest','vendor','article']
-        }),
-       
+
       
         new HtmlWebpackPlugin({
             filename: 'CM100.html',

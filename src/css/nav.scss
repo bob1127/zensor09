@@ -797,10 +797,8 @@ nav {
             opacity: 1;
           }
           .short-inside-ul{
-            height: 200px !important;
-            @include pc_width{
-              height: 270px
-            }
+            height: auto!important;
+            
             
 
             @include pad_pro_width {
@@ -834,7 +832,7 @@ nav {
             
 
             @include pad_pro_width {
-              height: 550px;
+              height: 620px;
               width: 32vw;
               right: 11.6vw;
            
@@ -953,7 +951,7 @@ nav {
                       height: 570px
                     }
                     @include pad_pro_width {
-                      height: 550px;
+                      height: 620px;
                       width: 30vw;
                       right: -94.5%;
                       
